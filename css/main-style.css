@@ -27,6 +27,10 @@
 
 /* Style */
 
+.main_body_contents {
+    background: #E9E9E9;
+}
+
 .navbar-inverse {
     background-color: #272727;
     border: none;
@@ -136,7 +140,7 @@ a.um_forum {
 .navbar {
     min-height: 100px;
     border-radius: 0px;
-	margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .nav>li {
@@ -144,9 +148,19 @@ a.um_forum {
     line-height: 100px;
 }
 
+.main_nav>li {
+    line-height: 70px;
+}
+
 .nav>li>a {
     display: inline-block;
     vertical-align: bottom;
+}
+
+.main_nav>li>a {
+    vertical-align: middle;
+    line-height: 40px;
+    text-transform: uppercase;
 }
 
 .logo {
