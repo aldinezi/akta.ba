@@ -1,35 +1,185 @@
-body {
-  padding-top: 50px;
+/* --Fonts-- */
+
+@font-face {
+    font-family: 'RobotoCondensed-Bold';
+    src: url('../fonts/RobotoCondensed-Bold.eot');
+    src: local('☺'), url('../fonts/RobotoCondensed-Bold.woff') format('woff'), url('../fonts/RobotoCondensed-Bold.ttf') format('truetype'), url('../fonts/RobotoCondensed-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
+
+@font-face {
+    font-family: 'RobotoCondensed-Regular';
+    src: url('../fonts/RobotoCondensed-Regular.eot');
+    src: local('☺'), url('../fonts/RobotoCondensed-Regular.woff') format('woff'), url('../fonts/RobotoCondensed-Regular.ttf') format('truetype'), url('../fonts/RobotoCondensed-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-.ads{
-	margin-top: 30px;
-	margin-bottom:30px;
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('../fonts/Raleway-Bold.eot');
+    src: local('☺'), url('../fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold.ttf') format('truetype'), url('../fonts/Raleway-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-.upper_menu{	    
+
+
+/* Style */
+
+.navbar-inverse {
+    background-color: #272727;
+    border: none;
+}
+
+.navbar-inverse a:focus,
+.navbar-inverse a:hover {
+    text-decoration: none;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    font-family: "Raleway-Bold";
+    font-size: 13px;
+}
+
+.ads {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.upper_menu {
     border-left: none;
-	padding-top: 35px;
+    padding-top: 35px;
     border-top: 1px solid #a5a5af;
 }
-.upper_menu ul{
-	text-align: center;
+
+.upper_menu a {
+    font-family: "RobotoCondensed-Regular";
+    font-size: 18px;
+    display: block;
+    padding-top: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.upper_menu a::after {
+    height: 20px;
+    width: 30px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAATCAYAAACDW21BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbxJREFUeNq8VctNw0AQtVAQHLcD3AG+cDcVYCqAVEBSQaCCFQWgpIPAHQl3EHdgqMA+gjiYedZbtIw3/hzISBNrdnZ+b2Y2UTSCjk9OrXDSo3/r0/t0FI0jODM9+nRAPzngJLp4fcoOFlCC3cpnK9/1vweUIID1SjgXjhl8OnEo0h5906fvVCiXM+GShuAdzgaSSGgT8whJNdQZ4bXnr6FsZviRO8C7EF7SeIUz0RXfX5/voWAIoI6X9AFCsoDzgfCi+jvfgVEOkWElvNCQsrKKKJixkMIX7rWQShU1D1NARPlZ+HxPZaj60tn1BInpE4lt/B5a4g9n6EvJRY7V8o8KRhRaX7Sp2KYIPQTWCw/viHhnngyy7NFgZdhDJnwtXDNx64/8OpBlySzdnVL3OrQWhLDTUxTmegjFS8BPruSYVQ8R7tWCwh97kTf+SxOC6EPJNVdl6PUw3noEF79Ww+HoTMmPnLShoAVR07AbFxCl3wSUHfgElvmIoL8rps7b+zP2Dw6s10u77/8NQeVuRBvXm4JJ5yIXeKEwqfKdewiu9D96o97SrZrSe4WCeysTN4Gw8/Zwp3y2MX4EGACw76mHn9GMogAAAABJRU5ErkJggg==');
+    background-size: initial;
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin-left: 5px;
+}
+
+a.um_vijesti::after {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+}
+
+.upper_menu a:focus,
+.upper_menu a:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.upper_menu a.active {
+    font-family: "RobotoCondensed-Bold";
+    background-color: #272727;
+}
+
+.upper_menu ul {
+    text-align: center;
     padding: 0;
     margin: 0;
 }
-.upper_menu li{
-	list-style:none;
-	display:inline-block;
+
+.upper_menu li {
+    list-style: none;
+    display: inline-block;
 }
+
+a.um_vijesti {
+    color: #5D78AE;
+}
+
+a.um_registar {
+    color: #00827D;
+}
+
+a.um_tenderi {
+    color: #C88C00;
+}
+
+a.um_promo {
+    color: #785096;
+}
+
+a.um_forum {
+    color: #787878;
+}
+
 .navbar {
     min-height: 100px;
+    border-radius: 0px;
 }
-.logo{
-	margin-top:22px;
-	margin-bottom: 5px;
+
+.nav>li {
+    display: inline-block;
+    line-height: 100px;
 }
-.logo-link{
-	height:100px;
+
+.nav>li>a {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.logo {
+    margin-top: 22px;
+    margin-bottom: 5px;
+    margin-right: 40px;
+}
+
+.logo-link {
+    height: 100px;
+}
+
+.social_icons {
+    margin-left: 50px;
+}
+
+.user_menu {
+    float: right;
+}
+
+.person-ico {
+    width: 40px;
+    padding-right: 0px !important;
+}
+
+#user_icon {
+    vertical-align: bottom;
+}
+
+
+/* - Responsive breakpoints - */
+
+@media (min-width:1366px) {
+    .container {
+        width: 1280px;
+    }
 }
