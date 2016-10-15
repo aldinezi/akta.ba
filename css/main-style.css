@@ -1,0 +1,35 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.ads{
+	margin-top: 30px;
+	margin-bottom:30px;
+}
+.upper_menu{	    
+    border-left: none;
+	padding-top: 35px;
+    border-top: 1px solid #a5a5af;
+}
+.upper_menu ul{
+	text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.upper_menu li{
+	list-style:none;
+	display:inline-block;
+}
+.navbar {
+    min-height: 100px;
+}
+.logo{
+	margin-top:22px;
+	margin-bottom: 5px;
+}
+.logo-link{
+	height:100px;
+}
