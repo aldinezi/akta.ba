@@ -387,16 +387,74 @@ a.um_forum,
     text-transform: uppercase;
     padding: 3px 0px 3px 18px;
 }
-.sub_items>li>a:hover,.sub_items>li>a:focus{
-    color:white;
+
+.sub_items>li>a:hover,
+.sub_items>li>a:focus {
+    color: white;
     text-decoration: none;
 }
+
 .glavna_kategorija {
     padding: 0px 0px 0px 7px;
 }
 
 .dropdown-header {
     padding: 3px 18px;
+}
+
+#skroler-novosti {
+    overflow: auto;
+    padding: 20px 10px;
+    background: white;
+}
+
+.link-novosti {
+    font-family: "Raleway-Bold";
+    color: black;
+    font-size: 15px;
+}
+
+.link-novosti:hover,
+.link-novosti:focus {
+    text-decoration: none;
+}
+
+.news-label {
+    float: left;
+    width: auto;
+    padding: 20px 10px;
+    min-width: 100px;
+    background: #4B69A5;
+    color: white;
+    text-align: center;
+    font-family: "Raleway-Bold";
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.next-label {
+    float: right;
+    padding: 10px 10px;
+    font-size: 29px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 4px;
+    background: white;
+    box-shadow: -5px 0px 15px white;
+}
+
+#dalje {
+    color: #d3d3d3;
+    cursor:pointer;
+}
+
+.skroler-novosti-modul {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
 }
 
 
