@@ -41,10 +41,10 @@
 <body>
 
     <div class="container">
-        <div class="ads">
+        <div class="hidden-xs ads">
             <img src="http://placehold.it/1250x130?text=Place for ads.">
         </div>
-        <nav class="upper_menu">
+        <nav class="hidden-xs upper_menu">
             <ul>
                 <li><a href="#" class="um_vijesti active">VIJESTI</a></li>
                 <li><a href="#" class="um_registar">REGISTAR</a></li>
@@ -105,7 +105,7 @@
 
 
             <li class="dropdown mega-dropdown">
-                <ul class="nav navbar-nav main_nav">
+                <ul class="nav navbar-nav main_nav hidden-xs">
                     <li><a class="active" href="#">HOME</a></li>
                     <li><a href="#">VIJESTI</a></li>
                     <li><a href="#">Kapitalt</a></li>
@@ -127,33 +127,160 @@
 
                 <ul class="dropdown-menu mega-dropdown-menu row">
                     <li class="top_divider"></li>
-                    <li class="col-sm-4">
+                    <li class="col-sm-4 glavna_kategorija">
                         <ul>
                             <li class="dropdown-header "><a href="#" class="vijesti">VIJESTI</a></li>
+                            <!--Lijeva kolona linkova -->
+                            <ul class="col-sm-6 nopadding ">
+                                <!-- Jedan menu sub item / kategorija -->
+                                <li class="subheader"><a href="#">VIJESTI</a></li>
+                                <ul class=" nopadding sub_items">
+                                    <li>
+                                        <a href="#">Svijet</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Regija</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">BiH</a>
+                                    </li>
+                                </ul>
+                                <!-- Kraj kategorije -->
+                                <li class="subheader"><a href="#">investicije</a></li>
+                                <ul class=" nopadding sub_items">
+                                    <li>
+                                        <a href="#">PROJEKTI</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">URBANIZAM</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">NEKRETNINE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">IMOVINA U STEČAJU</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">PRIVATIZACIJA</a>
+                                    </li>
+                                </ul>
+                                <li class="subheader"><a href="#">kapital</a></li>
+                                <ul class="nopadding sub_items">
+                                    <li>
+                                        <a href="#">IZVJEŠTAJI</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">SVJETSKE BERZE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">BH BERZE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DIONICE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">BANKARSTVO</a>
+                                    </li>
+                                </ul>
+                                <li class="subheader"><a href="#">eu</a></li>
+                                <ul class="nopadding sub_items">
+                                    <li>
+                                        <a href="#">POLITIKA</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">EKONOMIJA</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FONDOVI</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                            <!--Desna kolona linkova -->
+                            <ul class="col-sm-6 nopadding">
+                                <li class="subheader"><a href="#">Najave</a></li>
+                                <ul class="nopadding sub_items">
+                                    <li>
+                                        <a href="#">KONFERENCIJE I KONGRESI</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">SAJMOVI I IZLOŽBE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DOGAĐAJI</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">SEMINARI I EDUKACIJE</a>
+                                    </li>
+                                </ul>
+                                <li class="subheader"><a href="#">ličnosti</a></li>
+                                <ul class="nopadding sub_items">
+                                    <li>
+                                        <a href="#">SVIJET</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">KULTURA I SPORT</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">PRIVREDA I POLITIKA</a>
+                                    </li>
+                                </ul>
+                                <li class="subheader"><a href="#">karijera</a></li>
+                                <ul class="nopadding sub_items">
+                                    <li>
+                                        <a href="#">LEADERSHIP</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">TIPS AND TRICKS</a>
+                                    </li>
+                                </ul>
+                                <li class="subheader"><a href="#">pauza</a></li>
+                                <ul class="nopadding sub_items">
+                                    <li>
+                                        <a href="#">INOVACIJE I TEHNOLOGIJE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">TURIZAM I GASTRO</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ŽIVOT I ZDRAVLJE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">SPORT</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">KULTURA I FILM</a>
+                                    </li>
+                                </ul>
+                                <li class="subheader"><a href="#">kolumne</a></li>
 
-
+                            </ul>
                         </ul>
                     </li>
-                    <li class="col-sm-2">
+                    <li class="col-sm-2 glavna_kategorija">
                         <ul>
                             <li class="dropdown-header "><a href="#" class="registar">REGISTAR</a></li>
-
+                            <li class="subheader"><a href="#">KOMPANIJE I INSTITUCIJE</a></li>
+                            <li class="subheader"><a href="#">MENADŽERSKE POZICIJE</a></li>
                         </ul>
                     </li>
-                    <li class="col-sm-2">
+                    <li class="col-sm-2 glavna_kategorija">
                         <ul>
                             <li class="dropdown-header"><a href="#" class="tenderi">TENDERI</a></li>
-
+                            <li class="subheader"><a href="#">OBJAVLJENI TENDERI</a></li>
+                            <li class="subheader"><a href="#">DODJELE UGOVORA</a></li>
+                            <li class="subheader"><a href="#">PRODAJA POTRAŽIVANJA</a></li>
                         </ul>
                     </li>
-                    <li class="col-sm-2">
+                    <li class="col-sm-2 glavna_kategorija">
                         <ul>
                             <li class="dropdown-header"><a href="#" class="promo">PROMO</a></li>
-
+                            <li class="subheader"><a href="#">svijet</a></li>
+                            <li class="subheader"><a href="#">regija</a></li>
+                            <li class="subheader"><a href="#">bih</a></li>
 
                         </ul>
                     </li>
-                    <li class="col-sm-2">
+                    <li class="col-sm-2 glavna_kategorija">
                         <ul>
                             <li class="dropdown-header"><a href="#" class="forum">FORUM</a></li>
 
