@@ -20,6 +20,6 @@ $(document).ready(function() {
         next.children(':first-child').clone().appendTo($(this));
     });
 });
-$("#dalje").click(function(){
+$("#dalje").click(function() {
     $("#skroler-novosti").carousel("next");
 });

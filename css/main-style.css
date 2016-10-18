@@ -17,6 +17,22 @@
 }
 
 @font-face {
+    font-family: 'Raleway-Medium';
+    src: url('../fonts/Raleway-Medium.eot');
+    src: local('Raleway Medium'), local('Raleway-Medium'), url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Raleway-Medium.woff2') format('woff2'), url('../fonts/Raleway-Medium.woff') format('woff'), url('../fonts/Raleway-Medium.ttf') format('truetype'), url('../fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-SemiBold';
+    src: url('../fonts/Raleway-SemiBold.eot');
+    src: local('☺'), url('../fonts/Raleway-SemiBold.woff') format('woff'), url('../fonts/Raleway-SemiBold.ttf') format('truetype'), url('../fonts/Raleway-SemiBold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Raleway-Bold';
     src: url('../fonts/Raleway-Bold.eot');
     src: local('☺'), url('../fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold.ttf') format('truetype'), url('../fonts/Raleway-Bold.svg') format('svg');
@@ -24,8 +40,36 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Raleway-ExtraBold';
+    src: url('../fonts/Raleway-ExtraBold.eot');
+    src: local('☺'), url('../fonts/Raleway-ExtraBold.woff') format('woff'), url('../fonts/Raleway-ExtraBold.ttf') format('truetype'), url('../fonts/Raleway-ExtraBold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.eot');
+    src: local('☺'), url('../fonts/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light.ttf') format('truetype'), url('../fonts/Roboto-Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* Style */
+
+body {
+    background-color: #e9e9e9;
+}
+
+.bijeli-menu {
+    background: white;
+}
+
+.nav-wrapper {
+    min-height: 171px;
+}
 
 .main_body_contents {
     background: #E9E9E9;
@@ -58,8 +102,15 @@
 }
 
 .ads {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    border-bottom: 1px solid #b2b2b2;
+    border-top: 1px solid #b2b2b2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.ads.noborder {
+    border-top: transparent;
+    border-bottom: transparent;
 }
 
 .upper_menu {
@@ -376,6 +427,10 @@ a.um_forum,
     padding: 0px;
 }
 
+.remargin {
+    margin: 0 -15px;
+}
+
 .sub_items {
     list-style: none;
 }
@@ -446,7 +501,7 @@ a.um_forum,
 
 #dalje {
     color: #d3d3d3;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .skroler-novosti-modul {
@@ -457,6 +512,465 @@ a.um_forum,
     position: relative;
 }
 
+span.kategorija-novosti {
+    color: #4B69A5;
+    text-transform: uppercase;
+}
+
+h1.naslov-kolone {
+    font-family: "Raleway-ExtraBold";
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1.naslov-kolone.lijevi {
+    margin-left: -15px;
+}
+
+h1.naslov-kolone.desni {
+    margin-right: -15px;
+}
+
+h1.naslov-kolone:before,
+h1.naslov-kolone:after {
+    background-color: #b2b2b2;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h1.naslov-kolone:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h1.naslov-kolone:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.wrapper-vijesti {
+    overflow: auto;
+    background: url('data:image/png;base64,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');
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: 90% bottom;
+    padding-bottom: 120px;
+}
+
+.bottom_line {
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.crni-menu,
+.bijeli-menu {
+    transition: all 0.5s ease-in;
+}
+
+.crni-menu.affix {
+    top: 0px;
+    z-index: 9;
+    width: 100%;
+}
+
+.bijeli-menu.affix {
+    top: 100px;
+    z-index: 9;
+    width: 100%;
+    background: white;
+}
+
+.card-opis-vijesti {
+    background: white;
+    padding: 25px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: relative;
+}
+
+.card-kategorija {
+    color: #4B69A5;
+    font-family: "Raleway-Bold";
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.card-naslov-vijesti {
+    font-family: "Raleway-Bold";
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-slika-vijesti {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.card-intro-vijesti {
+    font-family: "Roboto-Light";
+    font-size: 15px;
+    margin-bottom: 32px;
+}
+
+.card-count-label {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+}
+
+.card-count-label p {
+    margin-bottom: 0px;
+    line-height: 30px;
+    font-family: "RobotoCondensed-Regular";
+    font-size: 15px;
+    color: #bebebe;
+}
+
+.card-count-label::before {
+    content: "";
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAedJREFUeNrsl0FrwkAQhac1iiBKRBRBFEEUDx78/5f2J/TgwYsQFC+KIIoiilK/oRvSmJoYJRbahZC4k+yb997sJL4MBgNbRPqS3HB6vZ5jfYG+JQgsZ7Ifr/Kc0X8WsPwD/z7gVColuVxOz1EG9zYaDalUKoFxKypou93W8/F4lNFoJIfD4eoz9Xpd78/n8/rMYrG4nXE2m3WZcs5kMqGJepUJUikS8G6306y9iVwDbTab7u/NZnPBNrLURl6YVqtVPZgjIbxkrFYrOZ1OCkpiy+VSptPpj2taUYsLTzkcx1G/a7XatzjJEE+n06GgsbaTYWpkBGA+n+s8oMTCQG9i7PUXeQGFvRn4iBKmEL018RDGhULBBfIrgcRhxXeX1Im3TDy0bVuvS6VSYIzEsOFhHrMolYt/LIzPbJ31eq3xcrmssSiFFQoMKxbDM1of22UymSgwSRA3+9hf8bGBWZTFzYAZbIzHFBL3ME+hMd9qtfTFQLOJXdX+/joej93FYA+IYYkCZv/idbfblU6no9c3A9MCDRANwq9GUN8228kUW7FYvF1qGAyHw8DYdrt1vfV7SrJGrWtyW3H24Gw2k/1+f8FSP5rP3YwmE/QOvhs4CNCrVJTK/psfe85TgPkDdT6/Jw38KcAA8OEGNnQsRZQAAAAASUVORK5CYII=');
+    height: 30px;
+    width: 30px;
+    border-bottom-left-radius: 4px;
+    display: block;
+    position: absolute;
+    left: -31px;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.card-vijest:nth-child(even) {
+    padding-left: 15px;
+}
+
+.card-vijest:nth-child(odd) {
+    padding-right: 15px;
+}
+
+.card-newsletter .form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #EFEFF0;
+    border: transparent;
+    border-radius: 0px;
+    margin-bottom: 25px;
+}
+
+.card-newsletter .form-control::-webkit-input-placeholder,
+.card-newsletter .form-control::-moz-placeholder,
+.card-newsletter .form-control:-ms-input-placeholder,
+.card-newsletter .form-control:-moz-placeholder {
+    color: #787878;
+    font-family: "RobotoCondensed-Regular";
+    font-size: 15px;
+}
+
+.card-newsletter .card-naslov-vijesti {
+    margin-bottom: 40px;
+}
+
+.card-button {
+    right: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    display: block;
+    max-width: 160px;
+    text-align: right;
+}
+
+a.card-button:hover,
+a.card-button:focus {
+    text-decoration: none;
+}
+
+.card-button:hover .card-button-tekst,
+.card-button:focus .card-button-tekst {
+    background: #21ccaf;
+}
+
+.card-button-tekst {
+    color: white;
+    font-family: "Raleway-ExtraBold";
+    font-size: 12px;
+    background: #00B496;
+    text-transform: uppercase;
+    padding: 10px 25px;
+}
+
+.card-button-ikona {
+    background: #787878;
+    padding: 10px;
+    color: #d3d3d3;
+    font-size: 12px;
+}
+
+.side-link-button {
+    width: 100%;
+    font-family: "Raleway-SemiBold";
+    font-size: 16px;
+    color: white;
+    display: inline-block;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 13px;
+    border-radius: 4px;
+}
+
+.side-link-button:hover,
+.side-link-button:focus {
+    color: white;
+    text-decoration: none;
+    background: #787878 !important;
+}
+
+.side-link-button i {
+    font-size: 40px;
+    vertical-align: middle;
+    position: absolute;
+    left: 20px;
+}
+
+.side-link-button .label-download {
+    font-family: "Raleway-ExtraBold";
+    font-size: 16px;
+}
+
+.side-link-button.zeleni {
+    background: #00B496;
+}
+
+.side-link-button.crni {
+    background: #1A1A28;
+}
+
+.newsletter-footer {
+    text-align: center;
+    color: white;
+    background: #00B496;
+    margin-top: 150px;
+    padding: 40px 15px;
+}
+
+.newsletter-footer h1 {
+    display: inline-block;
+    font-family: "Raleway-Medium";
+    font-size: 30px;
+    margin: 0;
+}
+
+.newsletter-footer h1 span {
+    font-family: "Raleway-ExtraBold";
+    font-size: 30px;
+}
+
+.newsletter-footer .form-group {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 60px;
+    min-width: 320px;
+    margin-bottom: 0px;
+}
+
+.newsletter-footer .form-group .form-control {
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #fff;
+}
+
+.newsletter-footer .form-group .form-control::-webkit-input-placeholder {
+    font-family: "RobotoCondensed-Regular";
+    color: #909090;
+    font-size: 16px;
+}
+
+.newsletter-footer .form-control-feedback {
+    background: #E8E8E9;
+    color: #A3A3A9;
+}
+
+.footer-cta {
+    background: white;
+    text-align: center;
+    padding: 20px 15px;
+}
+
+.footer-cta h1 {
+    font-family: "Raleway-Medium";
+    font-size: 21px;
+    display: inline-block;
+    margin: 0;
+}
+
+.footer-cta-button {
+    background: #00b496;
+    color: white;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    font-family: "Raleway-ExtraBold";
+    font-size: 16px;
+}
+
+a.footer-cta-button:hover,
+a.footer-cta-button:focus {
+    background: #21ccaf;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-cta h1 span {
+    font-family: "Raleway-Bold";
+    font-size: 22px;
+    color: black;
+}
+
+.footer-menu {
+    background: #272727;
+}
+
+.logo.footer {
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.navbar-header .footer-line {
+    color: #d3d3d3;
+    vertical-align: bottom;
+    font-size: 16px;
+}
+
+.navbar-header.footer a {
+    vertical-align: bottom;
+}
+
+.navbar-header.footer .link::after {
+    height: 20px;
+    width: 30px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAATCAYAAACDW21BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo4YjUyNTc4Ni0xZjlkLTUwNDAtYTA0NC01MDIxZDYyM2E3YjQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDc2MjI5OTY5NDYzMTFFNkEwNEFEMUIxM0IwQUE4MEQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDc2MjI5OTU5NDYzMTFFNkEwNEFEMUIxM0IwQUE4MEQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OGI1MjU3ODYtMWY5ZC01MDQwLWEwNDQtNTAyMWQ2MjNhN2I0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjhiNTI1Nzg2LTFmOWQtNTA0MC1hMDQ0LTUwMjFkNjIzYTdiNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pk9DSMoAAAHLSURBVHjavFXRccIwDM1xPb69QbNBGSGdoHSChgkKE5BO4OsEYQPKBGSDZAPaCcgv/KR6uWdONcFxP1rdiZwtS896kkXSdV0ypqfTyYrOAvZ9yK51ksTJTNQE7NmI/SKxgL+Soijm/wYoYLl8tvIt/xxQQEDrk2glmhL8p0Q2DZoiC9i7kP2qac7n81z0INpRa+yFshH7jD4pt/bwpc2Ilipex7W5w4+cAd+N6IrOa+yJrZlOp59DYADwtleMAcFlQecb6UUXv14oFTqMR5ERPYoufUrx3mirnV8MpYiFcz2lkkXLm2egiOsP0YcbmSHrR+cXoD1lTLC4uXSpbFjyj2Coy4EPOfUefxQY69vHos+RZUpQQ3C9VHwn5Huu1hDLGo1mhnfICz+Ltry47QFFX5CuBCmUQ8UstcTSmBEAZyu1j085YQftBnwrb50y6zHBuVaDsU82etIM3frLW7d8KvkIoFHPY3C0tV5zOLn31u/stDHQhqz5VBsHWLGOvvGKPqFlEQHaqlpqyV3T7BjAqlraW/9vAHUNgC9r0/DSlawbTCh0qnwXisG1njSW08IppsgWE0ZNmsKbHCXPYvLkzk9No9qL2WN8CzAAUW9QQeIYPncAAAAASUVORK5CYII=');
+    background-size: initial;
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar-header.footer .link {
+    font-family: "RobotoCondensed-Regular";
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.navbar-header.footer .link:hover,
+.navbar-header.footer .link:focus {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-header.footer.menu {
+    padding-top: 78px;
+}
+
+.sub-footer {
+    padding-top: 60px;
+}
+
+.side-link-button.footer {
+    font-family: "Raleway-Bold";
+    font-size: 11px;
+    line-height: 20px;
+    max-width: 190px;
+    border: 2px solid #606060;
+    color: #d3d3d3;
+}
+
+.side-link-button.footer:hover,
+.side-link-button.footer:focus {
+    color: white;
+}
+
+.download-ctas {
+    text-align: center;
+}
+
+.side-link-button.footer .label-download {
+    font-size: 16px;
+}
+
+.footer.subheader>a {
+    font-family: "Raleway-ExtraBold";
+    font-size: 15px;
+    color: #BEBEBE;
+}
+
+.footer.subheader {
+    padding-top: 0px;
+    margin-bottom: 35px;
+}
+
+.footer.sub_items>li>a {
+    font-size: 14px;
+    text-transform: capitalize;
+    padding-left: 0;
+}
+
+.tagovi a {
+    font-size: 14px;
+    color: #787878;
+    font-family: "Raleway-ExtraBold";
+    margin-right: 30px;
+}
+
+.tagovi a:hover,
+.tagovi a:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-latest-news-item {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.footer-latest-news-item img {
+    float: left;
+    margin-right: 20px;
+}
+
+.footer-latest-news-item .kategorija {
+    font-size: 9px;
+    color: #787878;
+    font-family: "Raleway-ExtraBold";
+    vertical-align: top;
+}
+
+.footer-latest-news-item .naslov {
+    font-size: 16px;
+    color: #bebebe;
+    font-family: "Raleway-ExtraBold";
+    vertical-align: top;
+}
+.copyright p{
+    color:#787878;
+    font-size:12px;
+    font-family: "Roboto-Light";
+}
 
 /* - Responsive breakpoints - */
 
