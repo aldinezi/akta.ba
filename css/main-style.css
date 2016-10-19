@@ -971,7 +971,9 @@ a.footer-cta-button:focus {
     font-size:12px;
     font-family: "Roboto-Light";
 }
-
+.investicije h1.naslov-kolone{
+    margin-top: 40px;
+}
 /* - Responsive breakpoints - */
 
 @media (min-width:1366px) {

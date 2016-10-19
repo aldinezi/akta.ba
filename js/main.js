@@ -23,3 +23,9 @@ $(document).ready(function() {
 $("#dalje").click(function() {
     $("#skroler-novosti").carousel("next");
 });
+var $grid = $('#vijesti-wrap').imagesLoaded( function() {
+  // init Masonry after all images have loaded
+  $grid.masonry({
+     itemSelector: '.card',
+  });
+});
