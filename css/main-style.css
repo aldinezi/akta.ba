@@ -966,14 +966,18 @@ a.footer-cta-button:focus {
     font-family: "Raleway-ExtraBold";
     vertical-align: top;
 }
-.copyright p{
-    color:#787878;
-    font-size:12px;
+
+.copyright p {
+    color: #787878;
+    font-size: 12px;
     font-family: "Roboto-Light";
 }
-.investicije h1.naslov-kolone{
+
+.investicije h1.naslov-kolone {
     margin-top: 40px;
 }
+
+
 /* - Responsive breakpoints - */
 
 @media (min-width:1366px) {
