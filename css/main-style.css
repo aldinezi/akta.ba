@@ -626,6 +626,7 @@ h1.naslov-kolone:after {
 }
 
 .card-count-label p {
+    padding-left: 7px;
     margin-bottom: 0px;
     line-height: 30px;
     font-family: "RobotoCondensed-Regular";
@@ -975,6 +976,58 @@ a.footer-cta-button:focus {
 
 .investicije h1.naslov-kolone {
     margin-top: 40px;
+}
+
+.card-registar .module-label {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    background: #00827D;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: white;
+}
+
+.card-registar .module-label span {
+    font-family: "RobotoCondensed-Regular";
+    font-size: 34px;
+}
+
+.card-registar .module-label span:after {
+    height: 40px;
+    width: 60px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAlCAYAAAAJBxroAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAArlJREFUeNrsWItt3DAM1Rk3wGWCeoPeCO4Glw3cDTqCN3A2cDqBmwmUDXKdwNcJ7E6gSi0dMColUrIvcIIQIA6wj8Z7IsXfTq0kxpij/TlYvex2u0uirbNz9pO1PastiQWnzT9pMmwrsNVr4SnUO5UPYh/ErnN/D1Y7SDLvymOt1dqqlpIr3oC3OiCloCSIyBVviJRKIbffuMO+gybLponZLuQx13YvaJHUFlsd162IDwHSamN1NP+Le9aGYjulpXKHBt87eS2VLxWBrw3gM2RJAKMnw8sI3swihkj9FSmxVHw4K/aQcZw4t95avQG9hWcKwrNbMAFoFOJ3xN++IMXh3zH4fpD44NR6SLHB9ItOpk7xmO8pbI89xkwAfSwi7Ltv3Hck40kvJRYjJSWWiq/IrC1Oqszw+2oz2P2Va19W54Hv2tZIPePbB8Z0l4ZLq59dDbP6y11OV8vc2D9HjAuhUP24Fin73RLwfZrXCVZ/UviwUcOkUg1pl0rHz3eMu1OR1YBh/sfh62d8oYznZACw2gP5xBDrU0glZMUUfONsVHsvKuLDJ6LiU8RMCikJMQLfMfCNF4VfIS8MsXGACLEYsTrh3nDEhlR8yrszkrBpBcTqxIQQJOaSRQ6+ArUpCrUlMXl45Ua+RB38vRQfJuZS5bTSjNSlei0iR69+ivAVeOZa+aTXInfIMcrdeVwi7+5QV76m55KJTUvinpDf3sixlNw5l9g5saktBXE+rUhuymi6XxBTVOEj5CS8xGuRuyTiq6gC2AlWzQPXKzIrh3pBge4EHhvwPDbXr5o51Za5X4s9F+gsRPiAeOlX99Hb9hy9PlEzyxZuNRD0nNf9NAFbjK+Z8cE7H9/INbmU1DnEBORa72Ar7D2iTzWRFZymmsg+YDCgPWAWMYqc91wze8UyEDk+Pv1HgAEAmPGP48WriowAAAAASUVORK5CYII=');
+    background-size: initial;
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+
+.card-registar .card-kategorija {
+    color: #00827D;
+}
+
+.card-registar .card-count-label::before {
+    background: #00827D;
+    font: normal normal normal 20px/1 FontAwesome;
+    content: "\f067";
+    padding: 7px;
+    color: white;
+}
+
+.kursna-lista .datum {
+    color: #909090;
+}
+
+.kursna-lista-tabela>tbody>tr>td,
+.kursna-lista-tabela thead>tr>th {
+    font-family: "RobotoCondensed-Regular";
+    font-size: 12px;
 }
 
 
