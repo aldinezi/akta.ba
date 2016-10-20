@@ -20,12 +20,57 @@ $(document).ready(function() {
         next.children(':first-child').clone().appendTo($(this));
     });
 });
+$(document).ready(function() {
+    $('#skroler-kapital').carousel({
+            interval: 10000
+        })
+        /* $('.fdi-Carousel.kapital .item').each(function() {
+             var next = $(this).next();
+             if (!next.length) {
+                 next = $(this).siblings(':first');
+             }
+             next.children(':first-child').clone().appendTo($(this));
+         });*/
+});
 $("#dalje").click(function() {
     $("#skroler-novosti").carousel("next");
 });
-var $grid = $('#vijesti-wrap').imagesLoaded( function() {
-  // init Masonry after all images have loaded
-  $grid.masonry({
-     itemSelector: '.card',
-  });
+$(".kapital #dalje").click(function() {
+    $("#skroler-kapital").carousel("next");
+});
+var $gridvijesti = $('#vijesti-wrap').imagesLoaded(function() {
+    // init Masonry after all images have loaded
+    $gridvijesti.masonry({
+        itemSelector: '.card',
+    });
+});
+var $gridkapital = $('#kapital-wrap').imagesLoaded(function() {
+    // init Masonry after all images have loaded
+    $gridkapital.masonry({
+        itemSelector: '.card',
+    });
+});
+var $grideu = $('#eu-wrap').imagesLoaded(function() {
+    // init Masonry after all images have loaded
+    $grideu.masonry({
+        itemSelector: '.card',
+    });
+});
+var $gridlic = $('#licnosti-wrap').imagesLoaded(function() {
+    // init Masonry after all images have loaded
+    $gridlic.masonry({
+        itemSelector: '.card',
+    });
+});
+var $gridkar = $('#karijera-wrap').imagesLoaded(function() {
+    // init Masonry after all images have loaded
+    $gridkar.masonry({
+        itemSelector: '.card',
+    });
+});
+var $gridkolum = $('#kolumne-wrap').imagesLoaded(function() {
+    // init Masonry after all images have loaded
+    $gridkolum.masonry({
+        itemSelector: '.card',
+    });
 });
