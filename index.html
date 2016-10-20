@@ -41,10 +41,10 @@
 <body>
 
     <div class="container">
-        <div class="hidden-xs ads noborder">
-            <img src="http://placehold.it/1250x130?text=Place for ads.">
+        <div class="hidden-xs visible-md visible-lg ads noborder">
+            <img class="img-responsive" src="http://placehold.it/1250x130?text=Place for ads.">
         </div>
-        <nav class="hidden-xs upper_menu">
+        <nav class="hidden-xs visible-md visible-lg upper_menu">
             <ul>
                 <li><a href="#" class="um_vijesti active">VIJESTI</a></li>
                 <li><a href="#" class="um_registar">REGISTAR</a></li>
@@ -61,15 +61,16 @@
                 <div class="navbar-header">
                     <a class="logo-link" href="#"><img class="logo" src="./images/logo.png" alt="logo"></a>
                 </div>
+                <h1 id="current_category" class="visible-xs-inline-block visible-sm-inline-block hidden-md hidden-lg vijesti">VIJESTI</h1>
                 <div id="header_navigation" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav hidden-xs visible-md visible-lg">
                         <li><a href="#">O nama</a></li>
                         <li><a href="#">Partneri</a></li>
                         <li><a href="#">Kontakt</a></li>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Marketing</a></li>
                     </ul>
-                    <ul class="nav navbar-nav social_icons">
+                    <ul class="nav navbar-nav social_icons hidden-xs visible-lg">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
@@ -106,7 +107,7 @@
 
 
                 <li class="dropdown mega-dropdown">
-                    <ul class="nav navbar-nav main_nav hidden-xs">
+                    <ul class="nav navbar-nav main_nav hidden-xs visible-md">
                         <li><a class="active" href="#">HOME</a></li>
                         <li><a href="#">VIJESTI</a></li>
                         <li><a href="#">Kapitalt</a></li>
@@ -308,7 +309,7 @@
                     <div class="carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
                         <div class="carousel-inner onebyone-carosel">
                             <div class="item active">
-                                <div class="col-md-6">
+                                <div class="col-xs-12 col-md-6">
                                     <a class="link-novosti" href="#">
                                         <span class="kategorija-novosti">
                                                 VIJESTI / SVIJET:
@@ -471,7 +472,7 @@
             </div>
 
             <div class="hidden-xs ads">
-                <img src="http://placehold.it/1250x130?text=Place for ads.">
+                <img class="img-responsive" src="http://placehold.it/1250x130?text=Place for ads.">
             </div>
         </div>
     </section>
@@ -480,10 +481,10 @@
 
             <h1 class="naslov-kolone ">Investicije</h1>
             <div class="wrap-kolona remargin">
-                <div class="col-md-8 ">
+                <div class="col-md-12 ">
                     <div id="vijesti-wrap" class=" row">
 
-                        <div class="col-md-6 card card-vijest">
+                        <div class="col-sm-6 col-md-6 col-lg-4 card card-vijest">
                             <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic4.jpg">
                             <div class="card-opis-vijesti">
                                 <p class="card-kategorija">Vijesti / SVIJET</p>
@@ -494,7 +495,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 card card-vijest ">
+                        <div class="col-sm-6 col-md-6 col-lg-4 card card-vijest ">
                             <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic5.jpg">
                             <div class="card-opis-vijesti">
                                 <p class="card-kategorija">Vijesti / SVIJET</p>
@@ -505,36 +506,7 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-md-6 card card-vijest ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic1.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 card card-vijest">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic2.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col-md-4 ">
-                    <div id="moduli-wrap" class="row ">
-                        <div class="col-md-12 card card-vijest card-registar">
+                        <div class="col-sm-6 col-md-6 col-lg-4 card card-vijest card-registar">
                             <h2 class="module-label"><span>REGISTAR</span></h2>
                             <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic3.jpg">
                             <div class="card-opis-vijesti">
@@ -546,7 +518,29 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12 card card-newsletter card-vijest kursna-lista">
+                        <div class="col-sm-6 col-md-6 col-lg-4 card card-vijest ">
+                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic1.jpg">
+                            <div class="card-opis-vijesti">
+                                <p class="card-kategorija">Vijesti / SVIJET</p>
+                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
+                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
+                                <div class="card-count-label">
+                                    <p>100</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 card card-vijest">
+                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic2.jpg">
+                            <div class="card-opis-vijesti">
+                                <p class="card-kategorija">Vijesti / SVIJET</p>
+                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
+                                <div class="card-count-label">
+                                    <p>100</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 card card-newsletter card-vijest kursna-lista">
                             <div class="card-opis-vijesti">
                                 <h1 class="card-naslov-vijesti">Kursna lista <span class="datum" id="datum">19.10.2016.</span></h1>
                                 <table class="table table-hover kursna-lista-tabela">
@@ -584,7 +578,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12 card card-newsletter card-vijest konvertor-valuta">
+                        <div class="col-sm-6 col-md-6 col-lg-4 card card-newsletter card-vijest konvertor-valuta">
                             <div class="card-opis-vijesti">
                                 <h1 class="card-naslov-vijesti">Konvertor valuta</h1>
                                 <form>
@@ -629,6 +623,8 @@
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
@@ -636,7 +632,7 @@
     </section>
     <div class="container">
         <div class="hidden-xs ads">
-            <img src="http://placehold.it/1250x130?text=Place for ads.">
+            <img class="img-responsive" src="http://placehold.it/1250x130?text=Place for ads.">
         </div>
     </div>
     <section class="kapital">
@@ -1107,7 +1103,7 @@
             </div>
         </div>
     </section>
-     <section class="kolumne">
+    <section class="kolumne">
         <div class="container">
             <h1 class="naslov-kolone ">Kolumne</h1>
             <div class="wrap-kolona remargin">

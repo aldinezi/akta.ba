@@ -584,6 +584,7 @@ h1.naslov-kolone:after {
     z-index: 9;
     width: 100%;
     background: white;
+    height: 70px;
 }
 
 .card-opis-vijesti {
@@ -1113,7 +1114,8 @@ a.footer-cta-button:focus {
     margin-bottom: 10px;
 }
 
-.licnosti h1.naslov-kolone,.karijera h1.naslov-kolone {
+.licnosti h1.naslov-kolone,
+.karijera h1.naslov-kolone {
     margin-top: 40px;
 }
 
@@ -1123,5 +1125,21 @@ a.footer-cta-button:focus {
 @media (min-width:1366px) {
     .container {
         width: 1280px;
+    }
+}
+
+
+/* sve ispod 1200px */
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+    .dropdown-toggle {
+        right: initial;
+        left: 0;
+    }
+    #current_category {
+        position: absolute;
+        margin: 48px 0 0 0;
     }
 }

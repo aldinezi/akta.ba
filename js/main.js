@@ -12,25 +12,18 @@ $(document).ready(function() {
     $('#skroler-novosti').carousel({
         interval: 10000
     })
-    $('.fdi-Carousel .item').each(function() {
-        var next = $(this).next();
-        if (!next.length) {
-            next = $(this).siblings(':first');
-        }
-        next.children(':first-child').clone().appendTo($(this));
-    });
-});
-$(document).ready(function() {
     $('#skroler-kapital').carousel({
-            interval: 10000
-        })
-        /* $('.fdi-Carousel.kapital .item').each(function() {
-             var next = $(this).next();
-             if (!next.length) {
-                 next = $(this).siblings(':first');
-             }
-             next.children(':first-child').clone().appendTo($(this));
-         });*/
+        interval: 10000
+    }) 
+    if ($(window).width() > 991){
+        $('.fdi-Carousel .item').each(function() {
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+        });
+    }
 });
 $("#dalje").click(function() {
     $("#skroler-novosti").carousel("next");
