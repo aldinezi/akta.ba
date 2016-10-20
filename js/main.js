@@ -14,8 +14,8 @@ $(document).ready(function() {
     })
     $('#skroler-kapital').carousel({
         interval: 10000
-    }) 
-    if ($(window).width() > 991){
+    })
+    if ($(window).width() > 991) {
         $('.fdi-Carousel .item').each(function() {
             var next = $(this).next();
             if (!next.length) {
@@ -64,6 +64,12 @@ var $gridkar = $('#karijera-wrap').imagesLoaded(function() {
 var $gridkolum = $('#kolumne-wrap').imagesLoaded(function() {
     // init Masonry after all images have loaded
     $gridkolum.masonry({
+        itemSelector: '.card',
+    });
+});
+var $gridnaj = $('#najave-wrap').imagesLoaded(function() {
+    // init Masonry after all images have loaded
+    $gridnaj.masonry({
         itemSelector: '.card',
     });
 });

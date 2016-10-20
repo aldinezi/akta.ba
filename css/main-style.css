@@ -651,13 +651,14 @@ h1.naslov-kolone:after {
     margin-bottom: 30px;
 }
 
-.card-vijest:nth-child(even) {
+
+/*.card-vijest:nth-child(even) {
     padding-left: 15px;
 }
 
 .card-vijest:nth-child(odd) {
     padding-right: 15px;
-}
+}*/
 
 .card-newsletter .form-control {
     -webkit-box-shadow: none;
@@ -666,6 +667,10 @@ h1.naslov-kolone:after {
     border: transparent;
     border-radius: 0px;
     margin-bottom: 25px;
+}
+
+.card-newsletter.card-vijest {
+    margin-bottom: 30px;
 }
 
 .card-newsletter .form-control::-webkit-input-placeholder,
@@ -1115,8 +1120,21 @@ a.footer-cta-button:focus {
 }
 
 .licnosti h1.naslov-kolone,
-.karijera h1.naslov-kolone {
+.karijera h1.naslov-kolone,
+.najave h1.naslov-kolone {
     margin-top: 40px;
+}
+
+.card-promo .module-label {
+    background: #785096;
+}
+
+.card-promo .card-kategorija {
+    color: #785096;
+}
+
+.card-promo .card-count-label::before {
+    background: #785096;
 }
 
 
@@ -1141,5 +1159,11 @@ a.footer-cta-button:focus {
     #current_category {
         position: absolute;
         margin: 48px 0 0 0;
+    }
+    .kolona-najcitanije h1.naslov-kolone {
+        width: 100%;
+    }
+    .navbar-header.footer .link {
+        margin-left: 10px;
     }
 }
