@@ -15,7 +15,7 @@ $(document).ready(function() {
     $('#skroler-kapital').carousel({
         interval: 10000
     })
-    if ($(window).width() > 991) {
+    if ($(window).width() > 1199) {
         $('.fdi-Carousel .item').each(function() {
             var next = $(this).next();
             if (!next.length) {
