@@ -1225,6 +1225,17 @@ a.footer-cta-button:focus {
         min-height: 61px;
         min-width: 10px;
     }
+    .pretraga {
+        position: fixed;
+        top: 100px;
+        display: none;
+        left: 0;
+        width: 100%;
+        background: white;
+        border: 6px solid #272727;
+        /* margin: 15px; */
+        border-radius: 0px;
+    }
 }
 
 @media (max-width:480px) {
@@ -1247,7 +1258,7 @@ a.footer-cta-button:focus {
     .pretraga {
         position: fixed;
         top: 100px;
-        display: block;
+        display: none;
         left: 0;
         width: 100%;
         background: white;

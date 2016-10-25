@@ -24,12 +24,16 @@ $(document).ready(function() {
             next.children(':first-child').clone().appendTo($(this));
         });
     };
-    if ($(window).width() < 480) {
+    if ($(window).width() < 768) {
         $(".search-icon").click(function(event) {
             event.preventDefault();
-            console.log("klikno si da ga jebes..")
-            $(".bijeli-menu.affix .pretraga").toggle();
-            return false;
+            if ($(".crni-menu").hasClass("affix")) {
+                $(".pretraga").css("top", "100px");
+                $(".bijeli-menu.affix .pretraga").toggle();
+            } else if ($(document.body).scrollTop() < 170) {
+                $(".pretraga").css("top", "170px");
+                $(".pretraga").toggle();
+            }
         });
     }
 });
