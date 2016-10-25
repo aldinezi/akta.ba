@@ -1191,8 +1191,8 @@ a.footer-cta-button:focus {
         padding-left: 15px;
     }
     .bijeli-menu {
-    background: transparent;
-}
+        background: transparent;
+    }
     .bijeli-menu.affix {
         background: transparent;
         right: 0;
@@ -1219,5 +1219,40 @@ a.footer-cta-button:focus {
     }
     .bijeli-menu.affix .person-ico {
         display: inline-block;
+    }
+    .news-label {
+        font-size: 0px;
+        min-height: 61px;
+        min-width: 10px;
+    }
+}
+
+@media (max-width:480px) {
+    #current_category {
+        font-size: 16px;
+        margin: 65px 0 0 0;
+    }
+    .person-ico {
+        margin-right: 10px;
+    }
+    .dropdown-toggle {
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+    .search_bar {
+        right: 30px;
+        width: 100%;
+        text-align: right;
+    }
+    .pretraga {
+        position: fixed;
+        top: 100px;
+        display: block;
+        left: 0;
+        width: 100%;
+        background: white;
+        border: 6px solid #272727;
+        /* margin: 15px; */
+        border-radius: 0px;
     }
 }

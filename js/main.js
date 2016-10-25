@@ -11,10 +11,10 @@ $(".dropdown").on("hide.bs.dropdown", function() {
 $(document).ready(function() {
     $('#skroler-novosti').carousel({
         interval: 10000
-    })
+    });
     $('#skroler-kapital').carousel({
         interval: 10000
-    })
+    });
     if ($(window).width() > 1199) {
         $('.fdi-Carousel .item').each(function() {
             var next = $(this).next();
@@ -22,6 +22,14 @@ $(document).ready(function() {
                 next = $(this).siblings(':first');
             }
             next.children(':first-child').clone().appendTo($(this));
+        });
+    };
+    if ($(window).width() < 480) {
+        $(".search-icon").click(function(event) {
+            event.preventDefault();
+            console.log("klikno si da ga jebes..")
+            $(".bijeli-menu.affix .pretraga").toggle();
+            return false;
         });
     }
 });
