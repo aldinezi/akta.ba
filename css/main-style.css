@@ -1160,6 +1160,9 @@ a.footer-cta-button:focus {
 /* sve ispod 1200px */
 
 @media (max-width: 991px) {
+    .bijeli-menu .main_nav{
+        display:none !important;
+    }
     .dropdown-toggle {
         right: initial;
         left: 0;
