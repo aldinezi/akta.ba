@@ -564,8 +564,13 @@ h1.naslov-kolone:after {
     background: url('data:image/png;base64,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');
     background-repeat: no-repeat;
     background-size: initial;
-    background-position: 90% bottom;
+    background-position: 50% bottom;
     padding-bottom: 120px;
+}
+
+.wrap-ostalih-vijesti {
+    overflow: overlay;
+    clear: both;
 }
 
 .bottom_line {
@@ -816,9 +821,11 @@ a.card-button:focus {
 }
 
 .footer-cta {
-    background: white;
+    background: #00B496;
+    color:white;
     text-align: center;
     padding: 20px 15px;
+    margin-top: 30px;
 }
 
 .footer-cta h1 {
@@ -829,6 +836,7 @@ a.card-button:focus {
 }
 
 .footer-cta-button {
+    border:2px solid white;
     background: #00b496;
     color: white;
     display: inline-block;
@@ -849,7 +857,6 @@ a.footer-cta-button:focus {
 .footer-cta h1 span {
     font-family: "Raleway-Bold";
     font-size: 22px;
-    color: black;
 }
 
 .footer-menu {
@@ -1149,6 +1156,54 @@ a.footer-cta-button:focus {
 
 .single_article .wrapper-vijesti {
     margin-top: 50px;
+}
+
+.tabs_module {
+    background: #fff;
+    padding: 15px;
+}
+
+.tabs>li {
+    line-height: 20px;
+    line-height: 20px;
+    background: #eee;
+    border-radius: 3px;
+}
+
+.top5 {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    background: #4B69A5;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: white;
+}
+
+.tab-pane .card-opis-vijesti {
+    padding: 15px 0px;
+}
+
+.tab-pane .card-opis-vijesti li {
+    list-style: none;
+    margin-top: 7px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.tabs_module .tabs>li>a {
+    font-size: 13px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.tab-pane .card-opis-vijesti li h1 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 

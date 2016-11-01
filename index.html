@@ -383,9 +383,11 @@
             <!-- Kraj skrolera -->
 
             <div class="wrapper-vijesti remargin">
+                <div class="col-xs-12">
+                    <h1 class="naslov-kolone ">Aktuelno</h1>
+                </div>
 
                 <div class="col-md-8 kolona-aktuelno ">
-                    <h1 class="naslov-kolone ">Aktuelno</h1>
                     <div class="col-xs-12 card card-lead nopadding">
                         <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic10.jpg">
                         <div class="card-opis-vijesti">
@@ -420,7 +422,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 card-newsletter card-vijest ">
+                        <div class="col-sm-6 col-md-6 card card-newsletter card-vijest ">
                             <div class="card-opis-vijesti">
                                 <h1 class="card-naslov-vijesti">Newsletter</h1>
                                 <form>
@@ -444,15 +446,25 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-sm-6 col-md-6 card card-vijest">
-                            <img class="img-responsive " src="http://placehold.it/400x300&text=Place for ads">
-
+                        <div class="col-sm-6 col-md-6 card card-vijest ">
+                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic11.jpg">
+                            <div class="card-opis-vijesti">
+                                <p class="card-kategorija">Vijesti / SVIJET</p>
+                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
+                                <div class="card-count-label">
+                                    <p>100</p>
+                                </div>
+                            </div>
                         </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 card ">
+                            <a href="#" class="side-link-button zeleni"><i class="fa fa-android" aria-hidden="true"></i> Akta aplikacija <span class="label-download">DOWNLOAD<span></a>
+                            <a href="#" class="side-link-button crni"><i class="fa fa-apple" aria-hidden="true"></i> Akta aplikacija <span class="label-download">DOWNLOAD<span></a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-md-4 kolona-najcitanije ">
-                    <h1 class="naslov-kolone ">Najčitanije</h1>
                     <div class="wrap-najcitanije remargin">
                         <div class="col-xs-12 col-sm-6 col-md-12 card ">
                             <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic1.jpg">
@@ -477,20 +489,96 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-12 card ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic2.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
+                            <h2 class="module-label top5"><span>TOP 5 VIJESTI</span></h2>
+                            <div id="exTab3" class="tabs_module">
+                                <ul class="nav nav-pills tabs">
+                                    <li class="active">
+                                        <a href="#1b" data-toggle="tab">Najnovije</a>
+                                    </li>
+                                    <li>
+                                        <a href="#2b" data-toggle="tab">Najčitanije</a>
+                                    </li>
+                                    <li>
+                                        <a href="#3b" data-toggle="tab">Ne propustite</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content clearfix">
+                                    <div class="tab-pane active" id="1b">
+                                        <div class="card-opis-vijesti">
+                                            <li>
+                                                <p class="card-kategorija">Vijesti / SVIJET</p>
+                                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            </li>
+                                            <li>
+                                                <p class="card-kategorija">Vijesti / SVIJET</p>
+                                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            </li>
+                                            <li>
+                                                <p class="card-kategorija">Vijesti / SVIJET</p>
+                                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            </li>
+                                            <li>
+                                                <p class="card-kategorija">Vijesti / SVIJET</p>
+                                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            </li>
+                                            <li>
+                                                <p class="card-kategorija">Vijesti / SVIJET</p>
+                                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            </li>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="2b">
+                                        <div class="card-opis-vijesti">
+                                            <li>
+                                                <p class="card-kategorija">Najčitanije</p>
+                                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            </li>
+                                            <li>
+                                                <p class="card-kategorija">Najčitanije</p>
+                                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            </li>
+                                            <li>
+                                                <p class="card-kategorija">Najčitanije</p>
+                                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            </li>
+                                            <li>
+                                                <p class="card-kategorija">Najčitanije</p>
+                                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            </li>
+                                            <li>
+                                                <p class="card-kategorija">Najčitanije</p>
+                                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            </li>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="3b">
+                                        <div class="card-opis-vijesti">
+                                            <li>
+                                                <p class="card-kategorija">Ne propustite</p>
+                                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            </li>
+                                            <li>
+                                                <p class="card-kategorija">Ne propustite</p>
+                                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            </li>
+                                            <li>
+                                                <p class="card-kategorija">Ne propustite</p>
+                                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            </li>
+                                            <li>
+                                                <p class="card-kategorija">Ne propustite</p>
+                                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            </li>
+                                            <li>
+                                                <p class="card-kategorija">Ne propustite</p>
+                                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            </li>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-12 card ">
-                            <a href="#" class="side-link-button zeleni"><i class="fa fa-android" aria-hidden="true"></i> Akta aplikacija <span class="label-download">DOWNLOAD<span></a>
-                            <a href="#" class="side-link-button crni"><i class="fa fa-apple" aria-hidden="true"></i> Akta aplikacija <span class="label-download">DOWNLOAD<span></a>
-                        </div>
+
                     </div>
                 </div>
 
@@ -504,7 +592,7 @@
     <section class="investicije">
         <div class="container">
 
-            <h1 class="naslov-kolone ">Investicije</h1>
+            <h1 class="naslov-kolone ">Kapital</h1>
             <div class="wrap-kolona remargin">
                 <div class="col-md-12 ">
                     <div id="vijesti-wrap" class=" row">
@@ -1284,6 +1372,7 @@
     </div>
     <!--- footer sekcija -->
     <section id="footer">
+        <!--- Footer newsletter
         <div class="container-fluid newsletter-footer">
             <h1>PRIJAVI SE ZA <span>NEWSLETTER</span></h1>
             <div class="form-group has-feedback">
@@ -1293,6 +1382,7 @@
                 </span>
             </div>
         </div>
+        -->
         <div class="container-fluid footer-cta">
             <h1> <span>Poslujte bolje!</span> TESTIRAJTE BEPLATNO!</h1>
             <a class="footer-cta-button">REGISTRUJ SE</a>
