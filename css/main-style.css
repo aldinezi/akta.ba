@@ -1147,6 +1147,10 @@ a.footer-cta-button:focus {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.single_article .wrapper-vijesti {
+    margin-top: 50px;
+}
+
 
 /* - Responsive breakpoints - */
 
@@ -1159,9 +1163,15 @@ a.footer-cta-button:focus {
 
 /* sve ispod 1200px */
 
+@media (max-width:1200px) {
+    .bijeli-menu .main_nav>li>a {
+        padding: 15px 5px;
+    }
+}
+
 @media (max-width: 991px) {
-    .bijeli-menu .main_nav{
-        display:none !important;
+    .bijeli-menu .main_nav {
+        display: none !important;
     }
     .dropdown-toggle {
         right: initial;
