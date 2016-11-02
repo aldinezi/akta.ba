@@ -79,7 +79,7 @@ var $gridkar = $('#karijera-wrap').imagesLoaded(function() {
         itemSelector: '.card',
     });
 });
-var $gridkolum = $('#kolumne-wrap').imagesLoaded(function() {
+var $gridkolum = $('#pauza-wrap').imagesLoaded(function() {
     // init Masonry after all images have loaded
     $gridkolum.masonry({
         itemSelector: '.card',

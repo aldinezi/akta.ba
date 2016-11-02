@@ -822,7 +822,7 @@ a.card-button:focus {
 
 .footer-cta {
     background: #00B496;
-    color:white;
+    color: white;
     text-align: center;
     padding: 20px 15px;
     margin-top: 30px;
@@ -836,7 +836,7 @@ a.card-button:focus {
 }
 
 .footer-cta-button {
-    border:2px solid white;
+    border: 2px solid white;
     background: #00b496;
     color: white;
     display: inline-block;
@@ -1064,9 +1064,10 @@ a.footer-cta-button:focus {
 
 .investicije .container {
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK8AAACACAYAAAB9aDmWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAACZVJREFUeNrsne1x2koUhlcM/+N0IP5nJlBBoIKYCq5cQUwFMRXYrgClApMKQiowmcl/63bA7eDuiVeOLEsgibPf75mR8Sfgo0fvno/dVSJgMMfs9+/fF/JhLo9P8phWfnSQx/cPHz7k9EUCV8EcgvZSPvwjj8sTv7qTxxLwwlyANpMPX+WR9vizLeCF+Qbti43hQpgFaOcK2vk5zwN4YaYTsVt5ZBzPB3j1ZcqUJb9Tj4U8/qU4TWbK+4iTsY08LrieEzEvH7CZypSnXTJlCfEhIt9sOlQQoLyGT0yqYrc+wyCp8g95zKC2UF5foK3bSqrvHWLbwXaA8vY/KQTtNcPTfZbHXYA+orDpQQwsf/Ww7QhIdj4ppCJPTOCW4UNoPiLfPBoAl+w7lLeb2j6ECJsPSVmLFTLkgvJ2SDieAO7JMOGHQXDJvtEHwNt+Um6V4l7AG0cvbgJ3avBlD2WugLCheQg0cUJ2nvvpRiWvpu2+rJED3uYh0ITa7j2+uE3Gt42qi7DhbTXBFLhkPz30UWohvq3aqtqZRJPiL7gbkwoiT8J7jEr9Rirps1ddyRHA/VOb3Bh+2a2HF/ej5eR1Vf/GOHJwCdrMRtLhkY+o6nJt+W3cSdXdAV774O58mRZp0UdVK+SxbvrB2LJzpir+KyyECrZOytqTioLp+m2bXbVNH00sOqieJO3UVfZLPJeR9jrmvFpIzuqqu/CgovDgCLgULqzafphYclDX4ahQx0/1uD9nyLUMLtnM5ZDBgYpC/dzPjglYYtg5XAXufUWl/yj2qdDDgROTy/d4BXD5LvTEMLi646idAvvfauihXvvJ4okh9Zi4uvTHgRGpbp0m6icRXNWlIqcWTwatWdsCXN68YGTIOTaHo9QyuFuHwb12DFwamZZdf3lswDm3Il6jk3HlKLgu1HDrtugTWo0jc46NcOEAcDvHub0qMWMNjsGymWdbN7U0AW6j5UNWUo+ZHZMKdwrctu2divcLFyA2tBx9iJHarob8YcLoHNfqhK5ZoU5U2UEsTDUsHGv31nOC2dDpAQmTczLHslafbCf+7mVGn7O2xR0Gt0zQBo9KCYNzboSdtUyhVyn2FaUeFHo4Du5VuT2/FXhRUbASHxbi9eSlwkNwWVrlyUBoXXZMzKHHrwrgribObDPrBiuvinNpS8852IH1GDkWXDE9R8w7FwxbtMOiiONnnAsPOEtlqTh/209YuOAuuEuD7LPKFMQE8BeBmi/s2bTMqtM2JVIlddcqLk5x/qK1s0tixuFtSO6+AuLojOZ33Oh6ctPLgC5VOIHkLnzTvuzJ1gLMuQonkNwBXL/grSV3qFCEZay1XGfhbUjuUKEAuH7BW4P4EskdwPUO3hrImVJizJ9w36ws7Xd+f160n70Ad2FjJyBvNpdWKzW+ILkDuN7BW4E4rUCM5C5ScL2Et5bcoUIRKbhew9uQ3KFCERG4wcBbgRjt50jADQ7eCsRzBfEleGM1bTPEhliQdwOilbbyoA3bJvLIwRybORWWBX0rK1pyoiaIEMRrNezBhtsnl95MVDcRVBWKTIUUSO76G4nBBPDaB5kgRoWiv713ZefLaO+ASYmHUhHaQ2AHJjubM3NNor99q0ruCOAZkrtONge87kG8ryR3OZK7VvuImNeP5A7tZ4eTNsDbDWJMkHcwaQO8/UDOBPZnI1u4sNs7Yt5+cXGukrvYKxROXLyAdxjEZYUi1vbzR8DrP8Sxtp+diP0R8/Ind1HszyYv2gTwhgkx7Uoe+nRM60kbwgZ+cG9FHPOIrbeJAS8vuJkKG5C0AV6vwCUliukm4VDegBK12O7+CXgBrtf/+xzw+m23It791KaA11/loeQsi9gFHwGvn+BeRpagNVkKeP2sLOAu95Yn6KDDNixBexSY21vajHsHHeXjejxd1O+eOYbve9sDwH2TtO0ZgCUV/yyeu5Npy+/s5MOqvFgAbz8HbwQmorMlbQMmMpHvf8i/+7NfGuDt7uhMYGPrNuUdCu2Q9YEXavSbIObtnqA9whPN1md6pPTljeBZ1LoEvKednSpwsYL4jKRNxbQbxnxhjbDh9PD2AHCHJ23KhxvBP030E+A9bhuBW2kNTtqU2mq7+NGkOB6buTCpnBSN1sm5vD5u2uI/nROWUG04Uln46sBb2Yrn3cgP8j2VI4HT8FZCrbnm1/wPCVtzZcGFKY5rCe1N7b09CXcbJBPxt4xl4j0uEDa4l6CVNy25aQLaYfd9URe9kYuLFn8C3tdmzPlH4ttZ26pcdTOTwlHfXRu86LdI2F6rru3KQq4U9xSca5wt8Z0+IOYVL5PKbc7N7XWLKMdjX+1hlfTVeyiveKlF2gL3oMKEvOffxay+9+Uno8jBnaoEzYZRXDsZMhfW8dhX98V+V34xjhjcsm1po7JwJwFcnfkcaxHfao776qbWMSuvjQTtoOLbc8GNUX1fqW608FraT2yvqgk543PGFPuu67cSSCIEN7Mw3L60eTX8PzFUHuhOTbP6N8eRgWtj1e+6pVvGqb6hx75XTd9MIgKXErMngwkaqezSxB62gatv68U/ighck5NtjrZ5NalvqOFC66gVS8Jmcj+xXHRr87JZoJWHQ1u4EE3MqyZFZ6ZiM+ZqQsyx7+pUAycJHFwqhz0YUokF984xEce+ubrL0lEbBQyuqcoCxbUT2+AGFPvuu4AbrPIa3E+Mo80L9X2d6C661sNDVV7dS1HY2rxQ3zc+7dzICU551aTyTLM6XDkSJoSivoNyhlFg4Gaawd26kJgFpr6Dk90kIHDn4rkRoQ0IzW3eGNX3rCrNKBBwU6GvJHZsNS/U1xK4g5RXgSJMdpA6VBZIcXV00MixS1f+14DUl6UuPurpjHKrzye6ObRqAtg2XZPKc2G4zRuJ+rI1dJKe4DZNbqGT+008d0UKw8pCQ7mObZlstnlDVl/WkSw5E9wmtfpmaBpgJvg7aE60eT1LZLsa+4T8hBHcuhrfKzXWsXpAx35ivbo7ngFMvprbDF90JLyJAUhY1VjTpPI7R7tlvqtv2TXb6njyxKC6FSqB2J6jbvJ9PTImaPQ+VqHEty6qb5/7VbBUGzQNy6mKUalSsVGv0fcEcFYWCsG/mheVh2aWtFhiCNxjceZ9FzVm3k9M22peqO8b01a5GVkEVygVrapxeqSywAUuJQ/L2MC1qL7a7gyfWAS3zXYqwcsr4HKUxLQmD1Df9vMpfb7QBq9D4NZhI9AypvBk6Xm3zNvKg66kLXEUXE7LVUXhIGC21Hemo/HzvwADAFPZW9IRxwNTAAAAAElFTkSuQmCC');
-    background-position: 10% bottom;
+    background-position: 90% bottom;
     background-repeat: no-repeat;
     background-size: initial;
+    padding-bottom: 100px;
 }
 
 #skroler-kapital {
@@ -1128,6 +1129,7 @@ a.footer-cta-button:focus {
     background-repeat: no-repeat;
     background-size: initial;
     margin-bottom: 10px;
+    padding-bottom: 100px;
 }
 
 .licnosti h1.naslov-kolone,
@@ -1161,10 +1163,10 @@ a.footer-cta-button:focus {
 .tabs_module {
     background: #fff;
     padding: 15px;
+    border-radius: 4px;
 }
 
 .tabs>li {
-    line-height: 20px;
     line-height: 20px;
     background: #eee;
     border-radius: 3px;
@@ -1204,6 +1206,31 @@ a.footer-cta-button:focus {
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.berze .nav-pills>li.active>a,
+.berze .nav-pills>li.active>a:focus,
+.berze .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #00B496;
+}
+
+.berze .tabs>li {
+    background: transparent;
+}
+
+.berze .tabs>li>a {
+    color: grey;
+    text-transform: none;
+    font-family: "Raleway-Bold";
+    font-size: 15px;
+}
+
+.lista-berze .datum {
+    font-family: "RobotoCondensed-Regular";
+    font-size: 12px;
+    padding: 7px;
+    line-height: 30px;
 }
 
 
