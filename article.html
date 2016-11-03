@@ -115,7 +115,9 @@
                         <li><a href="#">Najave</a></li>
                         <li><a href="#">Ličnosti</a></li>
                         <li><a href="#">Karijera</a></li>
+                        <li><a href="#">Kolumne</a></li>
                         <li><a href="#">Pauza</a></li>
+                        <li><a href="#">Filantropi</a></li>
                     </ul>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
@@ -322,43 +324,337 @@
 
                 <div class="col-md-8 kolona-aktuelno ">
                     <div class="col-xs-12 card card-lead nopadding">
-                        <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic10.jpg">
+                        <div class="galerija">
+
+                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic10.jpg">
+                            <div class="galerijaCta"><a class="otvoriGaleriju"><i class="fa fa-camera" aria-hidden="true"></i>  OTVORI GALERIJU </a></div>
+                        </div>
                         <div class="card-opis-vijesti">
                             <p class="card-kategorija">Vijesti / SVIJET</p>
                             <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                            <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                            <div class="card-count-label">
-                                <p>100</p>
+                            <div class="separator"></div>
+                            <p class="toolbarVijesti">
+                                <span class="vijestiInfo">
+                                <span class="datumVijesti">15.01.2017.</span> / <span class="autorVijesti">Autor:</span> <span id="imeiprezimeautora">Ime i prezime</span>
+                                </span>
+                                <span class="toolbarIcons">
+                                <span class="vijestOutreachIcon"></span>
+                                <span class="count">12345</span>
+                                <i class="fa fa-print" aria-hidden="true"></i>
+                                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                </span>
+                            </p>
+                            <div class="separator"></div>
+                            <p class="sadrzajVijesti">
+                                <b>Lorem ipsum</b>
+                                <br> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec cursus lacus. Maecenas sagittis est purus, vel porta arcu posuere sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum
+                                dolor, id suscipit erat lacinia ut. Cras et lorem at diam egestas condimentum. Morbi odio mauris, interdum a mauris quis, accumsan tristique nisl. Phasellus sed imperdiet dui.
+                                <br><br>
+                                <b>Lorem ipsum</b>
+                                <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec cursus lacus. Maecenas sagittis est purus, vel porta arcu posuere sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum
+                                dolor, id suscipit erat lacinia ut. Cras et lorem at diam egestas condimentum. Morbi odio mauris, interdum a mauris quis, accumsan tristique nisl. Phasellus sed imperdiet dui.
+                                <br><br>
+                                <b>Lorem ipsum</b>
+                                <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec cursus lacus. Maecenas sagittis est purus, vel porta arcu posuere sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum
+                                dolor, id suscipit erat lacinia ut. Cras et lorem at diam egestas condimentum. Morbi odio mauris, interdum a mauris quis, accumsan tristique nisl. Phasellus sed imperdiet dui.
+                                <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec cursus lacus. Maecenas sagittis est purus, vel porta arcu posuere sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum
+                                dolor, id suscipit erat lacinia ut. Cras et lorem at diam egestas condimentum. Morbi odio mauris, interdum a mauris quis, accumsan tristique nisl. Phasellus sed imperdiet dui.
+                                <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec cursus lacus. Maecenas sagittis est purus, vel porta arcu posuere sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum
+                                dolor, id suscipit erat lacinia ut. Cras et lorem at diam egestas condimentum. Morbi odio mauris, interdum a mauris quis, accumsan tristique nisl. Phasellus sed imperdiet dui.
+
+                            </p>
+                            <div class="separator"></div>
+                            <span class="preuzmiDoc">PREUZMI DOKUMENT:</span>
+                            <a id="preuzimanjeDokumenta" class="docDownload">nazivdokumenta.pdf</a>
+                            <div class="separator"></div>
+                            <div class="bottomToolbar">
+                                <span class="preuzmiDoc">PODIJELI:  </span><span class="vijestOutreachIcon"></span>
+                                <span class="count">12345</span>
+                                <i class="fa fa-print" aria-hidden="true"></i> <span class="preuzmiDoc">SAČUVAj:</span>
+                                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                <br><br>
+                                <span class="preuzmiDoc">TAGOVI:  </span><span class="count tag">
+                                    <a>Vijesti</a>
+                                    <a>Investicije</a>
+                                    <a>Svijet</a>
+                                    <a>Konzum</a>
+                                    <a>Prodaja</a>
+                                    </span>
+                            </div>
+                            <div class="separator"></div>
+                            <p id="brojKomentara" class="brojKomentara"><span>0</span> komentara</p>
+                            <div clss="unosKomentara">
+                                <span><img src="http://placehold.it/50x50"></span><textarea class="poljeKomentar" rows="3" cols="50">
+                                    </textarea>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 kolona-najcitanije ">
-                    <h1 class="naslov-kolone ">Povezano</h1>
+                    <h1 class="naslov-kolone ">Ostale vijesti iz rubrike</h1>
                     <div class="wrap-najcitanije remargin">
+
                         <div class="col-xs-12 col-sm-6 col-md-12 card ">
                             <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic1.jpg">
                             <div class="card-opis-vijesti">
                                 <p class="card-kategorija">Vijesti / SVIJET</p>
                                 <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
                                 <div class="card-count-label">
                                     <p>100</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-12  card ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic3.jpg">
+                        <div class="col-xs-12 card card-vijest card-registar card-tenderi">
+                            <h2 class="module-label tenderi"><span>TENDERI</span></h2>
+                            <div class="card-opis-vijesti">
+                                <li>
+                                    <p class="card-kategorija">Vijesti / SVIJET</p>
+                                    <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                </li>
+                                <li>
+                                    <p class="card-kategorija">Vijesti / SVIJET</p>
+                                    <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                </li>
+                                <li>
+                                    <p class="card-kategorija">Vijesti / SVIJET</p>
+                                    <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                </li>
+                                <div class="card-count-label">
+                                    <p>Više tekstova TENDERI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 card ">
+                    <div id="exTabFirmeiVijesti" class="tabs_module firmeVijesti">
+                        <ul class="nav nav-pills tabs">
+                            <li class="active">
+                                <a href="#povezanefirme" data-toggle="tab">Povezane firme</a>
+                            </li>
+                            <li>
+                                <a href="#povezanevijesti" data-toggle="tab">Povezane vijesti</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content clearfix">
+                            <div class="tab-pane active" id="povezanefirme">
+                                <div class="card-opis-vijesti">
+                                    <div class="col-md-4">
+                                        <li>
+                                            <h1 class="card-naslov-vijesti naziv-firme">Lactalis BH d.o.o. Gradačac</h1>
+                                            <p class="card-kategorija adresa-firme">Željeznička bb, 76250 Gradačac </p>
+
+                                        </li>
+                                        <li>
+                                            <h1 class="card-naslov-vijesti naziv-firme">KONZUM d.o.o. Sarajevo</h1>
+                                            <p class="card-kategorija adresa-firme">Rajlovačka bb, Sarajevo </p>
+
+                                        </li>
+                                        <li>
+                                            <h1 class="card-naslov-vijesti naziv-firme">Lactalis BH d.o.o. Gradačac</h1>
+                                            <p class="card-kategorija adresa-firme">Željeznička bb, 76250 Gradačac </p>
+
+                                        </li>
+                                        <li>
+                                            <h1 class="card-naslov-vijesti naziv-firme">KONZUM d.o.o. Sarajevo</h1>
+                                            <p class="card-kategorija adresa-firme">Rajlovačka bb, Sarajevo </p>
+
+                                        </li>
+                                        <li>
+                                            <h1 class="card-naslov-vijesti naziv-firme">Lactalis BH d.o.o. Gradačac</h1>
+                                            <p class="card-kategorija adresa-firme">Željeznička bb, 76250 Gradačac </p>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <li>
+                                            <h1 class="card-naslov-vijesti naziv-firme">Lactalis BH d.o.o. Gradačac</h1>
+                                            <p class="card-kategorija adresa-firme">Željeznička bb, 76250 Gradačac </p>
+
+                                        </li>
+                                        <li>
+                                            <h1 class="card-naslov-vijesti naziv-firme">KONZUM d.o.o. Sarajevo</h1>
+                                            <p class="card-kategorija adresa-firme">Rajlovačka bb, Sarajevo </p>
+
+                                        </li>
+                                        <li>
+                                            <h1 class="card-naslov-vijesti naziv-firme">Lactalis BH d.o.o. Gradačac</h1>
+                                            <p class="card-kategorija adresa-firme">Željeznička bb, 76250 Gradačac </p>
+
+                                        </li>
+                                        <li>
+                                            <h1 class="card-naslov-vijesti naziv-firme">KONZUM d.o.o. Sarajevo</h1>
+                                            <p class="card-kategorija adresa-firme">Rajlovačka bb, Sarajevo </p>
+
+                                        </li>
+                                        <li>
+                                            <h1 class="card-naslov-vijesti naziv-firme">Lactalis BH d.o.o. Gradačac</h1>
+                                            <p class="card-kategorija adresa-firme">Željeznička bb, 76250 Gradačac </p>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <li>
+                                            <h1 class="card-naslov-vijesti naziv-firme">Lactalis BH d.o.o. Gradačac</h1>
+                                            <p class="card-kategorija adresa-firme">Željeznička bb, 76250 Gradačac </p>
+
+                                        </li>
+                                        <li>
+                                            <h1 class="card-naslov-vijesti naziv-firme">KONZUM d.o.o. Sarajevo</h1>
+                                            <p class="card-kategorija adresa-firme">Rajlovačka bb, Sarajevo </p>
+
+                                        </li>
+                                        <li>
+                                            <h1 class="card-naslov-vijesti naziv-firme">Lactalis BH d.o.o. Gradačac</h1>
+                                            <p class="card-kategorija adresa-firme">Željeznička bb, 76250 Gradačac </p>
+
+                                        </li>
+                                        <li>
+                                            <h1 class="card-naslov-vijesti naziv-firme">KONZUM d.o.o. Sarajevo</h1>
+                                            <p class="card-kategorija adresa-firme">Rajlovačka bb, Sarajevo </p>
+
+                                        </li>
+                                        <li>
+                                            <h1 class="card-naslov-vijesti naziv-firme">Lactalis BH d.o.o. Gradačac</h1>
+                                            <p class="card-kategorija adresa-firme">Željeznička bb, 76250 Gradačac</p>
+                                        </li>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <a class="viseVijesti">VIŠE POVEZANIH VIJESTI +</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="povezanevijesti">
+                                <div class="card-opis-vijesti">
+                                    <div class="col-sm-6 col-md-4 card card-vijest">
+                                        <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic4.jpg">
+                                        <div class="card-opis-vijesti">
+                                            <p class="card-kategorija">Vijesti / SVIJET</p>
+                                            <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            <div class="card-count-label">
+                                                <p>100</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 card card-vijest ">
+                                        <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic5.jpg">
+                                        <div class="card-opis-vijesti">
+                                            <p class="card-kategorija">Vijesti / SVIJET</p>
+                                            <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
+                                            <div class="card-count-label">
+                                                <p>100</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 card card-vijest">
+                                        <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic4.jpg">
+                                        <div class="card-opis-vijesti">
+                                            <p class="card-kategorija">Vijesti / SVIJET</p>
+                                            <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            <div class="card-count-label">
+                                                <p>100</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 card card-vijest">
+                                        <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic4.jpg">
+                                        <div class="card-opis-vijesti">
+                                            <p class="card-kategorija">Vijesti / SVIJET</p>
+                                            <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            <div class="card-count-label">
+                                                <p>100</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 card card-vijest">
+                                        <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic4.jpg">
+                                        <div class="card-opis-vijesti">
+                                            <p class="card-kategorija">Vijesti / SVIJET</p>
+                                            <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                            <div class="card-count-label">
+                                                <p>100</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 card card-vijest ">
+                                        <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic5.jpg">
+                                        <div class="card-opis-vijesti">
+                                            <p class="card-kategorija">Vijesti / SVIJET</p>
+                                            <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
+                                            <div class="card-count-label">
+                                                <p>100</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <a class="viseVijesti">VIŠE POVEZANIH VIJESTI +</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden-xs ads">
+                <img class="img-responsive" src="http://placehold.it/1250x130?text=Place for ads.">
+            </div>
+        </div>
+    </section>
+    <section class="investicije">
+        <div class="container">
+            <h1 class="naslov-kolone ">Aktuelno</h1>
+
+            <div class="wrap-kolona remargin">
+                <div class="col-md-8">
+                    <div id="kapital-wrap" class=" row">
+
+                        <div class="col-sm-6 col-md-6 card card-vijest">
+                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic4.jpg">
                             <div class="card-opis-vijesti">
                                 <p class="card-kategorija">Vijesti / SVIJET</p>
                                 <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
                                 <div class="card-count-label">
                                     <p>100</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-12  card card-vijest card-registar card-tenderi">
+                        <div class="col-sm-6 col-md-6 card card-vijest ">
+                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic5.jpg">
+                            <div class="card-opis-vijesti">
+                                <p class="card-kategorija">Vijesti / SVIJET</p>
+                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
+                                <div class="card-count-label">
+                                    <p>100</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 card card-vijest ">
+                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic6.jpg">
+                            <div class="card-opis-vijesti">
+                                <p class="card-kategorija">Vijesti / SVIJET</p>
+                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
+                                <div class="card-count-label">
+                                    <p>100</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 card card-vijest">
+                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic7.jpg">
+                            <div class="card-opis-vijesti">
+                                <p class="card-kategorija">Vijesti / SVIJET</p>
+                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
+                                <div class="card-count-label">
+                                    <p>100</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div id="moduli-wrap" class="row ">
+                        <div class="col-xs-12 card card-vijest card-registar card-tenderi">
                             <h2 class="module-label tenderi"><span>TENDERI</span></h2>
                             <div class="card-opis-vijesti">
                                 <li>
@@ -380,775 +676,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-12  card card-vijest">
-                            <img class="img-responsive " src="http://placehold.it/400x300&amp;text=Place for ads">
-
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="hidden-xs ads">
-                <img class="img-responsive" src="http://placehold.it/1250x130?text=Place for ads.">
-            </div>
-        </div>
-    </section>
-    <section class="investicije">
-        <div class="container">
-
-            <h1 class="naslov-kolone ">Investicije</h1>
-            <div class="wrap-kolona remargin">
-                <div class="col-md-12 ">
-                    <div id="vijesti-wrap" class=" row">
-
-                        <div class="col-sm-6 col-md-6 col-lg-4 card card-vijest">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic4.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 card card-vijest ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic5.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 card card-vijest card-registar">
-                            <h2 class="module-label"><span>REGISTAR</span></h2>
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic3.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>Više tekstova REGISTAR</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 card card-vijest ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic1.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 card card-vijest">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic2.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 card card-newsletter card-vijest kursna-lista">
-                            <div class="card-opis-vijesti">
-                                <h1 class="card-naslov-vijesti">Kursna lista <span class="datum" id="datum">19.10.2016.</span></h1>
-                                <table class="table table-hover kursna-lista-tabela">
-                                    <thead>
-                                        <tr>
-                                            <th>Zemlja</th>
-                                            <th>Šifra valute</th>
-                                            <th>Oznaka valute</th>
-                                            <th>Srednji kurs</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>EMU </td>
-                                            <td>978 </td>
-                                            <td>EUR </td>
-                                            <td>1,95583</td>
-                                        </tr>
-                                        <tr>
-                                            <td>EMU </td>
-                                            <td>978 </td>
-                                            <td>EUR </td>
-                                            <td>1,95583</td>
-                                        </tr>
-                                        <tr>
-                                            <td>EMU </td>
-                                            <td>978 </td>
-                                            <td>EUR </td>
-                                            <td>1,95583</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 card card-newsletter card-vijest konvertor-valuta">
-                            <div class="card-opis-vijesti">
-                                <h1 class="card-naslov-vijesti">Konvertor valuta</h1>
-                                <form>
-                                    <div class="form-group has-feedback">
-                                        <div class="col-sm-6" style="padding-right:0;">
-                                            <input type="text" class="form-control" placeholder="Vrijednost">
-
-                                        </div>
-                                        <div class="col-sm-6 ">
-                                            <input type="text" class="form-control" placeholder="Srednji za devize">
-                                            <span class="form-control-feedback">
-                                                <i class="fa fa-sort" aria-hidden="true"></i>
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <div class="col-sm-6 ">
-                                            <input type="select" class="form-control" placeholder="Konvertuj iz">
-                                            <span class="form-control-feedback">
-                                                <i class="fa  fa-sort" aria-hidden="true"></i>
-                                            </span>
-                                            <span style="position: absolute;  top: 6px;   right: -10px;">
-                                            <i class="fa  fa-caret-right" aria-hidden="true"></i>
-                                            </span>
-                                        </div>
-
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control" placeholder="Konvertuj u">
-                                            <span class="form-control-feedback">
-                                                <i class="fa  fa-sort" aria-hidden="true"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <a href="#" class="card-button" onclick="$(this).closest('form').submit()">
-                                            <span class="card-button-ikona"><i class="fa fa-ban" aria-hidden="true"></i></span><span class="card-button-tekst">Izračunaj</span></a>
-                                    </div>
-                                </form>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="container">
-        <div class="hidden-xs ads">
-            <img class="img-responsive" src="http://placehold.it/1250x130?text=Place for ads.">
-        </div>
-    </div>
-    <section class="kapital">
-        <div class="container">
-            <h1 class="naslov-kolone ">Kapital</h1>
-            <div class="skroler-novosti-modul">
-                <div class="news-label">Najnovije kapital</div>
-                <div id="skroler-kapital" class="carousel fdi-Carousel kapital slide">
-
-                    <div class="carousel fdi-Carousel kapital slide" id="eventCarousel" data-interval="0">
-                        <div class="carousel-inner onebyone-carosel">
-                            <div class="item active">
-                                <div class="col-md-6">
-                                    <a class="link-novosti" href="#">
-                                        <span class="kategorija-novosti">
-                                                VIJESTI / SVIJET:
-                                            </span>
-                                        <span class="naslov-novosti">
-                                                Lorem ipsum dolor sit amet, consecur egestas quis; 
-                                            </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-6">
-                                    <a class="link-novosti" href="#">
-                                        <span class="kategorija-novosti">
-                                                LIČNOSTI / svijet:
-                                            </span>
-                                        <span class="naslov-novosti">
-                                                Lorem ipsum dolor sit amet, consecur egestas quis; 
-                                            </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-6">
-                                    <a class="link-novosti" href="#">
-                                        <span class="kategorija-novosti">
-                                                LIČNOSTI / svijet:
-                                            </span>
-                                        <span class="naslov-novosti">
-                                                Lorem ipsum dolor sit amet, consecur egestas quis; 
-                                            </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-6">
-                                    <a class="link-novosti" href="#">
-                                        <span class="kategorija-novosti">
-                                                VIJESTI / SVIJET:
-                                            </span>
-                                        <span class="naslov-novosti">
-                                                Lorem ipsum dolor sit amet, consecur egestas quis; 
-                                            </span>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="next-label"><a id="dalje"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></div>
-            </div>
-            <div class="wrap-kolona remargin">
-                <div class="col-md-12">
-                    <div id="kapital-wrap" class=" row">
-
-                        <div class="col-sm-6 col-md-4 card card-vijest">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic4.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic5.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-sm-6 col-md-4 card card-vijest ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic6.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic7.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 card card-newsletter card-vijest konvertor-valuta kreditni-kalk">
-                            <div class="card-opis-vijesti">
-                                <h1 class="card-naslov-vijesti">Kreditni kalkulator</h1>
-                                <form>
-                                    <div class="form-group has-feedback">
-                                        <div class="col-sm-6" style="padding-right:0;">
-                                            <input type="text" class="form-control input-padding" placeholder="Iznos kredita (KM)">
-
-                                        </div>
-                                        <div class="col-sm-6 ">
-                                            <input type="text" class="form-control" placeholder="Tip kamatne stope">
-                                            <span class="form-control-feedback">
-                                                <i class="fa fa-sort" aria-hidden="true"></i>
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <div class="col-sm-6 " style="padding-right:0;">
-                                            <input type="select" class="form-control input-padding" placeholder="Kamatna stopa (%)">
-                                        </div>
-
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control" placeholder="Period otplate">
-                                            <span class="form-control-feedback">
-                                                <i class="fa  fa-sort" aria-hidden="true"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-sm-6 " style="padding-right:0;">
-                                            <input type="select" class="form-control input-padding" placeholder="Iznos mjesečne rate (KM)">
-                                        </div>
-                                        <div class="col-sm-6 " style="position:relative;">
-                                            <a href="#" class="card-button" onclick="$(this).closest('form').submit()">
-                                                <span class="card-button-ikona"><i class="fa fa-ban" aria-hidden="true"></i></span><span class="card-button-tekst">Izračunaj</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </form>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col-md-4 ">
-                    <div id="moduli-wrap" class="row ">
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- EU sekcija -->
-    <section class="eu">
-        <div class="container">
-            <h1 class="naslov-kolone ">EU</h1>
-            <div class="wrap-kolona remargin">
-                <div class="col-md-12 ">
-                    <div id="eu-wrap" class=" row">
-
-                        <div class="col-sm-6 col-md-4 card card-vijest">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic8.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic9.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 card card-newsletter card-vijest kursna-lista">
-                            <div class="card-opis-vijesti">
-                                <h1 class="card-naslov-vijesti">Berza SASE <span class="datum" id="datum">19.10.2016.</span></h1>
-                                <table class="table table-hover kursna-lista-tabela">
-                                    <thead>
-                                        <tr>
-                                            <th>Zemlja</th>
-                                            <th>Šifra valute</th>
-                                            <th>Oznaka valute</th>
-                                            <th>Srednji kurs</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>EMU </td>
-                                            <td>978 </td>
-                                            <td>EUR </td>
-                                            <td>1,95583</td>
-                                        </tr>
-                                        <tr>
-                                            <td>EMU </td>
-                                            <td>978 </td>
-                                            <td>EUR </td>
-                                            <td>1,95583</td>
-                                        </tr>
-                                        <tr>
-                                            <td>EMU </td>
-                                            <td>978 </td>
-                                            <td>EUR </td>
-                                            <td>1,95583</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 card card-newsletter card-vijest kursna-lista">
-                            <div class="card-opis-vijesti">
-                                <h1 class="card-naslov-vijesti">Berza BLSE <span class="datum" id="datum">19.10.2016.</span></h1>
-                                <table class="table table-hover kursna-lista-tabela">
-                                    <thead>
-                                        <tr>
-                                            <th>Zemlja</th>
-                                            <th>Šifra valute</th>
-                                            <th>Oznaka valute</th>
-                                            <th>Srednji kurs</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>EMU </td>
-                                            <td>978 </td>
-                                            <td>EUR </td>
-                                            <td>1,95583</td>
-                                        </tr>
-                                        <tr>
-                                            <td>EMU </td>
-                                            <td>978 </td>
-                                            <td>EUR </td>
-                                            <td>1,95583</td>
-                                        </tr>
-                                        <tr>
-                                            <td>EMU </td>
-                                            <td>978 </td>
-                                            <td>EUR </td>
-                                            <td>1,95583</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <div class="container">
-        <div class="hidden-xs ads">
-            <img class="img-responsive" src="http://placehold.it/1920x130?text=Place for ads.">
-        </div>
-    </div>
-    <section class="najave">
-        <div class="container">
-            <h1 class="naslov-kolone ">Najave</h1>
-            <div class="wrap-kolona remargin">
-                <div id="najave-wrap" class="col-xs-12 col-md-12 nopadding">
-                    <div class="col-sm-6 col-md-4 col-lg-4 card card-vijest">
-                        <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic4.jpg">
-                        <div class="card-opis-vijesti">
-                            <p class="card-kategorija">Vijesti / SVIJET</p>
-                            <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                            <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                            <div class="card-count-label">
-                                <p>100</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 card card-vijest ">
-                        <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic5.jpg">
-                        <div class="card-opis-vijesti">
-                            <p class="card-kategorija">Vijesti / SVIJET</p>
-                            <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                            <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                            <div class="card-count-label">
-                                <p>100</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 card card-vijest card-registar card-promo">
-                        <h2 class="module-label"><span>PROMO</span></h2>
-                        <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic3.jpg">
-                        <div class="card-opis-vijesti">
-                            <p class="card-kategorija">Vijesti / SVIJET</p>
-                            <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                            <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                            <div class="card-count-label">
-                                <p>Više tekstova PROMO</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 card card-vijest">
-                        <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic4.jpg">
-                        <div class="card-opis-vijesti">
-                            <p class="card-kategorija">Vijesti / SVIJET</p>
-                            <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                            <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                            <div class="card-count-label">
-                                <p>100</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 card card-vijest ">
-                        <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic5.jpg">
-                        <div class="card-opis-vijesti">
-                            <p class="card-kategorija">Vijesti / SVIJET</p>
-                            <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                            <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                            <div class="card-count-label">
-                                <p>100</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="container">
-        <div class="hidden-xs ads">
-            <img class="img-responsive" src="http://placehold.it/1920x130?text=Place for ads.">
-        </div>
-    </div>
-    <section class="licnosti">
-        <div class="container">
-            <h1 class="naslov-kolone ">Ličnosti</h1>
-            <div class="wrap-kolona remargin">
-                <div class="col-md-12 ">
-                    <div id="licnosti-wrap" class=" row">
-                        <div class="col-sm-6 col-md-4 card card-vijest">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic8.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic9.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic3.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic1.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic11.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic5.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
+                        <div class="col-xs-12 card card-vijest">
+                            <img class="img-responsive" src="http://placehold.it/600x400?text=4:3 Ads">
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="karijera">
-        <div class="container">
-            <h1 class="naslov-kolone ">Karijera</h1>
-            <div class="wrap-kolona remargin">
-                <div class="col-md-12 ">
-                    <div id="karijera-wrap" class=" row">
-                        <div class="col-sm-6 col-md-4 card card-vijest">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic8.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic9.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic3.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic1.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic11.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic5.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
         </div>
-    </section>
-    <section class="kolumne">
-        <div class="container">
-            <h1 class="naslov-kolone ">Kolumne</h1>
-            <div class="wrap-kolona remargin">
-                <div class="col-md-12 ">
-                    <div id="kolumne-wrap" class=" row">
-                        <div class="col-sm-6 col-md-4 card card-vijest">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic8.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic9.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic3.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic1.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet,consecur egestas quis</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic11.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 card card-vijest ">
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic5.jpg">
-                            <div class="card-opis-vijesti">
-                                <p class="card-kategorija">Vijesti / SVIJET</p>
-                                <h1 class="card-naslov-vijesti">Lorem ipsum dolor sit amet</h1>
-                                <p class="card-intro-vijesti">Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje.</p>
-                                <div class="card-count-label">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <div class="container">
         <div class="hidden-xs ads">
@@ -1157,6 +694,7 @@
     </div>
     <!--- footer sekcija -->
     <section id="footer">
+        <!--- Footer newsletter
         <div class="container-fluid newsletter-footer">
             <h1>PRIJAVI SE ZA <span>NEWSLETTER</span></h1>
             <div class="form-group has-feedback">
@@ -1166,6 +704,7 @@
                 </span>
             </div>
         </div>
+        -->
         <div class="container-fluid footer-cta">
             <h1> <span>Poslujte bolje!</span> TESTIRAJTE BEPLATNO!</h1>
             <a class="footer-cta-button">REGISTRUJ SE</a>

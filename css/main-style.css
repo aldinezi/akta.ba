@@ -1158,6 +1158,8 @@ a.footer-cta-button:focus {
 
 .single_article .wrapper-vijesti {
     margin-top: 50px;
+    background: none;
+    padding-bottom: 20px;
 }
 
 .tabs_module {
@@ -1231,6 +1233,185 @@ a.footer-cta-button:focus {
     font-size: 12px;
     padding: 7px;
     line-height: 30px;
+}
+
+.single_article .tabs_module {
+    background: transparent;
+    padding: 0;
+    border-radius: 4px;
+}
+
+.single_article .tab-pane .card-opis-vijesti {
+    padding: 15px;
+}
+
+.single_article .firmeVijesti .tab-pane .card-opis-vijesti {
+    box-shadow: 0px 2px 3px rgba(232, 232, 232, 0.5);
+}
+
+.tab-content>#povezanevijesti>.card-opis-vijesti {
+    padding-top: 30px;
+}
+
+.tab-pane .card-opis-vijesti li h1.naziv-firme {
+    font-size: 17px;
+}
+
+.firmeVijesti .tabs>li>a {
+    color: #909090;
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.firmeVijesti .tabs>li.active>a,
+.firmeVijesti .tabs>li.active>a:focus,
+.firmeVijesti .tabs>li.active>a:hover {
+    color: white;
+}
+
+.firmeVijesti .viseVijesti {
+    font-family: "Raleway-Bold";
+    font-size: 19px;
+    text-align: center;
+    color: #bebebe;
+    margin: auto;
+    display: block;
+    margin-top: 15px;
+}
+
+.viseVijesti:hover,
+.viseVijesti:focus {
+    color: #6d6d6d;
+    text-decoration: none;
+}
+
+.adresa-firme {
+    text-transform: none;
+    color: #606060;
+    font-size: 15px;
+    font-family: "Roboto-Light";
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    margin: 20px 0px;
+    background-image: radial-gradient(#CCC, #FFF), radial-gradient(#CCC, #FFF);
+    background-position: 0, 100%, 0, 100%;
+}
+
+.toolbarVijesti {
+    margin: 0;
+    color: #444444;
+    font-family: "RobotoCondensed-Bold";
+    font-size: 11px;
+    height: 30px;
+}
+
+.toolbarVijesti .autorVijesti {
+    text-transform: uppercase;
+    color: #909090;
+}
+
+.vijestOutreachIcon {
+    content: "";
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAedJREFUeNrsl0FrwkAQhac1iiBKRBRBFEEUDx78/5f2J/TgwYsQFC+KIIoiilK/oRvSmJoYJRbahZC4k+yb997sJL4MBgNbRPqS3HB6vZ5jfYG+JQgsZ7Ifr/Kc0X8WsPwD/z7gVColuVxOz1EG9zYaDalUKoFxKypou93W8/F4lNFoJIfD4eoz9Xpd78/n8/rMYrG4nXE2m3WZcs5kMqGJepUJUikS8G6306y9iVwDbTab7u/NZnPBNrLURl6YVqtVPZgjIbxkrFYrOZ1OCkpiy+VSptPpj2taUYsLTzkcx1G/a7XatzjJEE+n06GgsbaTYWpkBGA+n+s8oMTCQG9i7PUXeQGFvRn4iBKmEL018RDGhULBBfIrgcRhxXeX1Im3TDy0bVuvS6VSYIzEsOFhHrMolYt/LIzPbJ31eq3xcrmssSiFFQoMKxbDM1of22UymSgwSRA3+9hf8bGBWZTFzYAZbIzHFBL3ME+hMd9qtfTFQLOJXdX+/joej93FYA+IYYkCZv/idbfblU6no9c3A9MCDRANwq9GUN8228kUW7FYvF1qGAyHw8DYdrt1vfV7SrJGrWtyW3H24Gw2k/1+f8FSP5rP3YwmE/QOvhs4CNCrVJTK/psfe85TgPkDdT6/Jw38KcAA8OEGNnQsRZQAAAAASUVORK5CYII=');
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bottomToolbar .count,
+.toolbarIcons .count {
+    vertical-align: middle;
+    font-size: 15px;
+    color: #d4d4d4;
+}
+
+.vijestiInfo {
+    display: inline-block;
+    line-height: 30px;
+}
+
+.toolbarIcons {
+    display: inline-block;
+    float: right;
+}
+
+.bottomToolbar i,
+.toolbarIcons i {
+    font-size: 30px;
+    vertical-align: middle;
+    color: #d4d4d4;
+    margin: 0 15px;
+}
+
+.otvoriGaleriju {
+    padding: 15px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+a.otvoriGaleriju:focus,
+a.otvoriGaleriju:hover {
+    text-decoration: none;
+    color: #cecece;
+}
+
+.galerija {
+    position: relative;
+}
+
+.galerijaCta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.sadrzajVijesti {
+    margin-bottom: 30px;
+}
+
+.preuzmiDoc {
+    font-family: "Raleway-Bold";
+    color: #4B69A5;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.brojKomentara {
+    font-family: "RobotoCondensed-Regular";
+    color: #545454;
+}
+.poljeKomentar{
+    height: 50px;
+    margin-left:7px;
+        vertical-align: middle;
+}
+.docDownload {
+    font-family: "Raleway-Medium";
+    font-size: 14px;
+    color: #909090;
+}
+
+.docDownload::after {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f019";
+    margin-left: 7px;
+    vertical-align: middle;
 }
 
 

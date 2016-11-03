@@ -49,7 +49,7 @@ var $gridvijesti = $('#vijesti-wrap').imagesLoaded(function() {
         itemSelector: '.card',
     });
 });
-var $gridostalihvijesti=$('.wrap-ostalih-vijesti').imagesLoaded(function() {
+var $gridostalihvijesti = $('.wrap-ostalih-vijesti').imagesLoaded(function() {
     // init Masonry after all images have loaded
     $gridostalihvijesti.masonry({
         itemSelector: '.card',
