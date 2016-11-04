@@ -1391,11 +1391,13 @@ a.otvoriGaleriju:hover {
     font-family: "RobotoCondensed-Regular";
     color: #545454;
 }
-.poljeKomentar{
+
+.poljeKomentar {
     height: 50px;
-    margin-left:7px;
-        vertical-align: middle;
+    margin-left: 7px;
+    vertical-align: middle;
 }
+
 .docDownload {
     font-family: "Raleway-Medium";
     font-size: 14px;
@@ -1414,6 +1416,21 @@ a.otvoriGaleriju:hover {
     vertical-align: middle;
 }
 
+.kolona-najcitanije {
+    display: inline-block;
+}
+
+.modal {
+    z-index: 999999;
+}
+
+.carousel-control>i {
+    position: absolute;
+    top: calc(50% - 10px);
+}
+.modal-open .modal {
+        background: rgba(0, 0, 0, 0.8);
+}
 
 /* - Responsive breakpoints - */
 
@@ -1546,5 +1563,17 @@ a.otvoriGaleriju:hover {
         border: 6px solid #272727;
         /* margin: 15px; */
         border-radius: 0px;
+    }
+    .toolbarVijesti {
+        height: 60px;
+    }
+    .toolbarIcons {
+        display: inline-block;
+        float: none;
+    }
+    .poljeKomentar {
+        width: calc(100% - 57px);
+        margin: 0;
+        margin-left: 7px;
     }
 }
