@@ -91,3 +91,8 @@ var $gridnaj = $('#najave-wrap').imagesLoaded(function() {
         itemSelector: '.card',
     });
 });
+var $gridpovezanih =$(".wrap-povezanih-vijesti").imagesLoaded(function(){
+    $gridpovezanih.masonry({
+        itemSelector: '.card',
+    });
+});

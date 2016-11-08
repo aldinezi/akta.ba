@@ -1190,7 +1190,7 @@ a.footer-cta-button:focus {
     padding: 15px 0px;
 }
 
-.tab-pane .card-opis-vijesti li {
+.card-opis-vijesti li {
     list-style: none;
     margin-top: 7px;
     padding-bottom: 10px;
@@ -1253,7 +1253,7 @@ a.footer-cta-button:focus {
     padding-top: 30px;
 }
 
-.tab-pane .card-opis-vijesti li h1.naziv-firme {
+.card-opis-vijesti li h1.naziv-firme {
     font-size: 17px;
 }
 
@@ -1428,9 +1428,11 @@ a.otvoriGaleriju:hover {
     position: absolute;
     top: calc(50% - 10px);
 }
+
 .modal-open .modal {
-        background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8);
 }
+
 
 /* - Responsive breakpoints - */
 
