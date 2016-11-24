@@ -3,7 +3,7 @@
 @font-face {
     font-family: 'RobotoCondensed-Bold';
     src: url('../fonts/RobotoCondensed-Bold.eot');
-    src: local('☺'), url('../fonts/RobotoCondensed-Bold.woff') format('woff'), url('../fonts/RobotoCondensed-Bold.ttf') format('truetype'), url('../fonts/RobotoCondensed-Bold.svg') format('svg');
+    src: local('â˜º'), url('../fonts/RobotoCondensed-Bold.woff') format('woff'), url('../fonts/RobotoCondensed-Bold.ttf') format('truetype'), url('../fonts/RobotoCondensed-Bold.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'RobotoCondensed-Regular';
     src: url('../fonts/RobotoCondensed-Regular.eot');
-    src: local('☺'), url('../fonts/RobotoCondensed-Regular.woff') format('woff'), url('../fonts/RobotoCondensed-Regular.ttf') format('truetype'), url('../fonts/RobotoCondensed-Regular.svg') format('svg');
+    src: local('â˜º'), url('../fonts/RobotoCondensed-Regular.woff') format('woff'), url('../fonts/RobotoCondensed-Regular.ttf') format('truetype'), url('../fonts/RobotoCondensed-Regular.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,7 +27,7 @@
 @font-face {
     font-family: 'Raleway-SemiBold';
     src: url('../fonts/Raleway-SemiBold.eot');
-    src: local('☺'), url('../fonts/Raleway-SemiBold.woff') format('woff'), url('../fonts/Raleway-SemiBold.ttf') format('truetype'), url('../fonts/Raleway-SemiBold.svg') format('svg');
+    src: local('â˜º'), url('../fonts/Raleway-SemiBold.woff') format('woff'), url('../fonts/Raleway-SemiBold.ttf') format('truetype'), url('../fonts/Raleway-SemiBold.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -35,7 +35,7 @@
 @font-face {
     font-family: 'Raleway-Bold';
     src: url('../fonts/Raleway-Bold.eot');
-    src: local('☺'), url('../fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold.ttf') format('truetype'), url('../fonts/Raleway-Bold.svg') format('svg');
+    src: local('â˜º'), url('../fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold.ttf') format('truetype'), url('../fonts/Raleway-Bold.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -43,7 +43,7 @@
 @font-face {
     font-family: 'Raleway-ExtraBold';
     src: url('../fonts/Raleway-ExtraBold.eot');
-    src: local('☺'), url('../fonts/Raleway-ExtraBold.woff') format('woff'), url('../fonts/Raleway-ExtraBold.ttf') format('truetype'), url('../fonts/Raleway-ExtraBold.svg') format('svg');
+    src: local('â˜º'), url('../fonts/Raleway-ExtraBold.woff') format('woff'), url('../fonts/Raleway-ExtraBold.ttf') format('truetype'), url('../fonts/Raleway-ExtraBold.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -51,7 +51,7 @@
 @font-face {
     font-family: 'Roboto-Light';
     src: url('../fonts/Roboto-Light.eot');
-    src: local('☺'), url('../fonts/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light.ttf') format('truetype'), url('../fonts/Roboto-Light.svg') format('svg');
+    src: local('â˜º'), url('../fonts/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light.ttf') format('truetype'), url('../fonts/Roboto-Light.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -131,8 +131,8 @@ body {
 .upper_menu a::after {
     height: 20px;
     width: 30px;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAATCAYAAACDW21BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbxJREFUeNq8VctNw0AQtVAQHLcD3AG+cDcVYCqAVEBSQaCCFQWgpIPAHQl3EHdgqMA+gjiYedZbtIw3/hzISBNrdnZ+b2Y2UTSCjk9OrXDSo3/r0/t0FI0jODM9+nRAPzngJLp4fcoOFlCC3cpnK9/1vweUIID1SjgXjhl8OnEo0h5906fvVCiXM+GShuAdzgaSSGgT8whJNdQZ4bXnr6FsZviRO8C7EF7SeIUz0RXfX5/voWAIoI6X9AFCsoDzgfCi+jvfgVEOkWElvNCQsrKKKJixkMIX7rWQShU1D1NARPlZ+HxPZaj60tn1BInpE4lt/B5a4g9n6EvJRY7V8o8KRhRaX7Sp2KYIPQTWCw/viHhnngyy7NFgZdhDJnwtXDNx64/8OpBlySzdnVL3OrQWhLDTUxTmegjFS8BPruSYVQ8R7tWCwh97kTf+SxOC6EPJNVdl6PUw3noEF79Ww+HoTMmPnLShoAVR07AbFxCl3wSUHfgElvmIoL8rps7b+zP2Dw6s10u77/8NQeVuRBvXm4JJ5yIXeKEwqfKdewiu9D96o97SrZrSe4WCeysTN4Gw8/Zwp3y2MX4EGACw76mHn9GMogAAAABJRU5ErkJggg==');
-    background-size: initial;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAoCAYAAACvpem4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA65JREFUeNrsWcGS0kAQhSyW3swfbPyCjQfPhCrv4hdsKD9AuHkDvoD1AyziF2S9WwV79kD8AuIXwFFLXe2metammSSTZEDE7aqpkMxMT7/pnu6eptH4T+jMFqMHDx+FZ63WBFrz9uePpMJ8nPum6vwicizy8qAF9KxCfs35BwN61HQP9Bjp2cd33skDBZAhPJb0PE2gBG5Kr1N4908OqACpaFYWrPMPnMlLaHPRMM4Ood815dU6ZqCfnr9K4dG5Dy8lqJWRjnUpU+F0/f3bV2upGayBZudpeJ5DX6BeoH9eQsaU5FwXLd6HtoL2K6MtuRBi7ojGjExAQlvQWj59m+nW1AEskHFFm6A3XRJwAo0fcHXweT6LAoU1NTkjbeDvbom5ODbWyMi1jn2xVkbaYb4joaZ/JMa4ZTXKNKn4xIoP02je/BVbv6+7QQlte1saJZt+Ai1CLwfvEWeA/dBQgB7btbCGJpEi4Pmy8Dxt01NoA5LxSnaS3NxLD+s4kZh2a2GqUY0mp5oxM9MzbiDjVGm+Tnh5z+6PVTXZ23M0eassTx2NKkDnDIR/hCAbImT52jhK4QNbm33GiTfAYBOjYAz3cAcHSRvcFTKmJGPEFBLsJAzkoaa8kxF+wxg7Zw7p4JokvnGGjEjodV/rZGwxBgtNfOLqd2mBRYE8j/cIciZ8A1ramsV4j/pn7PuWRnmigKofSLdPJh3nmSsRj282z+SQgdxYFvBONTJOmGL+ZEZksiHLZ3u62EY5Z0fuVA7ZPJMu28AE+HYkyCIZHWHvAwNvFh0SJPMRpjIiyLEO6IUyB90uaeiDwZjPliOGMtk06zYjb1o6oIrJjWGMMlloost+LFBiKGN6yIt3aBFsu4KlzG0ATQr6Estg07oMnJpnRkdr8nw2wX5R1YcSc1wJVO3WhaGr9wzOyD7AqqSgkjIctlumddLA0CHYBJuWWTurlKIOrZdVDxJ0WeIWYQtswqsIBuNf7AClcLFmYSHvRtI33dUaYM8zEhWl1WGBjIGu+uGIi6pPxS9PVzOiPLLK/dAErIrj3QwgY1GgCzIUEed53SsmBIJdUukDGeJNYMXqL8mewEbMW+5sNt0zI6GQpZKRyibqcpJIOR0hRCS8ViBM9bpR4y+CDLB9ls2MxWYvxfweKYV7YSWjyxKFncS+mRE+Qgo3LjOru0o9K2BFKt1ilYlUVhFz7pYeVfSks7m7NkJfnoxtYfpcxpD4b2RsNv4S5fwlofr8Erl1If0WYACkXd1JQbYTDgAAAABJRU5ErkJggg==');
+    background-size: cover;
     content: "";
     display: inline-block;
     background-repeat: no-repeat;
