@@ -99,7 +99,6 @@ var $gridpovezanih = $(".wrap-povezanih-vijesti").imagesLoaded(function() {
 
 $('document').ready(function() {
     $('#slikeCarousel').on('slid.bs.carousel', function(e) {
-        console.log("slajdash aa");
         var url = $('.item.active').find("img").attr('data-src');
         $('.item.active').find("img").attr("src", url); //set value : src = url
     });
