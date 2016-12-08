@@ -1579,3 +1579,12 @@ a.otvoriGaleriju:hover {
         margin-left: 7px;
     }
 }
+
+.fa-viber:before,
+.fa-viber:before {
+    content: url('../assets/viber-ico.svg');
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
