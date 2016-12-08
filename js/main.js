@@ -104,3 +104,9 @@ $('document').ready(function() {
         $('.item.active').find("img").attr("src", url); //set value : src = url
     });
 });
+$("#Pops").popover({
+    html: true,
+    content: function() {
+        return $('#popover-content').html();
+    }
+});
