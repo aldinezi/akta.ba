@@ -140,7 +140,7 @@ body {
     margin-left: 5px;
 }
 
-a.um_vijesti::after {
+.upper_menu a.active::after {
     width: 0px;
     height: 0px;
     margin-left: 0px;
@@ -178,9 +178,20 @@ a.um_registar,
     color: #00827D;
 }
 
-a.um_tenderi,
-.tenderi {
+a.um_tenderi {
     color: #C88C00;
+}
+
+.tenderi {
+    color: #C88C00 !important;
+}
+
+.main_nav.tenderi>li>a.active {
+    color: #C88C00;
+}
+
+.main_nav.tenderi>li>a {
+    color: black;
 }
 
 a.um_promo,
@@ -1431,6 +1442,13 @@ a.otvoriGaleriju:hover {
 
 .modal-open .modal {
     background: rgba(0, 0, 0, 0.8);
+}
+
+.galerija.tenderi-header {
+    min-height: 460px;
+    background: url(../images/tenderi_head.png);
+    background-size: cover;
+    background-position: center center;
 }
 
 
