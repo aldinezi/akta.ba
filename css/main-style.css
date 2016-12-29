@@ -1451,6 +1451,34 @@ a.otvoriGaleriju:hover {
     background-position: center center;
 }
 
+.row-istih-visina {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-istih-visina>[class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-tenderi-pretraga {
+    background: url(../images/tender_pretraga.png);
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-tenderi-pretraga>div {
+    align-self: center;
+    padding: 0 15px;
+}
+
 
 /* - Responsive breakpoints - */
 
