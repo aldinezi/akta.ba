@@ -109,3 +109,9 @@ $("#Pops").popover({
         return $('#popover-content').html();
     }
 });
+$(".kategorija-tendera>div").click(function() {
+    $(this).toggleClass("active");
+});
+$(".grupa span").click(function() {
+    $(this).parent().find('.datepick').focus();
+});

@@ -572,6 +572,7 @@ h1.naslov-kolone:after {
 
 .wrapper-vijesti {
     overflow: auto;
+    overflow-x: hidden;
     background: url('data:image/png;base64,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');
     background-repeat: no-repeat;
     background-size: initial;
@@ -1290,6 +1291,7 @@ a.footer-cta-button:focus {
     margin: auto;
     display: block;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .viseVijesti:hover,
@@ -1490,6 +1492,7 @@ a.otvoriGaleriju:hover {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
+    text-align: center;
 }
 
 .tenderi-menu>li {
@@ -1547,6 +1550,381 @@ a.otvoriGaleriju:hover {
     font-family: "Raleway-Bold";
 }
 
+.fa-viber:before,
+.fa-viber:before {
+    content: url('../assets/icons/viber-ico.svg');
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+[data-style=mypops]+.popover {
+    background: #4194ca;
+}
+
+[data-style=mypops]+.popover.top .arrow:after {
+    border-bottom-color: #4194ca;
+}
+
+[data-style=mypops]+.popover.top .arrow:after {
+    border-top-color: #4194ca;
+}
+
+[data-style=mypops]+.popover-content {}
+
+.has-feedback .grupa {
+    white-space: nowrap;
+}
+
+.datepick {
+    display: inline-block;
+    margin-right: -6px;
+    width: calc(100% - 34px);
+    padding-right: 0px !important;
+}
+
+.grupa span {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    pointer-events: auto !important;
+    vertical-align: top;
+}
+
+.popovermenu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.popovermenu li {
+    border-bottom: none;
+    text-align: center;
+    vertical-align: middle;
+    padding: 7px 0px;
+    margin: 7px;
+}
+
+.popovermenu li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.popovermenu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.popovermenu li a i {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 7px;
+}
+
+.popovermenu li a:hover i {
+    color: aliceblue;
+}
+
+.vijestOutreachIcon:hover {
+    box-shadow: 0px 0px 5px #23527c, inset 0px 0px 5px #23527c;
+}
+
+.popover-content {
+    padding: 5px 5px;
+}
+
+.tenderi-menu>li:active,
+.tenderi-menu>li.active {
+    background-color: #c88c00;
+}
+
+.tenderi-menu>li:active a,
+.tenderi-menu>li.active a {
+    color: white;
+}
+
+.tenderi-pretraga-widget {
+    height: 100%;
+    margin-bottom: 0;
+    padding: 0px 28px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tenderi-pretraga-widget h1 {
+    margin-bottom: 15px;
+}
+
+.tenderi-pretraga-widget .footer-cta-button {
+    margin-left: 0px;
+}
+
+.tender-lista-datum {
+    font-family: "RobotoCondensed-Regular";
+    margin-bottom: 4px;
+}
+
+.tender-lista.sa-datumima {
+    margin-bottom: 4px;
+}
+
+.tender-lista-datum-vazenja {
+    font-family: "RobotoCondensed-Regular";
+}
+
+.kategorija-tendera {
+    min-height: 55px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.kategorija-tendera p {
+    margin: 0;
+    font-family: RobotoCondensed-Regular;
+    color: #606060;
+    background-position: right center;
+    background-repeat: no-repeat;
+    min-height: 40px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 65px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.kategorija-tendera div {
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: #ffffff;
+    min-height: 55px;
+    display: table;
+    border-radius: 4px;
+    width: 100%;
+    padding: 4px 7px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.kategorija-tendera div.active {
+    background-color: #c88c00;
+}
+
+.kategorija-tendera div.active p {
+    color: white;
+}
+
+.kategorija-tendera p.obrazovanje {
+    background-image: url(../assets/icons/obrazovanje-ico.svg);
+}
+
+.kategorija-tendera p.energetika {
+    background-image: url(../assets/icons/energetika-ico.svg);
+}
+
+.kategorija-tendera p.hemija {
+    background-image: url(../assets/icons/hemija-ico.svg);
+}
+
+.kategorija-tendera p.gradevina {
+    background-image: url(../assets/icons/gradevina-ico.svg);
+}
+
+.kategorija-tendera p.zdravstvo {
+    background-image: url(../assets/icons/zdravstvo-ico.svg);
+}
+
+.kategorija-tendera p.poljop {
+    background-image: url(../assets/icons/poljop-ico.svg);
+}
+
+.kategorija-tendera p.tekstil {
+    background-image: url(../assets/icons/tekstil-ico.svg);
+}
+
+.kategorija-tendera p.okolis {
+    background-image: url(../assets/icons/okolis-ico.svg);
+}
+
+.kategorija-tendera p.it {
+    background-image: url(../assets/icons/it-ico.svg);
+}
+
+.kategorija-tendera p.sport {
+    background-image: url(../assets/icons/sport-ico.svg);
+}
+
+.kategorija-tendera p.telekom {
+    background-image: url(../assets/icons/telekom-ico.svg);
+}
+
+.kategorija-tendera p.elektronika {
+    background-image: url(../assets/icons/elektronika-ico.svg);
+}
+
+.kategorija-tendera p.istrazivanje {
+    background-image: url(../assets/icons/istrazivanje-ico.svg);
+}
+
+.kategorija-tendera p.namjestaj {
+    background-image: url(../assets/icons/namjestaj-ico.svg);
+}
+
+.kategorija-tendera p.rudarstvo {
+    background-image: url(../assets/icons/rudarstvo-ico.svg);
+}
+
+.kategorija-tendera p.transport {
+    background-image: url(../assets/icons/transport-ico.svg);
+}
+
+.kategorija-tendera p.industrija {
+    background-image: url(../assets/icons/industrija-ico.svg);
+}
+
+.kategorija-tendera p.turizam {
+    background-image: url(../assets/icons/turizam-ico.svg);
+}
+
+.kategorija-tendera p.stamparije {
+    background-image: url(../assets/icons/stamparije-ico.svg);
+}
+
+.kategorija-tendera p.finansije {
+    background-image: url(../assets/icons/finansije-ico.svg);
+}
+
+.kategorija-tendera p.odbrana {
+    background-image: url(../assets/icons/odbrana-ico.svg);
+}
+
+.kategorija-tendera p.ostalo {
+    background-image: url(../assets/icons/ostalo-ico.svg);
+}
+
+.kategorija-tendera.brza p {
+    background-image: url(../assets/icons/star-ico.svg);
+}
+
+
+/* active styles */
+
+.kategorija-tendera div.active p.obrazovanje {
+    background-image: url(../assets/icons/obrazovanje-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.energetika {
+    background-image: url(../assets/icons/energetika-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.hemija {
+    background-image: url(../assets/icons/hemija-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.gradevina {
+    background-image: url(../assets/icons/gradevina-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.zdravstvo {
+    background-image: url(../assets/icons/zdravstvo-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.poljop {
+    background-image: url(../assets/icons/poljop-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.tekstil {
+    background-image: url(../assets/icons/tekstil-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.okolis {
+    background-image: url(../assets/icons/okolis-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.it {
+    background-image: url(../assets/icons/it-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.sport {
+    background-image: url(../assets/icons/sport-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.telekom {
+    background-image: url(../assets/icons/telekom-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.elektronika {
+    background-image: url(../assets/icons/elektronika-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.istrazivanje {
+    background-image: url(../assets/icons/istrazivanje-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.namjestaj {
+    background-image: url(../assets/icons/namjestaj-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.rudarstvo {
+    background-image: url(../assets/icons/rudarstvo-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.transport {
+    background-image: url(../assets/icons/transport-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.industrija {
+    background-image: url(../assets/icons/industrija-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.turizam {
+    background-image: url(../assets/icons/turizam-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.stamparije {
+    background-image: url(../assets/icons/stamparije-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.finansije {
+    background-image: url(../assets/icons/finansije-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.odbrana {
+    background-image: url(../assets/icons/odbrana-ico-inv.svg);
+}
+
+.kategorija-tendera div.active p.ostalo {
+    background-image: url(../assets/icons/ostalo-ico-inv.svg);
+}
+
+.kategorija-tendera.brza div.active p {
+    background-image: url(../assets/icons/star-ico-inv.svg);
+}
+
+.kategorija-tendera.brza p {
+    background-position: left;
+    padding-left: 55px;
+    padding-right: 0px;
+}
+
+.dodatne .kategorija-tendera p {
+    text-transform: uppercase;
+    padding: 0;
+}
+
+i.fa.val {
+    display: block;
+    line-height: 17px;
+    padding: 0px;
+    margin: 0;
+    height: 17px;
+    cursor: pointer;
+}
+
 
 /* - Responsive breakpoints - */
 
@@ -1591,6 +1969,12 @@ a.otvoriGaleriju:hover {
     }
     .link-novosti {
         white-space: nowrap;
+    }
+    .row-istih-visina {
+        display: block;
+    }
+    .card-tenderi-pretraga {
+        padding: 50px 0;
     }
 }
 
@@ -1692,68 +2076,13 @@ a.otvoriGaleriju:hover {
         margin: 0;
         margin-left: 7px;
     }
-}
-
-.fa-viber:before,
-.fa-viber:before {
-    content: url('../assets/viber-ico.svg');
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-[data-style=mypops]+.popover {
-    background: #4194ca;
-}
-
-[data-style=mypops]+.popover.top .arrow:after {
-    border-bottom-color: #4194ca;
-}
-
-[data-style=mypops]+.popover.top .arrow:after {
-    border-top-color: #4194ca;
-}
-
-[data-style=mypops]+.popover-content {}
-
-.popovermenu {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-}
-
-.popovermenu li {
-    border-bottom: none;
-    text-align: center;
-    vertical-align: middle;
-    padding: 7px 0px;
-    margin: 7px;
-}
-
-.popovermenu li:hover {
-    background: rgba(255, 255, 255, 0.3);
-}
-
-.popovermenu li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.popovermenu li a i {
-    color: #fff;
-    font-size: 16px;
-    margin: 0 7px;
-}
-
-.popovermenu li a:hover i {
-    color: aliceblue;
-}
-
-.vijestOutreachIcon:hover {
-    box-shadow: 0px 0px 5px #23527c, inset 0px 0px 5px #23527c;
-}
-
-.popover-content {
-    padding: 5px 5px;
+    .tenderi-tabs .nav-pills>li+li {
+        margin-left: 0px;
+    }
+    .tenderi-tabs .nav-pills>li {
+        width: 100%;
+    }
+    .tenderi-tabs .tabs>li>a {
+        width: 100%;
+    }
 }
