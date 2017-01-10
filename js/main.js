@@ -118,3 +118,6 @@ $(".grupa span").click(function() {
 $(".akordion>.menu-content>li>a").click(function(event) {
     event.preventDefault();
 });
+$("input.akordion-input[type='text']").on("click", function() {
+    $(this).select();
+});

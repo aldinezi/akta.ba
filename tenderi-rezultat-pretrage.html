@@ -359,48 +359,104 @@
                                             <a href="#"><strong>Service Type </strong> <span class="arrow"></span></a>
                                         </li>
 
-                                        <ul id="service" class="sub-menu collapse">
+                                        <div id="service" class="sub-menu collapse">
                                             <li><a href="#">Full Interior Service</a></li>
                                             <li><a href="#">Design only</a></li>
                                             <li><a href="#">Execution only</a></li>
                                             <li><a href="#">Other services</a></li>
 
-                                        </ul>
-
-
-                                        <li class="collapsed" data-target="#new" data-toggle="collapse">
+                                        </div>
+                                        <li class="collapsed" data-target="#vrijednost" data-toggle="collapse">
                                             <a href="#">
-                                                <strong>Ratings </strong> <span class="arrow"></span></a>
+                                                <strong>Vrijednost ugovora</strong> <span class="arrow"></span></a>
                                         </li>
-                                        <ul id="new" class="sub-menu collapse spacialCheckbox-ul">
-                                            <li class="spacialCheckbox"><label><input type="checkbox" id="category" style="margin-right:5px;" class="d" name="category" value="0 - 1 Lack" onclick="budget();"><i></i> 0 - 1 Lack</label></li>
-                                            <li class="spacialCheckbox"><label><input type="checkbox" id="category" style="margin-right:5px;" class="d" name="category" value="0 - 1 Lack" onclick="budget();"><i></i> 2.5 - 3.5</label></li>
-                                            <li class="spacialCheckbox"><label><input type="checkbox" id="category" style="margin-right:5px;" class="d" name="category" value="0 - 1 Lack" onclick="budget();"><i></i> 3.5 –  4</label></li>
-                                            <li class="spacialCheckbox"><label><input type="checkbox" id="category" style="margin-right:5px;" class="d" name="category" value="0 - 1 Lack" onclick="budget();"><i></i> 4 – 5</label></li>
-                                        </ul>
-
-
-                                        <li class="collapsed" data-target="#outsidehome" data-toggle="collapse">
-                                            <a href="#"><strong>Budget </strong>  <span class="arrow"></span></a>
+                                        <div id="vrijednost" class="sub-menu collapse">
+                                            <label class="cek">
+                                                <input type="text" name="vrijednost-ugovora" class="akordion-input" value="Unesite vrijednost"> 
+                                           </label>
+                                            <button type="submit" class="btn btn-filter-refresh">
+                                                Osvježi pretragu <i class="fa fa-repeat"></i> 
+                                            </button>
+                                        </div>
+                                        <li class="collapsed" data-target="#narucilac" data-toggle="collapse">
+                                            <a href="#">
+                                                <strong>Naručilac</strong> <span class="arrow"></span></a>
                                         </li>
-                                        <ul id="outsidehome" class="sub-menu collapse">
-                                            <li><a href="#">Below 1 lakh </a></li>
-                                            <li><a href="#">Up to 2 Lakh </a></li>
-                                            <li><a href="#">Up to 5 Lakh </a></li>
-                                            <li><a href="#">Up to 7 Lakh </a></li>
-                                            <li><a href="#">Up to 10 Lakh </a></li>
-                                            <li><a href="#">Up to 12 Lakh </a></li>
-                                            <li><a href="#">Up to 15 Lakh </a></li>
-                                            <li><a href="#">Up to 20 Lakh </a></li>
-                                            <li><a href="#">Up to 25 Lakh </a></li>
-                                            <li><a href="#">Above to 25 Lakh </a></li>
-                                        </ul>
+                                        <div id="narucilac" class="sub-menu collapse">
+                                            <label class="cek">
+                                                <input type="text" name="narucioc-naziv" class="akordion-input" value="Naziv firme"> 
+                                           </label>
+                                            <label class="cek">
+                                                <input type="text" name="narucioc-id" class="akordion-input" value="ID"> 
+                                           </label>
+                                            <button type="submit" class="btn btn-filter-refresh">
+                                                Osvježi pretragu <i class="fa fa-repeat"></i> 
+                                            </button>
+                                        </div>
+                                        <li class="collapsed" data-target="#idpdv" data-toggle="collapse">
+                                            <a href="#">
+                                                <strong>ID/PDV broj </strong> <span class="arrow"></span></a>
+                                        </li>
+                                        <div id="idpdv" class="sub-menu collapse">
+                                            <label class="cek">
+                                                <input type="text" name="idpdvbroj" class="akordion-input" value="ID/PDV"> 
+                                           </label>
+                                            <button type="submit" class="btn btn-filter-refresh">
+                                                Osvježi pretragu <i class="fa fa-repeat"></i> 
+                                            </button>
+                                        </div>
+                                        <li class="collapsed" data-target="#cpvKod" data-toggle="collapse">
+                                            <a href="#">
+                                                <strong>CPV kod - rječnik javnih nabavki </strong> <span class="arrow"></span></a>
+                                        </li>
+                                        <div id="cpvKod" class="sub-menu collapse">
+                                            <label class="cek">
+                                                <input type="text" name="cpvkod" class="akordion-input" value="CPV"> 
+                                           </label>
+                                            <button type="submit" class="btn btn-filter-refresh">
+                                                Osvježi pretragu <i class="fa fa-repeat"></i> 
+                                            </button>
+                                        </div>
 
+                                        <li class="collapsed" data-target="#vazenje" data-toggle="collapse">
+                                            <a href="#">
+                                                <strong>Važnje tendera </strong> <span class="arrow"></span></a>
+                                        </li>
+                                        <div id="vazenje" class="sub-menu collapse">
+                                            <label class="cek">
+                                                <input type="checkbox"  name="vazenjeTendera" value="Važeći"> 
+                                                <span></span><span class="oznaka">Važeći</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="vazenjeTendera" value="Istekli"> 
+                                                <span></span><span class="oznaka">Istekli</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="vazenjeTendera" value="Svi"> 
+                                                <span></span><span class="oznaka">Svi</span><br>
+                                            </label>
+                                            <button type="submit" class="btn btn-filter-refresh">
+                                                Osvježi pretragu <i class="fa fa-repeat"></i> 
+                                            </button>
+                                        </div>
+
+
+                                        <li class="collapsed" data-target="#brooj" data-toggle="collapse">
+                                            <a href="#"><strong>Broj tendera </strong>  <span class="arrow"></span></a>
+                                        </li>
+                                        <div id="brooj" class="sub-menu collapse">
+                                            <label class="cek">
+                                                <input type="text" name="brojTendera" class="akordion-input" value="Broj tendera..."> 
+                                           </label>
+                                            <button type="submit" class="btn btn-filter-refresh">
+                                                Osvježi pretragu <i class="fa fa-repeat"></i> 
+                                            </button>
+                                        </div>
 
                                         <li class="collapsed tenderski" data-target="#brzaPretragaTendera" data-toggle="collapse">
                                             <a href="#"> <strong>Brza pretraga tendera </strong> </a>
                                         </li>
-                                        <form id="brzaPretragaTendera" class="sub-menu collapse" action="" method="get">
+                                        <div id="brzaPretragaTendera" class="sub-menu collapse">
                                             <label class="cek">
                                                 <input type="checkbox"  name="brzaPretraga" value="Licitacije/nekretnine"> 
                                                 <span></span><span class="oznaka">Licitacije/nekretnine</span><br>
@@ -436,16 +492,16 @@
                                             <button type="submit" class="btn btn-filter-refresh">
                                                 Osvježi pretragu <i class="fa fa-repeat"></i> 
                                             </button>
-                                        </form>
+                                        </div>
                                         <li class="collapsed tenderski" data-target="#dodatneKat" data-toggle="collapse">
                                             <a href="#"> <strong>Dodatne kategorije </strong> </a>
                                         </li>
-                                        <form id="dodatneKat" class="sub-menu collapse" action="" method="get">
+                                        <div id="dodatneKat" class="sub-menu collapse">
 
                                             <button type="submit" class="btn btn-filter-refresh">
                                                 Osvježi pretragu <i class="fa fa-repeat"></i> 
                                             </button>
-                                        </form>
+                                        </div>
 
                                     </ul>
                                 </div>
