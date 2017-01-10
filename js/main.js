@@ -115,3 +115,6 @@ $(".kategorija-tendera>div").click(function() {
 $(".grupa span").click(function() {
     $(this).parent().find('.datepick').focus();
 });
+$(".akordion>.menu-content>li>a").click(function(event) {
+    event.preventDefault();
+});

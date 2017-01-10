@@ -1925,6 +1925,107 @@ i.fa.val {
     cursor: pointer;
 }
 
+.galerija.tenderi-header.pretraga-rezultati {
+    background: url(../images/tenderi-rezultati-head.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.akordion .menu-content {
+    padding-left: 0px;
+}
+
+.akordion .menu-content>li {
+    background: #e1e1e1;
+    padding: 10px 15px;
+    border-bottom: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.akordion .menu-content li a {
+    color: #787878;
+    text-decoration: none;
+}
+
+label.cek {
+    width: 100%;
+    font-family: RobotoCondensed-Regular;
+    font-weight: normal;
+    color: #606060;
+}
+
+label.cek input[type="checkbox"] {
+    display: none !important;
+}
+
+label.cek span {
+    display: inline-block;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    background: #e1e1e1;
+    vertical-align: middle;
+    margin: 5px;
+    transition: width 0.1s, height 0.1s, margin 0.1s;
+    cursor: pointer;
+}
+
+label.cek :checked+span {
+    background: #c88c00;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    color: #c88c00;
+}
+
+label.cek :checked~span.oznaka {
+    color: #c88c00;
+}
+
+label.cek:checked {
+    color: #c88c00;
+}
+
+label.cek span.oznaka {
+    width: auto;
+    background: transparent;
+}
+
+.akordion .menu-content>li.tenderski {
+    background: #c88c00;
+}
+
+.akordion .menu-content>li.tenderski a {
+    color: white;
+}
+
+.akordion .menu-content>li:after {
+    position: absolute;
+    content: "\f103";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    right: 35px;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    line-height: 20px;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-filter-refresh {
+    text-transform: uppercase;
+    color: white;
+    background: #00B496;
+}
+
 
 /* - Responsive breakpoints - */
 
