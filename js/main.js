@@ -98,9 +98,11 @@ var $gridpovezanih = $(".wrap-povezanih-vijesti").imagesLoaded(function() {
 });
 
 $('document').ready(function() {
+    var url = $('.item.active').next().find("img").attr('data-src');
+    $('.item.active').next().find("img").attr("src", url);
     $('#slikeCarousel').on('slid.bs.carousel', function(e) {
-        var url = $('.item.active').find("img").attr('data-src');
-        $('.item.active').find("img").attr("src", url); //set value : src = url
+        var url = $('.item.active').next().find("img").attr('data-src');
+        $('.item.active').next().find("img").attr("src", url); //set value : src = url
     });
 });
 $("#Pops").popover({

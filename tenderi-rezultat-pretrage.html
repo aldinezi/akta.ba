@@ -75,10 +75,13 @@
                     </ul>
                     <ul class="nav navbar-nav social_icons hidden-xs visible-lg">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-viber" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                     </ul>
                     <ul class="nav navbar-nav user_menu">
                         <li>
@@ -341,30 +344,120 @@
                                 <div class="menu-list akordion">
 
                                     <ul class="menu-content collapse in" id="menu-content">
-
-
-                                        <li class="collapsed active" data-target="#products" data-toggle="collapse">
+                                        <li class="collapsed" data-target="#datumTenderaPretraga" data-toggle="collapse">
                                             <a href="#">
-                                                <strong>Professional Type</strong> <span class="arrow"></span></a>
+                                                <strong>Datum</strong> <span class="arrow"></span></a>
                                         </li>
-
-                                        <ul id="products" class="sub-menu collapse fade">
-                                            <li class="active"><a href="#">Architect</a></li>
-                                            <li><a href="#">Interior Designer</a></li>
-                                            <li><a href="#">Carpenter</a></li>
-                                        </ul>
-
-
-                                        <li class="collapsed" data-target="#service" data-toggle="collapse">
-                                            <a href="#"><strong>Service Type </strong> <span class="arrow"></span></a>
+                                        <div id="datumTenderaPretraga" class="sub-menu collapse">
+                                            <label class="cek pola">
+                                                <input type="date" class="form-control datepick akordion-input" placeholder="">
+                                           </label>
+                                            <label class="cek pola">
+                                                <input type="date" class="form-control datepick akordion-input" placeholder="">
+                                           </label>
+                                            <span class="form-control-feedback ">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            </span>
+                                            <button type="submit" class="btn btn-filter-refresh">
+                                                Osvježi pretragu <i class="fa fa-repeat"></i> 
+                                            </button>
+                                        </div>
+                                        <li class="collapsed" data-target="#kategorijepograni" data-toggle="collapse">
+                                            <a href="#">
+                                                <strong>Kategorije po grani privrede</strong> <span class="arrow"></span></a>
                                         </li>
-
-                                        <div id="service" class="sub-menu collapse">
-                                            <li><a href="#">Full Interior Service</a></li>
-                                            <li><a href="#">Design only</a></li>
-                                            <li><a href="#">Execution only</a></li>
-                                            <li><a href="#">Other services</a></li>
-
+                                        <div id="kategorijepograni" class="sub-menu collapse">
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Obrazovanje"> 
+                                                <span></span><span class="oznaka">Obrazovanje</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Energetika"> 
+                                                <span></span><span class="oznaka">Energetika</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Hemijski proizvodi"> 
+                                                <span></span><span class="oznaka">Hemijski proizvodi</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Građevina i nekretnine"> 
+                                                <span></span><span class="oznaka">Građevina i nekretnine</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Zdravstvo"> 
+                                                <span></span><span class="oznaka">Zdravstvo</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Poljoprivreda i mehanizacija"> 
+                                                <span></span><span class="oznaka">Poljoprivreda i mehanizacija</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Tekstil i asesoari"> 
+                                                <span></span><span class="oznaka">Tekstil i asesoari</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Zaštita okoliša, sanitarne i komunalne usluge"> 
+                                                <span></span><span class="oznaka">Zaštita okoliša, sanitarne i komunalne usluge</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Sport, kultura, umjetnost"> 
+                                                <span></span><span class="oznaka">Sport, kultura, umjetnost</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Telekomunikacije"> 
+                                                <span></span><span class="oznaka">Telekomunikacije</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="IT i uredska oprema"> 
+                                                <span></span><span class="oznaka">IT i uredska oprema</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Elektronika"> 
+                                                <span></span><span class="oznaka">Elektronika</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Istraživanje i razvoj, poslovne usluge"> 
+                                                <span></span><span class="oznaka">Istraživanje i razvoj, poslovne usluge</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Namještaj i aparati"> 
+                                                <span></span><span class="oznaka">Namještaj i aparati</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Rudarstvo i metali"> 
+                                                <span></span><span class="oznaka">Rudarstvo i metali</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Transport"> 
+                                                <span></span><span class="oznaka">Transport</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Industrija"> 
+                                                <span></span><span class="oznaka">Industrija</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Turizam"> 
+                                                <span></span><span class="oznaka">Turizam</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Štamparije i izdavaštvo"> 
+                                                <span></span><span class="oznaka">Štamparije i izdavaštvo</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Finansije i osiguranje"> 
+                                                <span></span><span class="oznaka">Finansije i osiguranje</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Odbrana, sigurnost i javna uprava"> 
+                                                <span></span><span class="oznaka">Odbrana, sigurnost i javna uprava</span><br>
+                                           </label>
+                                            <label class="cek">
+                                                <input type="checkbox"  name="granaPrivrede" value="Ostalo"> 
+                                                <span></span><span class="oznaka">Ostalo</span><br>
+                                           </label>
+                                            <button type="submit" class="btn btn-filter-refresh">
+                                                Osvježi pretragu <i class="fa fa-repeat"></i> 
+                                            </button>
                                         </div>
                                         <li class="collapsed" data-target="#vrijednost" data-toggle="collapse">
                                             <a href="#">
@@ -518,291 +611,8 @@
 
 
                 </div>
-                <div class="col-md-12">
-                    <h1 class="card-naslov-vijesti">Kategorije tendera</h1>
-                    <div class="red-kategorija remargin">
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="obrazovanje">Obrazovanje</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="energetika">Energetika</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="hemija">Hemijski proizvodi</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="gradevina">Građevina i nekretnine</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="zdravstvo">Zdravstvo</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="poljop">Poljoprivreda i mehanizacija</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="red-kategorija remargin">
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="tekstil">Tekstil i asesoari</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="okolis">Zaštita okoliša, sanitarne i komunalne usluge</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="sport">Sport, kultura, umjetnost</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="telekom">Telekomunikacije</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="it">IT i uredska oprema</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="elektronika">Elektronika</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="red-kategorija remargin">
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="istrazivanje">Istraživanje i razvoj, poslovne usluge</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="namjestaj">Namještaj i aparati</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="rudarstvo">Rudarstvo i metali</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="transport">Transport</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="industrija">Industrija</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="turizam">Turizam</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="red-kategorija remargin">
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="stamparije">Štamparije i izdavaštvo</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="finansije">Finansije i osiguranje</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="odbrana">Odbrana, sigurnost i javna uprava</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p class="ostalo">Ostalo</p>
-                            </div>
-                        </div>
 
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <h1 class="card-naslov-vijesti">Brza pretraga tendera</h1>
-                    <div class="red-kategorija remargin">
-                        <div class="col-md-2 kategorija-tendera brza">
-                            <div>
-                                <p>NABAVKE</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera brza">
-                            <div>
-                                <p>IZMJENE</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera brza">
-                            <div>
-                                <p>PONIŠTENJA</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera brza">
-                            <div>
-                                <p>EU i MEĐUNARODNI TENDERI</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera brza">
-                            <div>
-                                <p>PRODAJA POTRAŽIVANJA</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <h1 class="card-naslov-vijesti">Dodatne kategorije</h1>
-                    <div class="red-kategorija remargin dodatne">
-                        <div class="col-md-2 kategorija-tendera ">
-                            <div>
-                                <p>Licitacije/nekretnine</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera ">
-                            <div>
-                                <p>Javni pozivi,<br> konkursi, oglasi</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p>Privatizacije berze</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p>Skupštine</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p>Regulacioni planovi</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p>Stečaj <br>- prodaja imovine <br>- kompanije u stečaju</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p>Odluke o pokretanju postupaka
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 kategorija-tendera">
-                            <div>
-                                <p>Plan nabavki</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 card card-newsletter card-vijest konvertor-valuta pretraga-tendera-form">
-                    <div class="card-opis-vijesti ">
-                        <div class="col-md-10 col-md-push-1 col-xs-12">
-                            <form>
-                                <div class="form-group has-feedback">
-                                    <div class="col-sm-3" style="padding-right:0;">
-                                        <input type="text" class="form-control" placeholder="Naziv">
-                                    </div>
-                                    <div class="col-sm-3 ">
-                                        <span class="form-control-feedback valuebox">
-                                                <i class="val fa fa-caret-up" aria-hidden="true"></i>
-                                                <i class="val fa fa-caret-down" aria-hidden="true"></i>
-                                            </span>
-                                        <select class="form-control" placeholder="Država">
-                                            <option value="država">Država</option>
-                                            <option value="država">Država</option>
-                                            <option value="država">Država</option>
-                                            <option value="država">Država</option>
-                                            </select>
-                                    </div>
-                                    <div class="col-sm-3 ">
-                                        <span class="form-control-feedback valuebox">
-                                                <i class="val fa fa-caret-up" aria-hidden="true"></i>
-                                                <i class="val fa fa-caret-down" aria-hidden="true"></i>
-                                            </span>
-                                        <select class="form-control" placeholder="Tip">
-                                            <option value="tip">Tip</option>
-                                            <option value="tip">Tip</option>
-                                            <option value="tip">Tip</option>
-                                            <option value="tip">Tip</option>
-                                            </select>
-                                    </div>
-                                    <div class="col-sm-3 ">
-                                        <span class="form-control-feedback valuebox">
-                                                <i class="val fa fa-caret-up" aria-hidden="true"></i>
-                                                <i class="val fa fa-caret-down" aria-hidden="true"></i>
-                                            </span>
-                                        <select class="form-control" placeholder="Tip">
-                                            <option value="Važenje tendera">Važenje tendera</option>
-                                            <option value="Važenje tendera">Važenje tendera</option>
-                                            <option value="Važenje tendera">Važenje tendera</option>
-                                            <option value="Važenje tendera">Važenje tendera</option>
-                                            </select>
-                                    </div>
 
-                                </div>
-                                <div class="form-group has-feedback">
-                                    <div class="col-sm-8 grupa">
-                                        <div class="col-sm-4 " style="    padding-left: 0;">
-                                            <p style="    line-height: 34px;
-    font-weight: 600;    text-align: right;">Datum unosa (od-do)</p>
-
-                                        </div>
-                                        <div class="col-sm-4  grupa ">
-                                            <input type="date" class="form-control datepick" placeholder="">
-                                            <span class="form-control-feedback ">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>
-                                        </div>
-                                        <div class="col-sm-4  grupa">
-                                            <input type="date" class="form-control datepick" placeholder="">
-                                            <span class="form-control-feedback ">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4  grupa">
-                                        <select class="form-control datepick" placeholder="Sortiranje">
-                                            <option value="Sortiranje">Sortiranje</option>
-                                            <option value="Sortiranje">Sortiranje</option>
-                                            <option value="Sortiranje">Sortiranje</option>
-                                            <option value="Sortiranje">Sortiranje</option>
-                                            </select>
-                                        <span class="form-control-feedback ">
-                                                <i class="val fa fa-caret-up" aria-hidden="true"></i>
-                                                <i class="val fa fa-caret-down" aria-hidden="true"></i>
-                                            </span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <a href="#" class="card-button" style="margin-right:auto;text-align: center;    margin-top: 30px;" onclick="$(this).closest('form').submit()">
-                                        <span class="card-button-tekst" style="font-size: x-large;">Izračunaj</span></a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
 
 
             </div>
@@ -1081,7 +891,7 @@
         </div>
         -->
         <div class="container-fluid footer-cta">
-            <h1> <span>Poslujte bolje!</span> TESTIRAJTE BEPLATNO!</h1>
+            <h1> <span>Poslujte bolje!</span> TESTIRAJTE BESPLATNO!</h1>
             <a class="footer-cta-button">REGISTRUJ SE</a>
         </div>
         <div class="container-fluid footer-menu">
@@ -1122,7 +932,7 @@
                         </ul>
                         <ul class="col-sm-6 col-md-6 nopadding footer sub_items">
                             <li>
-                                <a href="#">Tender</a>
+                                <a href="#">Tenderi</a>
                             </li>
                             <li>
                                 <a href="#">Registar</a>
@@ -1160,7 +970,7 @@
                     <div class="col-md-3 tagovi">
                         <li class="footer nopadding subheader"><a href="#">POPULARNI TAGOVI</a></li>
                         <a href="#">MARKETING</a>
-                        <a href="#">INVESTICJE</a>
+                        <a href="#">INVESTICIJE</a>
                         <a href="#">FAQ</a>
                         <a href="#">VIJESTI</a>
                         <a href="#">TENDERI</a>

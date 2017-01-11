@@ -75,10 +75,13 @@
                     </ul>
                     <ul class="nav navbar-nav social_icons hidden-xs visible-lg">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-viber" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                     </ul>
                     <ul class="nav navbar-nav user_menu">
                         <li>
@@ -113,7 +116,7 @@
                     <ul class="nav navbar-nav main_nav hidden-xs">
                         <li><a class="active" href="#">HOME</a></li>
                         <li><a href="#">VIJESTI</a></li>
-                        <li><a href="#">Kapitalt</a></li>
+                        <li><a href="#">Kapital</a></li>
                         <li><a href="#">Eu</a></li>
                         <li><a href="#">Najave</a></li>
                         <li><a href="#">Ličnosti</a></li>
@@ -329,15 +332,51 @@
                     <div class="col-xs-12 card card-lead nopadding">
                         <div class="galerija">
 
-                            <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic10.jpg">
-                            <div class="galerijaCta">
+                            <div id="slikeCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+
+                                <ol class="carousel-indicators">
+                                    <li data-target="#slikeCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#slikeCarousel" data-slide-to="1"></li>
+                                    <li data-target="#slikeCarousel" data-slide-to="2"></li>
+                                    <li data-target="#slikeCarousel" data-slide-to="3"></li>
+                                </ol>
+
+
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img class="img-responsive" data-src="./images/dummy/pic1.jpg" src="./images/dummy/pic1.jpg" alt="Chania">
+                                    </div>
+
+                                    <div class="item">
+                                        <img class="img-responsive" data-src="./images/dummy/pic2.jpg" src="" alt="Chania">
+                                    </div>
+
+                                    <div class="item">
+                                        <img class="img-responsive" data-src="./images/dummy/pic3.jpg" src="" alt="Flower">
+                                    </div>
+
+                                    <div class="item">
+                                        <img class="img-responsive" data-src="./images/dummy/pic4.jpg" src="" alt="Flower">
+                                    </div>
+                                </div>
+
+
+                                <a class="left carousel-control" href="#slikeCarousel" role="button" data-slide="prev">
+                                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#slikeCarousel" role="button" data-slide="next">
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+                            <!--       <div class="galerijaCta">
                                 <a class="otvoriGaleriju" data-toggle="modal" data-target="#galerija"><i class="fa fa-camera" aria-hidden="true"></i>  OTVORI GALERIJU </a>
 
-                                <!-- Modal -->
                                 <div id="galerija" class="modal fade" role="dialog">
                                     <div class="modal-dialog">
 
-                                        <!-- Modal content-->
                                         <div class="modal-content">
                                             <div class="modal-body">
 
@@ -389,7 +428,7 @@
                                     </div>
                                 </div>
 
-                            </div>
+                            </div> -->
                         </div>
                         <div class="card-opis-vijesti">
                             <p class="card-kategorija">Vijesti / SVIJET</p>
@@ -438,7 +477,7 @@
                                         <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                                     </ul>
                                 </div>
-                                <span class="preuzmiDoc">PODJELI:  </span>
+                                <span class="preuzmiDoc">PODIJELI:  </span>
                                 <a tabindex="0" class=" vijestOutreachIcon" role="button" data-toggle="popover" data-trigger="focus" data-placement="top" data-style="mypops" id="Pops"></a>
                                 <span class="count">12345</span>
                                 <i class="fa fa-print" aria-hidden="true"></i> <span class="preuzmiDoc">SAČUVAJ:</span>
@@ -778,7 +817,7 @@
         </div>
         -->
         <div class="container-fluid footer-cta">
-            <h1> <span>Poslujte bolje!</span> TESTIRAJTE BEPLATNO!</h1>
+            <h1> <span>Poslujte bolje!</span> TESTIRAJTE BESPLATNO!</h1>
             <a class="footer-cta-button">REGISTRUJ SE</a>
         </div>
         <div class="container-fluid footer-menu">
@@ -819,7 +858,7 @@
                         </ul>
                         <ul class="col-sm-6 col-md-6 nopadding footer sub_items">
                             <li>
-                                <a href="#">Tender</a>
+                                <a href="#">Tenderi</a>
                             </li>
                             <li>
                                 <a href="#">Registar</a>
@@ -857,7 +896,7 @@
                     <div class="col-md-3 tagovi">
                         <li class="footer nopadding subheader"><a href="#">POPULARNI TAGOVI</a></li>
                         <a href="#">MARKETING</a>
-                        <a href="#">INVESTICJE</a>
+                        <a href="#">INVESTICIJE</a>
                         <a href="#">FAQ</a>
                         <a href="#">VIJESTI</a>
                         <a href="#">TENDERI</a>

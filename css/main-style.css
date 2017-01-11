@@ -268,7 +268,6 @@ a.um_forum,
 }
 
 .pretraga {
-    -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -282,7 +281,6 @@ a.um_forum,
 
 .pretraga:focus {
     border-color: transparent;
-    -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -591,6 +589,7 @@ h1.naslov-kolone:after {
 
 .crni-menu,
 .bijeli-menu {
+    -webkit-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
 }
 
@@ -682,7 +681,6 @@ h1.naslov-kolone:after {
 }*/
 
 .card-newsletter .form-control {
-    -webkit-box-shadow: none;
     box-shadow: none;
     background: #EFEFF0;
     border: transparent;
@@ -816,7 +814,6 @@ a.card-button:focus {
 
 .newsletter-footer .form-group .form-control {
     border-radius: 0px;
-    -webkit-box-shadow: none;
     box-shadow: none;
     border: 1px solid #fff;
 }
@@ -1018,7 +1015,7 @@ a.footer-cta-button:focus {
     background: #00827D;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    color: white;
+    color: white !important;
 }
 
 .card-registar .module-label span {
@@ -1094,8 +1091,6 @@ a.footer-cta-button:focus {
 
 #skroler-kapital .item>div {
     overflow: hidden;
-    -moz-box-shadow: inset -15px 0px 10px -10px #fff;
-    -webkit-box-shadow: inset -15px 0px 10px -10px #fff;
     box-shadow: inset -15px 0px 10px -10px #fff;
 }
 
@@ -1311,6 +1306,7 @@ a.footer-cta-button:focus {
     width: 100%;
     height: 1px;
     margin: 20px 0px;
+    background-image: -webkit-radial-gradient(#CCC, #FFF), -webkit-radial-gradient(#CCC, #FFF);
     background-image: radial-gradient(#CCC, #FFF), radial-gradient(#CCC, #FFF);
     background-position: 0, 100%, 0, 100%;
 }
@@ -1452,23 +1448,32 @@ a.otvoriGaleriju:hover {
     background-size: cover;
     background-position: center center;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
 .row-istih-visina {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .row-istih-visina>[class*='col-'] {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -1476,13 +1481,24 @@ a.otvoriGaleriju:hover {
     background: url(../images/tender_pretraga.png);
     background-size: cover;
     background-position: center center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
 }
 
 .card-tenderi-pretraga>div {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
     padding: 0 15px;
     border-radius: 0;
@@ -1505,6 +1521,7 @@ a.otvoriGaleriju:hover {
     vertical-align: bottom;
     margin: 10px;
     position: relative;
+    -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
 
@@ -1647,9 +1664,17 @@ a.otvoriGaleriju:hover {
     height: 100%;
     margin-bottom: 0;
     padding: 0px 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
 }
@@ -1677,9 +1702,17 @@ a.otvoriGaleriju:hover {
 
 .kategorija-tendera {
     min-height: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -1956,6 +1989,10 @@ label.cek {
     color: #606060;
 }
 
+label.cek.pola {
+    width: 49%;
+}
+
 label.cek input[type="checkbox"] {
     display: none !important;
 }
@@ -1968,6 +2005,7 @@ label.cek span {
     background: #e1e1e1;
     vertical-align: middle;
     margin: 5px;
+    -webkit-transition: width 0.1s, height 0.1s, margin 0.1s;
     transition: width 0.1s, height 0.1s, margin 0.1s;
     cursor: pointer;
 }
@@ -2034,6 +2072,14 @@ label.cek span.oznaka {
     width: 100%;
 }
 
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img,
+.img-responsive,
+.thumbnail a>img,
+.thumbnail>img {
+    margin: auto;
+}
+
 
 /* - Responsive breakpoints - */
 
@@ -2084,6 +2130,9 @@ label.cek span.oznaka {
     }
     .card-tenderi-pretraga {
         padding: 50px 0;
+    }
+    .tenderi-menu>li {
+        width: 150px;
     }
 }
 
@@ -2143,6 +2192,12 @@ label.cek span.oznaka {
         /* margin: 15px; */
         border-radius: 0px;
     }
+    .tenderi-menu>li {
+        width: 130px;
+    }
+    .tenderi-menu>li>a {
+        padding: 15px 10px;
+    }
 }
 
 @media (max-width:480px) {
@@ -2195,3 +2250,18 @@ label.cek span.oznaka {
         width: 100%;
     }
 }
+
+@media (max-width:1366px) and (min-width:991px) {
+    .tabs_module .tabs>li>a {
+        font-size: 10px;
+        padding: 7px 10px;
+    }
+    .kategorija-tendera p {
+        font-size: 13px;
+        line-height: 11px;
+        background-size: 35px;
+        padding-right: 35px;
+    }
+}
+
+​
