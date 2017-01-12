@@ -2121,6 +2121,20 @@ label.cek span.oznaka {
     overflow: visible;
 }
 
+.card-vise p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.card-vise p a {
+    margin-bottom: 0px;
+    line-height: 30px;
+    font-family: "RobotoCondensed-Regular";
+    font-size: 15px;
+    color: #bebebe;
+    cursor: pointer;
+}
+
 
 /* - Responsive breakpoints - */
 
@@ -2323,5 +2337,3 @@ label.cek span.oznaka {
         margin-left: 10px;
     }
 }
-
-​
