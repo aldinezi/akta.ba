@@ -890,8 +890,8 @@ a.footer-cta-button:focus {
 .navbar-header.footer .link::after {
     height: 20px;
     width: 30px;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAATCAYAAACDW21BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo4YjUyNTc4Ni0xZjlkLTUwNDAtYTA0NC01MDIxZDYyM2E3YjQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDc2MjI5OTY5NDYzMTFFNkEwNEFEMUIxM0IwQUE4MEQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDc2MjI5OTU5NDYzMTFFNkEwNEFEMUIxM0IwQUE4MEQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OGI1MjU3ODYtMWY5ZC01MDQwLWEwNDQtNTAyMWQ2MjNhN2I0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjhiNTI1Nzg2LTFmOWQtNTA0MC1hMDQ0LTUwMjFkNjIzYTdiNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pk9DSMoAAAHLSURBVHjavFXRccIwDM1xPb69QbNBGSGdoHSChgkKE5BO4OsEYQPKBGSDZAPaCcgv/KR6uWdONcFxP1rdiZwtS896kkXSdV0ypqfTyYrOAvZ9yK51ksTJTNQE7NmI/SKxgL+Soijm/wYoYLl8tvIt/xxQQEDrk2glmhL8p0Q2DZoiC9i7kP2qac7n81z0INpRa+yFshH7jD4pt/bwpc2Ilipex7W5w4+cAd+N6IrOa+yJrZlOp59DYADwtleMAcFlQecb6UUXv14oFTqMR5ERPYoufUrx3mirnV8MpYiFcz2lkkXLm2egiOsP0YcbmSHrR+cXoD1lTLC4uXSpbFjyj2Coy4EPOfUefxQY69vHos+RZUpQQ3C9VHwn5Huu1hDLGo1mhnfICz+Ltry47QFFX5CuBCmUQ8UstcTSmBEAZyu1j085YQftBnwrb50y6zHBuVaDsU82etIM3frLW7d8KvkIoFHPY3C0tV5zOLn31u/stDHQhqz5VBsHWLGOvvGKPqFlEQHaqlpqyV3T7BjAqlraW/9vAHUNgC9r0/DSlawbTCh0qnwXisG1njSW08IppsgWE0ZNmsKbHCXPYvLkzk9No9qL2WN8CzAAUW9QQeIYPncAAAAASUVORK5CYII=');
-    background-size: initial;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAoCAYAAACvpem4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA9pJREFUeNrsWlFy00AMjT1l4A9zgpoTxHzAb50Z/gknaDIcgOQESU7QcgCwOUHCP0zSbz5iThBzgvqPAh9BymiDKq/dtb0JmRTNaFx7d7V6u1pJq9RZr9et+0CuLUG/f970gOf4rDn+osn4vQEF8oFDetahoOH4vQG9H6b7H2hNchwnxy++fPB135GPZkeff36PTmpFz+M0XQIX0WsE78HRARUgFc2rgnUPHCSGmnPgheAEeATtnqmsk0MG+vXlmxQeHRuyDhao7dT0pCAd61Kmwmn24OGjxGLKiGbna2SeQluoXqB9UUHHlPTMSoHC4AHaPrDO9kfQjoL6RZNXBDlHoPB3R4DtEW9DqgZgVKAjEubMqONM64ygcYydhAB18Hk+2yjxZiADmqtbYSz2nWp05AuPbVOpo8smH9G3jHbNAcbVfgbvT4AnYtW8hiA3xwH4UnSb0NwbFm0R03HIdOxQ3z61bfrCfP4toGTTT4Fj9HLwHnPp2A48JkFq1XoNQcYg87XuPJUQLvqQdJQL1CK9uZce3fJuVfjXzY8p8Bp4Kb6P6ftYM8bD/tSOHGn6zIvG19AxIlnX6ludhOEjuz/W3cn+jqPTO2V56ojVAbpgIIIDBNkSXjzQxlGKYchn7DMOvEKXjWcK+nAPt3eQtMBdoWNKOsZsQ8JcHCUPFfFGRvhtAH0WzCHtfSdJ7rRAx00Mhj5vdTqeMAFLTXzi2+/RBMs79Hm8Q5Bz4RsSFk584oD6ZbrMiCcKMcWoTGPS0zJzJRqwv22eyREDuaBYn2p0vGAb8zdhIJPtsXy2r4ttlPZ15EqVkM0z6bEFTChBSKvo6Ap7Hxp4s3ifIJmPMNUxE1ncFmhbmYNulTT0yaDPN8sRQ5lsanihmOmAKiFXhjHKZCLMhaMdhMjEUMd0n6WUnkWwZzUsZWEDaHJHW2IZbNpUgNvwzOgoI89nE+x3VX2oMMaTQNVqtQ1dvW9wRnYBViUFtTbDZatlWicNDR2CTbBplbmpEpEzXXVofV6UKqHzCrcIW2ATBsLkwv8qB5TCRWZSIqHiWVhFwxpgTwsSlZQV6cp0DHXVD1dcVAMqfvkyBWPFszr3QxOwKo53C4BMRIEuLNiIaZnXvWRKINgVDFrST+14E7hm9ZdkR2Bj5i1zi033zFhsyErpCHzNLieJ1NMVSsTCa4XCVGetBj8RFIAdsGxmIhZ7Jcb3RdXQZzp6LFHIJfaOLP2z20ybDb5qsUo9mbFK3lNRmUhlFbHkbulTRU86m+21UVPy5DqeCdPnOvZI/kZH51/9+03JTxKqLaiQW99JfwQYAAWWvduieYRPAAAAAElFTkSuQmCC');
+    background-size: contain;
     content: "";
     display: inline-block;
     background-repeat: no-repeat;
@@ -2087,6 +2087,15 @@ label.cek span.oznaka {
     .container {
         width: 1280px;
     }
+    .bijeli-menu .main_nav>li>a {
+        padding: 15px 15px;
+    }
+}
+
+@media (min-width:1200px) {
+    .bijeli-menu .main_nav>li>a {
+        padding: 15px 10px;
+    }
 }
 
 
@@ -2256,11 +2265,21 @@ label.cek span.oznaka {
         font-size: 10px;
         padding: 7px 10px;
     }
+    #exTab3.tabs_module .tabs>li>a {
+        font-size: 9px;
+        padding: 7px 7px;
+    }
     .kategorija-tendera p {
         font-size: 13px;
         line-height: 11px;
         background-size: 35px;
         padding-right: 35px;
+    }
+    .bijeli-menu .main_nav>li>a {
+        font-size: 14px;
+    }
+    .social_icons {
+        margin-left: 10px;
     }
 }
 
