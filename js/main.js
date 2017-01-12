@@ -111,6 +111,12 @@ $("#Pops").popover({
         return $('#popover-content').html();
     }
 });
+$("#Pops1").popover({
+    html: true,
+    content: function() {
+        return $('#popover-content1').html();
+    }
+});
 $(".kategorija-tendera>div").click(function() {
     $(this).toggleClass("active");
 });

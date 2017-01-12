@@ -657,14 +657,25 @@ h1.naslov-kolone:after {
 }
 
 .card-count-label::before {
-    content: "";
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAedJREFUeNrsl0FrwkAQhac1iiBKRBRBFEEUDx78/5f2J/TgwYsQFC+KIIoiilK/oRvSmJoYJRbahZC4k+yb997sJL4MBgNbRPqS3HB6vZ5jfYG+JQgsZ7Ifr/Kc0X8WsPwD/z7gVColuVxOz1EG9zYaDalUKoFxKypou93W8/F4lNFoJIfD4eoz9Xpd78/n8/rMYrG4nXE2m3WZcs5kMqGJepUJUikS8G6306y9iVwDbTab7u/NZnPBNrLURl6YVqtVPZgjIbxkrFYrOZ1OCkpiy+VSptPpj2taUYsLTzkcx1G/a7XatzjJEE+n06GgsbaTYWpkBGA+n+s8oMTCQG9i7PUXeQGFvRn4iBKmEL018RDGhULBBfIrgcRhxXeX1Im3TDy0bVuvS6VSYIzEsOFhHrMolYt/LIzPbJ31eq3xcrmssSiFFQoMKxbDM1of22UymSgwSRA3+9hf8bGBWZTFzYAZbIzHFBL3ME+hMd9qtfTFQLOJXdX+/joej93FYA+IYYkCZv/idbfblU6no9c3A9MCDRANwq9GUN8228kUW7FYvF1qGAyHw8DYdrt1vfV7SrJGrWtyW3H24Gw2k/1+f8FSP5rP3YwmE/QOvhs4CNCrVJTK/psfe85TgPkDdT6/Jw38KcAA8OEGNnQsRZQAAAAASUVORK5CYII=');
+    /*  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAedJREFUeNrsl0FrwkAQhac1iiBKRBRBFEEUDx78/5f2J/TgwYsQFC+KIIoiilK/oRvSmJoYJRbahZC4k+yb997sJL4MBgNbRPqS3HB6vZ5jfYG+JQgsZ7Ifr/Kc0X8WsPwD/z7gVColuVxOz1EG9zYaDalUKoFxKypou93W8/F4lNFoJIfD4eoz9Xpd78/n8/rMYrG4nXE2m3WZcs5kMqGJepUJUikS8G6306y9iVwDbTab7u/NZnPBNrLURl6YVqtVPZgjIbxkrFYrOZ1OCkpiy+VSptPpj2taUYsLTzkcx1G/a7XatzjJEE+n06GgsbaTYWpkBGA+n+s8oMTCQG9i7PUXeQGFvRn4iBKmEL018RDGhULBBfIrgcRhxXeX1Im3TDy0bVuvS6VSYIzEsOFhHrMolYt/LIzPbJ31eq3xcrmssSiFFQoMKxbDM1of22UymSgwSRA3+9hf8bGBWZTFzYAZbIzHFBL3ME+hMd9qtfTFQLOJXdX+/joej93FYA+IYYkCZv/idbfblU6no9c3A9MCDRANwq9GUN8228kUW7FYvF1qGAyHw8DYdrt1vfV7SrJGrWtyW3H24Gw2k/1+f8FSP5rP3YwmE/QOvhs4CNCrVJTK/psfe85TgPkDdT6/Jw38KcAA8OEGNnQsRZQAAAAASUVORK5CYII=');
+   */
+    content: "\f1e0";
+    background-color: #d4d4d4;
+    color: white;
     height: 30px;
     width: 30px;
     border-bottom-left-radius: 4px;
     display: block;
     position: absolute;
     left: -31px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
 }
 
 .card {
@@ -1325,13 +1336,28 @@ a.footer-cta-button:focus {
 }
 
 .vijestOutreachIcon {
-    content: "";
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAedJREFUeNrsl0FrwkAQhac1iiBKRBRBFEEUDx78/5f2J/TgwYsQFC+KIIoiilK/oRvSmJoYJRbahZC4k+yb997sJL4MBgNbRPqS3HB6vZ5jfYG+JQgsZ7Ifr/Kc0X8WsPwD/z7gVColuVxOz1EG9zYaDalUKoFxKypou93W8/F4lNFoJIfD4eoz9Xpd78/n8/rMYrG4nXE2m3WZcs5kMqGJepUJUikS8G6306y9iVwDbTab7u/NZnPBNrLURl6YVqtVPZgjIbxkrFYrOZ1OCkpiy+VSptPpj2taUYsLTzkcx1G/a7XatzjJEE+n06GgsbaTYWpkBGA+n+s8oMTCQG9i7PUXeQGFvRn4iBKmEL018RDGhULBBfIrgcRhxXeX1Im3TDy0bVuvS6VSYIzEsOFhHrMolYt/LIzPbJ31eq3xcrmssSiFFQoMKxbDM1of22UymSgwSRA3+9hf8bGBWZTFzYAZbIzHFBL3ME+hMd9qtfTFQLOJXdX+/joej93FYA+IYYkCZv/idbfblU6no9c3A9MCDRANwq9GUN8228kUW7FYvF1qGAyHw8DYdrt1vfV7SrJGrWtyW3H24Gw2k/1+f8FSP5rP3YwmE/QOvhs4CNCrVJTK/psfe85TgPkDdT6/Jw38KcAA8OEGNnQsRZQAAAAASUVORK5CYII=');
+    /* background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFW…rP3YwmE/QOvhs4CNCrVJTK/psfe85TgPkDdT6/Jw38KcAA8OEGNnQsRZQAAAAASUVORK5CYII=); */
     height: 30px;
     width: 30px;
     border-radius: 4px;
     display: inline-block;
     vertical-align: middle;
+    background-color: #d4d4d4;
+    color: white;
+    /* height: 30px; */
+    /* width: 30px; */
+    border-bottom-left-radius: 4px;
+    /* display: block; */
+    /* position: absolute; */
+    left: -31px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
 }
 
 .bottomToolbar .count,
@@ -1357,6 +1383,12 @@ a.footer-cta-button:focus {
     vertical-align: middle;
     color: #d4d4d4;
     margin: 0 15px;
+}
+
+.vijestOutreachIcon i {
+    margin: 0px;
+    color: white;
+    font-size: 15px;
 }
 
 .otvoriGaleriju {
@@ -1411,6 +1443,7 @@ a.otvoriGaleriju:hover {
     font-family: "Raleway-Medium";
     font-size: 14px;
     color: #909090;
+    cursor: pointer;
 }
 
 .docDownload::after {
@@ -2078,6 +2111,14 @@ label.cek span.oznaka {
 .thumbnail a>img,
 .thumbnail>img {
     margin: auto;
+}
+
+.carousel-indicators {
+    z-index: 8;
+}
+
+.article-vijest {
+    overflow: visible;
 }
 
 
