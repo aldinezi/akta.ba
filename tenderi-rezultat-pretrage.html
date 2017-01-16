@@ -20,7 +20,9 @@
     <meta name="msapplication-config" content="./images/favico/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <title>Akta</title>
+    <!-- JqueryUI -->
 
+    <link href="./css/jquery-ui.min.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <!-- Font awesome icons CSS -->
@@ -350,10 +352,10 @@
                                         </li>
                                         <div id="datumTenderaPretraga" class="sub-menu collapse">
                                             <label class="cek pola">
-                                                <input type="date" class="form-control datepick akordion-input" placeholder="">
+                                                <input type="text" id='datetimepicker1'  class="form-control datepick akordion-input" placeholder="Od datuma:">
                                            </label>
                                             <label class="cek pola">
-                                                <input type="date" class="form-control datepick akordion-input" placeholder="">
+                                                <input type="text" id='datetimepicker2'  class="form-control datepick akordion-input" placeholder="Do datuma:">
                                            </label>
 
                                             <button type="submit" class="btn btn-filter-refresh">
@@ -365,11 +367,12 @@
                                                 <strong>Datum isteka</strong> <span class="arrow"></span></a>
                                         </li>
                                         <div id="datumIstekaTendera" class="sub-menu collapse">
+
                                             <label class="cek pola">
-                                                <input type="date" class="form-control datepick akordion-input" placeholder="">
+                                                <input type="text" id='datetimepicker3' class="form-control datepick akordion-input" placeholder="Od datuma:">
                                            </label>
                                             <label class="cek pola">
-                                                <input type="date" class="form-control datepick akordion-input" placeholder="">
+                                                <input type="text" id='datetimepicker4' class="form-control datepick akordion-input" placeholder="Do datuma:">
                                            </label>
 
                                             <button type="submit" class="btn btn-filter-refresh">
@@ -479,8 +482,12 @@
                                         </li>
                                         <div id="vrijednost" class="sub-menu collapse">
                                             <label class="cek">
-                                                <input type="text" name="vrijednost-ugovora" class="akordion-input" value="Unesite vrijednost"> 
-                                           </label>
+                                            <p>
+                                            <label for="amount">Vrijednost:</label>
+                                            <input type="text" id="amount" />
+                                            </p>
+                                            <div id="slider-range"></div>
+                                            </label>
                                             <button type="submit" class="btn btn-filter-refresh">
                                                 Osvježi pretragu <i class="fa fa-repeat"></i> 
                                             </button>
@@ -1005,9 +1012,9 @@
 
     <!-- Bootstrap core JavaScript  -->
     <script src="./js/jquery.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
-    </script>
+
+    <script src="./js/jquery-ui.min.js"></script>
+
     <script src="./js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>

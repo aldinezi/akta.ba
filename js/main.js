@@ -129,3 +129,38 @@ $(".akordion>.menu-content>li>a").click(function(event) {
 $("input.akordion-input[type='text']").on("click", function() {
     $(this).select();
 });
+$(document).ready(function() {
+    $("#datetimepicker1").datepicker({
+        dateFormat: "dd.mm.yy"
+    }).focus(function() {
+        $("#datetimepicker1").datepicker("show");
+    }).focus();
+    $("#datetimepicker2").datepicker({
+        dateFormat: "dd.mm.yy"
+    }).focus(function() {
+        $("#datetimepicker2").datepicker("show");
+    }).focus();
+    $("#datetimepicker3").datepicker({
+        dateFormat: "dd.mm.yy"
+    }).focus(function() {
+        $("#datetimepicker3").datepicker("show");
+    }).focus();
+    $("#datetimepicker4").datepicker({
+        dateFormat: "dd.mm.yy"
+    }).focus(function() {
+        $("#datetimepicker4").datepicker("show");
+    }).focus();
+    $(function() {
+        $("#slider-range, #slider-range2").slider({
+            range: true,
+            min: 1,
+            max: 1000000,
+            values: [1, 100000],
+            slide: function(event, ui) {
+                $("#amount").val(ui.values[0] + " KM" + " - " + ui.values[1] + " KM");
+            }
+        });
+        $("#amount").val($("#slider-range").slider("values", 0) + " KM" +
+            " - " + $("#slider-range").slider("values", 1) + " KM");
+    });
+});
