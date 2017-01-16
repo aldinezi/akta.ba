@@ -1179,7 +1179,10 @@ a.footer-cta-button:focus {
     background: none;
     padding-bottom: 20px;
 }
+.nav.tabs{
+    display: table;
 
+}   
 .tabs_module {
     background: #fff;
     padding: 15px;
@@ -1188,10 +1191,21 @@ a.footer-cta-button:focus {
 
 .tabs>li {
     line-height: 20px;
-    background: #eee;
     border-radius: 3px;
+        display: table-cell;
+        float:none;
 }
-
+.tabs>li a{
+       background: #b7b7b7;
+    width:100%;
+}
+.tabs>li>a:focus, .tabs>li>a:hover {
+    text-decoration: none;
+    background-color: rgba(75, 105, 165, 0.72);
+}
+.tabs>li+li {
+    padding-left: 3px;
+}
 .top5 {
     padding-top: 20px;
     padding-bottom: 15px;
@@ -2378,6 +2392,15 @@ label.cek span.oznaka {
     .tenderi-tabs .tabs>li>a {
         width: 100%;
     }
+    .nav.tabs{
+        display: block;
+    }
+    .tabs>li{
+            display: block;
+    }
+    .tabs>li+li {
+    padding-left: 0px;
+}
 }
 
 @media (max-width:1366px) and (min-width:991px) {
