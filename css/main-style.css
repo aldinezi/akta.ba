@@ -1271,19 +1271,23 @@ a.footer-cta-button:focus {
 }
 
 .berze .tabs>li>a {
-    color: grey;
+    color: white;
     text-transform: none;
     font-family: "Raleway-Bold";
     font-size: 15px;
 }
-
-.lista-berze .datum {
+.lista-berze{
+    padding:10px 0;
+}
+.lista-berze .label-kursnetabele {
     font-family: "RobotoCondensed-Regular";
-    font-size: 12px;
+    font-size: 15px;
     padding: 7px;
     line-height: 30px;
 }
-
+.kursna-lista-tabela thead{
+    background: rgba(0, 180, 150, 0.1);
+}
 .single_article .tabs_module {
     background: transparent;
     padding: 0;
