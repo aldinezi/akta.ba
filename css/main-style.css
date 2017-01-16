@@ -1035,7 +1035,14 @@ a.footer-cta-button:focus {
     border-top-right-radius: 4px;
     color: white !important;
 }
-
+.card-registar .card-opis-vijesti>li {
+    list-style: none;
+    overflow: auto;
+    border-bottom: 1px solid #00827D;
+}
+.card-registar .card-opis-vijesti>li h1 {
+    margin: 10px 0px;
+}
 .card-registar .module-label span {
     font-family: "RobotoCondensed-Regular";
     font-size: 34px;
@@ -1126,6 +1133,7 @@ a.footer-cta-button:focus {
     border-bottom: 1px solid #c88c00;
     
 }
+
 .card-tenderi .card-opis-vijesti>li h1 {
     margin:10px 0px;
 }
