@@ -610,7 +610,7 @@ h1.naslov-kolone:after {
 .card-opis-vijesti {
     background: white;
     padding: 25px;
-        padding-bottom: 45px;
+    padding-bottom: 45px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     position: relative;
@@ -630,13 +630,17 @@ h1.naslov-kolone:after {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.card-naslov-vijesti a{
-    color:#333;
+
+.card-naslov-vijesti a {
+    color: #333;
 }
-.card-naslov-vijesti a:hover,.card-naslov-vijesti a:focus{
-    text-decoration:none;
-    color:#23527c;
+
+.card-naslov-vijesti a:hover,
+.card-naslov-vijesti a:focus {
+    text-decoration: none;
+    color: #23527c;
 }
+
 .card-slika-vijesti {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1035,14 +1039,17 @@ a.footer-cta-button:focus {
     border-top-right-radius: 4px;
     color: white !important;
 }
+
 .card-registar .card-opis-vijesti>li {
     list-style: none;
     overflow: auto;
     border-bottom: 1px solid #00827D;
 }
+
 .card-registar .card-opis-vijesti>li h1 {
     margin: 10px 0px;
 }
+
 .card-registar .module-label span {
     font-family: "RobotoCondensed-Regular";
     font-size: 34px;
@@ -1131,12 +1138,12 @@ a.footer-cta-button:focus {
     list-style: none;
     overflow: auto;
     border-bottom: 1px solid #c88c00;
-    
 }
 
 .card-tenderi .card-opis-vijesti>li h1 {
-    margin:10px 0px;
+    margin: 10px 0px;
 }
+
 .card-registar.card-tenderi .card-count-label::before {
     background: #c88c00;
 }
@@ -1196,10 +1203,11 @@ a.footer-cta-button:focus {
     background: none;
     padding-bottom: 20px;
 }
-.nav.tabs{
-    display: table;
 
-}   
+.nav.tabs {
+    display: table;
+}
+
 .tabs_module {
     background: #fff;
     padding: 15px;
@@ -1209,20 +1217,25 @@ a.footer-cta-button:focus {
 .tabs>li {
     line-height: 20px;
     border-radius: 3px;
-        display: table-cell;
-        float:none;
+    display: table-cell;
+    float: none;
 }
-.tabs>li a{
-       background: #b7b7b7;
-    width:100%;
+
+.tabs>li a {
+    background: #b7b7b7;
+    width: 100%;
 }
-.tabs>li>a:focus, .tabs>li>a:hover {
+
+.tabs>li>a:focus,
+.tabs>li>a:hover {
     text-decoration: none;
     background-color: rgba(75, 105, 165, 0.72);
 }
+
 .tabs>li+li {
     padding-left: 3px;
 }
+
 .top5 {
     padding-top: 20px;
     padding-bottom: 15px;
@@ -1276,18 +1289,22 @@ a.footer-cta-button:focus {
     font-family: "Raleway-Bold";
     font-size: 15px;
 }
-.lista-berze{
-    padding:10px 0;
+
+.lista-berze {
+    padding: 10px 0;
 }
+
 .lista-berze .label-kursnetabele {
     font-family: "RobotoCondensed-Regular";
     font-size: 15px;
     padding: 7px;
     line-height: 30px;
 }
-.kursna-lista-tabela thead{
+
+.kursna-lista-tabela thead {
     background: rgba(0, 180, 150, 0.1);
 }
+
 .single_article .tabs_module {
     background: transparent;
     padding: 0;
@@ -1426,10 +1443,16 @@ a.footer-cta-button:focus {
     font-size: 15px;
 }
 
+.galerija>img {
+    cursor: zoom-in;
+    cursor: -webkit-zoom-in;
+}
+
 .otvoriGaleriju {
     padding: 15px;
     color: white;
     background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
 }
 
 a.otvoriGaleriju:focus,
@@ -2234,10 +2257,12 @@ label.cek span.oznaka {
 .ui-widget.ui-widget-content {
     margin: 25px 0px;
 }
-.card.card-vijest.card-registar.card-tenderi div p.card-kategorija{
-    margin:25px 0 0;
+
+.card.card-vijest.card-registar.card-tenderi div p.card-kategorija {
+    margin: 25px 0 0;
 }
-.galerija .modal-dialog{
+
+.galerija .modal-dialog {
     position: relative;
     display: table;
     overflow-y: auto;
@@ -2245,22 +2270,27 @@ label.cek span.oznaka {
     width: auto;
     min-width: 300px;
 }
-.carousel-caption{
-    display:none;
+
+.carousel-caption {
+    display: none;
 }
+
 .modal-footer {
     padding: 15px;
     text-align: left;
     border-top: none;
-        font-family: "Raleway-Medium",Helvetica,Arial,sans-serif;
+    font-family: "Raleway-Medium", Helvetica, Arial, sans-serif;
 }
-.modal-content{
+
+.modal-content {
     border-radius: 2px;
 }
-.modal-title{
-        text-align: left;
-    font-family: "Raleway-Bold",Helvetica,Arial,sans-serif;
+
+.modal-title {
+    text-align: left;
+    font-family: "Raleway-Bold", Helvetica, Arial, sans-serif;
 }
+
 ol#carousel-thumbs {
     width: 100%;
     position: relative;
@@ -2268,14 +2298,110 @@ ol#carousel-thumbs {
     margin: 0;
     bottom: 0;
 }
+
 ol#carousel-thumbs>li {
     width: 100px;
     height: 100px;
     display: inline-block;
     background-size: cover !important;
 }
+
+#exTabNajTenderi.firmeVijesti .tabs>li>a,
 #exTabFirmeiVijesti.firmeVijesti .tabs>li>a {
-color: white;}
+    color: white;
+}
+
+input#amount:focus {
+    outline-color: transparent;
+}
+
+.datum-tendera {
+    margin-right: 7px;
+}
+
+.tender-lista.lista-rezultati {
+    padding-right: 100px;
+}
+
+.lista-rezultata-pretrage>li:hover {
+    background: #eee;
+}
+
+.lista-rezultata-pretrage>li {
+    padding-top: 10px;
+    margin-top: 0px;
+    padding-left: 7px;
+    position: relative;
+}
+
+.list-pagination {
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.list-pagination>li {
+    display: inline-block;
+    border-bottom: none;
+}
+
+.list-pagination>li>button {
+    background: #d0cdc7;
+    color: black;
+}
+
+.list-pagination>li>button:hover,
+.list-pagination>li>button:focus {
+    background: #00b496;
+    color: white;
+}
+
+.rezultati-ikone {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100px;
+    padding: 20px 0;
+}
+
+.kratak-rok {
+    font-family: RobotoCondensed-Regular, arial, sans-serif;
+    font-size: 10px;
+    line-height: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    color: red;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+}
+
+.kratak-rok.upozorenje {
+    opacity: 1;
+}
+
+.bookmark-tendera {
+    display: inline-block;
+    line-height: 18px;
+    vertical-align: top;
+    font-size: 18px;
+    float: right;
+    margin-right: 15px;
+}
+
+.bookmark-tendera a {
+    color: rgba(208, 205, 199, 0.5);
+}
+
+.bookmark-tendera a:hover {
+    color: rgba(208, 205, 199, 1);
+}
+
+.bookmark-tendera a:focus {
+    color: #00b496;
+}
+
+
 /* - Responsive breakpoints - */
 
 @media (min-width:1366px) {
@@ -2453,15 +2579,15 @@ color: white;}
     .tenderi-tabs .tabs>li>a {
         width: 100%;
     }
-    .nav.tabs{
+    .nav.tabs {
         display: block;
     }
-    .tabs>li{
-            display: block;
+    .tabs>li {
+        display: block;
     }
     .tabs>li+li {
-    padding-left: 0px;
-}
+        padding-left: 0px;
+    }
 }
 
 @media (max-width:1366px) and (min-width:991px) {
