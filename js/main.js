@@ -98,12 +98,32 @@ var $gridpovezanih = $(".wrap-povezanih-vijesti").imagesLoaded(function() {
 });
 
 $('document').ready(function() {
+    var $naslov=$(".modal-title");
+    var $opis=$("#modalDescription");
+    var nazivSlike= $(".item.active .carousel-caption h3").text();
+    var opisSlike= $(".item.active .carousel-caption p").text();
+    $naslov.text(nazivSlike);
+    $opis.text(opisSlike);
     var url = $('.item.active').next().find("img").attr('data-src');
     $('.item.active').next().find("img").attr("src", url);
     $('#slikeCarousel').on('slid.bs.carousel', function(e) {
         var url = $('.item.active').next().find("img").attr('data-src');
         $('.item.active').next().find("img").attr("src", url); //set value : src = url
+        var naslovSlike=$(".item.active .carousel-caption h3").text();
+        
+    var opisSlike= $(".item.active .carousel-caption p").text();
+         $naslov.text(naslovSlike);
+          $opis.text(opisSlike);
     });
+    var brojSlajdova=$("#slikeCarousel>.carousel-inner>.item").length;
+    console.log("broj slajdova je "+brojSlajdova);   
+    $( "#slikeCarousel>.carousel-inner>.item" ).each(function( index ) {
+        var urlSlike=$( this ).find("img").attr('data-src');
+        var element ="<li data-target='#slikeCarousel' data-slide-to="+index+" style='background:url("+urlSlike+")'></li>";
+        
+        $( "#carousel-thumbs" ).append(element);
+     console.log( index + ": "+urlSlike );
+   });
 });
 $("#Pops").popover({
     html: true,
