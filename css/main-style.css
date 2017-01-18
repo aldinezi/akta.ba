@@ -2402,6 +2402,156 @@ input#amount:focus {
 }
 
 
+/* - Registar -*/
+
+.main_nav.registar>li>a,
+.user_menu>li>a.registar {
+    color: #00827D;
+}
+
+.galerija.registar-header {
+    min-height: 460px;
+    background: url(../images/registar-pretraga-head.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.galerija.registar-header h1 {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.registar-counter-naslov {
+    padding: 0 30px;
+    color: white;
+}
+
+.card-registar-broj {
+    background: #00827d;
+    padding-top: 10px;
+}
+
+.registar-counter-broj {
+    padding: 10px 30px;
+    display: inline-block;
+    width: calc(100% - 60px);
+    margin: 30px;
+    border-radius: 0px;
+    background: white;
+}
+
+.registar-counter-broj .card-naslov-vijesti {
+    text-align: center;
+    font-family: RobotoCondensed-Bold;
+    font-size: 4rem;
+}
+
+.single_article .tabs_module.registar-vijesti-widget {
+    background: white;
+    padding: 15px;
+}
+
+.module-label.registar-nove {
+    background: #00827d;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: white;
+}
+
+.nove-obrade .tab-pane .card-opis-vijesti li h1 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.nove-obrade .card-kategorija {
+    color: #333333;
+    font-family: "Raleway-Bold";
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.nove-obrade .card-opis-vijesti li {
+    border-bottom: 1px solid #00827d;
+}
+
+.registar-forma-pretrage input {
+    box-shadow: none;
+    background: #efeff0;
+    border: transparent;
+    border-radius: 0;
+    margin-bottom: 25px;
+}
+
+.registar-forma-pretrage input:focus {
+    border-color: transparent;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.registar-forma-pretrage .ui-selectmenu-button {
+    box-shadow: none;
+    background: #efeff0;
+    border: transparent;
+    border-radius: 0;
+    margin-bottom: 25px;
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+}
+
+.registar-forma-premium .card-button {
+    margin-right: auto;
+    text-align: center;
+    margin-top: 30px;
+    background: #00B496;
+    padding: 10px;
+    padding-right: 65px;
+    max-width: initial;
+    line-height: 55px;
+}
+
+.registar-forma-premium.premium .card-button {
+    background: url(../assets/premium-pretraga-ico.png), linear-gradient(#00B496, #00B496);
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.registar-forma-premium.premium-plus .card-button {
+    background: url(../assets/premium-plus-pretraga-ico.png), linear-gradient(#00B496, #00B496);
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.registar-forma-premium .card-button-tekst {
+    color: white;
+    font-family: "Raleway-Semibold";
+    background: none;
+    font-size: 20px;
+}
+
+.registar-forma-premium .card-button:hover .card-button-tekst,
+.registar-forma-premium .card-button:focus .card-button-tekst {
+    background: none;
+}
+
+
 /* - Responsive breakpoints - */
 
 @media (min-width:1366px) {

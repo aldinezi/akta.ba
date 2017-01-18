@@ -125,7 +125,8 @@ $('document').ready(function() {
     $(".galerija>img").click(function(evet) {
         $(".otvoriGaleriju").click();
     });
-
+    //  $("#selectmenu").selectmenu();    
+    $('[name="drzava-registar"]').selectmenu();
 });
 $("#Pops").popover({
     html: true,
