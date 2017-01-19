@@ -126,7 +126,7 @@ $('document').ready(function() {
         $(".otvoriGaleriju").click();
     });
     //  $("#selectmenu").selectmenu();    
-    $('[name="drzava-registar"]').selectmenu();
+    $('[name="drzava-registar"],[name="cpvKodovi"],[name="godinePP"],[name="sveobuhvatnaDobit"]').selectmenu();
 });
 $("#Pops").popover({
     html: true,

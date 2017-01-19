@@ -2337,6 +2337,8 @@ input#amount:focus {
 .list-pagination {
     margin-bottom: 0;
     text-align: right;
+    padding-top: 15px;
+    padding-right: 7px;
 }
 
 .list-pagination>li {
@@ -2407,6 +2409,10 @@ input#amount:focus {
 .main_nav.registar>li>a,
 .user_menu>li>a.registar {
     color: #00827D;
+}
+
+.main_nav.registar>li>a.active {
+    color: #000;
 }
 
 .galerija.registar-header {
@@ -2549,6 +2555,104 @@ input#amount:focus {
 .registar-forma-premium .card-button:hover .card-button-tekst,
 .registar-forma-premium .card-button:focus .card-button-tekst {
     background: none;
+}
+
+#djelatnosti label.cek :checked~span.oznaka,
+label.cek.registarski :checked~span.oznaka {
+    color: #00B496;
+}
+
+#djelatnosti label.cek :checked+span,
+label.cek.registarski :checked+span {
+    background: #00B496;
+}
+
+.akordion .menu-content>li.registarski {
+    background: #00B496;
+}
+
+.akordion .menu-content>li.registarski a {
+    color: white;
+}
+
+.zemlje {
+    display: block;
+}
+
+#selectmenu-button {
+    margin: 10px 0;
+    padding: 7px;
+    border-radius: 4px;
+    font-family: RobotoCondensed-Regular;
+    font-weight: normal;
+    color: #606060;
+}
+
+.zemlje #selectmenu-button {
+    width: 100%;
+}
+
+.ui-widget.ui-widget-content {
+    margin: 0px 0px;
+}
+
+.lista-rezultata-pretrage.registar-firme>li {
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+}
+
+.lista-rezultata-pretrage.registar-firme li>div>button {
+    background: #d0cdc7;
+    color: white;
+    padding: 7px;
+    font-size: 14px;
+    font-family: "RobotoCondensed-Regular";
+}
+
+.lista-rezultata-pretrage.registar-firme li>div>button:hover,
+.lista-rezultata-pretrage.registar-firme li>div>button:focus {
+    color: white;
+    background: #00B496;
+}
+
+.sacuvane-firme-btn {
+    text-align: right;
+    padding-right: 7px;
+}
+
+.adresaFirme {
+    padding: 7px;
+}
+
+.dugmadFirme {
+    padding: 7px;
+    text-align: right;
+}
+
+.registar-rezultati-adresa {
+    margin: 0;
+    font-family: "RobotoCondensed-Regular";
+}
+
+.imeFirme a {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    color: #d0cdc7;
+}
+
+.imeFirme a:hover,
+.imeFirme a:focus {
+    color: #00B496;
+}
+
+.registar-rezultati-imeFirme {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    font-family: "Raleway-Bold";
+    font-size: 20px;
 }
 
 
