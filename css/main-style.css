@@ -2655,8 +2655,185 @@ label.cek.registarski :checked+span {
     font-size: 20px;
 }
 
+.brziPregledFirme .modal-dialog {}
+
+.brziPregledFirme .modal-content {
+    background: #E5E5E5;
+}
+
+.brziPregledFirme .modal-body {
+    padding: 35px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.brziPregledFirme .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    background: grey;
+    color: white;
+    text-shadow: none;
+    padding: 4px 8px;
+    font-size: 25px;
+}
+
+.brziPregledFirme .logo-firme {
+    margin: 0;
+    padding: 15px;
+}
+
+.brziPregledFirme .logo-firme img {
+    width: 100%;
+}
+
+.brziPregledFirme .podaci-o-firmi {
+    margin: 0;
+    padding: 15px;
+}
+
+.brziPregledFirme .grid-contents {
+    padding: 15px;
+    background: white;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.podaci-o-firmi a.star {
+    float: right;
+    color: #ccc;
+    font-size: 18px;
+}
+
+.podaci-o-firmi a.star:hover,
+.podaci-o-firmi a.star:focus {
+    color: #00B496;
+}
+
+.tabela-ofirmi {
+    margin: 14px 0;
+}
+
+.tabela-ofirmi td:first-child {
+    font-weight: bold;
+    padding: 2px 15px 2px 0;
+    text-transform: uppercase;
+}
+
+.djelatnost .tabela-ofirmi td:first-child {
+    color: #00B496;
+    padding: 0;
+    vertical-align: top;
+    text-align: right;
+}
+
+.tabela-ofirmi td a+a {
+    padding-left: 15px;
+}
+
+.pravne-info .registar-rezultati-imeFirme {
+    color: #999999;
+}
+
+.djelatnost .tabela-ofirmi td:first-child:after {
+    content: "-";
+    color: #333;
+    font-weight: 300;
+    padding: 0 7px;
+}
+
+.djelatnost .grid-contents {
+    background: url(../assets/firme-djelatnost-bg.png), -webkit-linear-gradient(white, white);
+    background: url(../assets/firme-djelatnost-bg.png), linear-gradient(white, white);
+    background-size: contain;
+    background-position: right -1px;
+    background-repeat: no-repeat;
+}
+
+.broj-zaposlenih .grid-contents {
+    background: url(../assets/firme-zaposleni-bg.png), -webkit-linear-gradient(white, white);
+    background: url(../assets/firme-zaposleni-bg.png), linear-gradient(white, white);
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.bank-racuni .grid-contents {
+    background: url(../assets/firme-racun-bg.png), -webkit-linear-gradient(white, white);
+    background: url(../assets/firme-racun-bg.png), linear-gradient(white, white);
+    background-size: contain;
+    background-position: right -1px;
+    background-repeat: no-repeat;
+}
+
+.odgovorni .grid-contents {
+    background: url(../assets/firme-odgovornolice-bg.png), -webkit-linear-gradient(white, white);
+    background: url(../assets/firme-odgovornolice-bg.png), linear-gradient(white, white);
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.podaci-o-firmi.bank-racuni hr {
+    margin: 7px 0;
+}
+
+.bank-racuni .label-racuni,
+.broj-radnika {
+    color: #999999;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.pozicija-odgovornog-lica,
+.odgovorno-label {
+    color: #999999;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.grid-contents.footer-modala {
+    background: transparent;
+}
+
+.plavi {
+    color: #00827D;
+}
+
+.crveni {
+    color: #BD555E;
+}
+
+p.label-racuni .brojke {
+    font-size: 50px;
+}
+
+.label-racuni.brojke .plavi,
+.broj-radnika.plavi,
+.odgovorni .odgovorno-lice {
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.broj-radnika.label-zaposlenih {
+    text-align: left;
+}
+
 
 /* - Responsive breakpoints - */
+
+@media (min-width:991px) {
+    .okvir-boksova {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+}
 
 @media (min-width:1366px) {
     .container {

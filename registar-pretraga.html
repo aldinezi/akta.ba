@@ -577,7 +577,7 @@
                                         <p class="registar-rezultati-adresa"><strong>Adresa:</strong> Dolor sit amet, consecur egestas quis<br>Dolor sit amet, consecur egestas quis</p>
                                     </div>
                                     <div class="col-md-4 nopadding  dugmadFirme">
-                                        <button type="submit" class="btn btn-filter-refresh">BRZI PREGLED</button>
+                                        <button type="submit" class="btn btn-filter-refresh brziPregled" data-toggle="modal" data-target="#firma1">BRZI PREGLED</button>
                                         <button type="submit" class="btn btn-filter-refresh">FULL PROFIL FIRME</button>
                                     </div>
                                 </li>
@@ -666,6 +666,145 @@
                                     <li><button type="submit" class="btn btn-filter-refresh">2</button></li>
                                     <li><button type="submit" class="btn btn-filter-refresh">3</button></li>
                                 </ul>
+
+                                <!-- Modal brzi prikaz firme -->
+                                <div id="firma1" class="modal fade brziPregledFirme" role="dialog">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="container-fluid okvir-boksova">
+                                                        <div class="col-sm-4 col-md-3 logo-firme">
+                                                            <!-- ./images/firma-logotip.png -->
+                                                            <div class="grid-contents">
+                                                                <img class="img img-responsive" src="http://placehold.it/150x150">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-8 col-md-9 podaci-o-firmi">
+                                                            <div class="grid-contents">
+                                                                <h1 class="registar-rezultati-imeFirme">KONZUM d.o.o. Sarajevo </h1>
+                                                                <a href="#" class="star"><i class="fa fa-star"></i></a>
+                                                                <table class="tabela-ofirmi">
+                                                                    <tr>
+                                                                        <td>NAZIV</td>
+                                                                        <td>Konzum trgovina na veliko i malo d.o.o. Sarajevo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>ADRESA</td>
+                                                                        <td>Rajlovačka bb</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>MJESTO</td>
+                                                                        <td>71000 Sarajevo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>WEB</td>
+                                                                        <td>
+                                                                            <a href="http://www.konzum.ba" target="_blank">www.konzum.ba</a>
+                                                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="container-fluid okvir-boksova">
+                                                        <div class="col-sm-12 col-md-6 podaci-o-firmi pravne-info">
+                                                            <div class="grid-contents">
+                                                                <h1 class="registar-rezultati-imeFirme">Pravne informacije </h1>
+                                                                <table class="tabela-ofirmi">
+                                                                    <tr>
+                                                                        <td>Oblik svojine</td>
+                                                                        <td>Privatna</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Vlasnička strukura</td>
+                                                                        <td>100% Konzum d.d. Zagreb</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>ID broj</td>
+                                                                        <td>1234567890</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>PDV broj</td>
+                                                                        <td>1234567890</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Datum osnivanja</td>
+                                                                        <td>12.12.2000.</td>
+                                                                    </tr>
+
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-6 podaci-o-firmi pravne-info djelatnost">
+                                                            <div class="grid-contents">
+                                                                <h1 class="registar-rezultati-imeFirme">Djelatnost</h1>
+                                                                <table class="tabela-ofirmi">
+                                                                    <tr>
+                                                                        <td>46.39</td>
+                                                                        <td>Nespecijalizirana trgovina na veliko hranom, pićima i duhanskim proizvodima</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>51.170</td>
+                                                                        <td>Posredovanje u trgovini hranom, pićem i duhanom</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>51.390</td>
+                                                                        <td>Nespecijalizirana trgovina na veliko hranom, pićima i duhanom</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>52.110</td>
+                                                                        <td>Trgovina na malo u nespecijaliziranim </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="container-fluid okvir-boksova">
+                                                        <div class="col-sm-12 col-md-3 podaci-o-firmi broj-zaposlenih">
+                                                            <div class="grid-contents">
+                                                                <p class="broj-radnika plavi">4380</p>
+                                                                <p class="broj-radnika label-zaposlenih">zaposlenih<br>radnika</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-6 podaci-o-firmi odgovorni">
+                                                            <div class="grid-contents">
+                                                                <p class="odgovorno-label">Odgovorno lice</p>
+                                                                <h1 class="odgovorno-lice plavi">David Dolinar</h1>
+                                                                <p class="pozicija-odgovornog-lica">direktor</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-3 podaci-o-firmi bank-racuni">
+                                                            <div class="grid-contents">
+                                                                <p class="label-racuni">bankovni računi</p>
+                                                                <hr>
+                                                                <p class="label-racuni brojke"><span class="plavi">15</span> / <span class="crveni">0</span></p>
+                                                                <hr>
+                                                                <p class="label-racuni opisi"><span class="plavi">aktivni</span> / <span class="crveni">blokirani</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="container-fluid okvir-boksova">
+                                                        <div class="col-sm-12 col-md-12 text-center text-uppercase">
+                                                            <div class="grid-contents footer-modala">
+                                                                <button type="submit" class="btn btn-filter-refresh">POGLEDAJ PROFIL FIRME</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
                             </div>
                         </div>
 
