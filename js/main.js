@@ -186,4 +186,14 @@ $(document).ready(function() {
         $("#amount").val($("#slider-range").slider("values", 0) + " KM" +
             " - " + $("#slider-range").slider("values", 1) + " KM");
     });
+    $(".profil-card.opcije>li>a").on("click", function() {
+        event.preventDefault();
+        var klasa = $(this).attr("data-target");
+        $('.profil-centar').children().not('.tab-podaci').not('.' + klasa).fadeOut("fast", function() {
+            $('.' + klasa).fadeIn(400);
+        });
+
+
+
+    });
 });
