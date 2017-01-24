@@ -1341,7 +1341,8 @@ a.footer-cta-button:focus {
     color: white;
 }
 
-.firmeVijesti .viseVijesti {
+.firmeVijesti .viseVijesti,
+#profil-firme-tabs .viseVijesti {
     font-family: "Raleway-Bold";
     font-size: 19px;
     text-align: center;
@@ -1350,6 +1351,11 @@ a.footer-cta-button:focus {
     display: block;
     margin-top: 15px;
     cursor: pointer;
+}
+
+#profil-firme-tabs .viseVijesti {
+    margin-bottom: 30px;
+    margin-top: 0px;
 }
 
 .viseVijesti:hover,
@@ -2769,13 +2775,15 @@ label.cek.registarski :checked+span {
     background-position: right bottom;
     background-repeat: no-repeat;
 }
-.neto-promet .profil-card{
+
+.neto-promet .profil-card {
     background: url(../assets/firme-neto-bg.png), -webkit-linear-gradient(white, white);
     background: url(../assets/firme-neto-bg.png), linear-gradient(white, white);
     background-size: contain;
     background-position: right bottom;
     background-repeat: no-repeat;
 }
+
 .bank-racuni .grid-contents {
     background: url(../assets/firme-racun-bg.png), -webkit-linear-gradient(white, white);
     background: url(../assets/firme-racun-bg.png), linear-gradient(white, white);
@@ -2849,53 +2857,119 @@ p.label-racuni .brojke {
 .profil-card .tabela-ofirmi td {
     font-size: 13px;
 }
+
 .podaci-o-firmi.bank-racuni .profil-card hr {
     margin: 3px 0;
 }
 
-/* - grafikon css - */
-.morris-hover{position:absolute;z-index:1000}
-.morris-hover.morris-default-style{
-    border-radius:4px;
-    padding:6px;color:#333;
-    background:white;font-family:sans-serif;font-size:10px;text-align:center;
-    transition: all 0.3s ease-in;}
-.morris-hover.morris-default-style .morris-hover-row-label{font-weight:bold;margin:0.25em 0}
-.morris-hover.morris-default-style .morris-hover-point{white-space:nowrap;margin:0.1em 0;color:#333 !important;}
 
-#line-chart{
-    background:#00B496;
-    max-height:250px;
+/* - grafikon css - */
+
+.morris-hover {
+    position: absolute;
+    z-index: 1000
 }
+
+.morris-hover.morris-default-style {
+    border-radius: 4px;
+    padding: 6px;
+    color: #333;
+    background: white;
+    font-family: sans-serif;
+    font-size: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+
+.morris-hover.morris-default-style .morris-hover-row-label {
+    font-weight: bold;
+    margin: 0.25em 0
+}
+
+.morris-hover.morris-default-style .morris-hover-point {
+    white-space: nowrap;
+    margin: 0.1em 0;
+    color: #333 !important;
+}
+
+#line-chart {
+    background: #00B496;
+    max-height: 250px;
+}
+
+
 /* - sidebar desni - */
-.profil-sidebar-desni h1{
-    color:#999;
+
+.profil-sidebar-desni h1 {
+    color: #999;
 }
-ul.povezana-drustva,ul.povezana-drustva li{
-    list-style:none;
-    padding-left:0px;
+
+ul.povezana-drustva,
+ul.povezana-drustva li {
+    list-style: none;
+    padding-left: 0px;
 }
-ul.povezana-drustva li>span{
+
+ul.povezana-drustva li>span {
     color: #00B496;
-    font-weight:bold;
+    font-weight: bold;
 }
+
+
 /* sidebar lijevi */
-.profil-sidebar-lijevi .profil-card.opcije li{
-    list-style:none;
-    margin-bottom:15px;
+
+.profil-sidebar-lijevi .profil-card.opcije li {
+    list-style: none;
+    margin-bottom: 15px;
 }
-.profil-sidebar-lijevi .profil-card.opcije li>a{
-    text-transform:uppercase;
-    font-weight:bold;
-        color: #999999;
+
+.profil-sidebar-lijevi .profil-card.opcije li>a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #999999;
     font-size: 12px;
 }
+
 .profil-sidebar-lijevi .profil-card.opcije li>a:focus,
 .profil-sidebar-lijevi .profil-card.opcije li>a:hover,
-.profil-sidebar-lijevi .profil-card.opcije li>a.active{
-    text-decoration:none;
+.profil-sidebar-lijevi .profil-card.opcije li>a.active {
+    text-decoration: none;
     color: #00827D;
 }
+
+.profil-sidebar-lijevi .profil-card.opcije button {
+    padding: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+}
+
+#profil-firme-tabs {
+    padding: 2px;
+}
+
+#profil-firme-tabs .tab-content {
+    padding: 30px 13px 0;
+}
+
+#profil-firme-tabs .tabs {
+    display: block;
+}
+
+#profil-firme-tabs .tabs li {
+    width: calc(100% /4);
+    display: inline-block;
+    margin: 0;
+    float: left;
+}
+
+#profil-firme-tabs .card-wrap {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+
 /* - Responsive breakpoints - */
 
 @media (min-width:991px) {
@@ -2904,9 +2978,11 @@ ul.povezana-drustva li>span{
         display: -ms-flexbox;
         display: flex;
     }
-    .broj-zaposlenih .profil-card,.neto-promet .profil-card,.odgovorni .profil-card,.bank-racuni .profil-card{
-            min-height: 150px;
-
+    .broj-zaposlenih .profil-card,
+    .neto-promet .profil-card,
+    .odgovorni .profil-card,
+    .bank-racuni .profil-card {
+        min-height: 150px;
     }
 }
 
