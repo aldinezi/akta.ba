@@ -2706,12 +2706,15 @@ label.cek.registarski :checked+span {
     border-radius: 4px;
 }
 
-.podaci-o-firmi a.star {
+.podaci-o-firmi a.star,
+.profil-card a.star {
     float: right;
     color: #ccc;
     font-size: 18px;
 }
 
+.profil-card a.star:hover,
+.profil-card a.star:focus,
 .podaci-o-firmi a.star:hover,
 .podaci-o-firmi a.star:focus {
     color: #00B496;
@@ -2749,7 +2752,8 @@ label.cek.registarski :checked+span {
     padding: 0 7px;
 }
 
-.djelatnost .grid-contents {
+.djelatnost .grid-contents,
+.djelatnost .profil-card {
     background: url(../assets/firme-djelatnost-bg.png), -webkit-linear-gradient(white, white);
     background: url(../assets/firme-djelatnost-bg.png), linear-gradient(white, white);
     background-size: contain;
@@ -2757,14 +2761,21 @@ label.cek.registarski :checked+span {
     background-repeat: no-repeat;
 }
 
-.broj-zaposlenih .grid-contents {
+.broj-zaposlenih .grid-contents,
+.broj-zaposlenih .profil-card {
     background: url(../assets/firme-zaposleni-bg.png), -webkit-linear-gradient(white, white);
     background: url(../assets/firme-zaposleni-bg.png), linear-gradient(white, white);
     background-size: contain;
     background-position: right bottom;
     background-repeat: no-repeat;
 }
-
+.neto-promet .profil-card{
+    background: url(../assets/firme-neto-bg.png), -webkit-linear-gradient(white, white);
+    background: url(../assets/firme-neto-bg.png), linear-gradient(white, white);
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
 .bank-racuni .grid-contents {
     background: url(../assets/firme-racun-bg.png), -webkit-linear-gradient(white, white);
     background: url(../assets/firme-racun-bg.png), linear-gradient(white, white);
@@ -2773,6 +2784,7 @@ label.cek.registarski :checked+span {
     background-repeat: no-repeat;
 }
 
+.odgovorni .profil-card,
 .odgovorni .grid-contents {
     background: url(../assets/firme-odgovornolice-bg.png), -webkit-linear-gradient(white, white);
     background: url(../assets/firme-odgovornolice-bg.png), linear-gradient(white, white);
@@ -2828,7 +2840,62 @@ p.label-racuni .brojke {
     text-align: left;
 }
 
+.profil-card {
+    padding: 15px;
+    background: white;
+    border-radius: 4px;
+}
 
+.profil-card .tabela-ofirmi td {
+    font-size: 13px;
+}
+.podaci-o-firmi.bank-racuni .profil-card hr {
+    margin: 3px 0;
+}
+
+/* - grafikon css - */
+.morris-hover{position:absolute;z-index:1000}
+.morris-hover.morris-default-style{
+    border-radius:4px;
+    padding:6px;color:#333;
+    background:white;font-family:sans-serif;font-size:10px;text-align:center;
+    transition: all 0.3s ease-in;}
+.morris-hover.morris-default-style .morris-hover-row-label{font-weight:bold;margin:0.25em 0}
+.morris-hover.morris-default-style .morris-hover-point{white-space:nowrap;margin:0.1em 0;color:#333 !important;}
+
+#line-chart{
+    background:#00B496;
+    max-height:250px;
+}
+/* - sidebar desni - */
+.profil-sidebar-desni h1{
+    color:#999;
+}
+ul.povezana-drustva,ul.povezana-drustva li{
+    list-style:none;
+    padding-left:0px;
+}
+ul.povezana-drustva li>span{
+    color: #00B496;
+    font-weight:bold;
+}
+/* sidebar lijevi */
+.profil-sidebar-lijevi .profil-card.opcije li{
+    list-style:none;
+    margin-bottom:15px;
+}
+.profil-sidebar-lijevi .profil-card.opcije li>a{
+    text-transform:uppercase;
+    font-weight:bold;
+        color: #999999;
+    font-size: 12px;
+}
+.profil-sidebar-lijevi .profil-card.opcije li>a:focus,
+.profil-sidebar-lijevi .profil-card.opcije li>a:hover,
+.profil-sidebar-lijevi .profil-card.opcije li>a.active{
+    text-decoration:none;
+    color: #00827D;
+}
 /* - Responsive breakpoints - */
 
 @media (min-width:991px) {
@@ -2836,6 +2903,10 @@ p.label-racuni .brojke {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+    }
+    .broj-zaposlenih .profil-card,.neto-promet .profil-card,.odgovorni .profil-card,.bank-racuni .profil-card{
+            min-height: 150px;
+
     }
 }
 
