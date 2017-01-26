@@ -3003,6 +3003,12 @@ ul.povezana-drustva li>span {
     white-space: nowrap;
 }
 
+#tabela-rezultata tbody>tr>td>.bookmark-tendera {
+    text-align: center;
+    width: 100%;
+    float: none;
+}
+
 #tabela-rezultata tbody tr.skriven {
     display: none;
 }
@@ -3042,7 +3048,9 @@ a.paginate_button.current {
     color: white;
 }
 
-#tabela-rezultata_length, #tabela-rezultata tr>td:last-child, #tabela-rezultata tr>th:last-child,
+#tabela-rezultata_length,
+#tabela-rezultata tr>td:last-child,
+#tabela-rezultata tr>th:last-child,
 #tabela-rezultata_filter {
     display: none;
 }

@@ -205,7 +205,7 @@ $(document).ready(function() {
         } else {
             zadnjakolona.text(0);
         }
-        oTable.row(red).invalidate();      
+        oTable.row(red).invalidate();
 
     });
 
@@ -214,12 +214,20 @@ $(document).ready(function() {
 
     $.fn.dataTable.moment('DD.MM.YYYY.');
     $.fn.dataTable.moment('DD.MM.YYYY.');
+    var oldStart = 0;
     var oTable = $('#tabela-rezultata').DataTable({
         searching: true,
         "paging": true,
         "info": false,
         "pageLength": 15,
         "pagingType": "numbers",
+        "fnDrawCallback": function(o) {
+            if (o._iDisplayStart != oldStart) {
+                var targetOffset = $('#tabela-rezultata').offset().top - 350;
+                $('html,body').animate({ scrollTop: targetOffset }, 500);
+                oldStart = o._iDisplayStart;
+            }
+        }
     });
 
     $("#sacuvani-tenderi").click(function() {
@@ -236,12 +244,11 @@ $(document).ready(function() {
             .draw();
     });
 
-    function paginateScroll() {
-        $('html').scrollTo('#tabela-rezultata');
-       /* $('#tabela-rezultata').animate({            
-            scrollTop: udaljenost
-        }, 200);*/
-        $("th:first-child").focus();
-    }
-    $(".paginate_button").bind('click', paginateScroll);
+    /*    function paginateScroll() {
+            $('html').animate({
+                scrollTop: $('#tabela-rezultata').offset().top
+            }, 200);
+        }
+        $(".paginate_button").bind('click', paginateScroll);*/
+
 });
