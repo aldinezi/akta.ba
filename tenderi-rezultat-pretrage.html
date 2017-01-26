@@ -32,7 +32,6 @@
 
     <!-- Custom styles for this template -->
     <link href="./css/main-style.css" rel="stylesheet">
-    <link href="./css/owl.carousel.css" rel="stylesheet">
 
     <script src="./js/ie-emulation-modes-warning.js"></script>
 
@@ -626,116 +625,223 @@
                         <div class="card-opis-vijesti">
                             <h1 class="card-naslov-vijesti">Rezultati pretrage</h1>
                             <div class="form-group nopadding">
-                                <div class="col-md-4 nopadding">
-                                    <select class="form-control" placeholder="Poredaj po">
-                                            <option value="poredaj">Poredaj po</option>
-                                            <option value="poredaj">Poredaj po</option>
-                                            <option value="poredaj">Poredaj po</option>
-                                            <option value="poredaj">Poredaj po</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4 pull-right nopadding">
-                                    <button type="submit" class="btn btn-filter-refresh">
+
+                                <div class="col-md-12 nopadding text-right">
+                                    <button type="submit" class="btn btn-filter-refresh" id="sacuvani-tenderi">
                                                 PREGLED SAČUVANIH TENDERA <i class="fa fa-bookmark"></i> 
+                                            </button>
+                                    <button type="submit" class="btn btn-filter-refresh" id="svi-tenderi">
+                                                SVI TENDERI <i class="fa fa-repeat"></i> 
                                             </button>
                                 </div>
                                 <div class="col-xs-12 nopadding lista-rezultata-pretrage">
+
                                     <hr>
-                                    <li>
-                                        <p class="card-kategorija tender-lista tender-lista-datum lista-rezultati"><span class="datum-tendera">28.10.2016.</span><span class="naslov-tendera">Izvođenje radova na rekonstrukciji ograde objekta ATC Rakovica </span></p>
-                                        <p class="rezultati-ikone">
-                                            <span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span>
-                                            <span class="kratak-rok ">
-                                                <i class="fa fa-lg fa-exclamation"></i><br>KRATAK<br>ROK
-                                            </span>
-                                        </p>
-                                        <p class="card-kategorija tender-lista tender-lista-datum-vazenja">(važi do 17.11.2016.)</p>
-                                    </li>
-                                    <li>
-                                        <p class="card-kategorija tender-lista tender-lista-datum lista-rezultati"><span class="datum-tendera">28.10.2016.</span><span class="naslov-tendera">Izvođenje radova na adaptaciji prostora za smještaj TK opreme RSU 2 Koševsko Brdo u naselju Ciglane, Sarajevo</span></p>
-                                        <p class="rezultati-ikone">
-                                            <span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span>
-                                            <span class="kratak-rok upozorenje">
-                                                <i class="fa fa-lg fa-exclamation"></i><br>KRATAK<br>ROK
-                                            </span>
-                                        </p>
-                                        <p class="card-kategorija tender-lista tender-lista-datum-vazenja">(važi do 17.11.2016.)</p>
-                                    </li>
-                                    <li>
-                                        <p class="card-kategorija tender-lista tender-lista-datum lista-rezultati"><span class="datum-tendera">28.10.2016.</span><span class="naslov-tendera">Nabavka kancelarijskog materijala, sitnog inventara i kancelarijskog papira</span></p>
-                                        <p class="rezultati-ikone">
-                                            <span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span>
-                                            <span class="kratak-rok">
-                                                <i class="fa fa-lg fa-exclamation"></i><br>KRATAK<br>ROK
-                                            </span>
-                                        </p>
-                                        <p class="card-kategorija tender-lista tender-lista-datum-vazenja">(važi do 17.11.2016.)</p>
-                                    </li>
-                                    <li>
-                                        <p class="card-kategorija tender-lista tender-lista-datum lista-rezultati"><span class="datum-tendera">28.10.2016.</span><span class="naslov-tendera">Javni poziv ovlaštenim distributerima mobilnih uređaja proizvođača CAT i SONY </span></p>
-                                        <p class="rezultati-ikone">
-                                            <span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span>
-                                            <span class="kratak-rok">
-                                                <i class="fa fa-lg fa-exclamation"></i><br>KRATAK<br>ROK
-                                            </span>
-                                        </p>
-                                        <p class="card-kategorija tender-lista tender-lista-datum-vazenja">(važi do 17.11.2016.)</p>
-                                    </li>
-                                    <li>
-                                        <p class="card-kategorija tender-lista tender-lista-datum lista-rezultati"><span class="datum-tendera">28.10.2016.</span><span class="naslov-tendera">Izvođenje radova na adaptaciji i opremanju prostora za Telecom Centar Travnik II u Travniku </span></p>
-                                        <p class="rezultati-ikone">
-                                            <span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span>
-                                            <span class="kratak-rok upozorenje">
-                                                <i class="fa fa-lg fa-exclamation"></i><br>KRATAK<br>ROK
-                                            </span>
-                                        </p>
-                                        <p class="card-kategorija tender-lista tender-lista-datum-vazenja">(važi do 17.11.2016.)</p>
-                                    </li>
-                                    <li>
-                                        <p class="card-kategorija tender-lista tender-lista-datum lista-rezultati"><span class="datum-tendera">28.10.2016.</span><span class="naslov-tendera">Nabavka SAP test data migration servera </span></p>
-                                        <p class="rezultati-ikone">
-                                            <span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span>
-                                            <span class="kratak-rok ">
-                                                <i class="fa fa-lg fa-exclamation"></i><br>KRATAK<br>ROK
-                                            </span>
-                                        </p>
-                                        <p class="card-kategorija tender-lista tender-lista-datum-vazenja">(važi do 17.11.2016.)</p>
-                                    </li>
-                                    <li>
-                                        <p class="card-kategorija tender-lista tender-lista-datum lista-rezultati"><span class="datum-tendera">28.10.2016.</span><span class="naslov-tendera">Nabavka usluga osiguranja motornih i priključnih vozila Dioničkog društva BH Telecom Sarajevo, za period 01.01.2017.-31.12.2017. godine </span></p>
-                                        <p class="rezultati-ikone">
-                                            <span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span>
-                                            <span class="kratak-rok upozorenje">
-                                                <i class="fa fa-lg fa-exclamation"></i><br>KRATAK<br>ROK
-                                            </span>
-                                        </p>
-                                        <p class="card-kategorija tender-lista tender-lista-datum-vazenja">(važi do 17.11.2016.)</p>
-                                    </li>
-                                    <li>
-                                        <p class="card-kategorija tender-lista tender-lista-datum lista-rezultati"><span class="datum-tendera">28.10.2016.</span><span class="naslov-tendera">Nabavka rezervnih jedinica RR sistema proizvođača CERAGON </span></p>
-                                        <p class="rezultati-ikone">
-                                            <span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span>
-                                            <span class="kratak-rok ">
-                                                <i class="fa fa-lg fa-exclamation"></i><br>KRATAK<br>ROK
-                                            </span>
-                                        </p>
-                                        <p class="card-kategorija tender-lista tender-lista-datum-vazenja">(važi do 17.11.2016.)</p>
-                                    </li>
-                                    <li>
-                                        <p class="card-kategorija tender-lista tender-lista-datum lista-rezultati"><span class="datum-tendera">28.10.2016.</span><span class="naslov-tendera"> (produženje roka) Nabavka usluga osiguranja imovine društva </span></p>
-                                        <p class="rezultati-ikone">
-                                            <span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span>
-                                            <span class="kratak-rok upozorenje">
-                                                <i class="fa fa-lg fa-exclamation"></i><br>KRATAK<br>ROK
-                                            </span>
-                                        </p>
-                                        <p class="card-kategorija tender-lista tender-lista-datum-vazenja">(važi do 17.11.2016.)</p>
-                                    </li>
-                                    <ul class="list-pagination">
-                                        <li><button type="submit" class="btn btn-filter-refresh">1</button></li>
-                                        <li><button type="submit" class="btn btn-filter-refresh">2</button></li>
-                                        <li><button type="submit" class="btn btn-filter-refresh">3</button></li>
-                                    </ul>
+                                    <table id="tabela-rezultata" class="table-bordered table-striped table-hover table-responsive" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Naručilac </th>
+                                                <th>Kratki opis </th>
+                                                <th>Vrijednost </th>
+                                                <th>Datum raspisivanja </th>
+                                                <th>Datum važenja </th>
+                                                <th>Izdvojeni </th>
+                                                <th>true or false</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr data-izdvojen="0">
+                                                <td>Tiger Nixon</td>
+                                                <td>Izvođenje radova na rekonstrukciji ograde objekta ATC Rakovica</td>
+                                                <td>320,800 KM</td>
+                                                <td>01.01.2017.</td>
+                                                <td>01.04.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Garrett Winters</td>
+                                                <td>Javni poziv ovlaštenim distributerima mobilnih uređaja proizvođača CAT i SONY</td>
+                                                <td>370,800 KM</td>
+                                                <td>01.02.2017.</td>
+                                                <td>01.08.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Brielle Williamson</td>
+                                                <td>Nabavka kancelarijskog materijala, sitnog inventara i kancelarijskog papira</td>
+                                                <td>80,000 KM</td>
+                                                <td>01.03.2017.</td>
+                                                <td>01.05.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Herrod Chandler</td>
+                                                <td>Nabavka SAP test data migration servera</td>
+                                                <td>800,000 KM</td>
+                                                <td>11.03.2017.</td>
+                                                <td>15.05.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Rhona Davidson</td>
+                                                <td>Nabavka usluga osiguranja imovine društva</td>
+                                                <td>280,000 KM</td>
+                                                <td>15.01.2017.</td>
+                                                <td>25.04.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Colleen Hurst</td>
+                                                <td>Nabavka rezervnih jedinica RR sistema proizvođača CERAGON</td>
+                                                <td>680,000 KM</td>
+                                                <td>15.05.2017.</td>
+                                                <td>25.07.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Garrett Winters</td>
+                                                <td>Javni poziv ovlaštenim distributerima mobilnih uređaja proizvođača CAT i SONY</td>
+                                                <td>370,800 KM</td>
+                                                <td>01.02.2017.</td>
+                                                <td>01.08.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Brielle Williamson</td>
+                                                <td>Nabavka kancelarijskog materijala, sitnog inventara i kancelarijskog papira</td>
+                                                <td>80,000 KM</td>
+                                                <td>01.03.2017.</td>
+                                                <td>01.05.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Herrod Chandler</td>
+                                                <td>Nabavka SAP test data migration servera</td>
+                                                <td>800,000 KM</td>
+                                                <td>11.03.2017.</td>
+                                                <td>15.05.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Rhona Davidson</td>
+                                                <td>Nabavka usluga osiguranja imovine društva</td>
+                                                <td>280,000 KM</td>
+                                                <td>15.01.2017.</td>
+                                                <td>25.04.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Colleen Hurst</td>
+                                                <td>Nabavka rezervnih jedinica RR sistema proizvođača CERAGON</td>
+                                                <td>680,000 KM</td>
+                                                <td>15.05.2017.</td>
+                                                <td>25.07.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Garrett Winters</td>
+                                                <td>Javni poziv ovlaštenim distributerima mobilnih uređaja proizvođača CAT i SONY</td>
+                                                <td>370,800 KM</td>
+                                                <td>01.02.2017.</td>
+                                                <td>01.08.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Brielle Williamson</td>
+                                                <td>Nabavka kancelarijskog materijala, sitnog inventara i kancelarijskog papira</td>
+                                                <td>80,000 KM</td>
+                                                <td>01.03.2017.</td>
+                                                <td>01.05.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Herrod Chandler</td>
+                                                <td>Nabavka SAP test data migration servera</td>
+                                                <td>800,000 KM</td>
+                                                <td>11.03.2017.</td>
+                                                <td>15.05.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Rhona Davidson</td>
+                                                <td>Nabavka usluga osiguranja imovine društva</td>
+                                                <td>280,000 KM</td>
+                                                <td>15.01.2017.</td>
+                                                <td>25.04.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Colleen Hurst</td>
+                                                <td>Nabavka rezervnih jedinica RR sistema proizvođača CERAGON</td>
+                                                <td>680,000 KM</td>
+                                                <td>15.05.2017.</td>
+                                                <td>25.07.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Garrett Winters</td>
+                                                <td>Javni poziv ovlaštenim distributerima mobilnih uređaja proizvođača CAT i SONY</td>
+                                                <td>370,800 KM</td>
+                                                <td>01.02.2017.</td>
+                                                <td>01.08.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Brielle Williamson</td>
+                                                <td>Nabavka kancelarijskog materijala, sitnog inventara i kancelarijskog papira</td>
+                                                <td>80,000 KM</td>
+                                                <td>01.03.2017.</td>
+                                                <td>01.05.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Herrod Chandler</td>
+                                                <td>Nabavka SAP test data migration servera</td>
+                                                <td>800,000 KM</td>
+                                                <td>11.03.2017.</td>
+                                                <td>15.05.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Rhona Davidson</td>
+                                                <td>Nabavka usluga osiguranja imovine društva</td>
+                                                <td>280,000 KM</td>
+                                                <td>15.01.2017.</td>
+                                                <td>25.04.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr data-izdvojen="0">
+                                                <td>Colleen Hurst</td>
+                                                <td>Nabavka rezervnih jedinica RR sistema proizvođača CERAGON</td>
+                                                <td>680,000 KM</td>
+                                                <td>15.05.2017.</td>
+                                                <td>25.07.2017.</td>
+                                                <td><span class="bookmark-tendera"><a href="#" class=""><i class="fa fa-bookmark"></i></a></span></td>
+                                                <td>0</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
@@ -1127,13 +1233,14 @@
     <script src="./js/jquery.min.js"></script>
 
     <script src="./js/jquery-ui.min.js"></script>
-
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/moment.js"></script>
+    <script src="./js/datetime-moment.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
     <script src="./js/imagesLoaded.js"></script>
     <script src="./js/masonry.js"></script>
-    <script src="./js/owl.carousel.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

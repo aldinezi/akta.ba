@@ -192,8 +192,56 @@ $(document).ready(function() {
         $('.profil-centar').children().not('.tab-podaci').not('.' + klasa).fadeOut("fast", function() {
             $('.' + klasa).fadeIn(400);
         });
+    });
+    $('#tabela-rezultata td .bookmark-tendera>a').on("click", function() {
+        event.preventDefault();
+        $(this).toggleClass('active');
+        var red = $(this).closest('tr');
+        var zadnjakolona = red.find("td").eq(6);
+        red.attr('data-izdvojen', $(red).attr('data-izdvojen') == '0' ? '1' : '0');
 
-
+        if (zadnjakolona.text() == 0) {
+            zadnjakolona.text(1);
+        } else {
+            zadnjakolona.text(0);
+        }
+        oTable.row(red).invalidate();      
 
     });
+
+
+
+
+    $.fn.dataTable.moment('DD.MM.YYYY.');
+    $.fn.dataTable.moment('DD.MM.YYYY.');
+    var oTable = $('#tabela-rezultata').DataTable({
+        searching: true,
+        "paging": true,
+        "info": false,
+        "pageLength": 15,
+        "pagingType": "numbers",
+    });
+
+    $("#sacuvani-tenderi").click(function() {
+        oTable.draw();
+        oTable
+            .columns(6)
+            .search("1")
+            .draw();
+    });
+    $("#svi-tenderi").click(function() {
+        oTable.draw();
+        oTable.search('')
+            .columns().search('')
+            .draw();
+    });
+
+    function paginateScroll() {
+        $('html').scrollTo('#tabela-rezultata');
+       /* $('#tabela-rezultata').animate({            
+            scrollTop: udaljenost
+        }, 200);*/
+        $("th:first-child").focus();
+    }
+    $(".paginate_button").bind('click', paginateScroll);
 });

@@ -2969,6 +2969,107 @@ ul.povezana-drustva li>span {
     border-radius: 4px;
 }
 
+#tabela-rezultata td,
+#tabela-rezultata th {
+    padding: 15px 7px;
+}
+
+#tabela-rezultata.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: rgba(249, 249, 249, 0.4);
+}
+
+#tabela-rezultata.table-hover>tbody>tr:hover {
+    background-color: #00b496;
+    color: white;
+}
+
+#tabela-rezultata.table-hover>tbody>tr .bookmark-tendera a {
+    color: #d0d0d0;
+}
+
+#tabela-rezultata.table-hover>tbody>tr:hover .bookmark-tendera a.active {
+    color: white;
+}
+
+#tabela-rezultata.table-hover>tbody>tr:hover .bookmark-tendera a:hover {
+    color: white;
+}
+
+#tabela-rezultata.table-hover>tbody>tr .bookmark-tendera a.active {
+    color: #00b496;
+}
+
+#tabela-rezultata tbody>tr>td:nth-child(3) {
+    white-space: nowrap;
+}
+
+#tabela-rezultata tbody tr.skriven {
+    display: none;
+}
+
+#tabela-rezultata_paginate {
+    text-align: right;
+    padding: 15px 0 0;
+}
+
+a.paginate_button {
+    background: #d0cdc7;
+    color: black;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+a.paginate_button.current {
+    background: #00b496;
+    color: white;
+}
+
+#tabela-rezultata_length, #tabela-rezultata tr>td:last-child, #tabela-rezultata tr>th:last-child,
+#tabela-rezultata_filter {
+    display: none;
+}
+
+#tabela-rezultata thead th {
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CjxwYXRoIGZpbGw9IiNlMWUxZTEiIGQ9Ik0xMSA3aC02bDMtNHoiLz4KPHBhdGggZmlsbD0iI2UxZTFlMSIgZD0iTTUgOWg2bC0zIDR6Ii8+Cjwvc3ZnPgo=);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+#tabela-rezultata thead th.sorting_asc {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAZ0lEQVQ4y2NgGLKgquEuFxBPAGI2ahhWCsS/gDibUoO0gPgxEP8H4ttArEyuQYxAPBdqEAxPBImTY5gjEL9DM+wTENuQahAvEO9DMwiGdwAxOymGJQLxTyD+jgWDxCMZRsEoGAVoAADeemwtPcZI2wAAAABJRU5ErkJggg==');
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+#tabela-rezultata thead th.sorting_desc {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAZUlEQVQ4y2NgGAWjYBSggaqGu5FA/BOIv2PBIPFEUgxjB+IdQPwfC94HxLykus4GiD+hGfQOiB3J8SojEE9EM2wuSJzcsFMG4ttQgx4DsRalkZENxL+AuJQaMcsGxBOAmGvopk8AVz1sLZgg0bsAAAAASUVORK5CYII= ');
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
 
 /* - Responsive breakpoints - */
 
