@@ -226,6 +226,8 @@ $(document).ready(function() {
                 $('html,body').animate({ scrollTop: targetOffset }, 500);
                 oldStart = o._iDisplayStart;
             }
+            dodajLabel();
+            dodajKlik();
         },
         "columnDefs": [{
             "targets": 5,
@@ -239,13 +241,35 @@ $(document).ready(function() {
             .columns(6)
             .search("1")
             .draw();
+        dodajLabel();
+        dodajKlik();
     });
     $("#svi-tenderi").click(function() {
         oTable.draw();
         oTable.search('')
             .columns().search('')
             .draw();
+        dodajLabel();
+        dodajKlik();
     });
+
+    function dodajKlik() {
+
+
+        function naKlik() {
+            var sveKolone = $(this).nextAll('td');
+            if (!sveKolone.hasClass("normalnaVisina")) {
+                sveKolone.addClass("normalnaVisina");
+                $(this).addClass('otvoren');
+                //   sveKolone.css("display", "block")
+            } else {
+                sveKolone.removeClass("normalnaVisina");
+                $(this).removeClass('otvoren');
+            }
+        }
+        $("#tabela-rezultata td:first-child()").unbind('click').bind("click", naKlik);
+        return true;
+    }
 
     /*    function paginateScroll() {
             $('html').animate({
@@ -253,5 +277,27 @@ $(document).ready(function() {
             }, 200);
         }
         $(".paginate_button").bind('click', paginateScroll);*/
+    function dodajLabel() {
+        var headertext = [];
+        var headers = document.querySelectorAll("thead");
+        var tablebody = document.querySelectorAll("tbody");
 
+        for (var i = 0; i < headers.length; i++) {
+            headertext[i] = [];
+            for (var j = 0, headrow; headrow = headers[i].rows[0].cells[j]; j++) {
+                var current = headrow;
+                headertext[i].push(current.textContent.replace(/\r?\n|\r/, ""));
+            }
+        }
+
+        if (headers.length > 0) {
+            for (var h = 0, tbody; tbody = tablebody[h]; h++) {
+                for (var i = 0, row; row = tbody.rows[i]; i++) {
+                    for (var j = 0, col; col = row.cells[j]; j++) {
+                        col.setAttribute("data-th", headertext[h][j]);
+                    }
+                }
+            }
+        }
+    };
 });

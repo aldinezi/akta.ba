@@ -3226,6 +3226,95 @@ a.paginate_button.current {
     }
 }
 
+@media screen and (max-width: 600px) {
+    #tabela-rezultata table {
+        width: 100%;
+    }
+    #tabela-rezultata thead {
+        display: none;
+    }
+    #tabela-rezultata tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    #tabela-rezultata tr td:first-child {
+        background: #f0f0f0;
+        font-weight: bold;
+        font-size: 1.3em;
+        text-align: center;
+        cursor: pointer;
+    }
+    #tabela-rezultata tbody td:first-child:after {
+        position: absolute;
+        content: "\f103";
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        right: 35px;
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        line-height: 20px;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+    }
+    #tabela-rezultata tr td.otvoren {
+        background: #00b496;
+    }
+    #tabela-rezultata tbody>tr>td>.bookmark-tendera {
+        width: auto;
+    }
+    #tabela-rezultata td,
+    #tabela-rezultata th {
+        padding: 10px 10px;
+    }
+    #tabela-rezultata tbody td {
+        display: block;
+        text-align: right;
+    }
+    #tabela-rezultata tbody td:before {
+        content: attr(data-th);
+        display: inline-block;
+        text-align: left;
+        float: left;
+    }
+    #tabela-rezultata tbody td:nth-child(1):before,
+    #tabela-rezultata tbody td:nth-child(2):before {
+        display: none;
+    }
+    #tabela-rezultata tbody td:nth-child(2) {
+        text-align: left;
+    }
+    #tabela-rezultata.table-hover>tbody>tr:hover {
+        background-color: rgb(250, 250, 250);
+        color: black;
+    }
+    #tabela-rezultata.table-hover>tbody>tr:hover .bookmark-tendera a:hover,
+    #tabela-rezultata.table-hover>tbody>tr:hover .bookmark-tendera a.active {
+        color: #00B496;
+    }
+    #tabela-rezultata td:not(:first-child) {
+        overflow: hidden;
+        height: 0;
+        padding: 0 10px;
+        border: none;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    #tabela-rezultata td.normalnaVisina {
+        height: auto;
+        padding: 10px;
+        border: 0.5px solid #dddddd;
+    }
+}
+
 @media (max-width:480px) {
     #current_category {
         font-size: 16px;
