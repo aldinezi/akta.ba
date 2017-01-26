@@ -227,7 +227,11 @@ $(document).ready(function() {
                 $('html,body').animate({ scrollTop: targetOffset }, 500);
                 oldStart = o._iDisplayStart;
             }
-        }
+        },
+        "columnDefs": [{
+            "targets": 5,
+            "orderable": false
+        }]
     });
 
     $("#sacuvani-tenderi").click(function() {

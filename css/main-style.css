@@ -3018,6 +3018,11 @@ ul.povezana-drustva li>span {
     padding: 15px 0 0;
 }
 
+#tabela-rezultata thead th:nth-child(6) {
+    background: none;
+    cursor: default;
+}
+
 a.paginate_button {
     background: #d0cdc7;
     color: black;
