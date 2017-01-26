@@ -116,7 +116,6 @@ $('document').ready(function() {
         $opis.text(opisSlike);
     });
     var brojSlajdova = $("#slikeCarousel>.carousel-inner>.item").length;
-    console.log("broj slajdova je " + brojSlajdova);
     $("#slikeCarousel>.carousel-inner>.item").each(function(index) {
         var urlSlike = $(this).find("img").attr('data-src');
         var element = "<li data-target='#slikeCarousel' data-slide-to=" + index + " style='background:url(" + urlSlike + ")'></li>";
