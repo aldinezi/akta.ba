@@ -2251,6 +2251,10 @@ label.cek span.oznaka {
     background: #00b496;
 }
 
+#slider-range {
+    margin: 15px 7px;
+}
+
 .ui-slider-horizontal .ui-slider-handle {
     top: -9px;
     width: 15px;
@@ -3224,9 +3228,6 @@ a.paginate_button.current {
     .tenderi-menu>li>a {
         padding: 15px 10px;
     }
-}
-
-@media screen and (max-width: 600px) {
     #tabela-rezultata table {
         width: 100%;
     }
