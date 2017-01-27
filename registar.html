@@ -65,7 +65,7 @@
                 <div class="navbar-header">
                     <a class="logo-link" href="#"><img class="logo" src="./images/logo.png" alt="logo"></a>
                 </div>
-                <h1 id="current_category" class="visible-xs-inline-block visible-sm-inline-block hidden-md hidden-lg tenderi">TENDERI</h1>
+                <h1 id="current_category" class="visible-xs-inline-block visible-sm-inline-block hidden-md hidden-lg registar">REGISTAR</h1>
                 <div id="header_navigation" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav hidden-xs visible-md visible-lg">
                         <li><a href="#">O nama</a></li>
@@ -365,7 +365,7 @@
                                     <input type="text" class="form-control" placeholder="Djelatnost">
                                     <input type="text" class="form-control" placeholder="Pojmovi za pretragu">
 
-                                    <select id="selectmenu" name="drzava-registar" style="">
+                                    <select id="selectmenu" name="drzava-registar">
                                          <option value="" disabled selected>Sve zemlje</option>
                                         <option>Hrvatska</option>
                                         <option>BiH</option>
@@ -375,7 +375,7 @@
 
                                 </div>
                                 <div class="col-sm-12">
-                                    <a href="#" class="card-button" style="margin-right:auto;text-align: center;    margin-top: 30px;" onclick="$(this).closest('form').submit()">
+                                    <a href="#" class="card-button" id="registar_trazi" onclick="$(this).closest('form').submit()">
                                         <span class="card-button-tekst" style="font-size: x-large;">Traži</span></a>
                                     <hr>
                                     <p>Registrovani korisnici imaju pristup detaljnim podacima kao i detaljnijoj pretrazi.</p>
@@ -395,7 +395,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 kolona-najcitanije ">
+                <div class="col-xs-12 col-md-4 kolona-najcitanije ">
                     <div class="wrap-najcitanije remargin">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 card ">
                             <div class="card-registar-broj">

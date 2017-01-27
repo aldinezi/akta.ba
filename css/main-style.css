@@ -3087,6 +3087,12 @@ a.paginate_button.current {
     background-position: center right;
 }
 
+#registar_trazi {
+    margin-right: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
 
 /* - Responsive breakpoints - */
 
@@ -3167,6 +3173,12 @@ a.paginate_button.current {
 }
 
 @media(max-width:767px) {
+    .registar-forma-pretrage {
+        z-index: 8;
+    }
+    #registar_trazi {
+        display: inline-block;
+    }
     .subheader {
         display: none;
     }
