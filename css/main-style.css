@@ -3132,6 +3132,13 @@ a.paginate_button.current {
     .bijeli-menu .main_nav>li>a {
         padding: 15px 5px;
     }
+    .lista-rezultata-pretrage.registar-firme li>div>button {
+        margin: 7px 0;
+    }
+    .sacuvane-firme-btn {
+        padding-top: 15px;
+        padding-right: 0;
+    }
 }
 
 @media (max-width: 991px) {
