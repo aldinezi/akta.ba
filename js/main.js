@@ -44,7 +44,6 @@ $(document).ready(function() {
                 }
             });
         }
-
         if ($(window).width() >= 768) {
             var $gridvijesti = $('#vijesti-wrap').imagesLoaded(function() {
                 // init Masonry after all images have loaded
@@ -218,10 +217,6 @@ $(document).ready(function() {
         oTable.row(red).invalidate();
 
     });
-
-
-
-
     $.fn.dataTable.moment('DD.MM.YYYY.');
     $.fn.dataTable.moment('DD.MM.YYYY.');
     var oldStart = 0;
@@ -265,8 +260,6 @@ $(document).ready(function() {
     });
 
     function dodajKlik() {
-
-
         function naKlik() {
             var sveKolone = $(this).nextAll('td');
             if (!sveKolone.hasClass("normalnaVisina")) {
@@ -282,12 +275,6 @@ $(document).ready(function() {
         return true;
     }
 
-    /*    function paginateScroll() {
-            $('html').animate({
-                scrollTop: $('#tabela-rezultata').offset().top
-            }, 200);
-        }
-        $(".paginate_button").bind('click', paginateScroll);*/
     function dodajLabel() {
         var headertext = [];
         var headers = document.querySelectorAll("thead");
