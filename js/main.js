@@ -198,7 +198,7 @@ $(document).ready(function() {
     $(".profil-card.opcije>li>a").on("click", function() {
         event.preventDefault();
         var klasa = $(this).attr("data-target");
-        $('.profil-centar').children().not('.tab-podaci').not('.' + klasa).fadeOut("fast", function() {
+        $('.profil-centar').children().not('.tab-podaci').not('.' + klasa).fadeOut(200, function() {
             $('.' + klasa).fadeIn(400);
         });
     });
@@ -208,7 +208,6 @@ $(document).ready(function() {
         var red = $(this).closest('tr');
         var zadnjakolona = red.find("td").eq(6);
         red.attr('data-izdvojen', $(red).attr('data-izdvojen') == '0' ? '1' : '0');
-
         if (zadnjakolona.text() == 0) {
             zadnjakolona.text(1);
         } else {
@@ -235,10 +234,12 @@ $(document).ready(function() {
             dodajLabel();
             dodajKlik();
         },
-        "columnDefs": [{
+        "columnDefs": [
+            {
             "targets": 5,
             "orderable": false
-        }]
+        },
+        { type: 'currency', targets: 2 }]
     });
 
     $("#sacuvani-tenderi").click(function() {
@@ -298,4 +299,19 @@ $(document).ready(function() {
             }
         }
     };
+    /* -proširenje za sortiranje vrijednosti sa oznakom valute  */
+    jQuery.extend( jQuery.fn.dataTableExt.oSort, {
+    "currency-pre": function ( a ) {
+        a = (a==="-") ? 0 : a.replace( /[^\d\-\.]/g, "" );
+        return parseFloat( a );
+    },
+ 
+    "currency-asc": function ( a, b ) {
+        return a - b;
+    },
+ 
+    "currency-desc": function ( a, b ) {
+        return b - a;
+    }
+} );
 });
