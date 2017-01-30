@@ -198,8 +198,12 @@ $(document).ready(function() {
     $(".profil-card.opcije>li>a").on("click", function() {
         event.preventDefault();
         var klasa = $(this).attr("data-target");
-        $('.profil-centar').children().not('.tab-podaci').not('.' + klasa).fadeOut(200, function() {
-            $('.' + klasa).fadeIn(400);
+        var text = $(this).text();
+        console.log("Klik registrovan na: " + text + "\n ciljana klasa: " + klasa)
+        $('.profil-centar').children().not('.tab-podaci').not('.' + klasa).fadeOut(function() {
+            var pronadjen = $(this);
+            console.log(pronadjen);
+            $('.' + klasa).fadeIn(600);
         });
     });
     $('#tabela-rezultata td .bookmark-tendera>a').on("click", function() {
@@ -234,12 +238,12 @@ $(document).ready(function() {
             dodajLabel();
             dodajKlik();
         },
-        "columnDefs": [
-            {
-            "targets": 5,
-            "orderable": false
-        },
-        { type: 'currency', targets: 2 }]
+        "columnDefs": [{
+                "targets": 5,
+                "orderable": false
+            },
+            { type: 'currency', targets: 2 }
+        ]
     });
 
     $("#sacuvani-tenderi").click(function() {
@@ -300,18 +304,18 @@ $(document).ready(function() {
         }
     };
     /* -proširenje za sortiranje vrijednosti sa oznakom valute  */
-    jQuery.extend( jQuery.fn.dataTableExt.oSort, {
-    "currency-pre": function ( a ) {
-        a = (a==="-") ? 0 : a.replace( /[^\d\-\.]/g, "" );
-        return parseFloat( a );
-    },
- 
-    "currency-asc": function ( a, b ) {
-        return a - b;
-    },
- 
-    "currency-desc": function ( a, b ) {
-        return b - a;
-    }
-} );
+    jQuery.extend(jQuery.fn.dataTableExt.oSort, {
+        "currency-pre": function(a) {
+            a = (a === "-") ? 0 : a.replace(/[^\d\-\.]/g, "");
+            return parseFloat(a);
+        },
+
+        "currency-asc": function(a, b) {
+            return a - b;
+        },
+
+        "currency-desc": function(a, b) {
+            return b - a;
+        }
+    });
 });
