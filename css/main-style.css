@@ -3097,6 +3097,10 @@ a.paginate_button.current {
     margin-top: 30px;
 }
 
+.profil-centar>*:not(.tab-podaci):not(.tab-osnovno) {
+    display: none;
+}
+
 
 /* - Responsive breakpoints - */
 

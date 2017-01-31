@@ -162,6 +162,7 @@ $("input.akordion-input[type='text']").on("click", function() {
     $(this).select();
 });
 $(document).ready(function() {
+
     $("#datetimepicker1").datepicker({
         dateFormat: "dd.mm.yy"
     }).focus(function() {
@@ -195,6 +196,7 @@ $(document).ready(function() {
         $("#amount").val($("#slider-range").slider("values", 0) + " KM" +
             " - " + $("#slider-range").slider("values", 1) + " KM");
     });
+    // $('.profil-centar').children().not('.tab-podaci').not('.tab-osnovno').hide();
     $(".profil-card.opcije>li>a").on("click", function() {
         event.preventDefault();
         var klasa = $(this).attr("data-target");
