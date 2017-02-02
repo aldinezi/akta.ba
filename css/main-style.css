@@ -3075,6 +3075,7 @@ a.paginate_button.current {
     background-position: center left;
     cursor: pointer;
     padding-left: 25px;
+    outline: none;
 }
 
 #tabela-rezultata thead th.sorting_asc {
