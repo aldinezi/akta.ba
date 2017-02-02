@@ -3434,6 +3434,38 @@ a.paginate_button.current {
     }
 }
 
+@media (max-width:1200px) and (min-width:991px) {
+    #tabela-rezultata td,
+    #tabela-rezultata th {
+        font-size: 12px;
+    }
+    .akordion .menu-content li a {
+        font-size: 12px;
+    }
+    .akordion .menu-content .btn {
+        white-space: normal;
+    }
+    .akordion label.cek.pola {
+        width: 100%;
+    }
+    .akordion label.cek {
+        white-space: nowrap;
+    }
+    .akordion label.cek span {
+        width: 15px;
+        height: 15px;
+    }
+    .akordion label.cek span.oznaka {
+        font-size: 12px;
+        white-space: initial;
+        height: auto;
+        width: calc(100% - 30px);
+    }
+    #vrijednost .cek p {
+        white-space: normal;
+    }
+}
+
 @media (max-width:1366px) and (min-width:991px) {
     .tabs_module .tabs>li>a {
         font-size: 10px;
