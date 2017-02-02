@@ -335,8 +335,8 @@ $(document).ready(function() {
 
         datepicker.regional.bs = {
             closeText: "Zatvori",
-            prevText: "&#x3C;",
-            nextText: "&#x3E;",
+            prevText: "Prethodni mjesec",
+            nextText: "Sljedeći mjesec",
             currentText: "Danas",
             monthNames: ["Januar", "Februar", "Mart", "April", "Maj", "Juni",
                 "Juli", "August", "Septembar", "Oktobar", "Novembar", "Decembar"
