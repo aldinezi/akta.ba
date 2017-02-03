@@ -186,6 +186,11 @@ a.um_tenderi {
     color: #C88C00 !important;
 }
 
+a.um_promo,
+.promo {
+    color: rgba(156, 90, 174, 255);
+}
+
 .main_nav.tenderi>li>a.active {
     color: #C88C00;
 }
