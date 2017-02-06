@@ -51,15 +51,15 @@ $(document).ready(function() {
                     itemSelector: '.card',
                 });
             });
-            var $gridostalihvijesti = $('.wrap-ostalih-vijesti').imagesLoaded(function() {
+            var $kapitalWrap = $('#kapital-wrap').imagesLoaded(function() {
                 // init Masonry after all images have loaded
-                $gridostalihvijesti.masonry({
+                $kapitalWrap.masonry({
                     itemSelector: '.card',
                 });
             });
-            var $gridkapital = $('#kapital-wrap').imagesLoaded(function() {
+            var $gridostalihvijesti = $('.wrap-ostalih-vijesti').imagesLoaded(function() {
                 // init Masonry after all images have loaded
-                $gridkapital.masonry({
+                $gridostalihvijesti.masonry({
                     itemSelector: '.card',
                 });
             });
@@ -105,9 +105,7 @@ $(document).ready(function() {
         // pozovi funkcije uslovljene dimenzijama
         provjereDimenzija();
     }, false);
-});
 
-$('document').ready(function() {
     var $naslov = $(".modal-title");
     var $opis = $("#modalDescription");
     var nazivSlike = $(".item.active .carousel-caption h3").text();
@@ -136,32 +134,31 @@ $('document').ready(function() {
     });
     //  $("#selectmenu").selectmenu();    
     $('[name="drzava-registar"],[name="cpvKodovi"],[name="godinePP"],[name="sveobuhvatnaDobit"]').selectmenu();
-});
-$("#Pops").popover({
-    html: true,
-    content: function() {
-        return $('#popover-content').html();
-    }
-});
-$("#Pops1").popover({
-    html: true,
-    content: function() {
-        return $('#popover-content1').html();
-    }
-});
-$(".kategorija-tendera>div").click(function() {
-    $(this).toggleClass("active");
-});
-$(".grupa span").click(function() {
-    $(this).parent().find('.datepick').focus();
-});
-$(".akordion>.menu-content>li>a").click(function(event) {
-    event.preventDefault();
-});
-$("input.akordion-input[type='text']").on("click", function() {
-    $(this).select();
-});
-$(document).ready(function() {
+
+    $("#Pops").popover({
+        html: true,
+        content: function() {
+            return $('#popover-content').html();
+        }
+    });
+    $("#Pops1").popover({
+        html: true,
+        content: function() {
+            return $('#popover-content1').html();
+        }
+    });
+    $(".kategorija-tendera>div").click(function() {
+        $(this).toggleClass("active");
+    });
+    $(".grupa span").click(function() {
+        $(this).parent().find('.datepick').focus();
+    });
+    $(".akordion>.menu-content>li>a").click(function(event) {
+        event.preventDefault();
+    });
+    $("input.akordion-input[type='text']").on("click", function() {
+        $(this).select();
+    });
 
     $("#datetimepicker1").datepicker({
         dateFormat: "dd.mm.yy"
@@ -359,4 +356,109 @@ $(document).ready(function() {
         return datepicker.regional.bs;
 
     }));
+
+    function setGrid() {
+        var $novigrid = $('#ostale-promo').imagesLoaded(function() {
+            // init Masonry after all images have loaded
+            $novigrid.masonry({
+                itemSelector: '.card-vijest'
+            });
+        });
+
+        var resetGrid = function resetGrid() {
+            $novigrid.masonry();
+            $novigrid.masonry().masonry('reloadItems');
+            $novigrid.masonry();
+        }
+        var destroy = function destroyGrid() {
+            $novigrid.masonry().masonry('destroy');
+        }
+        setGrid.destroy = destroy;
+        setGrid.resetGrid = resetGrid;
+
+
+    }
+
+    function paginate() {
+        // consider adding an id to your table,
+        // just incase a second table ever enters the picture..?
+        var kartice = jQuery("#ostale-promo .card-vijest.card-promo").not(".istaknute");
+
+        var numItems = kartice.length;
+        var perPage = 6;
+
+        var pagination_placeholder_selector = ".articles-pagination"; // put in a variable to ensure proper changes in the future
+        var myPageName = "#stranica-"; // a number will follow for each page
+
+        // only show the first 2 (or "first per_page") items initially
+        var zaPrikazati = kartice.slice(perPage);
+        for (var i = 0; i < zaPrikazati.length; i++) {
+            $(zaPrikazati[i]).hide();
+            $(zaPrikazati[i]).removeClass("card-vijest", "card-promo");
+
+        }
+        setGrid();
+        // now setup your pagination
+        // you need that .pagination-page div before/after your table
+        $(pagination_placeholder_selector).pagination({
+            items: numItems,
+            itemsOnPage: perPage,
+            cssStyle: "light-theme",
+            hrefTextPrefix: myPageName,
+            prevText: "Prethodna",
+            nextText: "Sljedeća",
+            onPageClick: function(pageNumber) { // this is where the magic happens
+                // someone changed page, lets hide/show trs appropriately
+                var showFrom = perPage * (pageNumber - 1);
+                var showTo = showFrom + perPage;
+                for (var i = 0; i < kartice.length; i++) {
+                    $(kartice[i]).attr("style", '').hide().removeClass("card-vijest").removeClass("card-promo");
+
+                }
+                setGrid.destroy();
+                var zaPrikaza = kartice.slice(showFrom, showTo);
+                for (var i = 0; i < zaPrikaza.length; i++) {
+                    $(zaPrikaza[i]).attr("style", '').fadeIn(400);
+                    $(zaPrikaza[i]).addClass("card-vijest").addClass("card-promo");
+
+                }
+                setGrid();
+                var pozicijaOffset = $('#ostale-promo').offset().top - 220;
+                $('html,body').animate({ scrollTop: pozicijaOffset }, 500);
+            }
+        });
+
+
+
+        // EDIT: extra stuff to cover url fragments (i.e. #page-3)
+        // https://github.com/bilalakil/bin/tree/master/simplepagination/page-fragment
+        // is more thoroughly commented (to explain the regular expression)
+
+        // we'll create a function to check the url fragment and change page
+        // we're storing this function in a variable so we can reuse it
+        var checkFragment = function() {
+            // if there's no hash, make sure we go to page 1
+            var hash = window.location.hash || (myPageName + "1");
+
+            // we'll use regex to check the hash string
+            var re = new RegExp("^" + myPageName + "(\\d+)$");
+            hash = hash.match(re);
+
+            if (hash)
+            // the selectPage function is described in the documentation
+            // we've captured the page number in a regex group: (\d+)
+                jQuery(pagination_placeholder_selector).pagination("selectPage", parseInt(hash[1]));
+        };
+
+        // we'll call this function whenever the back/forward is pressed
+        jQuery(window).bind("popstate", checkFragment);
+
+        // and we'll also call it to check right now!
+        checkFragment();
+
+    }
+    paginate();
+
+
+
 });

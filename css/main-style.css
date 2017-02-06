@@ -1200,7 +1200,8 @@ a.footer-cta-button:focus {
     display: table;
 }
 
-.tabs_module {
+.tabs_module,
+.single_article .tabs_module.strict {
     background: #fff;
     padding: 15px;
     border-radius: 4px;
@@ -1240,7 +1241,8 @@ a.footer-cta-button:focus {
     color: white;
 }
 
-.tab-pane .card-opis-vijesti {
+.tab-pane .card-opis-vijesti,
+.single_article .tabs_module.strict .tab-pane .card-opis-vijesti {
     padding: 15px 0px;
 }
 
@@ -3046,7 +3048,9 @@ ul.povezana-drustva li>span {
     cursor: default;
 }
 
-a.paginate_button {
+a.paginate_button,
+.articles-pagination li a,
+.articles-pagination li span {
     background: #d0cdc7;
     color: black;
     display: inline-block;
@@ -3072,9 +3076,23 @@ a.paginate_button {
     margin-left: 7px;
 }
 
-a.paginate_button.current {
+.articles-pagination li {
+    display: inline-block;
+}
+
+a.paginate_button.current,
+.articles-pagination li span.current {
     background: #00b496;
     color: white;
+}
+
+.articles-pagination li.disabled span.current {
+    background: #d0cdc7;
+    color: #999;
+}
+
+.articles-pagination {
+    text-align: center;
 }
 
 #tabela-rezultata_length,
