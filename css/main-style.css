@@ -3176,6 +3176,30 @@ a.paginate_button.current {
     line-height: 30px;
 }
 
+.card-promo.card-pratitenas .ikona {
+    background: #785096;
+    margin: 15px 0;
+    text-align: center;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.card-promo.card-pratitenas .ikona a {
+    color: white;
+    font-size: 45px;
+    width: 100%;
+    display: block;
+}
+
+.card-promo.card-pratitenas .ikona a .fa-viber:before {
+    height: 45px;
+    width: 45px;
+}
+
+.card-promo.card-pratitenas .ikona a .fa-viber {
+    vertical-align: middle;
+}
+
 
 /* - Responsive breakpoints - */
 
