@@ -3200,6 +3200,41 @@ a.paginate_button.current {
     vertical-align: middle;
 }
 
+.card-promo .card-objaviteoglas {
+    background: #785096;
+    color: white;
+    padding-bottom: 25px;
+    border-radius: 4px;
+}
+
+.card-promo .card-objaviteoglas p {
+    margin: 30px 0;
+}
+
+.card-promo .card-objaviteoglas .card-button {
+    left: 0;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    margin-bottom: 0;
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+.card-promo .card-objaviteoglas .card-button .card-button-tekst {
+    width: 100%;
+    display: block;
+}
+
+.objaviteoglas-bg-layer {
+    background: url(../assets/promo-loudspeaker.png), -webkit-linear-gradient(#785096, #785096);
+    background: url(../assets/promo-loudspeaker.png), linear-gradient(#785096, #785096);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: right center;
+}
+
 
 /* - Responsive breakpoints - */
 
