@@ -205,8 +205,8 @@ $(document).ready(function() {
             $('.' + klasa).fadeIn(600);
         });
     });
-    $('#tabela-rezultata td .bookmark-tendera>a').on("click", function() {
-        event.preventDefault();
+    $('#tabela-rezultata td .bookmark-tendera>a').on("click", function(e) {
+        e.preventDefault();
         $(this).toggleClass('active');
         var red = $(this).closest('tr');
         var zadnjakolona = red.find("td").eq(6);
@@ -438,7 +438,7 @@ $(document).ready(function() {
 
             if (hash)
             // the selectPage function is described in the documentation
-            // we've captured the page number in a regex group: (\d+)
+            // we've te the page number in a regex group: (\d+)
                 jQuery(pagination_placeholder_selector).pagination("selectPage", parseInt(hash[1]));
         };
 
