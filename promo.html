@@ -322,14 +322,10 @@
             <div class="wrapper-vijesti remargin">
 
                 <div class="col-xs-12">
-                    <select id="selectKategorija" name="drzava-registar">
-                                         <option value="" disabled selected><h1>Kategorije oglasa</h1></option>
-                                        <option>Preporučujemo</option>
-                                        <option>Turizam</option>
-                                        <option>Gastro</option>
-                                        <option>Ljepota i zdravlje</option>
-                                        <option>Tekstil i asesoari</option>
-                                        <option>Enterijer</option>
+                    <div class="btn-group promo">
+
+                        <!--
+                                        
                                         <option>Sport/Kultura</option>
                                         <option>Auto-moto</option>
                                         <option>Konsalting i usluge</option>
@@ -342,7 +338,46 @@
                                         <option>Nekretnine</option>
                                         <option>Građevina</option>
                                         <option>Industrija</option>
-                                    </select>
+                                    </select> -->
+
+                        <button type="button" class="btn btn-default dropdown-toggle promo-kategorije" data-toggle="dropdown">
+        <h1>Kategorije oglasa</h1>
+      </button>
+                        <div class="dropdown-menu promo" role="menu">
+                            <div class="red-kategorija">
+                                <div class="col-xs-12 col-sm-6 col-md-2 kategorija-oglasa">
+                                    <div>
+                                        <p class="preporucujemo">Preporučujemo</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-2 kategorija-oglasa">
+                                    <div>
+                                        <p class="turizam">Turizam</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-2 kategorija-oglasa">
+                                    <div>
+                                        <p class="hemija">Gastro</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-2 kategorija-oglasa">
+                                    <div>
+                                        <p class="gradevina">Ljepota i zdravlje</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-2 kategorija-oglasa">
+                                    <div>
+                                        <p class="zdravstvo">Tekstil i asesoari</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-2 kategorija-oglasa">
+                                    <div>
+                                        <p class="poljop">Enterijer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <h1 class="naslov-kolone ">Aktuelno</h1>
                 </div>
 
