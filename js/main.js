@@ -380,17 +380,15 @@ $(document).ready(function() {
     }
 
     function paginate() {
-        // consider adding an id to your table,
-        // just incase a second table ever enters the picture..?
         var kartice = jQuery("#ostale-promo .card-vijest.card-promo").not(".istaknute");
 
         var numItems = kartice.length;
         var perPage = 6;
 
-        var pagination_placeholder_selector = ".articles-pagination"; // put in a variable to ensure proper changes in the future
-        var myPageName = "#stranica-"; // a number will follow for each page
+        var pagination_placeholder_selector = ".articles-pagination";
+        var myPageName = "#stranica-";
 
-        // only show the first 2 (or "first per_page") items initially
+
         var zaPrikazati = kartice.slice(perPage);
         for (var i = 0; i < zaPrikazati.length; i++) {
             $(zaPrikazati[i]).hide();
@@ -398,8 +396,6 @@ $(document).ready(function() {
 
         }
         setGrid();
-        // now setup your pagination
-        // you need that .pagination-page div before/after your table
         $(pagination_placeholder_selector).pagination({
             items: numItems,
             itemsOnPage: perPage,
@@ -407,8 +403,7 @@ $(document).ready(function() {
             hrefTextPrefix: myPageName,
             prevText: "Prethodna",
             nextText: "Sljedeća",
-            onPageClick: function(pageNumber) { // this is where the magic happens
-                // someone changed page, lets hide/show trs appropriately
+            onPageClick: function(pageNumber) {
                 var showFrom = perPage * (pageNumber - 1);
                 var showTo = showFrom + perPage;
                 for (var i = 0; i < kartice.length; i++) {
@@ -424,18 +419,15 @@ $(document).ready(function() {
                 }
                 setGrid();
                 var pozicijaOffset = $('#ostale-promo').offset().top - 220;
-                $('html,body').animate({ scrollTop: pozicijaOffset }, 500);
+
+                $('.articles-pagination ul>li>a').on('click', function(e) {
+                    if (e.target !== this)
+                        return;
+                    $('html,body').animate({ scrollTop: pozicijaOffset }, 500);
+                });
             }
         });
 
-
-
-        // EDIT: extra stuff to cover url fragments (i.e. #page-3)
-        // https://github.com/bilalakil/bin/tree/master/simplepagination/page-fragment
-        // is more thoroughly commented (to explain the regular expression)
-
-        // we'll create a function to check the url fragment and change page
-        // we're storing this function in a variable so we can reuse it
         var checkFragment = function() {
             // if there's no hash, make sure we go to page 1
             var hash = window.location.hash || (myPageName + "1");
