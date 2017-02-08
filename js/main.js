@@ -449,7 +449,10 @@ $(document).ready(function() {
         checkFragment();
 
     }
-    paginate();
+    if ($(".articles-pagination").length) {
+        paginate();
+    }
+
 
 
 
