@@ -197,7 +197,6 @@ $(document).ready(function() {
     $(".profil-card.opcije>li>a").on("click", function(event) {
         event.preventDefault();
         var klasa = $(this).attr("data-target");
-
         $('.profil-centar').children().not('.tab-podaci').not('.' + klasa).fadeOut(function() {
             var pronadjen = $(this);
             $('.' + klasa).fadeIn(600);
@@ -450,6 +449,32 @@ $(document).ready(function() {
     if ($(".articles-pagination").length) {
         paginate();
     }
+
+    /*   $(".dropdown-menu.promo>red-kategorija>kategorija-oglasa>div").click(function(event) {
+           event.stopPropagation();
+           event.preventDefault();
+
+       });*/
+    $(".dropdown-menu.promo .kategorija-oglasa>div").click(function() {
+        var element = $(this).find("p").attr('class');
+        console.log(element);
+        var ima = $(".red-kategorija.toggleable>.kategorija-oglasa>div").has('.' + element);
+        ima.parent().toggle();
+        console.log(ima);
+
+        $(this).toggleClass("active");
+    });
+    $(".red-kategorija.toggleable>.kategorija-oglasa>div").click(function() {
+        $(this).parent().toggle();
+        var element = $(this).find("p").attr('class');
+        console.log(element);
+        var ima = $(".dropdown-menu.promo .kategorija-oglasa>div").has('.' + element);
+        ima.toggleClass("active");
+        console.log(ima);
+    });
+    $(".dropdown-menu.promo").on("click", function(e) {
+        e.stopPropagation();
+    });
 
 
 

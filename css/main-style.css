@@ -1957,9 +1957,11 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/ostalo-ico.svg);
 }
 
+
+/*
 .kategorija-tendera.brza p {
     background-image: url(../assets/icons/star-ico.svg);
-}
+}*/
 
 .kategorija-oglasa p.preporucujemo {
     background-image: url(../assets/icons/preporucujemo-ico.svg);
@@ -1976,6 +1978,7 @@ a.otvoriGaleriju:hover {
 
 /* active styles */
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.obrazovanje,
 .kategorija-oglasa div.active p.obrazovanje,
 .kategorija-oglasa div:hover p.obrazovanje,
 .kategorija-tendera div.active p.obrazovanje,
@@ -1983,6 +1986,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/obrazovanje-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.energetika,
 .kategorija-oglasa div.active p.energetika,
 .kategorija-oglasa div:hover p.energetika,
 .kategorija-tendera div.active p.energetika,
@@ -1990,6 +1994,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/energetika-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.hemija,
 .kategorija-oglasa div.active p.hemija,
 .kategorija-oglasa div:hover p.hemija,
 .kategorija-tendera div.active p.hemija,
@@ -1997,6 +2002,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/hemija-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.gradevina,
 .kategorija-oglasa div.active p.gradevina,
 .kategorija-oglasa div:hover p.gradevina,
 .kategorija-tendera div.active p.gradevina,
@@ -2004,6 +2010,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/gradevina-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.zdravstvo,
 .kategorija-oglasa div.active p.zdravstvo,
 .kategorija-oglasa div:hover p.zdravstvo,
 .kategorija-tendera div.active p.zdravstvo,
@@ -2011,6 +2018,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/zdravstvo-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.poljop,
 .kategorija-oglasa div.active p.poljop,
 .kategorija-oglasa div:hover p.poljop,
 .kategorija-tendera div.active p.poljop,
@@ -2018,6 +2026,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/poljop-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.tekstil,
 .kategorija-oglasa div.active p.tekstil,
 .kategorija-oglasa div:hover p.tekstil,
 .kategorija-tendera div.active p.tekstil,
@@ -2025,6 +2034,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/tekstil-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.okolis,
 .kategorija-oglasa div.active p.okolis,
 .kategorija-oglasa div:hover p.okolis,
 .kategorija-tendera div.active p.okolis,
@@ -2032,6 +2042,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/okolis-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.it,
 .kategorija-oglasa div.active p.it,
 .kategorija-oglasa div:hover p.it,
 .kategorija-tendera div.active p.it,
@@ -2039,6 +2050,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/it-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.sport,
 .kategorija-oglasa div.active p.sport,
 .kategorija-oglasa div:hover p.sport,
 .kategorija-tendera div.active p.sport,
@@ -2046,6 +2058,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/sport-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.telekom,
 .kategorija-oglasa div.active p.telekom,
 .kategorija-oglasa div:hover p.telekom,
 .kategorija-tendera div.active p.telekom,
@@ -2053,6 +2066,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/telekom-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.elektronika,
 .kategorija-oglasa div.active p.elektronika,
 .kategorija-oglasa div:hover p.elektronika,
 .kategorija-tendera div.active p.elektronika,
@@ -2060,6 +2074,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/elektronika-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.istrazivanje,
 .kategorija-oglasa div.active p.istrazivanje,
 .kategorija-oglasa div:hover p.istrazivanje,
 .kategorija-tendera div.active p.istrazivanje,
@@ -2067,6 +2082,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/istrazivanje-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.namjestaj,
 .kategorija-oglasa div.active p.namjestaj,
 .kategorija-oglasa div:hover p.namjestaj,
 .kategorija-tendera div.active p.namjestaj,
@@ -2074,6 +2090,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/namjestaj-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.rudarstvo,
 .kategorija-oglasa div.active p.rudarstvo,
 .kategorija-oglasa div:hover p.rudarstvo,
 .kategorija-tendera div.active p.rudarstvo,
@@ -2081,6 +2098,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/rudarstvo-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.transport,
 .kategorija-oglasa div.active p.transport,
 .kategorija-oglasa div:hover p.transport,
 .kategorija-tendera div.active p.transport,
@@ -2088,6 +2106,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/transport-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.industrija,
 .kategorija-oglasa div.active p.industrija,
 .kategorija-oglasa div:hover p.industrija,
 .kategorija-tendera div.active p.industrija,
@@ -2095,6 +2114,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/industrija-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.turizam,
 .kategorija-oglasa div.active p.turizam,
 .kategorija-oglasa div:hover p.turizam,
 .kategorija-tendera div.active p.turizam,
@@ -2102,16 +2122,19 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/turizam-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.ljepota,
 .kategorija-oglasa div.active p.ljepota,
 .kategorija-oglasa div:hover p.ljepota {
     background-image: url(../assets/icons/ljepota-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.gastro,
 .kategorija-oglasa div.active p.gastro,
 .kategorija-oglasa div:hover p.gastro {
     background-image: url(../assets/icons/gastro-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.stamparije,
 .kategorija-oglasa div.active p.stamparije,
 .kategorija-oglasa div:hover p.stamparije,
 .kategorija-tendera div.active p.stamparije,
@@ -2119,6 +2142,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/stamparije-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.finansije,
 .kategorija-oglasa div.active p.finansije,
 .kategorija-oglasa div:hover p.finansije,
 .kategorija-tendera div.active p.finansije,
@@ -2126,6 +2150,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/finansije-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.odbrana,
 .kategorija-oglasa div.active p.odbrana,
 .kategorija-oglasa div:hover p.odbrana,
 .kategorija-tendera div.active p.odbrana,
@@ -2133,6 +2158,7 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/odbrana-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.ostalo,
 .kategorija-oglasa div.active p.ostalo,
 .kategorija-oglasa div:hover p.ostalo,
 .kategorija-tendera div.active p.ostalo,
@@ -2140,20 +2166,23 @@ a.otvoriGaleriju:hover {
     background-image: url(../assets/icons/ostalo-ico-inv.svg);
 }
 
+.red-kategorija.toggleable>.kategorija-oglasa>div>p.preporucujemo,
 .kategorija-oglasa div.active p.preporucujemo,
 .kategorija-oglasa div:hover p.preporucujemo {
     background-image: url(../assets/icons/preporucujemo-ico-inv.svg);
 }
 
+
+/*
 .kategorija-tendera.brza div:hover p,
 .kategorija-tendera.brza div.active p,
 {
     background-image: url(../assets/icons/star-ico-inv.svg);
-}
+}*/
 
 .kategorija-tendera.brza p {
     background-position: left;
-    padding-left: 55px;
+    padding-left: 0px;
     padding-right: 0px;
 }
 
@@ -2174,6 +2203,14 @@ a.otvoriGaleriju:hover {
     color: white;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.kategorija-oglasa div.active {
+    background-color: #9c5a9a;
+}
+
+.kategorija-oglasa div.active p {
+    color: white;
 }
 
 .kategorija-tendera div:hover p,
@@ -3256,9 +3293,25 @@ a.paginate_button.current,
     background-position: right center;
     height: auto;
     margin: 0;
-    padding: 0;
+    padding: 15px;
     border: none;
     z-index: 99;
+}
+
+.promo-toolbar {
+    padding-top: 7px;
+}
+
+.promo-toolbar>.red-kategorija>.kategorija-oglasa {
+    display: none;
+}
+
+.promo-toolbar>.red-kategorija.toggleable>.kategorija-oglasa>div {
+    background: #9c5a9a;
+}
+
+.promo-toolbar>.red-kategorija.toggleable>.kategorija-oglasa>div>p {
+    color: white;
 }
 
 .btn-group.promo,
