@@ -194,7 +194,7 @@ $(document).ready(function() {
             " - " + $("#slider-range").slider("values", 1) + " KM");
     });
     // $('.profil-centar').children().not('.tab-podaci').not('.tab-osnovno').hide();
-    $(".profil-card.opcije>li>a").on("click", function() {
+    $(".profil-card.opcije>li>a").on("click", function(event) {
         event.preventDefault();
         var klasa = $(this).attr("data-target");
         var text = $(this).text();
