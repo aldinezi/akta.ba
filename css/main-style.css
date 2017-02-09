@@ -3394,6 +3394,36 @@ a.paginate_button.current,
     margin-top: 0px;
 }
 
+.card-button.grey-btn {
+    margin-right: auto;
+    text-align: center;
+    margin-top: 30px;
+    max-width: 100%;
+    padding: 0 25px;
+    white-space: nowrap;
+}
+
+.card-button.grey-btn>i {
+    padding: 10px 15px;
+    font-size: 20px;
+    line-height: 20px;
+    background: #787878;
+    color: white;
+}
+
+.card-button.grey-btn .card-button-tekst {
+    font-size: 20px;
+    line-height: 20px;
+    height: 40px;
+    display: inline-block;
+    padding: 10px 15px;
+    background: #787878;
+}
+
+.card-button.grey-btn:hover .card-button-tekst {
+    background: #00B496;
+}
+
 
 /* - Responsive breakpoints - */
 
