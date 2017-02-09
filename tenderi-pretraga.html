@@ -356,6 +356,124 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 card card-newsletter card-vijest konvertor-valuta pretraga-tendera-form">
+                    <div class="card-opis-vijesti ">
+                        <div class="col-md-10 col-md-push-1 col-xs-12">
+                            <form>
+                                <div class="form-group has-feedback">
+                                    <div class="col-sm-3" style="padding-right:0;">
+                                        <input type="text" class="form-control" placeholder="Naziv">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" placeholder="Broj tendera">
+                                    </div>
+                                    <div class="col-sm-3  grupa ">
+                                        <input type="text" id='datetimepicker1-tp' class="form-control datepick akordion-input" placeholder="Datum objave (Od):">
+                                    </div>
+                                    <div class="col-sm-3  grupa">
+                                        <input type="text" id='datetimepicker2-tp' class="form-control datepick akordion-input" placeholder="Datum objave (Do):">
+                                    </div>
+                                    <div class="col-sm-3 ">
+                                        <span class="form-control-feedback valuebox">
+                                                <i class="val fa fa-caret-up" aria-hidden="true"></i>
+                                                <i class="val fa fa-caret-down" aria-hidden="true"></i>
+                                            </span>
+                                        <select class="form-control" placeholder="Tip">
+                                            <option value="vazeci">Važeći</option>
+                                            <option value="istekli">Istekli</option>
+                                            <option value="svi">Svi</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-sm-3  grupa ">
+                                        <input type="text" id='datetimepicker1-dp' class="form-control datepick akordion-input" placeholder="Datum predaje (Od):">
+                                    </div>
+                                    <div class="col-sm-3  grupa">
+                                        <input type="text" id='datetimepicker2-dp' class="form-control datepick akordion-input" placeholder="Datum opredaje (Do):">
+                                    </div>
+                                    <div class="col-sm-3" style="padding-right:0;">
+                                        <input type="text" class="form-control" placeholder="Naziv firme / ID broj">
+                                    </div>
+                                    <div class="col-sm-3 ">
+                                        <span class="form-control-feedback valuebox">
+                                                <i class="val fa fa-caret-up" aria-hidden="true"></i>
+                                                <i class="val fa fa-caret-down" aria-hidden="true"></i>
+                                            </span>
+                                        <select class="form-control" placeholder="CPV kod">
+                                            <option value="0" selected disabled>CPV kod</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-sm-3 ">
+                                        <span class="form-control-feedback valuebox">
+                                                <i class="val fa fa-caret-up" aria-hidden="true"></i>
+                                                <i class="val fa fa-caret-down" aria-hidden="true"></i>
+                                            </span>
+                                        <select class="form-control" placeholder="Država">
+                                            <option value="država" disabled selected>Država</option>
+                                            <option value="bih">BiH</option>
+                                            <option value="ostale">ostale</option>
+                                            <option value="sve">sve</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-sm-3 ">
+                                        <span class="form-control-feedback valuebox">
+                                                <i class="val fa fa-caret-up" aria-hidden="true"></i>
+                                                <i class="val fa fa-caret-down" aria-hidden="true"></i>
+                                            </span>
+                                        <select class="form-control" placeholder="Teritorija">
+                                            <option value="ter" disabled selected>Teritorija</option>
+                                            <option value="ks">KS</option>
+                                            <option value="hnkz">HNK/Ž</option>
+                                            <option value="zzh">ŽZH</option>
+                                            <option value="sbk">SBK/Ž</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div id="vrijednost-tp">
+                                            <label class="cek">
+                                            <p>
+                                            <label for="amount">Vrijednost:</label>
+                                            <input type="text" id="amount" />
+                                            </p>
+                                            <div id="slider-range"></div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 ">
+                                        <span class="form-control-feedback valuebox">
+                                                <i class="val fa fa-caret-up" aria-hidden="true"></i>
+                                                <i class="val fa fa-caret-down" aria-hidden="true"></i>
+                                            </span>
+                                        <select class="form-control" placeholder="Tip">
+                                            <option value="Tip" selected disabled>Tip</option>
+                                            <option value="Obavještenje o nabavci">Obavještenje o nabavci</option>
+                                            <option value="Obavještenje o konkurentskom postupku">Obavještenje o konkurentskom postupku</option>
+                                            <option value="Obavještenje o dodjeli ugovora">Obavještenje o dodjeli ugovora</option>
+                                            <option value="Obavještenje o nabavci - međunarodno obavještenje">Obavještenje o nabavci - međunarodno obavještenje</option>
+                                             <option value="Aukcija">Aukcija</option>
+                                              <option value="Ispravka obavještenja">Ispravka obavještenja</option>
+                                               <option value="Obavještenje o poništenju postupka">Obavještenje o poništenju postupka</option>
+                                           <option value="Direktni sporazum">Direktni sporazum</option>
+                                           <option value="Pregovarački sporazum">Pregovarački sporazum</option>
+                                           
+                                            </select>
+
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <a href="#" class="card-button" style="margin-right:auto;text-align: center;    margin-top: 30px;" onclick="$(this).closest('form').submit()">
+                                        <span class="card-button-tekst" style="font-size: x-large;">Pretraži</span></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-xs-12 col-md-12">
                     <h1 class="card-naslov-vijesti">Kategorije tendera</h1>
                     <div class="red-kategorija remargin">
@@ -554,93 +672,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 card card-newsletter card-vijest konvertor-valuta pretraga-tendera-form">
-                    <div class="card-opis-vijesti ">
-                        <div class="col-md-10 col-md-push-1 col-xs-12">
-                            <form>
-                                <div class="form-group has-feedback">
-                                    <div class="col-sm-3" style="padding-right:0;">
-                                        <input type="text" class="form-control" placeholder="Naziv">
-                                    </div>
-                                    <div class="col-sm-3 ">
-                                        <span class="form-control-feedback valuebox">
-                                                <i class="val fa fa-caret-up" aria-hidden="true"></i>
-                                                <i class="val fa fa-caret-down" aria-hidden="true"></i>
-                                            </span>
-                                        <select class="form-control" placeholder="Država">
-                                            <option value="država">Država</option>
-                                            <option value="država">Država</option>
-                                            <option value="država">Država</option>
-                                            <option value="država">Država</option>
-                                            </select>
-                                    </div>
-                                    <div class="col-sm-3 ">
-                                        <span class="form-control-feedback valuebox">
-                                                <i class="val fa fa-caret-up" aria-hidden="true"></i>
-                                                <i class="val fa fa-caret-down" aria-hidden="true"></i>
-                                            </span>
-                                        <select class="form-control" placeholder="Tip">
-                                            <option value="tip">Tip</option>
-                                            <option value="tip">Tip</option>
-                                            <option value="tip">Tip</option>
-                                            <option value="tip">Tip</option>
-                                            </select>
-                                    </div>
-                                    <div class="col-sm-3 ">
-                                        <span class="form-control-feedback valuebox">
-                                                <i class="val fa fa-caret-up" aria-hidden="true"></i>
-                                                <i class="val fa fa-caret-down" aria-hidden="true"></i>
-                                            </span>
-                                        <select class="form-control" placeholder="Tip">
-                                            <option value="Važenje tendera">Važenje tendera</option>
-                                            <option value="Važenje tendera">Važenje tendera</option>
-                                            <option value="Važenje tendera">Važenje tendera</option>
-                                            <option value="Važenje tendera">Važenje tendera</option>
-                                            </select>
-                                    </div>
 
-                                </div>
-                                <div class="form-group has-feedback">
-                                    <div class="col-sm-8 grupa">
-                                        <div class="col-sm-4 " style="    padding-left: 0;">
-                                            <p style="    line-height: 34px;
-    font-weight: 600;    text-align: right;">Datum unosa (od-do)</p>
-
-                                        </div>
-                                        <div class="col-sm-4  grupa ">
-                                            <input type="date" class="form-control datepick" placeholder="">
-                                            <span class="form-control-feedback ">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>
-                                        </div>
-                                        <div class="col-sm-4  grupa">
-                                            <input type="date" class="form-control datepick" placeholder="">
-                                            <span class="form-control-feedback ">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4  grupa">
-                                        <select class="form-control datepick" placeholder="Sortiranje">
-                                            <option value="Sortiranje">Sortiranje</option>
-                                            <option value="Sortiranje">Sortiranje</option>
-                                            <option value="Sortiranje">Sortiranje</option>
-                                            <option value="Sortiranje">Sortiranje</option>
-                                            </select>
-                                        <span class="form-control-feedback ">
-                                                <i class="val fa fa-caret-up" aria-hidden="true"></i>
-                                                <i class="val fa fa-caret-down" aria-hidden="true"></i>
-                                            </span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <a href="#" class="card-button" style="margin-right:auto;text-align: center;    margin-top: 30px;" onclick="$(this).closest('form').submit()">
-                                        <span class="card-button-tekst" style="font-size: x-large;">Pretraži</span></a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
 
 
             </div>

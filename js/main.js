@@ -159,7 +159,12 @@ $(document).ready(function() {
     $("input.akordion-input[type='text']").on("click", function() {
         $(this).select();
     });
-
+    $("#datetimepicker1-tp,#datetimepicker1-dp").datepicker({
+        dateFormat: "dd.mm.yy"
+    });
+    $("#datetimepicker2-tp,#datetimepicker2-dp").datepicker({
+        dateFormat: "dd.mm.yy"
+    });
     $("#datetimepicker1").datepicker({
         dateFormat: "dd.mm.yy"
     }).focus(function() {
