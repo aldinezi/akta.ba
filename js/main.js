@@ -197,11 +197,9 @@ $(document).ready(function() {
     $(".profil-card.opcije>li>a").on("click", function(event) {
         event.preventDefault();
         var klasa = $(this).attr("data-target");
-        var text = $(this).text();
-        console.log("Klik registrovan na: " + text + "\n ciljana klasa: " + klasa)
+
         $('.profil-centar').children().not('.tab-podaci').not('.' + klasa).fadeOut(function() {
             var pronadjen = $(this);
-            console.log(pronadjen);
             $('.' + klasa).fadeIn(600);
         });
     });
