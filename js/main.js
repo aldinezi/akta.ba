@@ -21,8 +21,7 @@ $(document).ready(function() {
     $(".kapital #dalje").click(function() {
         $("#skroler-kapital").carousel("next");
     });
-
-    function provjereDimenzija() {
+    function fdiCarousel(){
         if ($(window).width() > 1199) {
             $('.fdi-Carousel .item').each(function() {
                 var next = $(this).next();
@@ -32,6 +31,10 @@ $(document).ready(function() {
                 next.children(':first-child').clone().appendTo($(this));
             });
         };
+    }
+    fdiCarousel();   
+    function provjereDimenzija() {
+        
         if ($(window).width() < 768) {
             $(".search-icon").click(function(event) {
                 event.preventDefault();
