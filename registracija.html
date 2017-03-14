@@ -65,7 +65,6 @@
                 <div class="navbar-header">
                     <a class="logo-link" href="#"><img class="logo" src="./images/logo.png" alt="logo"></a>
                 </div>
-                <h1 id="current_category" class="visible-xs-inline-block visible-sm-inline-block hidden-md hidden-lg">REGISTRACIJA</h1>
                 <div id="header_navigation" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav hidden-xs visible-md visible-lg">
                         <li><a href="#">O nama</a></li>
@@ -317,33 +316,88 @@
     <!-- MAIN BODY -->
     <section class="main_body_contents single_article">
         <div class="container">
-
             <div class="wrapper-vijesti remargin">
-                <div class="col-xs-12 col-md-4 card">
-                    <div class="card-opis-vijesti ">
-                        <h1>poslujte bolje</h1>
+                <div class="col-md-12 row-istih-visina nopadding">
+                    <div class="col-xs-12 col-md-4 card">
+                        <div class="card-opis-vijesti full-height">
+                            <h1 class="card-naslov-vijesti">Poslujte bolje!</h1>
+                            <p>Pratimo ponudu, potražnju i stanje u privredi, te prema Vašim potrebama možete primati informacije koje se tiču isključivo Vaše djelatnosti.<br><br> Svakodnevno će Vam stizati newsletteri Akta.ba na Vaš email sa vijestima i
+                                tenderima, a sa korisničkim imenom i šifrom, možete pretraživati poslovni portal Akta.ba.</p>
+                            <p><b>Dovoljno je da izaberete paket koji vam odgovara i 
+registrujete se putem obrasca u nastavku.</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 card">
+                        <div class="footer-cta tenderi-footer-cta tenderi-pretraga-widget">
+                            <h1><span>Prijavite se za 14-dnevno BESPLATNO korištenje i uvjerite se u prednosti koje Vam pružamo.</span></h1>
+                            <a class="footer-cta-button white-cta">TESTIRAJ BESPLATNO</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 card">
+                        <div class="card-opis-vijesti full-height">
+                            <h1 class="card-naslov-vijesti">Kontaktirajte nas</h1>
+                            <p>Radno vrijeme Službe za korisnike je od 08:00 do 16:30 (Pon. – Pet.), subotom od 08:00 do 12:00.<br><br> Za sve dodatne informacije kontaktirajte nas na telefonske brojeve:<br> +387 33 762 215<br> +387 33 762 216<br> +387 33
+                                762 665<br><br> Ili putem e-maila na info@akta.ba
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4 card">
-                    <div class="card-opis-vijesti ">
-                        <h1>testiraj</h1>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4 card">
-                    <div class="card-opis-vijesti ">
-                        <h1>kontaktiraj</h1>
-                    </div>
-                </div>
-
-
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 card ">
                     <div class="card-opis-vijesti ">
-                        <h1>tabela</h1>
+                        <table id="tabela_paketa" class="tabela-paketa">
+                            <thead>
+                                <tr>
+                                    <th>Odaberite paket koji Vam odgovara</th>
+                                    <th class="tenderi-labela">&nbsp;</th>
+                                    <th class="registar-labela">&nbsp;</th>
+                                    <th class="promo-labela">&nbsp;</th>
+                                    <th class="registarplus-labela">&nbsp;</th>
+                                    <th class="primarni-labela">&nbsp;</th>
+                                    <th class="premium-labela">&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Feature 1</td>
+                                    <td><b class="check">✔</b></td>
+                                    <td><b class="check">✔</b></td>
+                                    <td><b class="check">✔</b></td>
+                                    <td><b class="check">✔</b></td>
+                                    <td><b class="check">✔</b></td>
+                                    <td><b class="check">✔</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Feature 2</td>
+                                    <td>&mdash;</td>
+                                    <td><b class="check">✔</b></td>
+                                    <td><b class="check">✔</b></td>
+                                    <td><b class="check">✔</b></td>
+                                    <td><b class="check">✔</b></td>
+                                    <td><b class="check">✔</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Feature 3</td>
+                                    <td>&mdash;</td>
+                                    <td>&mdash;</td>
+                                    <td><b class="check">✔</b></td>
+                                    <td><b class="check">✔</b></td>
+                                    <td><b class="check">✔</b></td>
+                                    <td><b class="check">✔</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Feature 4</td>
+                                    <td>&mdash;</td>
+                                    <td>&mdash;</td>
+                                    <td><b class="check">✔</b></td>
+                                    <td><b class="check">✔</b></td>
+                                    <td><b class="check">✔</b></td>
+                                    <td><b class="check">✔</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
 
@@ -353,17 +407,7 @@
 
     <!--- footer sekcija -->
     <section id="footer">
-        <!--- Footer newsletter
-        <div class="container-fluid newsletter-footer">
-            <h1>PRIJAVI SE ZA <span>NEWSLETTER</span></h1>
-            <div class="form-group has-feedback">
-                <input type="text" class="form-control" id="usrname" placeholder="Upišite svoju e-mail adresu ovdje">
-                <span class="form-control-feedback">
-                      <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                </span>
-            </div>
-        </div>
-        -->
+
         <div class="container-fluid footer-cta">
             <h1> <span>Poslujte bolje!</span> TESTIRAJTE BESPLATNO!</h1>
             <a class="footer-cta-button">REGISTRUJ SE</a>

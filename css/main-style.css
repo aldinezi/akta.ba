@@ -63,6 +63,10 @@ body {
     background-color: #e9e9e9;
 }
 
+a {
+    cursor: pointer;
+}
+
 .bijeli-menu {
     background: white;
 }
@@ -632,7 +636,7 @@ h1.naslov-kolone:after {
 .card-slika-vijesti {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    width:100%;
+    width: 100%;
 }
 
 .card-intro-vijesti {
@@ -865,6 +869,11 @@ a.card-button:focus {
     margin-bottom: 0px;
     font-family: "Raleway-ExtraBold";
     font-size: 16px;
+}
+
+a.footer-cta-button.white-cta {
+    color: #21ccaf;
+    background: white;
 }
 
 a.footer-cta-button:hover,
@@ -3489,6 +3498,124 @@ a.paginate_button.current,
 
 .form-control-feedback {
     z-index: 1;
+}
+
+.full-height {
+    height: 100%;
+}
+
+
+/* - Tabela paketa  - */
+
+table.tabela-paketa {
+    width: 100%;
+}
+
+.tabela-paketa>tbody>tr:nth-child(2n+1)>td,
+.tabela-paketa>tbody>tr:nth-child(2n+1)>th {
+    background-color: #dbdcdd;
+}
+
+.tabela-paketa td,
+.tabela-paketa th {
+    text-align: center;
+    border: none;
+    font-size: 21px;
+    padding: 6px;
+    word-wrap: break-word;
+    border-right: 15px solid white;
+    border-left: 15px solid white;
+    width: calc(80% / 6);
+    cursor: pointer;
+}
+
+.tabela-paketa th:first-child,
+.tabela-paketa td:first-child {
+    font-weight: bold;
+    width: 20%;
+    text-align: left;
+    cursor: default;
+}
+
+.tabela-paketa th {
+    height: 90px;
+}
+
+.tabela-paketa td.highlight {
+    background: rgba(0, 180, 150, 0.7) !important;
+}
+
+.tabela-paketa .tenderi-labela {
+    background-image: url(../assets/tenderi.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tabela-paketa .registar-labela {
+    background-image: url(../assets/registar.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tabela-paketa .promo-labela {
+    background-image: url(../assets/promo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tabela-paketa .registarplus-labela {
+    background-image: url(../assets/registarplus.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tabela-paketa .primarni-labela {
+    background-image: url(../assets/primarni.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tabela-paketa .premium-labela {
+    background-image: url(../assets/premium.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .tabela-paketa>tbody>tr:nth-child(2n+1)>td,
+    .tabela-paketa>tbody>tr:nth-child(2n+1)>th {
+        background-color: transparent;
+    }
+    .tabela-paketa .check {
+        color: limegreen;
+        font-size: 20px;
+    }
+    .tabela-paketa r {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .tabela-paketa td,
+    .tabela-paketa th {
+        display: inline-block;
+        width: calc(100% / 6);
+        font-size: 20px;
+        border-right: none;
+        border-left: none;
+        cursor: pointer;
+    }
+    .tabela-paketa th:first-child,
+    .tabela-paketa td:first-child {
+        background: #efefef !important;
+        width: 100%;
+        cursor: default;
+    }
+    .tabela-paketa td:first-child {
+        text-align: center;
+    }
+    .tabela-paketa th:first-child {
+        display: none;
+    }
 }
 
 

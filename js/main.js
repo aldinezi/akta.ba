@@ -21,7 +21,8 @@ $(document).ready(function() {
     $(".kapital #dalje").click(function() {
         $("#skroler-kapital").carousel("next");
     });
-    function fdiCarousel(){
+
+    function fdiCarousel() {
         if ($(window).width() > 1199) {
             $('.fdi-Carousel .item').each(function() {
                 var next = $(this).next();
@@ -32,9 +33,10 @@ $(document).ready(function() {
             });
         };
     }
-    fdiCarousel();   
+    fdiCarousel();
+
     function provjereDimenzija() {
-        
+
         if ($(window).width() < 768) {
             $(".search-icon").click(function(event) {
                 event.preventDefault();
@@ -482,6 +484,20 @@ $(document).ready(function() {
     });
     $(".dropdown-menu.promo").on("click", function(e) {
         e.stopPropagation();
+    });
+    /*
+    Oznacavanje kolone u tabeli
+    */
+    $("#tabela_paketa tr td, #tabela_paketa tr th").click(function() {
+        //Reset
+        $("#tabela_paketa td").removeClass("highlight");
+        //Add highlight class to new column
+        var index = $(this).index();
+        if (index != 0) {
+            $("#tabela_paketa tr").each(function(i, tr) {
+                $(tr).find('td').eq(index).addClass("highlight");
+            });
+        }
     });
 
 
