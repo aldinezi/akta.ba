@@ -3539,7 +3539,8 @@ table.tabela-paketa {
 
 .tabela-paketa td:first-child {
     font-weight: normal;
-    font-size: 18px
+    font-size: 14px;
+    font-family: 'RobotoCOndensed-Regular', Arial, Helvetica, sans-serif;
 }
 
 .tabela-paketa th {
