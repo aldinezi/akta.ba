@@ -3537,6 +3537,11 @@ table.tabela-paketa {
     cursor: default;
 }
 
+.tabela-paketa td:first-child {
+    font-weight: normal;
+    font-size: 18px
+}
+
 .tabela-paketa th {
     height: 100px;
 }
@@ -3581,6 +3586,46 @@ table.tabela-paketa {
 
 .tabela-paketa .premium-labela {
     background-image: url(../assets/premium.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tabela-paketa tfoot td {
+    height: 100px;
+}
+
+.tabela-paketa tfoot td.tenderi-labela {
+    background-image: url(../assets/tenderi_foot.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tabela-paketa tfoot td.registar-labela {
+    background-image: url(../assets/registar_foot.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tabela-paketa tfoot td.promo-labela {
+    background-image: url(../assets/promo_foot.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tabela-paketa tfoot td.registarplus-labela {
+    background-image: url(../assets/registarplus_foot.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tabela-paketa tfoot td.primarni-labela {
+    background-image: url(../assets/primarni_foot.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tabela-paketa tfoot td.premium-labela {
+    background-image: url(../assets/premium_foot.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
