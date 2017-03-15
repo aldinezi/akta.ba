@@ -490,11 +490,12 @@ $(document).ready(function() {
     */
     $("#tabela_paketa tr td, #tabela_paketa tr th").click(function() {
         //Reset
-        $("#tabela_paketa td").removeClass("highlight");
+        $("#tabela_paketa td, #tabela_paketa th").removeClass("highlight");
         //Add highlight class to new column
         var index = $(this).index();
         if (index != 0) {
             $("#tabela_paketa tr").each(function(i, tr) {
+                $(tr).find('th').eq(index).addClass("highlight");
                 $(tr).find('td').eq(index).addClass("highlight");
             });
         }

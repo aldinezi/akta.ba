@@ -3509,6 +3509,8 @@ a.paginate_button.current,
 
 table.tabela-paketa {
     width: 100%;
+    border-spacing: 10px 0px;
+    border-collapse: separate;
 }
 
 .tabela-paketa>tbody>tr:nth-child(2n+1)>td,
@@ -3523,8 +3525,6 @@ table.tabela-paketa {
     font-size: 21px;
     padding: 6px;
     word-wrap: break-word;
-    border-right: 15px solid white;
-    border-left: 15px solid white;
     width: calc(80% / 6);
     cursor: pointer;
 }
@@ -3538,11 +3538,15 @@ table.tabela-paketa {
 }
 
 .tabela-paketa th {
-    height: 90px;
+    height: 100px;
 }
 
-.tabela-paketa td.highlight {
-    background: rgba(0, 180, 150, 0.7) !important;
+.tabela-paketa tr:nth-child(even)>td.highlight {
+    background: #ececec;
+}
+
+.tabela-paketa th.highlight {
+    background-color: #ececec;
 }
 
 .tabela-paketa .tenderi-labela {
