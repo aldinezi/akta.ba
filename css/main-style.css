@@ -3509,7 +3509,7 @@ a.paginate_button.current,
 
 table.tabela-paketa {
     width: 100%;
-    border-spacing: 10px 0px;
+    border-spacing: 30px 0px;
     border-collapse: separate;
 }
 
@@ -3595,6 +3595,58 @@ table.tabela-paketa {
     height: 100px;
 }
 
+.tabela-paketa tfoot td.best_seller:after {
+    background: url(../assets/best_seller.svg);
+    content: "";
+    height: 70px;
+    width: 70px;
+    background-size: contain;
+    display: block;
+    position: relative;
+    left: 85px;
+    bottom: -20px;
+}
+
+.tabela-paketa tfoot td.best_buy:after {
+    background: url(../assets/best_buy.svg);
+    content: "";
+    height: 70px;
+    width: 70px;
+    background-size: contain;
+    display: block;
+    position: relative;
+    left: 85px;
+    bottom: -20px;
+}
+
+.tabela-paketa thead th.best_seller:after {
+    background: url(../assets/best_seller.svg);
+    content: "";
+    height: 70px;
+    width: 70px;
+    background-size: contain;
+    display: block;
+    position: relative;
+    left: 85px;
+    top: -65px;
+}
+
+.tabela-paketa thead th.best_buy:after {
+    background: url(../assets/best_buy.svg);
+    content: "";
+    height: 70px;
+    width: 70px;
+    background-size: contain;
+    display: block;
+    position: relative;
+    left: 85px;
+    top: -65px;
+}
+
+.tabela-paketa td .check {
+    color: #00b496;
+}
+
 .tabela-paketa tfoot td.tenderi-labela {
     background-image: url(../assets/tenderi_foot.svg);
     background-size: contain;
@@ -3666,6 +3718,13 @@ table.tabela-paketa {
     .tabela-paketa th:first-child {
         display: none;
     }
+}
+
+.registracijska-forma label {
+    font-weight: 100;
+    font-family: "RobotoCondensed-Regular";
+    padding-left: 2px;
+    font-size: 12px;
 }
 
 
