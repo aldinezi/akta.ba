@@ -2562,20 +2562,27 @@ input#amount:focus {
 
 /* - Registar -*/
 
-.main_nav.registar>li>a,
+.main_nav.registar>li>a {
+    color: black;
+}
+
 .user_menu>li>a.registar {
     color: #00827D;
 }
 
+.main_nav.tenderi>li>a.active,
 .main_nav.registar>li>a.active,
 .main_nav.promo>li>a.active {
-    color: #000;
+    color: #4B69A5;
 }
 
 
 /* Promo */
 
-.main_nav.promo>li>a,
+.main_nav.promo>li>a {
+    color: black;
+}
+
 .user_menu>li>a.promo {
     color: #9c5a9a;
 }
@@ -3525,7 +3532,7 @@ table.tabela-paketa {
     font-size: 21px;
     padding: 6px;
     word-wrap: break-word;
-    width: calc(80% / 6);
+    width: 13.33%;
     cursor: pointer;
 }
 
