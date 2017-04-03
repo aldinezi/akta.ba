@@ -120,17 +120,16 @@
                             <!-- Potrebno je koristiti klasu 'padajuci-meni' na LI tagu, za dodavanje padajuceg menija
                              kao i DIV sa klasom 'padajuci-sadrzaj' -->
                             <a href="#">VIJESTI</a>
-                        </li>
-                        <div class="padajuci-sadrzaj">
-                            <div class="col-xs-12 col-sm-12 col-md-3 ">
-                                <ul class="padajuci-submenu">
+                            <div class="padajuci-sadrzaj">
+                                 <div class="col-xs-12 col-sm-12 col-md-3 ">
+                                     <ul class="padajuci-submenu">
                                     <li><a href="#">BOSNA I HERCEGOVINA</a></li>
                                     <li><a href="#">REGIJA</a></li>
                                     <li><a href="#">SVIJET</a></li>
                                     <li><a href="#">EU</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-3 card card-vijest ">
+                                  </ul>
+                                 </div>
+                                 <div class="col-xs-12 col-sm-6 col-md-3 card card-vijest ">
                                 <img class="img-responsive card-slika-vijesti" src="./images/dummy/pic12.jpg">
                                 <div class="card-opis-vijesti">
                                     <p class="card-kategorija">Vijesti / SVIJET</p>
@@ -161,10 +160,12 @@
                                 </div>
                             </div>
 
-                        </div>
+                            </div>
+                        </li>
+                        
                         <li><a href="#">Kapital</a></li>
-                        <li class="padajuci-meni"><a href="#">Investicije</a></li>
-                        <div class="padajuci-sadrzaj">
+                        <li class="padajuci-meni"><a href="#">Investicije</a>
+                            <div class="padajuci-sadrzaj">
                             <div class="col-xs-12 col-sm-12 col-md-3 ">
                                 <ul class="padajuci-submenu">
                                     <li><a href="#">NASLOV 1</a></li>
@@ -203,6 +204,8 @@
                             </div>
 
                         </div>
+                        </li>
+                        
                         <li><a href="#">Eu</a></li>
                         <li><a href="#">Najave</a></li>
                         <li><a href="#">Ličnosti</a></li>
@@ -211,7 +214,8 @@
                         <li><a href="#">Pauza</a></li>
                         <li><a href="#">Filantropi</a></li>
                     </ul>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                    <!-- make hamburger icon hidden for desktop and visible for mobile-->
+                    <a href="#" class="dropdown-toggle visible-xs hidden-md" data-toggle="dropdown"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
                     <span class="search_bar">
                         <a href="#" class="person-ico hidden-sm hidden-md hidden-lg">

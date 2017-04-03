@@ -21,10 +21,10 @@ $(document).ready(function() {
     $(".kapital #dalje").click(function() {
         $("#skroler-kapital").carousel("next");
     });
-    $('.padajuci-meni').hover(function(){
-            $(this).next('.padajuci-sadrzaj').fadeIn(600);
+    $('.padajuci-meni, .padajuci-sadrzaj').hover(function(){
+            $(this).find('.padajuci-sadrzaj').fadeIn(600);
         },function(){
-             $(this).next('.padajuci-sadrzaj').fadeOut(600);
+             $(this).find('.padajuci-sadrzaj').delay(400).fadeOut(600);
         }
     );
     function fdiCarousel() {
