@@ -21,7 +21,12 @@ $(document).ready(function() {
     $(".kapital #dalje").click(function() {
         $("#skroler-kapital").carousel("next");
     });
-
+    $('.padajuci-meni').hover(function(){
+            $(this).next('.padajuci-sadrzaj').fadeIn(600);
+        },function(){
+             $(this).next('.padajuci-sadrzaj').fadeOut(600);
+        }
+    );
     function fdiCarousel() {
         if ($(window).width() > 1199) {
             $('.fdi-Carousel .item').each(function() {
