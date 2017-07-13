@@ -1,0 +1,21 @@
+.tooltipHolder {
+    display: inline-block;
+    text-align: center;
+}
+
+.tooltipHolder a {
+    line-height: 26px;
+    font-size: 25px;
+    height: 34px;
+    width: 25px;
+    display: block;
+}
+
+.tooltipHolder a i {
+    vertical-align: middle;
+}
+
+.typeahead {
+    width: calc(100% - 32px);
+    display: inline-block;
+}

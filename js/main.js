@@ -21,12 +21,12 @@ $(document).ready(function() {
     $(".kapital #dalje").click(function() {
         $("#skroler-kapital").carousel("next");
     });
-    $('.padajuci-meni, .padajuci-sadrzaj').hover(function(){
-            $(this).find('.padajuci-sadrzaj').fadeIn(600);
-        },function(){
-             $(this).find('.padajuci-sadrzaj').delay(400).fadeOut(600);
-        }
-    );
+    $('.padajuci-meni, .padajuci-sadrzaj').hover(function() {
+        $(this).find('.padajuci-sadrzaj').fadeIn(600);
+    }, function() {
+        $(this).find('.padajuci-sadrzaj').delay(400).fadeOut(600);
+    });
+
     function fdiCarousel() {
         if ($(window).width() > 1199) {
             $('.fdi-Carousel .item').each(function() {
@@ -505,8 +505,36 @@ $(document).ready(function() {
             });
         }
     });
-
-
-
+    $('.typeahead').prev('span').remove();
+    $('.typeahead').before('<a class="removeVal">X</a>');
+    $('.typeahead').parent().css('padding-right', '0');
+    $('.typeahead').on('keydown', function() {
+        var lijevo = this.getBoundingClientRect().left - 15;
+        var gore = this.getBoundingClientRect().top;
+        $('.typeahead.dropdown-menu').css({
+            position: 'fixed',
+            marginLeft: lijevo,
+            marginTop: gore
+        });
+    });
+    $('.typeahead').change(function(ev) {
+        if ($(this).val()) {
+            $(this).prev('.removeVal').addClass('visible');
+        }
+    });
+    $('.col-sm-3').on('click', '.removeVal', function(et) {
+        $(this).removeClass('visible');
+        $(this).siblings('.typeahead').val('');
+    });
+    $("a[rel='tooltip']").tooltip({
+        trigger: 'click'
+    });
+    $("a[rel='tooltip']").click(function(ev) {
+        ev.preventDefault();
+        var _this = this;
+        setTimeout(function() {
+            $(_this).tooltip('hide');
+        }, 3000);
+    });
 
 });

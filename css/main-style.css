@@ -221,7 +221,7 @@ a.um_forum,
 
 .main_nav>li {
     line-height: 70px;
-    position:initial;
+    position: initial;
 }
 
 .nav>li>a {
@@ -1478,6 +1478,7 @@ a.otvoriGaleriju:hover {
 
 .galerija {
     position: relative;
+    max-height: 400px;
 }
 
 .galerijaCta {
@@ -3751,15 +3752,17 @@ table.tabela-paketa {
     box-shadow: 0px 15px 12px -10px rgb(50, 50, 50);
     z-index: 99;
     padding-top: 30px;
+    display: none;
+}
 
-    display:none;
+.affix .padajuci-sadrzaj {
+    margin-top: -1px;
 }
-.affix .padajuci-sadrzaj{
-    margin-top:-1px;
-}
-.padajuci-submenu{
+
+.padajuci-submenu {
     padding-left: 0px;
 }
+
 .padajuci-submenu li {
     vertical-align: middle;
     line-height: 30px;
@@ -3769,9 +3772,12 @@ table.tabela-paketa {
     color: #4B69A5;
     list-style: none;
 }
-.padajuci-submenu li a:hover,.padajuci-submenu li a:focus{
-    text-decoration:none;
+
+.padajuci-submenu li a:hover,
+.padajuci-submenu li a:focus {
+    text-decoration: none;
 }
+
 
 /* - Responsive breakpoints - */
 
@@ -4160,4 +4166,50 @@ table.tabela-paketa {
     .social_icons {
         margin-left: 10px;
     }
+}
+
+.removeVal {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 34px;
+    height: 34px;
+    background: #a3a3a9;
+    line-height: 34px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+.removeVal:hover {
+    color: white;
+    text-decoration: none;
+    background: #77777b;
+}
+
+.removeVal.visible {
+    display: block;
+}
+
+.tooltipHolder {
+    display: inline-block;
+    text-align: center;
+}
+
+.tooltipHolder a {
+    line-height: 26px;
+    font-size: 25px;
+    height: 34px;
+    width: 25px;
+    display: block;
+}
+
+.tooltipHolder a i {
+    vertical-align: middle;
+}
+
+.typeahead {
+    width: calc(100% - 32px);
+    display: inline-block;
 }
