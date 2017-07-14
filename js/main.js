@@ -1,14 +1,14 @@
-$(".dropdown").on("show.bs.dropdown", function(event) {
-    $(".dropdown-toggle>i").removeClass("fa-bars").addClass("fa-times");
-    $(".dropdown-toggle").addClass("otvoren");
-    $(".search-icon").addClass("otvoren");
-});
-$(".dropdown").on("hide.bs.dropdown", function() {
-    $(".dropdown-toggle>i").removeClass("fa-times").addClass("fa-bars");
-    $(".dropdown-toggle").removeClass("otvoren");
-    $(".search-icon").removeClass("otvoren");
-});
 $(document).ready(function() {
+    $(".dropdown").on("show.bs.dropdown", function(event) {
+        $(".dropdown-toggle>i").removeClass("fa-bars").addClass("fa-times");
+        $(".dropdown-toggle").addClass("otvoren");
+        $(".search-icon").addClass("otvoren");
+    });
+    $(".dropdown").on("hide.bs.dropdown", function() {
+        $(".dropdown-toggle>i").removeClass("fa-times").addClass("fa-bars");
+        $(".dropdown-toggle").removeClass("otvoren");
+        $(".search-icon").removeClass("otvoren");
+    });
     $('#skroler-novosti').carousel({
         interval: 10000
     });
@@ -535,6 +535,23 @@ $(document).ready(function() {
         setTimeout(function() {
             $(_this).tooltip('hide');
         }, 3000);
+    });
+    /*  $("#prikaziViseManje").toggle(
+           function() {
+               $(this).html("PRIKAŽI MANJE TEKSTA <i class='fa fa-angle-double-up' aria-hidden='true'></i>").parent('.tekstSwitch').siblings(".sadrzajVijesti").children('.viseTeksta').show();
+           },
+           function() {
+               $(this).html("PRIKAŽI VIŠE TEKSTA <i class='fa fa-angle-double-down' aria-hidden='true'></i>").parent('.tekstSwitch').siblings(".sadrzajVijesti").children('.viseTeksta').hide();
+           }
+       ); */
+    $("#prikaziViseManje").on('click', function() {
+        if ($('.viseTeksta').hasClass('active')) {
+            $('.viseTeksta').removeClass('active').slideUp(900);
+            $("#prikaziViseManje").html("PRIKAŽI VIŠE TEKSTA <i class='fa fa-angle-double-down' aria-hidden='true'></i>");
+        } else {
+            $('.viseTeksta').addClass('active').slideDown(900);
+            $("#prikaziViseManje").html("PRIKAŽI MANJE TEKSTA <i class='fa fa-angle-double-up' aria-hidden='true'></i>");
+        }
     });
 
 });

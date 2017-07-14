@@ -4213,3 +4213,18 @@ table.tabela-paketa {
     width: calc(100% - 32px);
     display: inline-block;
 }
+
+.viseTeksta {
+    display: none;
+}
+
+#prikaziViseManje {
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tekstSwitch {
+    text-align: center;
+    color: #909090;
+}
