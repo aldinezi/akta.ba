@@ -15,11 +15,9 @@ $(document).ready(function() {
     $('#skroler-kapital').carousel({
         interval: 10000
     });
-    /*
     $("#dalje").click(function() {
-        $("#skroler-novosti").carousel("next");
+        $('#ticker').webTicker('cont');
     });
-    */
     $(".kapital #dalje").click(function() {
         $("#skroler-kapital").carousel("next");
     });
