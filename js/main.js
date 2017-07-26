@@ -22,9 +22,9 @@ $(document).ready(function() {
         $("#skroler-kapital").carousel("next");
     });
     $('.padajuci-meni, .padajuci-sadrzaj').hover(function() {
-        $(this).find('.padajuci-sadrzaj').fadeIn(600);
+        $(this).find('.padajuci-sadrzaj').stop().fadeIn(600);
     }, function() {
-        $(this).find('.padajuci-sadrzaj').delay(400).fadeOut(600);
+        $(this).find('.padajuci-sadrzaj').stop().delay(400).fadeOut(600);
     });
 
     function fdiCarousel() {
@@ -208,7 +208,7 @@ $(document).ready(function() {
         $("#amount").val($("#slider-range").slider("values", 0) + " KM" +
             " - " + $("#slider-range").slider("values", 1) + " KM");
     });
-    // $('.profil-centar').children().not('.tab-podaci').not('.tab-osnovno').hide();
+
     $(".profil-card.opcije>li>a").on("click", function(event) {
         event.preventDefault();
         var klasa = $(this).attr("data-target");
@@ -465,11 +465,6 @@ $(document).ready(function() {
         paginate();
     }
 
-    /*   $(".dropdown-menu.promo>red-kategorija>kategorija-oglasa>div").click(function(event) {
-           event.stopPropagation();
-           event.preventDefault();
-
-       });*/
     $(".dropdown-menu.promo .kategorija-oglasa>div").click(function() {
         var element = $(this).find("p").attr('class');
         console.log(element);
@@ -535,15 +530,7 @@ $(document).ready(function() {
         setTimeout(function() {
             $(_this).tooltip('hide');
         }, 3000);
-    });
-    /*  $("#prikaziViseManje").toggle(
-           function() {
-               $(this).html("PRIKAŽI MANJE TEKSTA <i class='fa fa-angle-double-up' aria-hidden='true'></i>").parent('.tekstSwitch').siblings(".sadrzajVijesti").children('.viseTeksta').show();
-           },
-           function() {
-               $(this).html("PRIKAŽI VIŠE TEKSTA <i class='fa fa-angle-double-down' aria-hidden='true'></i>").parent('.tekstSwitch').siblings(".sadrzajVijesti").children('.viseTeksta').hide();
-           }
-       ); */
+    });    
     $("#prikaziViseManje").on('click', function() {
         if ($('.viseTeksta').hasClass('active')) {
             $('.viseTeksta').removeClass('active').slideUp(900);
