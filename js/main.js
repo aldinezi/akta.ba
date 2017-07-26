@@ -15,19 +15,21 @@ $(document).ready(function() {
     $('#skroler-kapital').carousel({
         interval: 10000
     });
+    /*
     $("#dalje").click(function() {
         $("#skroler-novosti").carousel("next");
     });
+    */
     $(".kapital #dalje").click(function() {
         $("#skroler-kapital").carousel("next");
     });
     $('.padajuci-meni, .padajuci-sadrzaj').hover(function() {
         $(this).find('.padajuci-sadrzaj').stop().fadeIn(600);
     }, function() {
-        $(this).find('.padajuci-sadrzaj').stop().delay(400).fadeOut(600);
+        $(this).find('.padajuci-sadrzaj').stop().delay(200).fadeOut(600);
     });
 
-    function fdiCarousel() {
+    /*function fdiCarousel() {
         if ($(window).width() > 1199) {
             $('.fdi-Carousel .item').each(function() {
                 var next = $(this).next();
@@ -38,7 +40,7 @@ $(document).ready(function() {
             });
         };
     }
-    fdiCarousel();
+    fdiCarousel();*/
 
     function provjereDimenzija() {
 
@@ -540,5 +542,9 @@ $(document).ready(function() {
             $("#prikaziViseManje").html("PRIKAŽI MANJE TEKSTA <i class='fa fa-angle-double-up' aria-hidden='true'></i>");
         }
     });
+
+     $('#ticker').webTicker({
+         startEmpty:false
+     });
 
 });
