@@ -4215,10 +4215,6 @@ table.tabela-paketa {
     display: inline-block;
 }
 
-.viseTeksta {
-    display: none;
-}
-
 #prikaziViseManje {
     text-align: center;
     font-weight: bold;
@@ -4228,6 +4224,7 @@ table.tabela-paketa {
 .tekstSwitch {
     text-align: center;
     color: #909090;
+    position: relative;
 }
 
 .ticker-vijesti{
@@ -4244,3 +4241,32 @@ table.tabela-paketa {
 }
 
 .tickercontainer{height:61px !important}
+.sadrzajVijesti{
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+.sadrzajVijesti.manjeTeksta{
+    max-height: 900px;
+    
+}
+span#prikaziViseManje:before {
+    display: block;
+    content: "";
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 30px;   
+}
+span#prikaziViseManje.shadeOn:before{
+     background: rgba(255,255,255,0.26);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.26) 25%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0.26)), color-stop(25%, rgba(255,255,255,0.26)), color-stop(69%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.26) 25%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.26) 25%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.26) 25%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.26) 25%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+}
+span#prikaziViseManje.shadeOff:before{
+    background:transparent;
+}

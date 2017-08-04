@@ -532,12 +532,18 @@ $(document).ready(function() {
         }, 3000);
     });    
     $("#prikaziViseManje").on('click', function() {
-        if ($('.viseTeksta').hasClass('active')) {
-            $('.viseTeksta').removeClass('active').slideUp(900);
-            $("#prikaziViseManje").html("PRIKAŽI VIŠE TEKSTA <i class='fa fa-angle-double-down' aria-hidden='true'></i>");
-        } else {
-            $('.viseTeksta').addClass('active').slideDown(900);
+        var $element = $('.sadrzajVijesti');
+        var scrollHeight = $element.prop("scrollHeight");
+        var initial = 900;
+        if ($('.sadrzajVijesti').hasClass('manjeTeksta')) {         
+            $('.sadrzajVijesti').removeClass('manjeTeksta').css('max-height',scrollHeight);
             $("#prikaziViseManje").html("PRIKAŽI MANJE TEKSTA <i class='fa fa-angle-double-up' aria-hidden='true'></i>");
+            $("#prikaziViseManje").removeClass('shadeOn').addClass('shadeOff');
+        } else {
+            $('.sadrzajVijesti').addClass('manjeTeksta').css('max-height',initial);
+              $("#prikaziViseManje").html("PRIKAŽI VIŠE TEKSTA <i class='fa fa-angle-double-down' aria-hidden='true'></i>");
+              $("#prikaziViseManje").removeClass('shadeOff').addClass('shadeOn');
+
         }
     });
     if($('#ticker').length>0){
