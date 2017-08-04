@@ -540,9 +540,11 @@ $(document).ready(function() {
             $("#prikaziViseManje").html("PRIKAŽI MANJE TEKSTA <i class='fa fa-angle-double-up' aria-hidden='true'></i>");
         }
     });
-
-     $('#ticker').webTicker({
+    if($('#ticker').length>0){
+        $('#ticker').webTicker({
          startEmpty:false
-     });
+        });
+    }
+     
 
 });
