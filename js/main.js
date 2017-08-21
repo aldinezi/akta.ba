@@ -551,6 +551,10 @@ $(document).ready(function() {
          startEmpty:false
         });
     }
+    $(".open-login-box").on('click',function(e){
+        e.preventDefault();
+        $(".user-menu-box").toggleClass("open");
+    });
      
 
 });
