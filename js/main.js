@@ -555,6 +555,8 @@ $(document).ready(function() {
         e.preventDefault();
         $(".user-menu-box").toggleClass("open");
     });
-     
+    $(".collapsible-section").on('click',function(e){
+        e.preventDefault();
+    })
 
 });

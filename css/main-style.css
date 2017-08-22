@@ -4403,7 +4403,170 @@ span#prikaziViseManje.shadeOff:before{
     font-family: "Roboto";
     margin-left: 40px;
 }
- 
+
+.green_link{
+        color: #00B496 !important;
+}
+    /* 
+***************************************
+*                                     *
+*       Marketing page styles add     *       
+*                                     *       
+***************************************
+*/
+.marketing_header{
+    background: url(../images/dummy/pic2.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 480px;
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+        border-radius: 4px;
+}
+.marketing_header p.header_subtitle {
+    font-family: Raleway-Bold;
+    color: white;
+    font-size: 25px;
+}
+.marketing_header .logo_big {
+    height: 170px;
+    width: 250px;
+    background: url(../images/header_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 50px;
+}
+.kapacitet h1.naslov-kolone{
+    margin-top:40px;
+}
+.kapacitet-card .ikona{
+        height: 150px;
+    width: 150px;
+    margin: 75px auto 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.kapacitet-card .ikona.ikona-outreach{
+    background-image:url(../assets/outreach.svg);
+}
+.kapacitet-card .ikona.ikona-person{
+    background-image:url(../assets/person.svg);
+}
+.kapacitet-card .ikona.ikona-persontie{
+    background-image:url(../assets/persontie.svg);
+}
+
+.vertical-separator {
+    height: 70px;
+    width: 1px;
+    background: #b2b2ba;
+    margin: 30px auto 10px;
+}
+.kapacitet-card h1.kapacitet-title {
+    font-family: Raleway-Bold;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.kapacitet-card p.kap-desc {
+    font-family: Roboto-Light;
+    font-size: 15px;
+    text-align: center;
+}
+
+.kapacitet .bottom-section-separator {
+    border-bottom: 1px solid #b2b2b2;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.collapsible-header:nth-of-type(1) {
+    margin-top: 70px;
+}
+.collapsible-header {
+    padding: 30px 50px;
+    background: white;
+}
+.collapsible-header a {
+    font-family: "Raleway-Bold";
+    font-size: 25px;
+    color: #333;
+        line-height: 47px;
+}
+.collapsible-header a:hover,
+.collapsible-header a:focus{
+    text-decoration: none;
+}
+.collapsible-header span.collapsible-control-ico {
+    display: inline-block;
+    float: right;
+    height: 47px;
+    width: 47px;
+    background-image: url(../assets/open-plus.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.3s ease-in-out;
+}
+.collapsible-section[aria-expanded="true"] span.collapsible-control-ico{
+  background-image: url(../assets/close-x.svg);
+}
+.leaderboard-desc {
+    padding: 50px;
+    font-family: "Roboto-Light";
+    font-size: 25px;
+    color: #B2B2BA;
+}
+.oglasavanje .sub-menu .wrap{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.leaderboard-cijena {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-self: center;
+    text-align: center;
+}
+.cijena-holder {
+    margin: 0 auto;
+    color: #00B496;
+    font-family: Roboto;
+    font-size: 25px;
+    padding: 40px 35px;
+    background: white;
+    border-radius: 4px;
+}
+.cijena-holder p{
+    margin:0;
+}
+.tabela .fifth{
+    display:inline-block;
+    width:20%;
+    height:250px;
+    border-left:1px solid #b2b2ba;
+}
+.tabela .fifth:nth-of-type(1){
+    border-left:transparent;
+}
+.wrap.tabela {
+    border: 1px solid #B2B2BA;
+}
+
 /* 
 ***************************************
 *                                     *
