@@ -100,6 +100,7 @@ $(document).ready(function() {
             var $gridnaj = $('#najave-wrap').imagesLoaded(function() {
                 // init Masonry after all images have loaded
                 $gridnaj.masonry({
+                    columnWidth: '.card',
                     itemSelector: '.card',
                 });
             });
