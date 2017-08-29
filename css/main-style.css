@@ -72,7 +72,7 @@ a {
 }
 
 .nav-wrapper {
-    min-height: 171px;
+    min-height: 120px;
 }
 
 .main_body_contents {
@@ -113,6 +113,7 @@ a {
 }
 
 .ads.noborder {
+    padding:15px 0;
     border-top: transparent;
     border-bottom: transparent;
 }
@@ -209,24 +210,40 @@ a.um_forum,
 }
 
 .navbar {
-    min-height: 100px;
+    min-height: 60px;
     border-radius: 0px;
     margin-bottom: 0px;
 }
-
-.nav>li {
-    display: inline-block;
-    line-height: 100px;
+.affix .navbar{
+    min-height: 100px;
 }
-
-.main_nav>li {
+.nav>li{
+    display: inline-block;
+    line-height: 60px;
+}
+.affix .nav>li {
+        line-height: 100px;
+}
+.affix .main_nav>li {
     line-height: 70px;
+}
+.affix .main_nav>li>a {
+    line-height: 40px;
+}
+.main_nav>li {
+    line-height: 59px;
     position: initial;
 }
 
 .nav>li>a {
     display: inline-block;
+    vertical-align: middle;
+}
+.affix .nav>li>a {
     vertical-align: bottom;
+}
+.bijeli-menu.affix .nav>li>a {
+    vertical-align: top;
 }
 
 
@@ -238,7 +255,7 @@ a.um_forum,
 
 .main_nav>li>a {
     vertical-align: middle;
-    line-height: 40px;
+    line-height: 30px;
     font-family: "Raleway-Bold";
     text-transform: uppercase;
     font-size: 15px;
@@ -248,11 +265,18 @@ a.um_forum,
 .main_nav>li>a.active {
     color: black;
 }
-
-.logo {
+img.logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 40px;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+.affix .logo {
     margin-top: 22px;
     margin-bottom: 5px;
     margin-right: 40px;
+    max-height: 100%;
 }
 
 .logo-link {
@@ -285,6 +309,7 @@ a.um_forum,
     line-height: 60px;
     height: 60px;
     background: transparent;
+    vertical-align:top;
 }
 
 .pretraga:focus {
@@ -309,15 +334,19 @@ a.um_forum,
 
 .search-icon {
     color: #4B69A5;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+}
+.affix .search-icon{
     height: 70px;
     line-height: 70px;
-    font-size: 20px;
 }
 
 .dropdown-toggle {
     display: inline-block;
-    height: 70px;
-    line-height: 70px;
+    height: 60px;
+    line-height: 60px;
     font-size: 20px;
     color: black;
     margin-left: 35px;
@@ -326,7 +355,10 @@ a.um_forum,
     position: absolute;
     right: 0;
 }
-
+.affix .dropdown-toggle {
+    height: 70px;
+    line-height: 70px;   
+    }
 
 /* - Megamenu - */
 
@@ -4483,10 +4515,12 @@ span#prikaziViseManje.shadeOff:before{
     text-align: center;
 }
 
-.kapacitet .bottom-section-separator {
+.kapacitet .bottom-section-separator,
+.oglasavanje .bottom-section-separator {
     border-bottom: 1px solid #b2b2b2;
     margin-top: 50px;
     margin-bottom: 40px;
+    float: none;
 }
 
 .collapsible-header {
@@ -4698,6 +4732,16 @@ table.cijenik-table.grey {
 .cpd .cijena-holder:not(:first-child):not(:last-child) {
     border-radius: 0;
 }
+.wide-spread tr td:last-child {
+    text-align: right;
+}
+.green .collapsible-header {
+    background: #00b496;
+}
+.green .collapsible-header a {
+    color:white;
+}
+
 
 /* 
 ***************************************
