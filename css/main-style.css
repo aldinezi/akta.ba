@@ -3893,6 +3893,9 @@ table.tabela-paketa {
     }
     #current_category {
         position: absolute;
+        margin: 18px 0 0 0;
+    }
+    .affix #current_category {
         margin: 48px 0 0 0;
     }
     .kolona-najcitanije h1.naslov-kolone {
@@ -4331,6 +4334,9 @@ span#prikaziViseManje.shadeOff:before{
     width: 100%;
     z-index: 999;
 }
+.user-menu-box .nav>li>a {
+    vertical-align: bottom;
+}
 .user-menu-box.open{
     height:100px;
 }
@@ -4549,8 +4555,36 @@ span#prikaziViseManje.shadeOff:before{
     transition: all 0.3s ease-in-out;
 }
 .collapsible-section[aria-expanded="true"] span.collapsible-control-ico{
-  background-image: url(../assets/close-x.svg);
+    background-image: url(../assets/close-x.svg);
 }
+.gray .collapsible-header span.collapsible-control-ico,
+.green .collapsible-header span.collapsible-control-ico{
+    background-image: url(../assets/open-plus-white.svg);
+}
+.gray .collapsible-section[aria-expanded="true"] span.collapsible-control-ico,
+.green .collapsible-section[aria-expanded="true"] span.collapsible-control-ico{
+    background-image: url(../assets/close-x-white.svg);
+}
+.collapsible-hold.gray .collapsible-header{
+    background-color:#999999;
+    color:#fff;
+}
+.gray .collapsible-header a{
+    color:#fff;
+}
+
+.collapsible-hold .btn-filter-refresh{
+    min-height: 42px;
+    min-width: 198px;
+    line-height: 30px;
+    font-family: Raleway;
+    font-weight: 700;
+    transition:all 0.3s ease;
+}
+.collapsible-hold .btn-filter-refresh:hover, .collapsible-hold .btn-filter-refresh:focus{
+    color: #e9e9e9;
+}
+
 .leaderboard-desc {
     padding: 50px;
     font-family: "Roboto-Light";
@@ -4741,8 +4775,23 @@ table.cijenik-table.grey {
 .green .collapsible-header a {
     color:white;
 }
-
-
+.cijenik-table.kalkulator td {
+    width:auto;
+}
+.cijenik-table.kalkulator thead>tr>td{
+    background-color:#B2B2BA;
+}
+.kalk .sub-table {
+    margin-top: 0px;
+}
+.kalk label.cek :checked+span {
+    background: #00b496;
+    }
+.kalk input,.kalk label.cek {
+    border:transparent;
+    text-align:center;
+    outline-color: #00b496;
+}
 /* 
 ***************************************
 *                                     *
