@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./images/favico/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./images/favico/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="./images/favico/manifest.json">
+    <link rel="mask-icon" href="./images/favico/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./images/favico/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./images/favico/mstile-144x144.png">
+    <meta name="msapplication-config" content="./images/favico/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>Akta</title>
+    <!-- JqueryUI -->
+
+    <link href="./css/jquery-ui.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font awesome icons CSS -->
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/main-style.css" rel="stylesheet">
+
+    <script src="./js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+        <div class="container">
+                <div class="hidden-xs visible-md visible-lg ads noborder">
+                    <img class="img-responsive" src="http://placehold.it/1250x130?text=Place for ads.">
+                </div>
+                <nav class="hidden-xs visible-md visible-lg upper_menu">
+                    <ul>
+                        <li><a href="#" class="um_vijesti ">VIJESTI</a></li>
+                        <li><a href="#" class="um_registar ">REGISTAR</a></li>
+                        <li><a href="#" class="um_tenderi ">TENDERI</a></li>
+                        <li><a href="#" class="um_promo">PROMO</a></li>
+                        <li><a href="#" class="um_forum">FORUM</a></li>
+                    </ul>
+                </nav>
+            </div>
+    <div class="nav-wrapper">
+        <nav class="navbar navbar-inverse crni-menu" data-spy="affix" data-offset-top="435">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="logo-link" href="#"><img class="logo" src="./images/logo.png" alt="logo"></a>
+                </div>
+                <h1 id="current_category" class="visible-xs-inline-block visible-sm-inline-block hidden-md hidden-lg vijesti">Profil</h1>
+                <div id="header_navigation" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav hidden-xs visible-md visible-lg">
+                        <li><a href="#">O Nama</a></li>
+                        <li><a href="#">Partneri</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Marketing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid user-menu-box" data-spy="affix" data-offset-top="435">
+            <div class="container">
+                <div class="nav">
+                        <li>
+                            <a href="#" class="person-ico hidden-xs">
+                                <svg version="1.2" baseProfile="tiny" id="user_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20.5 20.5" xml:space="preserve">
+                                    <g>
+                                    <g>
+                                    <path fill="#FFFFFF" d="M12.8,12.6c1.4-0.9,2.3-2.4,2.3-4.2c0-2.7-2.2-4.9-4.9-4.9c-2.7,0-4.9,2.2-4.9,4.9c0,1.8,0.9,3.3,2.3,4.2
+                                        c-2,0.7-3.6,2.3-4.3,4.2c-0.2,0.5,0.8,1.4,0.8,1.4c0.6-2.8,3.1-4.9,6.1-4.9c3,0,5.5,2.1,6.1,4.9c0,0,1-0.9,0.8-1.4
+                                        C16.4,14.9,14.8,13.3,12.8,12.6L12.8,12.6z M6.6,8.5c0-2,1.7-3.7,3.7-3.7c2,0,3.7,1.7,3.7,3.7c0,2-1.7,3.7-3.7,3.7
+                                        C8.2,12.1,6.6,10.5,6.6,8.5L6.6,8.5z M6.6,8.5"/>
+                                    </g>
+                                    <path fill="#FFFFFF" d="M10.3,20.5C4.6,20.5,0,15.9,0,10.3C0,4.6,4.6,0,10.3,0c5.7,0,10.3,4.6,10.3,10.3
+                                    C20.5,15.9,15.9,20.5,10.3,20.5z M10.3,1.1c-5.1,0-9.2,4.1-9.2,9.2c0,5.1,4.1,9.2,9.2,9.2c5.1,0,9.2-4.1,9.2-9.2
+                                    C19.4,5.2,15.3,1.1,10.3,1.1z"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li><span class="cta-label">Novi korisnik?</span></li>
+                        <li class="reg-button-li"><a class="cta-button-reg" href="#">Registruj se</a></li>
+                        <div class="col-xs-12 col-md-8 login-inputs">
+                            
+                                <input class="login-input" type="text" placeholder="E-mail..."/>
+                                <div class="inputs-wrap">
+                                    <input class="login-input" type="password" placeholder="Šifra..." />
+                                    <div class="legend-wrap">
+                                        <input type="checkbox" id="zapamtiPrijavu" name="zapamtiPrijavu" value="zapamtiPrijavu">
+                                        <label for="zapamtiPrijavu">Zapamti me</label>
+                                        <a href="#" class="forgot-pass-link">Zaboravljen</a>
+                                    </div>
+                                </div>   
+                                <button class="login-bt">PRIJAVA</button>        
+                        </div>
+                </div>
+            </div>      
+        </div>
+        <div class="container-fluid bijeli-menu" data-spy="affix" data-offset-top="435">
+            <div class="container">
+
+
+                <li class="dropdown mega-dropdown">
+                    <ul class="nav navbar-nav main_nav hidden-xs">
+                        <li><a class="green_link" href="#">HOME</a></li>
+                        <li><a class="green_link" href="#">KORISNIČKI PROFIL</a></li>
+                    </ul>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars" aria-hidden="true"></i></a>
+
+                    <span class="search_bar">
+                        <a href="#" class="person-ico open-login-box hidden-sm hidden-md hidden-lg">
+                                <svg version="1.2" baseProfile="tiny" id="user_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20.5 20.5" xml:space="preserve">
+                            <g>
+                            <g>
+                              <path fill="#FFFFFF" d="M12.8,12.6c1.4-0.9,2.3-2.4,2.3-4.2c0-2.7-2.2-4.9-4.9-4.9c-2.7,0-4.9,2.2-4.9,4.9c0,1.8,0.9,3.3,2.3,4.2
+                                c-2,0.7-3.6,2.3-4.3,4.2c-0.2,0.5,0.8,1.4,0.8,1.4c0.6-2.8,3.1-4.9,6.1-4.9c3,0,5.5,2.1,6.1,4.9c0,0,1-0.9,0.8-1.4
+                                C16.4,14.9,14.8,13.3,12.8,12.6L12.8,12.6z M6.6,8.5c0-2,1.7-3.7,3.7-3.7c2,0,3.7,1.7,3.7,3.7c0,2-1.7,3.7-3.7,3.7
+                                C8.2,12.1,6.6,10.5,6.6,8.5L6.6,8.5z M6.6,8.5"/>
+                            </g>
+                            <path fill="#FFFFFF" d="M10.3,20.5C4.6,20.5,0,15.9,0,10.3C0,4.6,4.6,0,10.3,0c5.7,0,10.3,4.6,10.3,10.3
+                              C20.5,15.9,15.9,20.5,10.3,20.5z M10.3,1.1c-5.1,0-9.2,4.1-9.2,9.2c0,5.1,4.1,9.2,9.2,9.2c5.1,0,9.2-4.1,9.2-9.2
+                              C19.4,5.2,15.3,1.1,10.3,1.1z"/>
+                            </g>
+                          </svg>
+                    </a>
+                    <input type="text" class="form-control input-lg pretraga" placeholder="Pretraga..." />
+                    
+                    <a href="#" class="search-icon" type="button">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                    
+                </span>
+
+                    <ul class="dropdown-menu mega-dropdown-menu row">
+                        <li class="top_divider"></li>
+                        <li class="col-xs-12 col-sm-6 col-md-4 glavna_kategorija">
+                            <ul>
+                                <li class="dropdown-header "><a href="#" class="vijesti">VIJESTI</a></li>
+                                <!--Lijeva kolona linkova -->
+                                <ul class="col-sm-6 nopadding ">
+                                    <!-- Jedan menu sub item / kategorija -->
+                                    <li class="subheader"><a href="#">VIJESTI</a></li>
+                                    <ul class=" nopadding sub_items">
+                                        <li>
+                                            <a href="#">Svijet</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Regija</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">BiH</a>
+                                        </li>
+                                    </ul>
+                                    <!-- Kraj kategorije -->
+                                    <li class="subheader"><a href="#">investicije</a></li>
+                                    <ul class=" nopadding sub_items">
+                                        <li>
+                                            <a href="#">PROJEKTI</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">URBANIZAM</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">NEKRETNINE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">IMOVINA U STEČAJU</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">PRIVATIZACIJA</a>
+                                        </li>
+                                    </ul>
+                                    <li class="subheader"><a href="#">kapital</a></li>
+                                    <ul class="nopadding sub_items">
+                                        <li>
+                                            <a href="#">IZVJEŠTAJI</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">SVJETSKE BERZE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">BH BERZE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">DIONICE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">BANKARSTVO</a>
+                                        </li>
+                                    </ul>
+                                    <li class="subheader"><a href="#">eu</a></li>
+                                    <ul class="nopadding sub_items">
+                                        <li>
+                                            <a href="#">POLITIKA</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">EKONOMIJA</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FONDOVI</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <!--Desna kolona linkova -->
+                                <ul class="col-sm-6 nopadding">
+                                    <li class="subheader"><a href="#">Najave</a></li>
+                                    <ul class="nopadding sub_items">
+                                        <li>
+                                            <a href="#">KONFERENCIJE I KONGRESI</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">SAJMOVI I IZLOŽBE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">DOGAĐAJI</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">SEMINARI I EDUKACIJE</a>
+                                        </li>
+                                    </ul>
+                                    <li class="subheader"><a href="#">ličnosti</a></li>
+                                    <ul class="nopadding sub_items">
+                                        <li>
+                                            <a href="#">SVIJET</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">KULTURA I SPORT</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">PRIVREDA I POLITIKA</a>
+                                        </li>
+                                    </ul>
+                                    <li class="subheader"><a href="#">karijera</a></li>
+                                    <ul class="nopadding sub_items">
+                                        <li>
+                                            <a href="#">LEADERSHIP</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">TIPS AND TRICKS</a>
+                                        </li>
+                                    </ul>
+                                    <li class="subheader"><a href="#">pauza</a></li>
+                                    <ul class="nopadding sub_items">
+                                        <li>
+                                            <a href="#">INOVACIJE I TEHNOLOGIJE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">TURIZAM I GASTRO</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ŽIVOT I ZDRAVLJE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">SPORT</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">KULTURA I FILM</a>
+                                        </li>
+                                    </ul>
+                                    <li class="subheader"><a href="#">kolumne</a></li>
+
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-3 col-md-2 glavna_kategorija">
+                            <ul>
+                                <li class="dropdown-header "><a href="#" class="registar">REGISTAR</a></li>
+                                <li class="subheader"><a href="#">KOMPANIJE I INSTITUCIJE</a></li>
+                                <li class="subheader"><a href="#">MENADŽERSKE POZICIJE</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-3 col-md-2 glavna_kategorija">
+                            <ul>
+                                <li class="dropdown-header"><a href="#" class="tenderi">TENDERI</a></li>
+                                <li class="subheader"><a href="#">OBJAVLJENI TENDERI</a></li>
+                                <li class="subheader"><a href="#">DODJELE UGOVORA</a></li>
+                                <li class="subheader"><a href="#">PRODAJA POTRAŽIVANJA</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-3 col-md-2 glavna_kategorija">
+                            <ul>
+                                <li class="dropdown-header"><a href="#" class="promo">PROMO</a></li>
+                                <li class="subheader"><a href="#">svijet</a></li>
+                                <li class="subheader"><a href="#">regija</a></li>
+                                <li class="subheader"><a href="#">bih</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-3 col-md-2 glavna_kategorija">
+                            <ul>
+                                <li class="dropdown-header"><a href="#" class="forum">FORUM</a></li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN BODY -->
+    <section class="main_body_contents single_article profil_firme">
+            <div class="container">
+    
+                <div class="wrapper-vijesti remargin">
+                    <div class="col-md-3 col-lg-2 profil-sidebar-lijevi nopadding">
+    
+                        <div class="col-sm-12 col-md-12 card card-vijest ">
+                            <div class="profil-card">
+                                <img class=" img img-responsive " src="./assets/profil_default.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 card card-vijest ">
+                            <div class="profil-card opcije">
+                                <li><a href="#" data-target="tab-podaci" >OSNOVNI PROFIL KORISNIKA</a></li>
+                                <li><a href="#" data-target="tab-osnovno" >OSNOVNI PROFIL FIRME</a></li>                                
+                                <li><a href="#">OSNOVNI PODACI</a></li>
+                                <li><a href="#">BILTEN I NEWSLETTER</a></li>
+                                <li><a href="#">IZDVOJENI ČLANAK</a></li>
+                                <li><a href="#">IZDVOJENI TENDERI</a></li>
+                                <li><a href="#" >PRATI FIRME</a></li>
+                                <button type="submit" class="btn btn-filter-refresh">Prijavi grešku</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6 col-lg-6 profil-centar korisnik nopadding">
+                        <div class="col-xs-12 card card-vijest tab-podaci">
+                                    <div class="profil-card">
+                                        <table class="tabela-okorisniku">
+                                            <tr>
+                                                <td>IME I PREZIME</td>
+                                                <td>Nolita Nola</td>
+                                            </tr>
+                                            <tr>
+                                                <td>EMAIL</td>
+                                                <td>nolita@nola.ba</td>
+                                            </tr>
+                                            <tr>
+                                                <td>POZICIJA U FIRMI</td>
+                                                <td>Vlasnica</td>
+                                            </tr>
+                                            <tr>
+                                                <td>NIVO ODLUČIVANJA</td>
+                                                <td>CEO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>TELEFON	</td>
+                                                <td>+387 33 123 456</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                        </div>  
+                        <div class="col-xs-12 card card-vijest tab-podaci">
+                            <div class="profil-card">
+                                <h1 class="card-naslov-vijesti">KONZUM d.o.o. Sarajevo </h1>
+                                <a href="# " class="star "><i class="fa fa-star "></i></a>
+                                <table class="tabela-ofirmi ">
+                                    <tr>
+                                        <td>NAZIV</td>
+                                        <td>Konzum trgovina na veliko i malo d.o.o. Sarajevo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ADRESA</td>
+                                        <td>Rajlovačka bb</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MJESTO</td>
+                                        <td>71000 Sarajevo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WEB</td>
+                                        <td>
+                                            <a href="http://www.konzum.ba " target="_blank ">www.konzum.ba</a>
+                                            <a href="# "><i class="fa fa-twitter " aria-hidden="true "></i></a>
+                                            <a href="# "><i class="fa fa-facebook " aria-hidden="true "></i></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>                        
+                        <div class="col-sm-12 col-md-12 card podaci-o-firmi pravne-info djelatnost tab-osnovno">
+                            <div class="profil-card ">
+                                <h1 class="card-naslov-vijesti" style="color: #999;">Djelatnost</h1>
+                                <table class="tabela-ofirmi ">
+                                    <tr>
+                                        <td>46.39</td>
+                                        <td>Nespecijalizirana trgovina na veliko hranom, pićima i duhanskim proizvodima</td>
+                                    </tr>
+                                    <tr>
+                                        <td>51.170</td>
+                                        <td>Posredovanje u trgovini hranom, pićem i duhanom</td>
+                                    </tr>
+                                    <tr>
+                                        <td>51.390</td>
+                                        <td>Nespecijalizirana trgovina na veliko hranom, pićima i duhanom</td>
+                                    </tr>
+                                    <tr>
+                                        <td>52.110</td>
+                                        <td>Trgovina na malo u nespecijaliziranim </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 podaci-o-firmi">
+                                <div class="collapsible-hold green korisnik">
+                                        <div class="collapsible-header">
+                                            <div class="collapsible-section collapsed" data-target="#postavkezabilten" data-toggle="collapse" aria-expanded="false">
+                                                <a href="#">Postavke za bilten</a>
+                                                <span class="collapsible-control-ico"></span>
+                                            </div>
+                                        </div>
+                                        <div id="postavkezabilten" class="sub-menu collapse" aria-expanded="false" style="height: 0px;">
+                                                <div class="wrap">
+                                                    <div class="col-md-12 korisnik-desc">
+                                                        <p class="plavi">Želim da primam obavjesti iz slijedećih<br>poslovnih grana:</p>
+                                                        <div class="col-xs-12 col-md-6 nopadding">
+                                                            <ul class="bilten-grane">
+                                                                <li>
+                                                                    <label class="cek">
+                                                                        <input type="checkbox" name="djelatnost" value="Štamparije i izdavaštvo"> 
+                                                                        <span></span><span class="oznaka">Štamparije i izdavaštvo</span><br>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="cek">
+                                                                        <input type="checkbox" name="djelatnost" value="IT i uredska oprema"> 
+                                                                        <span></span><span class="oznaka">IT i uredska oprema</span><br>
+                                                                   </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="cek">
+                                                                        <input type="checkbox" name="djelatnost" value="Telekomunikacije"> 
+                                                                        <span></span><span class="oznaka">Telekomunikacije</span><br>
+                                                                   </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="cek">
+                                                                        <input type="checkbox" name="djelatnost" value="Elektronika"> 
+                                                                        <span></span><span class="oznaka">Elektronika</span><br>
+                                                                   </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="cek">
+                                                                        <input type="checkbox" name="djelatnost" value="Istraživanje i razvoj, poslovne usluge"> 
+                                                                        <span></span><span class="oznaka">Istraživanje i razvoj, poslovne usluge</span><br>
+                                                                   </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="cek">
+                                                                        <input type="checkbox" name="djelatnost" value="Ostalo"> 
+                                                                        <span></span><span class="oznaka">Ostalo</span><br>
+                                                                   </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="cek">
+                                                                        <input type="checkbox" name="djelatnost" value="Poljoprivreda i poljomehanizacija"> 
+                                                                        <span></span><span class="oznaka">Poljoprivreda i poljomehanizacija</span><br>
+                                                                   </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="cek">
+                                                                        <input type="checkbox" name="djelatnost" value="Energetika"> 
+                                                                        <span></span><span class="oznaka">Energetika</span><br>
+                                                                   </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="cek">
+                                                                        <input type="checkbox" name="djelatnost" value="Rudarstvo i metali"> 
+                                                                        <span></span><span class="oznaka">Rudarstvo i metali</span><br>
+                                                                   </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="cek">
+                                                                        <input type="checkbox" name="djelatnost" value="Građevina i nekreatnine"> 
+                                                                        <span></span><span class="oznaka">Građevina i nekreatnine</span><br>
+                                                                   </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="cek">
+                                                                        <input type="checkbox" name="djelatnost" value="Tekstil i asesoari"> 
+                                                                        <span></span><span class="oznaka">Tekstil i asesoari</span><br>
+                                                                   </label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6 nopadding">
+                                                                <ul class="bilten-grane">
+                                                                    <li>
+                                                                        <label class="cek">
+                                                                            <input type="checkbox" name="djelatnost" value="Sport, kultura, umjernost"> 
+                                                                            <span></span><span class="oznaka">Sport, kultura, umjernost</span><br>
+                                                                        </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label class="cek">
+                                                                            <input type="checkbox" name="djelatnost" value="Hemijski proizvodi"> 
+                                                                            <span></span><span class="oznaka">Hemijski proizvodi</span><br>
+                                                                       </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label class="cek">
+                                                                            <input type="checkbox" name="djelatnost" value="Zdravstvo"> 
+                                                                            <span></span><span class="oznaka">Zdravstvo</span><br>
+                                                                       </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label class="cek">
+                                                                            <input type="checkbox" name="djelatnost" value="Odbrana, sigurnost i javna uprava"> 
+                                                                            <span></span><span class="oznaka">Odbrana, sigurnost i javna uprava</span><br>
+                                                                       </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label class="cek">
+                                                                            <input type="checkbox" name="djelatnost" value="Zaštita okoliša, sanitarne i komunalne usluge"> 
+                                                                            <span></span><span class="oznaka">Zaštita okoliša, sanitarne i komunalne usluge</span><br>
+                                                                       </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label class="cek">
+                                                                            <input type="checkbox" name="djelatnost" value="Industrija"> 
+                                                                            <span></span><span class="oznaka">Industrija</span><br>
+                                                                       </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label class="cek">
+                                                                            <input type="checkbox" name="djelatnost" value="Namještaj i aparati"> 
+                                                                            <span></span><span class="oznaka">Namještaj i aparati</span><br>
+                                                                       </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label class="cek">
+                                                                            <input type="checkbox" name="djelatnost" value="Transport"> 
+                                                                            <span></span><span class="oznaka">Transport</span><br>
+                                                                       </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label class="cek">
+                                                                            <input type="checkbox" name="djelatnost" value="Obrazovanje"> 
+                                                                            <span></span><span class="oznaka">Obrazovanje</span><br>
+                                                                       </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label class="cek">
+                                                                            <input type="checkbox" name="djelatnost" value="Turizam"> 
+                                                                            <span></span><span class="oznaka">Turizam</span><br>
+                                                                       </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label class="cek">
+                                                                            <input type="checkbox" name="djelatnost" value="Finansije i osiguranje"> 
+                                                                            <span></span><span class="oznaka">Finansije i osiguranje</span><br>
+                                                                       </label>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                    </div>                           
+                                                </div>                                                                      
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-4 profil-sidebar nopadding">
+    
+                        <div class="col-sm-12 col-md-12 card card-vijest ">
+                            <div class="profil-card">
+                                <h1 class="card-naslov-vijesti grey">Pravne informacije </h1>
+                                <table class="tabela-ofirmi ">
+                                    <tr>
+                                        <td>Oblik svojine</td>
+                                        <td>Privatna</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vlasnička strukura</td>
+                                        <td>100% Konzum d.d. Zagreb</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ID broj</td>
+                                        <td>1234567890</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PDV broj</td>
+                                        <td>1234567890</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Datum osnivanja</td>
+                                        <td>12.12.2000.</td>
+                                    </tr>
+    
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 card podaci-o-firmi broj-zaposlenih tab-osnovno">
+                                <div class="profil-card ">
+                                    <p class="broj-radnika plavi ">4380</p>
+                                    <p class="broj-radnika label-zaposlenih ">zaposlenih<br>radnika</p>
+                                </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 card podaci-o-firmi bank-racuni tab-osnovno">
+                            <div class="profil-card ">
+                                <p class="label-racuni ">bankovni računi</p>
+                                <hr>
+                                <p class="label-racuni brojke "><span class="plavi ">15</span> / <span class="crveni ">0</span></p>
+                                <hr>
+                                <p class="label-racuni opisi "><span class="plavi ">aktivni</span> / <span class="crveni ">blokirani</span></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 card podaci-o-firmi neto-promet tab-osnovno">
+                            <div class="profil-card ">
+                                <p class="odgovorno-label ">Neto promet u 2016.</p>
+                                <h1 class="odgovorno-lice plavi ">852.526.306,00 KM</h1>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 card podaci-o-firmi odgovorni tab-osnovno">
+                            <div class="profil-card ">
+                                <p class="odgovorno-label ">Odgovorno lice</p>
+                                <h1 class="odgovorno-lice plavi ">David Dolinar</h1>
+                                <p class="pozicija-odgovornog-lica ">direktor</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 card card-vijest ">
+                                <div class="profil-card">
+                                    <h1 class="card-naslov-vijesti grey">Izdvojeni članci</h1>
+                                    <ul class="izdvojeni-clanci">
+                                        <li><span class="naslov">Naslov članka</span><span class="uvod">Uvodni tekst članka</span></li>
+                                        <li><span class="naslov">Naslov članka</span><span class="uvod">Uvodni tekst članka</span></li>
+                                        <li><span class="naslov">Naslov članka</span><span class="uvod">Uvodni tekst članka</span></li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 card card-vijest ">
+                                <div class="profil-card">
+                                    <h1 class="card-naslov-vijesti grey">Izdvojeni tenderi</h1>
+                                    <ul class="izdvojeni-tenderi">
+                                        <li>Nabavka kartonskih pakovanja</li>
+                                        <li>Javna nabavka organskih dobara</li>
+                                        <li>Nabavka kancelarijskog namještaja</li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 card card-vijest ">
+                            <div class="profil-card">
+                                <h1 class="card-naslov-vijesti grey">Praćenje firmi</h1>
+                                <ul class="povezana-drustva">
+                                    <li><span>Super Kartica</span> d.o.o. Sarajevo</li>
+                                    <li><span>VELPRO</span> d.o.o. Sarajevo Ilidža</li>
+                                </ul>
+                            </div>
+                        </div>                        
+                        <div class="col-sm-12 col-md-12 card card-vijest ">
+                                <div class="profil-card">
+                                    <h1 class="card-naslov-vijesti grey">Promjena šifre</h1>
+                                    <input type="password" name="staraSifra" class="akordion-input sifra" placeholder="STARA ŠIFRA">
+                                    <input type="password" name="staraSifraPonovo" class="akordion-input sifra" placeholder="PONOVLJENA STARA ŠIFRA">                                    
+                                    <input type="password" name="novaSifra" class="akordion-input sifra" placeholder="NOVA ŠIFRA">
+                                    <div class="text-right">
+                                            <button type="submit" class="btn btn-filter-refresh">SPREMI</button>
+                                    </div>
+                                </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>    
+        </section>
+    <!--- footer sekcija -->
+    <section id="footer">
+        <!--- Footer newsletter
+        <div class="container-fluid newsletter-footer">
+            <h1>PRIJAVI SE ZA <span>NEWSLETTER</span></h1>
+            <div class="form-group has-feedback">
+                <input type="text" class="form-control" id="usrname" placeholder="Upišite svoju e-mail adresu ovdje">
+                <span class="form-control-feedback">
+                      <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+        -->
+        <div class="container-fluid footer-cta">
+            <h1> <span>Poslujte bolje!</span> TESTIRAJTE BESPLATNO!</h1>
+            <a class="footer-cta-button">REGISTRUJ SE</a>
+        </div>
+        <div class="container-fluid footer-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 navbar-header footer">
+                        <a class="logo-link" href="#"><img class="logo footer" src="./images/logo-light-green.png" alt="logo"></a>
+                        <span class="footer-line">POSLUJTE BOLJE</span>
+                    </div>
+                    <div class="col-sm-12 col-md-8 navbar-header footer menu">
+                        <a href="#" class="link vijesti">VIJESTI</a>
+                        <a href="#" class="link registar">REGISTAR</a>
+                        <a href="#" class="link tenderi">TENDERI</a>
+                        <a href="#" class="link promo">PROMO</a>
+                        <a href="#" class="link forum">FORUM</a>
+                    </div>
+                </div>
+                <div class="row sub-footer">
+                    <div class="col-sm-4 col-md-3 download-ctas">
+                        <a href="#" class="side-link-button footer"><i class="fa fa-android" aria-hidden="true"></i> Akta aplikacija <br> <span class="label-download">DOWNLOAD<span></span></span></a>
+                        <a href="#" class="side-link-button footer"><i class="fa fa-apple" aria-hidden="true"></i> Akta aplikacija <br> <span class="label-download">DOWNLOAD<span></span></span></a>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                        <li class="footer nopadding subheader"><a href="#">VAŽNI LINKOVI</a></li>
+                        <ul class="col-sm-6 col-md-6 nopadding footer sub_items">
+                            <li>
+                                <a href="#">Marketing</a>
+                            </li>
+                            <li>
+                                <a href="#">O nama</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Kontakt</a>
+                            </li>
+                        </ul>
+                        <ul class="col-sm-6 col-md-6 nopadding footer sub_items">
+                            <li>
+                                <a href="#">Tenderi</a>
+                            </li>
+                            <li>
+                                <a href="#">Registar</a>
+                            </li>
+                            <li>
+                                <a href="#">Newsletter</a>
+                            </li>
+                            <li>
+                                <a href="#">Vijesti</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                        <li class="footer nopadding subheader"><a href="#">NAJNOVIJI TEKSTOVI</a></li>
+                        <li class="footer-latest-news-item">
+                            <img class="img-rounded" src="http://placehold.it/100x60">
+                            <span class="kategorija">REGIJA</span><br>
+                            <span class="naslov">Lorem ipsum dolor sitconsecur</span>
+
+                        </li>
+                        <li class="footer-latest-news-item">
+                            <img class="img-rounded" src="http://placehold.it/100x60">
+                            <span class="kategorija">REGIJA</span><br>
+                            <span class="naslov">Lorem ipsum dolor sitconsecur</span>
+
+                        </li>
+                        <li class="footer-latest-news-item">
+                            <img class="img-rounded" src="http://placehold.it/100x60">
+                            <span class="kategorija">REGIJA</span><br>
+                            <span class="naslov">Lorem ipsum dolor sitconsecur</span>
+
+                        </li>
+
+                    </div>
+                    <div class="col-md-3 tagovi">
+                        <li class="footer nopadding subheader"><a href="#">POPULARNI TAGOVI</a></li>
+                        <a href="#">MARKETING</a>
+                        <a href="#">INVESTICIJE</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">VIJESTI</a>
+                        <a href="#">TENDERI</a>
+                        <a href="#">NAJAVE</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container copyright">
+                        <p>
+                            Copyright © 2016 akta.ba Sva prava zadržana.
+                        </p>
+                        <p>Zabranjeno preuzimanje sadržaja bez dozvole izdavača. Ova elektronska serijska publikacija registrovana je pod ISSN brojem: ISSN 1986-6968 (Online)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap core JavaScript  -->
+    <script src="./js/jquery.min.js"></script>
+
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/moment.js"></script>
+    <script src="./js/datetime-moment.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+    <script src="./js/imagesLoaded.js"></script>
+    <script src="./js/masonry.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

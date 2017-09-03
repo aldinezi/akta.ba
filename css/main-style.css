@@ -341,8 +341,11 @@ img.logo {
 .affix .search-icon{
     height: 70px;
     line-height: 70px;
+    vertical-align: middle;
 }
-
+.affix .pretraga {
+    vertical-align: middle;
+}
 .dropdown-toggle {
     display: inline-block;
     height: 60px;
@@ -4791,6 +4794,85 @@ table.cijenik-table.grey {
     border:transparent;
     text-align:center;
     outline-color: #00b496;
+}
+#fiksnibanneri .cijenik-table td {
+    padding: 20px 40px; 
+}
+.collapsible-hold.green.kalk+.collapsible-hold.green.kalk{
+    margin-top: -30px;
+}
+h1.card-naslov-vijesti.grey{
+    color:#999999;
+}
+ul.izdvojeni-clanci, ul.izdvojeni-clanci li,
+ul.izdvojeni-tenderi, ul.izdvojeni-tenderi li,ul.bilten-grane {
+    list-style: none;
+    padding-left: 0px;
+}
+ul.izdvojeni-clanci li>span.naslov {
+    color: #4B69A5;
+}
+ul.izdvojeni-clanci li>span.uvod {
+   margin-left:15px;
+}
+ul.izdvojeni-tenderi, ul.izdvojeni-tenderi li {
+    color:#C88C00;
+}
+input.akordion-input.sifra {
+    background: #E4E4E4;
+    border: none;
+    color: #787878;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+.tabela-okorisniku {
+    margin: 7.5px 0;
+}
+.profil-card .tabela-okorisniku td {
+    font-size: 13px;
+}
+.tabela-okorisniku td:first-child {
+    font-weight: bold;
+    padding: 2px 15px 2px 0;
+    text-transform: uppercase;
+}
+.profil-centar.korisnik>*:not(.tab-podaci):not(.tab-osnovno) {
+    display: block;
+}
+.collapsible-hold.korisnik{
+    margin:0;
+}
+.korisnik .collapsible-header {
+    padding: 30px 15px;
+    border-radius: 4px;
+}
+.korisnik .collapsible-header span.collapsible-control-ico {
+    background-image: url(../assets/arrows-up.svg);
+    height: 40px;
+    width: 40px;
+    background-size: 25px;
+    transform: rotateX(180deg);
+}
+.korisnik .collapsible-section[aria-expanded="true"] span.collapsible-control-ico {
+    transform: rotateX(0deg);
+    background-image: url(../assets/arrows-up.svg);
+}
+.korisnik-desc {
+    padding: 30px 15px;
+    font-family: "Roboto-Light";
+    font-size:14px;
+    color: #272727;
+    background:#fff;
+}
+.bilten-grane label.cek :checked+span {
+    background: #00B496;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    color: #272727;
+}
+.bilten-grane label.cek :checked~span.oznaka {
+    color: #272727;
 }
 /* 
 ***************************************

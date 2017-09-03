@@ -563,7 +563,7 @@ $(document).ready(function() {
         //console.log('postoji kalkulator tabela');
         var valuta = " KM";
         $(".brojprikaza input").on('keyup mouseup',function(){
-            if(parseInt($(this).val())>0){
+            if(parseInt($(this).val())>=0){
               if($(this).parents('.brojprikaza').siblings('.nanaslovnici').find('.cek input:checked').length>0 ){
                     var cijena = (parseInt($(this).val())*0.007+((parseInt($(this).val())*0.007)/100)*20).toFixed(3).toString().replace(".", ",")+valuta;
                     $(this).parents('.brojprikaza').siblings('.ukupno').find('input').val(cijena);
@@ -586,9 +586,36 @@ $(document).ready(function() {
                     $(this).parents('.nanaslovnici').siblings('.ukupno').find('input').val(cijena);
                 }
             }
-                    // do stuff here. It will fire on any checkbox change
             
-        }); 
+        });
+        
+        // fiksni banneri calc
+        $("#fiksnibanneri .brojprikaza input").on('keyup mouseup',function(){
+            if(parseInt($(this).val())>=0){
+              if($(this).parents('.brojprikaza').siblings('.nanaslovnici').find('.cek input:checked').length>0 ){
+                    var cijena = (parseInt($(this).val())*200.00+((parseInt($(this).val())*200.00)/100)*30).toFixed(2).toString().replace(".", ",")+valuta;
+                    $(this).parents('.brojprikaza').siblings('.ukupno').find('input').val(cijena);
+                }else{
+                    var cijena = (parseInt($(this).val())*200.00).toFixed(2).toString().replace(".", ",")+valuta;
+                    $(this).parents('.brojprikaza').siblings('.ukupno').find('input').val(cijena);
+                }   
+            }           
+        });
+        $('#fiksnibanneri .nanaslovnici .cek input:checkbox').change(function() {
+            if($(this).is(":checked")){
+                if(parseInt($(this).parents('.nanaslovnici').siblings('.brojprikaza').find('input').val())>0){
+                    var cijena = (parseInt($(this).parents('.nanaslovnici').siblings('.brojprikaza').find('input').val())*200.00+(parseInt($(this).parents('.nanaslovnici').siblings('.brojprikaza').find('input').val())*200.00/100)*30).toFixed(2).toString().replace(".", ",")+valuta;
+                    $(this).parents('.nanaslovnici').siblings('.ukupno').find('input').val(cijena);
+                }
+            }
+            else{
+                if(parseInt($(this).parents('.nanaslovnici').siblings('.brojprikaza').find('input').val())>0){
+                    var cijena = (parseInt($(this).parents('.nanaslovnici').siblings('.brojprikaza').find('input').val())*200.00).toFixed(2).toString().replace(".", ",")+valuta;
+                    $(this).parents('.nanaslovnici').siblings('.ukupno').find('input').val(cijena);
+                }
+            }
+            
+        });
     }
 
 
