@@ -4804,8 +4804,14 @@ table.cijenik-table.grey {
 h1.card-naslov-vijesti.grey{
     color:#999999;
 }
+
+/* 
+    Moj profil
+*/
 ul.izdvojeni-clanci, ul.izdvojeni-clanci li,
-ul.izdvojeni-tenderi, ul.izdvojeni-tenderi li,ul.bilten-grane {
+ul.izdvojeni-tenderi, ul.izdvojeni-tenderi li,
+ul.bilten-grane,
+ul.newsletter-postavke {
     list-style: none;
     padding-left: 0px;
 }
@@ -4864,6 +4870,9 @@ input.akordion-input.sifra {
     color: #272727;
     background:#fff;
 }
+.newsletter-postavke label.cek :checked+span {
+    background: #00B496;
+}
 .bilten-grane label.cek :checked+span {
     background: #00B496;
     width: 20px;
@@ -4871,9 +4880,111 @@ input.akordion-input.sifra {
     margin: 5px;
     color: #272727;
 }
+.newsletter-postavke label.cek :checked~span.oznaka,
 .bilten-grane label.cek :checked~span.oznaka {
     color: #272727;
 }
+textarea.upitTextarea {
+    width: 100% !important;
+    max-width: 100%;
+    min-height: 135px;
+    background: #E4E4E4;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 7px;
+    outline: none;
+    margin: 10px 0 !important;
+}
+p.upitDescription {
+    font-family: Roboto;
+    font-size: 9px;
+    color: #999999;
+    margin-top: 30px;
+}
+.bilten-grane span.oznaka {
+    font-size: 11px;
+    max-width: calc(100% - 45px);
+}
+input.newsletterDate {
+    width: 300px;
+    margin: 0;
+}
+input.newsletterDate {
+    width: 100px;
+    padding:0;
+    margin: 0 30px 0 0;
+    background: #E4E4E4;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+}
+.newsletterWrap{
+    margin: 15px 0;
+}
+p.newsletterDescription {
+    margin: 30px 0;
+}
+.newsletterDate::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: Roboto;
+    font-size:9px;
+  }
+  .newsletterDate::-moz-placeholder { /* Firefox 19+ */
+    font-family: Roboto;
+    font-size:9px;
+  }
+  .newsletterDate:-ms-input-placeholder { /* IE 10+ */
+    font-family: Roboto;
+    font-size:9px;
+  }
+.newsletterDate:-moz-placeholder { /* Firefox 18- */
+    font-family: Roboto;
+    font-size:9px;
+    }
+label.cek span.sub {
+        width: 100%;
+        background: transparent;
+        font-size: 11px;
+        color: #999;
+        font-weight: 600;
+        padding-left: 30px;
+    }
+.profil-card.clanci,.profil-card.tender,.profil-card.firme{
+    overflow-y:auto;
+}
+p.izdvojeni-clanci, p.izdvojeni-tenderi{
+    text-transform: none;
+    color: black;
+    font-size: 14px;
+}
+p.izdvojeni-clanci.datum, p.izdvojeni-tenderi.datum{
+    font-family: "RobotoCondensed-Regular";
+    margin-bottom: 4px;
+}
+.clanci li, .tender li, .firme li {
+    list-style: none;
+    
+    margin-bottom: 30px;
+    border-bottom:1px solid #d7d7d7;
+}
+p.izdvojeni-clanci.naslov a, p.izdvojeni-tenderi.naslov a  {
+    font-size: 14px;
+    font-family: "Roboto";
+    text-transform:uppercase;
+    color:#4B69A5;
+}
+p.izdvojeni-tenderi.naslov a{ 
+    color: #C88C00;
+}
+p.izdvojeni-clanci.uvod {
+    font-family: Roboto;
+}
+p.izdvojeni-firme.naslov a{ 
+    color: #00827D;
+}
+.profil-sidebar-lijevi .profil-card.opcije li>a.btn-filter-refresh{
+    color:white;
+}
+
 /* 
 ***************************************
 *                                     *

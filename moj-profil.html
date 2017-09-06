@@ -332,20 +332,20 @@
                         </div>
                         <div class="col-sm-12 col-md-12 card card-vijest ">
                             <div class="profil-card opcije">
-                                <li><a href="#" data-target="tab-podaci" >OSNOVNI PROFIL KORISNIKA</a></li>
+                                <li><a href="#" data-target="tab-osnovnipodaci" >OSNOVNI PROFIL KORISNIKA</a></li>
                                 <li><a href="#" data-target="tab-osnovno" >OSNOVNI PROFIL FIRME</a></li>                                
-                                <li><a href="#">OSNOVNI PODACI</a></li>
-                                <li><a href="#">BILTEN I NEWSLETTER</a></li>
-                                <li><a href="#">IZDVOJENI ČLANAK</a></li>
-                                <li><a href="#">IZDVOJENI TENDERI</a></li>
-                                <li><a href="#" >PRATI FIRME</a></li>
-                                <button type="submit" class="btn btn-filter-refresh">Prijavi grešku</button>
+                               <!-- <li><a href="#">OSNOVNI PODACI</a></li> -->
+                                <li><a href="#" data-target="tab-bilten" >BILTEN I NEWSLETTER</a></li>
+                                <li><a href="#" data-target="tab-clanci">IZDVOJENI ČLANCI</a></li>
+                                <li><a href="#" data-target="tab-tenderi">IZDVOJENI TENDERI</a></li>
+                                <li><a href="#" data-target="tab-firme">PRATI FIRME</a></li>
+                                <li><a href="#" data-target="tab-upit" class="btn btn-filter-refresh">Ppšalji upit</a></li>
                             </div>
                         </div>
                     </div>
     
                     <div class="col-md-6 col-lg-6 profil-centar korisnik nopadding">
-                        <div class="col-xs-12 card card-vijest tab-podaci">
+                        <div class="col-xs-12 card card-vijest tab-osnovnipodaci">
                                     <div class="profil-card">
                                         <table class="tabela-okorisniku">
                                             <tr>
@@ -371,7 +371,7 @@
                                         </table>
                                     </div>
                         </div>  
-                        <div class="col-xs-12 card card-vijest tab-podaci">
+                        <div class="col-xs-12 card card-vijest tab-osnovno">
                             <div class="profil-card">
                                 <h1 class="card-naslov-vijesti">KONZUM d.o.o. Sarajevo </h1>
                                 <a href="# " class="star "><i class="fa fa-star "></i></a>
@@ -422,7 +422,7 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-12 podaci-o-firmi">
+                        <div class="col-sm-12 col-md-8 card podaci-o-firmi tab-bilten">
                                 <div class="collapsible-hold green korisnik">
                                         <div class="collapsible-header">
                                             <div class="collapsible-section collapsed" data-target="#postavkezabilten" data-toggle="collapse" aria-expanded="false">
@@ -579,6 +579,203 @@
                                         </div>
                                     </div>
                         </div>
+                        <div class="col-sm-12 col-md-4 card podaci-o-firmi tab-bilten">
+                            <div class="profil-card ">
+                               <div class="text-center">
+                                    <button type="submit" class="btn btn-filter-refresh">UPUTSTVO</button>
+                                </div>
+                            </div>
+                        </div>
+                                                
+                        <div class="col-sm-12 col-md-12 card podaci-o-firmi tab-bilten">
+                            <div class="profil-card ">
+                                <h1 class="card-naslov-vijesti" style="color: #999;">Newsletter</h1>
+                                <p class="newsletterDescription">
+                                    Odaberite željeni datum kako bi dobili pregled liste newsletter-a za isti.
+                                </p>
+                               <div class="newsletterWrap">
+                                    <input type="text" id="newsletterDate" class="form-control datepick akordion-input newsletterDate" placeholder="Odabir datuma">
+                                    <button  class="btn btn-filter-refresh">OSVJEŽI PRETRAGU</button>
+                                </div>
+                                <ul class="pronadjeni-newsletteri">
+                                        
+                                        <!-- <li><span class="naslov"> </span><span class="uvod"> </span></li>  -->
+                                    </ul>
+                                
+                            </div>
+                        </div>  
+                        <div class="col-sm-12 col-md-12 card podaci-o-firmi tab-bilten">
+                                <div class="profil-card ">
+                                    <h1 class="card-naslov-vijesti" style="color: #999;">Dodatne postavke za newsletter</h1>
+                                    <p class="newsletterDescription">
+                                        Odaberite željeni datum kako bi dobili pregled liste newsletter-a za isti.
+                                    </p>
+                                    <ul class="newsletter-postavke">
+                                            <li>
+                                                <label class="cek">
+                                                    <input type="checkbox" name="djelatnost" value="B | H | S"> 
+                                                    <span></span><span class="oznaka">B | H | S</span><br>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="cek">
+                                                    <input type="checkbox" name="djelatnost" value="Prijem informativnih poruka"> 
+                                                    <span></span><span class="oznaka">Prijem informativnih poruka</span><br>
+                                                    <span class="sub">Informativne poruke ćete dobiti prilikom objave vijesti u kojoj se pominje vaša firma.</span>
+                                               </label>
+                                            </li>
+                                            <li>
+                                                <label class="cek">
+                                                    <input type="checkbox" name="djelatnost" value="Dnevna Poslovna Akta - 'Dodjela Ugovora' "> 
+                                                    <span></span><span class="oznaka">Dnevna Poslovna Akta - "Dodjela Ugovora" </span><br>
+                                               </label>
+                                            </li>
+                                            <li>
+                                                <label class="cek">
+                                                    <input type="checkbox" name="djelatnost" value="Prijem obavijesti o tenderima"> 
+                                                    <span></span><span class="oznaka">Prijem obavijesti o tenderima</span><br>
+                                               </label>
+                                            </li>
+                                            <li>
+                                                <label class="cek">
+                                                    <input type="checkbox" name="djelatnost" value="Prijem Newslettera"> 
+                                                    <span></span><span class="oznaka">Prijem Newslettera</span><br>
+                                               </label>
+                                            </li>
+                                            <li>
+                                                <label class="cek">
+                                                    <input type="checkbox" name="djelatnost" value="Prijem važnih vijesti"> 
+                                                    <span></span><span class="oznaka">Prijem važnih vijesti</span><br>
+                                               </label>
+                                            </li>
+                                            
+                                        </ul>
+                                    
+                                    
+                                </div>
+                            </div>                       
+                        <div class="col-sm-12 col-md-12 card podaci-o-firmi tab-upit">
+                            <div class="profil-card ">
+                                <h1 class="card-naslov-vijesti" style="color: #999;">Upit</h1>
+                                <textarea class="upitTextarea" type="textarea" rows="5" ></textarea>
+                                <div class="text-right">
+                                    <button type="submit" class="btn btn-filter-refresh">POŠALJI</button>
+                                </div>
+                                <p class="upitDescription">
+                                    Vaš kompanijski profil i profil klijenta možete uređivati shodno Vašim željama i potrebama, odnosno kadrovskim i registracijskim promjenama.
+                                    <br><br>
+                                    Sve promjene vezane za "Podatke o firmi" možete poslati putem Komentara. Dovoljno je da upišete sve promjene koje želite da se naprave i da pošaljete pritiskom na dugmić "pošalji".
+                                    <br><br>
+                                    Promjene će biti vidljive po odobrenju od strane administratora.
+                                    <br><br>
+                                    Sve komentare, pohvale i pritužbe možete slati putem opcije "Pošalji upit", te ćete u najkraćem mogućem periodu dobiti odgovor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 card podaci-o-firmi tab-clanci">
+                                <div class="profil-card clanci">
+                                    <h1 class="card-naslov-vijesti" style="color: #4B69A5;">Izdvojeni članci</h1>
+                                    
+                                    <div class="col-xs-12 nopadding">
+                                            <li>
+                                                <p class="izdvojeni-clanci datum">28.10.2016.</p>
+                                                <p class="izdvojeni-clanci naslov"><a href="#">Naslov članka</a></p>
+                                                <p class="izdvojeni-clanci uvod">Uvodni tekst članka</p>
+                                            </li>
+                                            <li>
+                                                <p class="izdvojeni-clanci datum">28.10.2016.</p>
+                                                <p class="izdvojeni-clanci naslov"><a href="#">Naslov članka</a></p>
+                                                <p class="izdvojeni-clanci uvod">Uvodni tekst članka</p>
+                                            </li>
+                                            <li>
+                                                <p class="izdvojeni-clanci datum">28.10.2016.</p>
+                                                <p class="izdvojeni-clanci naslov"><a href="#">Naslov članka</a></p>
+                                                <p class="izdvojeni-clanci uvod">Uvodni tekst članka</p>
+                                            </li>
+                                            <li>
+                                                <p class="izdvojeni-clanci datum">28.10.2016.</p>
+                                                <p class="izdvojeni-clanci naslov"><a href="#">Naslov članka</a></p>
+                                                <p class="izdvojeni-clanci uvod">Uvodni tekst članka</p>
+                                            </li>
+                                            <li>
+                                                <p class="izdvojeni-clanci datum">28.10.2016.</p>
+                                                <p class="izdvojeni-clanci naslov"><a href="#">Naslov članka</a></p>
+                                                <p class="izdvojeni-clanci uvod">Uvodni tekst članka</p>
+                                            </li>
+                                            <li>
+                                                <p class="izdvojeni-clanci datum">28.10.2016.</p>
+                                                <p class="izdvojeni-clanci naslov"><a href="#">Naslov članka</a></p>
+                                                <p class="izdvojeni-clanci uvod">Uvodni tekst članka</p>
+                                            </li>
+                                            <ul class="list-pagination">
+                                                    <li><button type="submit" class="btn btn-filter-refresh">1</button></li>
+                                                    <li><button type="submit" class="btn btn-filter-refresh">2</button></li>
+                                                    <li><button type="submit" class="btn btn-filter-refresh">3</button></li>
+                                            </ul>                                            
+                                        </div>                                   
+                                </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 card podaci-o-firmi tab-tenderi">
+                                <div class="profil-card tender">
+                                    <h1 class="card-naslov-vijesti" style="color: #C88C00;">Izdvojeni tenderi</h1>
+                                    
+                                    <div class="col-xs-12 nopadding">
+                                            <li>
+                                                <p class="izdvojeni-tenderi datum">28.10.2016.</p>
+                                                <p class="izdvojeni-tenderi naslov"><a href="#">Naslov tendera</a></p>
+                                                <p class="izdvojeni-tenderi uvod">Opis tendera...</p>
+                                            </li>
+                                            <li>
+                                                <p class="izdvojeni-tenderi datum">28.10.2016.</p>
+                                                <p class="izdvojeni-tenderi naslov"><a href="#">Naslov tendera</a></p>
+                                                <p class="izdvojeni-tenderi uvod">Opis tendera...</p>
+                                            </li>
+                                            <li>
+                                                <p class="izdvojeni-tenderi datum">28.10.2016.</p>
+                                                <p class="izdvojeni-tenderi naslov"><a href="#">Naslov tendera</a></p>
+                                                <p class="izdvojeni-tenderi uvod">Opis tendera...</p>
+                                            </li>
+                                            <li>
+                                                <p class="izdvojeni-tenderi datum">28.10.2016.</p>
+                                                <p class="izdvojeni-tenderi naslov"><a href="#">Naslov tendera</a></p>
+                                                <p class="izdvojeni-tenderi uvod">Opis tendera...</p>
+                                            </li>
+                                            <li>
+                                                <p class="izdvojeni-tenderi datum">28.10.2016.</p>
+                                                <p class="izdvojeni-tenderi naslov"><a href="#">Naslov tendera</a></p>
+                                                <p class="izdvojeni-tenderi uvod">Opis tendera...</p>
+                                            </li>
+                                            <ul class="list-pagination">
+                                                    <li><button type="submit" class="btn btn-filter-refresh">1</button></li>
+                                                    <li><button type="submit" class="btn btn-filter-refresh">2</button></li>
+                                                    <li><button type="submit" class="btn btn-filter-refresh">3</button></li>
+                                            </ul>                                            
+                                        </div>                                   
+                                </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 card podaci-o-firmi tab-firme">
+                                <div class="profil-card firme">
+                                    <h1 class="card-naslov-vijesti" style="color: #00827D;">Praćenje firmi</h1>
+                                    
+                                    <div class="col-xs-12 nopadding">
+                                            <li>
+                                                <p class="izdvojeni-firme naslov"><a href="#">Naziv firme</a> d.d Grad sjedišta.</p>                                                
+                                            </li>
+                                            <li>
+                                                <p class="izdvojeni-firme naslov"><a href="#">Naziv firme</a> d.d Grad sjedišta.</p>                                                
+                                            </li>
+                                            <li>
+                                                <p class="izdvojeni-firme naslov"><a href="#">Naziv firme</a> d.d Grad sjedišta.</p>                                                
+                                            </li>
+                                            
+                                            <ul class="list-pagination">
+                                                    <li><button type="submit" class="btn btn-filter-refresh">1</button></li>
+                                                    <li><button type="submit" class="btn btn-filter-refresh">2</button></li>
+                                                    <li><button type="submit" class="btn btn-filter-refresh">3</button></li>
+                                            </ul>                                            
+                                        </div>                                   
+                                </div>
+                        </div>
                     </div>
                     <div class="col-md-3 col-lg-4 profil-sidebar nopadding">
     
@@ -684,17 +881,6 @@
         </section>
     <!--- footer sekcija -->
     <section id="footer">
-        <!--- Footer newsletter
-        <div class="container-fluid newsletter-footer">
-            <h1>PRIJAVI SE ZA <span>NEWSLETTER</span></h1>
-            <div class="form-group has-feedback">
-                <input type="text" class="form-control" id="usrname" placeholder="Upišite svoju e-mail adresu ovdje">
-                <span class="form-control-feedback">
-                      <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                </span>
-            </div>
-        </div>
-        -->
         <div class="container-fluid footer-cta">
             <h1> <span>Poslujte bolje!</span> TESTIRAJTE BESPLATNO!</h1>
             <a class="footer-cta-button">REGISTRUJ SE</a>
@@ -808,6 +994,7 @@
     <script src="./js/imagesLoaded.js"></script>
     <script src="./js/masonry.js"></script>
     <script src="./js/main.js"></script>
+
 </body>
 
 </html>

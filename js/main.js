@@ -196,6 +196,11 @@ $(document).ready(function() {
     }).focus(function() {
         $("#datetimepicker4").datepicker("show");
     }).focus();
+    $("#newsletterDate").datepicker({
+        dateFormat: "dd.mm.yy"
+    }).focus(function() {
+        $("#newsletterDate").datepicker("show");
+    });
     $(function() {
         $("#slider-range, #slider-range2").slider({
             range: true,
