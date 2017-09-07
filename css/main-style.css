@@ -2398,6 +2398,7 @@ label.cek span.oznaka {
 .thumbnail a>img,
 .thumbnail>img {
     margin: auto;
+    max-height:60vh;
 }
 
 .carousel-indicators {
@@ -2465,6 +2466,7 @@ label.cek span.oznaka {
     overflow-x: auto;
     width: auto;
     min-width: 300px;
+    max-width: 60vw;
 }
 
 .carousel-caption {
