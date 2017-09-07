@@ -5064,6 +5064,20 @@ p.izdvojeni-firme.naslov a{
     .bijeli-menu.affix path {
         fill: #fff;
     }
+    .galerijaCta .modal-body {
+        padding: 0;
+    }
+    .galerija .modal-dialog {
+        max-width: 100%;
+        margin: 0px;
+    }
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+        margin: auto;
+        max-height: calc(100vh - 50px);
+    }
+    .galerijaCta .modal.fade.in {
+        padding-right: 0px !important;
+    }
 
 }
 @media (max-width: 480px){
