@@ -4296,10 +4296,11 @@ table.tabela-paketa {
 span#prikaziViseManje:before {
     display: block;
     content: "";
-    height: 80px;
+    height: 30px;
     width: 100%;
     position: absolute;
     bottom: 30px;   
+    pointer-events:none;
 }
 span#prikaziViseManje.shadeOn:before{
      background: rgba(255,255,255,0.26);
