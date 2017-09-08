@@ -46,10 +46,10 @@ $(document).ready(function() {
             $(".search-icon").click(function(event) {
                 event.preventDefault();
                 if ($(".crni-menu").hasClass("affix")) {
-                    $(".pretraga").css("top", "100px");
+                    $(".pretraga").css("top", "85px");
                     $(".bijeli-menu.affix .pretraga").toggle();
                 } else if ($(document.body).scrollTop() < 170) {
-                    $(".pretraga").css("top", "170px");
+                    $(".pretraga").css("top", "120px");
                     $(".pretraga").toggle();
                 }
             });
