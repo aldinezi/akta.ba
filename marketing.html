@@ -334,7 +334,7 @@
                 <h1 class="kapacitet-title">Preko <span id="brojRegistriranih">250.000</span><br>registrovanih<br>pravnih lica</h1>
                 <p class="kap-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
-            <div class="col-xs-12 bottom-section-separator"></div>
+            <div class="hidden-xs col-md-12 bottom-section-separator"></div>
         </div>        
     </section>
     <section class="oglasavanje">
@@ -423,8 +423,8 @@
                                 <p class="mark-description">Oglašavanjem isključivo na naslovnici cijena se uvećava za 20%.</p>  
                         </div>
                         <div class="wrap">
-                            <div class="col-md-8 col-md-push-2 nopadding">
-                                    <div class="col-md-6 nopadding">
+                            <div class="col-xs-12 col-md-8 col-md-push-2 nopadding">
+                                    <div class="col-xs-12 col-md-6 nopadding">
                                             <table class="cijenik-table grey">
                                                     <thead>
                                                         <td>Rich media</td>
@@ -450,7 +450,7 @@
                                                     </tbody>
                                             </table>
                                     </div>
-                                    <div class="col-md-6 nopadding">
+                                    <div class="col-xs-12 col-md-6 nopadding">
                                             <table class="cijenik-table grey right">
                                                     <thead>
                                                         <td>Popusti</td>
@@ -1119,7 +1119,7 @@
                             <div class="wrap">
                                     <div class="col-md-12 nopadding sub-table">
                                         <table class="cijenik-table kalkulator">
-                                            <thead>
+                                            <thead class="hidden-xs">
                                                 <td>Pozicija</td>
                                                 <td>Dimenzija</td>
                                                 <td>Cijena po prikazivanju</td>
@@ -1129,26 +1129,32 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
+                                                    <td class="hidden-md mobile-thead"><div>Pozicija</div></td>
+                                                    <td class="hidden-md mobile-thead"><div>Dimenzija</div></td>
+                                                    <td class="hidden-md mobile-thead"><div>Cijena po prikazivanju</div></td>
                                                     <td>Leaderboard</td>
                                                     <td>728x90</td>
                                                     <td class="cijena">0,007</td>
+                                                    <td class="hidden-md mobile-thead"><div>Broj prikazivanja</div></td>
+                                                    <td class="hidden-md mobile-thead"><div>Prikaz na naslovnici</div></td>
+                                                    <td class="hidden-md mobile-thead"><div>UKUPNO</div></td>
                                                     <td class="brojprikaza"><input type="number" min="0" placeholder="0"></td>
                                                     <td class="nanaslovnici"><label class="cek ">
                                                             <input type="checkbox" name="prikaznanaslovnici" > <span></span>
                                                        </label>
                                                     </td>
-                                                    <td class="ukupno"><input  type="text"></td>                                                       
-                                                    
-                                               <!--     <td>Fiksni A1**</td>
-                                                    <td>Fiksni A2**</td>
-                                                    <td>Fiksni A3**</td>
-                                                    <td>Fiksni A4</td>
-                                                    <td>Fiksni A5</td> -->
+                                                    <td class="ukupno"><input  type="text"></td>
                                                 </tr>
-                                                <tr>
+                                                <tr>    
+                                                        <td class="hidden-md mobile-thead"><div>Pozicija</div></td>
+                                                        <td class="hidden-md mobile-thead"><div>Dimenzija</div></td>
+                                                        <td class="hidden-md mobile-thead"><div>Cijena po prikazivanju</div></td>
                                                         <td>Rectangle</td>
                                                         <td>300x250</td>      
                                                         <td class="cijena">0,007</td>
+                                                        <td class="hidden-md mobile-thead"><div>Broj prikazivanja</div></td>
+                                                        <td class="hidden-md mobile-thead"><div>Prikaz na naslovnici</div></td>
+                                                        <td class="hidden-md mobile-thead"><div>UKUPNO</div></td>
                                                         <td class="brojprikaza"><input type="number" placeholder="0"></td>
                                                         <td class="nanaslovnici"><label class="cek">
                                                                 <input type="checkbox" name="prikaznanaslovnici" > <span></span>
@@ -1157,9 +1163,15 @@
                                                         <td class="ukupno" ><input type="text"></td>      
                                                 </tr>
                                                 <tr>
+                                                        <td class="hidden-md mobile-thead"><div>Pozicija</div></td>
+                                                        <td class="hidden-md mobile-thead"><div>Dimenzija</div></td>
+                                                        <td class="hidden-md mobile-thead"><div>Cijena po prikazivanju</div></td>
                                                         <td>CPD Leaderboard</td>
                                                         <td>728x90</td>
                                                         <td class="cijena">0,007</td>
+                                                        <td class="hidden-md mobile-thead"><div>Broj prikazivanja</div></td>
+                                                        <td class="hidden-md mobile-thead"><div>Prikaz na naslovnici</div></td>
+                                                        <td class="hidden-md mobile-thead"><div>UKUPNO</div></td>
                                                         <td class="brojprikaza"><input type="number" placeholder="0" min="0"></td>  
                                                         <td class="nanaslovnici"><label class="cek">
                                                                 <input type="checkbox" name="prikaznanaslovnici" > <span></span>
@@ -1168,9 +1180,15 @@
                                                         <td class="ukupno" ><input type="text"></td>   
                                                 </tr>
                                                 <tr>
+                                                        <td class="hidden-md mobile-thead"><div>Pozicija</div></td>
+                                                        <td class="hidden-md mobile-thead"><div>Dimenzija</div></td>
+                                                        <td class="hidden-md mobile-thead"><div>Cijena po prikazivanju</div></td>
                                                         <td>Double Rectangle</td>
                                                         <td>300x600</td>
                                                         <td class="cijena">0,007</td>
+                                                        <td class="hidden-md mobile-thead"><div>Broj prikazivanja</div></td>
+                                                        <td class="hidden-md mobile-thead"><div>Prikaz na naslovnici</div></td>
+                                                        <td class="hidden-md mobile-thead"><div>UKUPNO</div></td>
                                                         <td class="brojprikaza"><input type="number" placeholder="0" min="0"></td> 
                                                         <td class="nanaslovnici"><label class="cek">
                                                                 <input type="checkbox" name="prikaznanaslovnici" > <span></span>
@@ -1179,9 +1197,15 @@
                                                         <td class="ukupno" ><input type="text"></td>    
                                                 </tr>
                                                 <tr>
+                                                        <td class="hidden-md mobile-thead"><div>Pozicija</div></td>
+                                                        <td class="hidden-md mobile-thead"><div>Dimenzija</div></td>
+                                                        <td class="hidden-md mobile-thead"><div>Cijena po prikazivanju</div></td>
                                                         <td>In-text Rectangle</td>
                                                         <td>300x250</td>
                                                         <td class="cijena">0,007</td>
+                                                        <td class="hidden-md mobile-thead"><div>Broj prikazivanja</div></td>
+                                                        <td class="hidden-md mobile-thead"><div>Prikaz na naslovnici</div></td>
+                                                        <td class="hidden-md mobile-thead"><div>UKUPNO</div></td>
                                                         <td class="brojprikaza"><input type="number" placeholder="0" min="0"></td> 
                                                         <td class="nanaslovnici"><label class="cek">
                                                                 <input type="checkbox" name="prikaznanaslovnici" > <span></span>
@@ -1209,7 +1233,7 @@
                         <div class="wrap">
                                 <div class="col-md-12 nopadding sub-table">
                                     <table class="cijenik-table kalkulator">
-                                        <thead>
+                                        <thead class="hidden-xs">
                                             <td>Pozicija</td>
                                             <td>Dimenzija</td>
                                             <td>Cijena po danu</td>
@@ -1219,59 +1243,94 @@
                                         </thead>
                                         <tbody>
                                             <tr>
+                                                <td class="hidden-md mobile-thead"><div>Pozicija</div></td>
+                                                <td class="hidden-md mobile-thead"><div>Dimenzija</div></td>
+                                                <td class="hidden-md mobile-thead"><div>Cijena po danu</div></td>
                                                 <td>Fiksni A1**</td>
                                                 <td>728x90</td>
                                                 <td class="cijena">200,00</td>
+                                                <td class="hidden-md mobile-thead"><div>Broj dana</div></td>
+                                                <td class="hidden-md mobile-thead"><div>Prikaz u kategorijama<br>Tender i Registar</div></td>
+                                                <td class="hidden-md mobile-thead"><div>UKUPNO</div></td>
                                                 <td class="brojprikaza"><input type="number" min="0" placeholder="0"></td>
-                                                <td class="nanaslovnici"><label class="cek ">
+                                                <td class="nanaslovnici">
+                                                    <label class="cek ">
                                                         <input type="checkbox" name="prikaznanaslovnici" > <span></span>
                                                    </label>
                                                 </td>
                                                 <td class="ukupno"><input  type="text"></td>
                                             </tr>
                                             <tr>
-                                                    <td>Fiksni A2**</td>
-                                                    <td>300x250</td>      
-                                                    <td class="cijena">200,00</td>
-                                                    <td class="brojprikaza"><input type="number" placeholder="0"></td>
-                                                    <td class="nanaslovnici"><label class="cek">
-                                                            <input type="checkbox" name="prikaznanaslovnici" > <span></span>
-                                                       </label>
-                                                    </td>
-                                                    <td class="ukupno" ><input type="text"></td>      
+                                                <td class="hidden-md mobile-thead"><div>Pozicija</div></td>
+                                                <td class="hidden-md mobile-thead"><div>Dimenzija</div></td>
+                                                <td class="hidden-md mobile-thead"><div>Cijena po danu</div></td>
+                                                <td>Fiksni A2**</td>
+                                                <td>300x250</td>      
+                                                <td class="cijena">200,00</td>
+                                                <td class="hidden-md mobile-thead"><div>Broj dana</div></td>
+                                                <td class="hidden-md mobile-thead"><div>Prikaz u kategorijama<br>Tender i Registar</div></td>
+                                                <td class="hidden-md mobile-thead"><div>UKUPNO</div></td>
+                                                <td class="brojprikaza"><input type="number" placeholder="0"></td>
+                                                <td class="nanaslovnici">
+                                                    <label class="cek">
+                                                        <input type="checkbox" name="prikaznanaslovnici" > <span></span>
+                                                   </label>
+                                                </td>
+                                                <td class="ukupno" ><input type="text"></td>      
                                             </tr>
                                             <tr>
-                                                    <td>Fiksni A3**</td>
-                                                    <td>728x90</td>
-                                                    <td class="cijena">200,00</td>
-                                                    <td class="brojprikaza"><input type="number" placeholder="0" min="0"></td>  
-                                                    <td class="nanaslovnici"><label class="cek">
-                                                            <input type="checkbox" name="prikaznanaslovnici" > <span></span>
-                                                       </label>
-                                                    </td>
-                                                    <td class="ukupno" ><input type="text"></td>   
+                                                <td class="hidden-md mobile-thead"><div>Pozicija</div></td>
+                                                <td class="hidden-md mobile-thead"><div>Dimenzija</div></td>
+                                                <td class="hidden-md mobile-thead"><div>Cijena po danu</div></td>
+                                                <td>Fiksni A3**</td>
+                                                <td>728x90</td>
+                                                <td class="cijena">200,00</td>
+                                                <td class="hidden-md mobile-thead"><div>Broj dana</div></td>
+                                                <td class="hidden-md mobile-thead"><div>Prikaz u kategorijama<br>Tender i Registar</div></td>
+                                                <td class="hidden-md mobile-thead"><div>UKUPNO</div></td>
+                                                <td class="brojprikaza"><input type="number" placeholder="0" min="0"></td>  
+                                                <td class="nanaslovnici">
+                                                    <label class="cek">
+                                                        <input type="checkbox" name="prikaznanaslovnici" > <span></span>
+                                                   </label>
+                                                </td>
+                                                <td class="ukupno" ><input type="text"></td>   
                                             </tr>
                                             <tr>
-                                                    <td>Fiksni A4</td>
-                                                    <td>300x600</td>
-                                                    <td class="cijena">200,00</td>
-                                                    <td class="brojprikaza"><input type="number" placeholder="0" min="0"></td> 
-                                                    <td class="nanaslovnici"><label class="cek">
-                                                            <input type="checkbox" name="prikaznanaslovnici" > <span></span>
-                                                       </label>
-                                                    </td>
-                                                    <td class="ukupno" ><input type="text"></td>    
+                                                <td class="hidden-md mobile-thead"><div>Pozicija</div></td>
+                                                <td class="hidden-md mobile-thead"><div>Dimenzija</div></td>
+                                                <td class="hidden-md mobile-thead"><div>Cijena po danu</div></td>
+                                                <td>Fiksni A4</td>
+                                                <td>300x600</td>
+                                                <td class="cijena">200,00</td>
+                                                <td class="hidden-md mobile-thead"><div>Broj dana</div></td>
+                                                <td class="hidden-md mobile-thead"><div>Prikaz u kategorijama<br>Tender i Registar</div></td>
+                                                <td class="hidden-md mobile-thead"><div>UKUPNO</div></td>
+                                                <td class="brojprikaza"><input type="number" placeholder="0" min="0"></td> 
+                                                <td class="nanaslovnici">
+                                                    <label class="cek">
+                                                        <input type="checkbox" name="prikaznanaslovnici" > <span></span>
+                                                   </label>
+                                                </td>
+                                                <td class="ukupno" ><input type="text"></td>    
                                             </tr>
                                             <tr>
-                                                    <td>Fiksni A5</td>
-                                                    <td>300x250</td>
-                                                    <td class="cijena">200,00</td>
-                                                    <td class="brojprikaza"><input type="number" placeholder="0" min="0"></td> 
-                                                    <td class="nanaslovnici"><label class="cek">
-                                                            <input type="checkbox" name="prikaznanaslovnici" > <span></span>
-                                                       </label>
-                                                    </td>
-                                                    <td class="ukupno" ><input type="text"></td>
+                                                <td class="hidden-md mobile-thead"><div>Pozicija</div></td>
+                                                <td class="hidden-md mobile-thead"><div>Dimenzija</div></td>
+                                                <td class="hidden-md mobile-thead"><div>Cijena po danu</div></td>
+                                                <td>Fiksni A5</td>
+                                                <td>300x250</td>
+                                                <td class="cijena">200,00</td>
+                                                <td class="hidden-md mobile-thead"><div>Broj dana</div></td>
+                                                <td class="hidden-md mobile-thead"><div>Prikaz u kategorijama<br>Tender i Registar</div></td>
+                                                <td class="hidden-md mobile-thead"><div>UKUPNO</div></td>
+                                                <td class="brojprikaza"><input type="number" placeholder="0" min="0"></td> 
+                                                <td class="nanaslovnici">
+                                                    <label class="cek">
+                                                        <input type="checkbox" name="prikaznanaslovnici" > <span></span>
+                                                   </label>
+                                                </td>
+                                                <td class="ukupno" ><input type="text"></td>
                                             </tr>
                                         </tbody>
                                     </table>

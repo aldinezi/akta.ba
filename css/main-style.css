@@ -300,7 +300,8 @@ img.logo {
 }
 
 .pretraga {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     border: none;
@@ -314,7 +315,8 @@ img.logo {
 
 .pretraga:focus {
     border-color: transparent;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
@@ -529,7 +531,8 @@ img.logo {
     font-family: "Raleway-Bold";
     text-transform: uppercase;
     font-size: 15px;
-    box-shadow: 10px 0px 15px white;
+    -webkit-box-shadow: 10px 0px 15px white;
+            box-shadow: 10px 0px 15px white;
 }
 
 .next-label {
@@ -541,7 +544,8 @@ img.logo {
     top: 0;
     border-radius: 4px;
     background: white;
-    box-shadow: -5px 0px 15px white;
+    -webkit-box-shadow: -5px 0px 15px white;
+            box-shadow: -5px 0px 15px white;
 }
 
 #dalje {
@@ -736,7 +740,8 @@ h1.naslov-kolone:after {
 }*/
 
 .card-newsletter .form-control {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     background: #EFEFF0;
     border: transparent;
     border-radius: 0px;
@@ -869,7 +874,8 @@ a.card-button:focus {
 
 .newsletter-footer .form-group .form-control {
     border-radius: 0px;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     border: 1px solid #fff;
 }
 
@@ -1161,7 +1167,8 @@ a.footer-cta-button:focus {
 
 #skroler-kapital .item>div {
     overflow: hidden;
-    box-shadow: inset -15px 0px 10px -10px #fff;
+    -webkit-box-shadow: inset -15px 0px 10px -10px #fff;
+            box-shadow: inset -15px 0px 10px -10px #fff;
 }
 
 .kapital h1.naslov-kolone {
@@ -1361,7 +1368,8 @@ a.footer-cta-button:focus {
 }
 
 .single_article .firmeVijesti .tab-pane .card-opis-vijesti {
-    box-shadow: 0px 2px 3px rgba(232, 232, 232, 0.5);
+    -webkit-box-shadow: 0px 2px 3px rgba(232, 232, 232, 0.5);
+            box-shadow: 0px 2px 3px rgba(232, 232, 232, 0.5);
 }
 
 .tab-content>#povezanevijesti>.card-opis-vijesti {
@@ -1420,7 +1428,6 @@ a.footer-cta-button:focus {
     width: 100%;
     height: 1px;
     margin: 20px 0px;
-    background-image: -webkit-radial-gradient(#CCC, #FFF), -webkit-radial-gradient(#CCC, #FFF);
     background-image: radial-gradient(#CCC, #FFF), radial-gradient(#CCC, #FFF);
     background-position: 0, 100%, 0, 100%;
 }
@@ -1786,7 +1793,8 @@ a.otvoriGaleriju:hover {
 }
 
 .vijestOutreachIcon:hover {
-    box-shadow: 0px 0px 5px #23527c, inset 0px 0px 5px #23527c;
+    -webkit-box-shadow: 0px 0px 5px #23527c, inset 0px 0px 5px #23527c;
+            box-shadow: 0px 0px 5px #23527c, inset 0px 0px 5px #23527c;
 }
 
 .popover-content {
@@ -2709,7 +2717,8 @@ input#amount:focus {
 }
 
 .registar-forma-pretrage input {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     background: #efeff0;
     border: transparent;
     border-radius: 0;
@@ -2719,11 +2728,13 @@ input#amount:focus {
 .registar-forma-pretrage input:focus {
     border-color: transparent;
     outline: 0;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 .registar-forma-pretrage .ui-selectmenu-button {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     background: #efeff0;
     border: transparent;
     border-radius: 0;
@@ -2749,7 +2760,7 @@ input#amount:focus {
 }
 
 .registar-forma-premium.premium .card-button {
-    background: url(../assets/premium-pretraga-ico.png), -webkit-linear-gradient(#00B496, #00B496);
+    background: url(../assets/premium-pretraga-ico.png), -webkit-gradient(linear, left top, left bottom, from(#00B496), to(#00B496));
     background: url(../assets/premium-pretraga-ico.png), linear-gradient(#00B496, #00B496);
     background-size: contain;
     background-position: center right;
@@ -2757,7 +2768,7 @@ input#amount:focus {
 }
 
 .registar-forma-premium.premium-plus .card-button {
-    background: url(../assets/premium-plus-pretraga-ico.png), -webkit-linear-gradient(#00B496, #00B496);
+    background: url(../assets/premium-plus-pretraga-ico.png), -webkit-gradient(linear, left top, left bottom, from(#00B496), to(#00B496));
     background: url(../assets/premium-plus-pretraga-ico.png), linear-gradient(#00B496, #00B496);
     background-size: contain;
     background-position: center right;
@@ -2971,7 +2982,7 @@ label.cek.registarski :checked+span {
 
 .djelatnost .grid-contents,
 .djelatnost .profil-card {
-    background: url(../assets/firme-djelatnost-bg.png), -webkit-linear-gradient(white, white);
+    background: url(../assets/firme-djelatnost-bg.png), -webkit-gradient(linear, left top, left bottom, from(white), to(white));
     background: url(../assets/firme-djelatnost-bg.png), linear-gradient(white, white);
     background-size: contain;
     background-position: right -1px;
@@ -2995,7 +3006,7 @@ label.cek.registarski :checked+span {
 
 .broj-zaposlenih .grid-contents,
 .broj-zaposlenih .profil-card {
-    background: url(../assets/firme-zaposleni-bg.png), -webkit-linear-gradient(white, white);
+    background: url(../assets/firme-zaposleni-bg.png), -webkit-gradient(linear, left top, left bottom, from(white), to(white));
     background: url(../assets/firme-zaposleni-bg.png), linear-gradient(white, white);
     background-size: contain;
     background-position: right bottom;
@@ -3003,7 +3014,7 @@ label.cek.registarski :checked+span {
 }
 
 .neto-promet .profil-card {
-    background: url(../assets/firme-neto-bg.png), -webkit-linear-gradient(white, white);
+    background: url(../assets/firme-neto-bg.png), -webkit-gradient(linear, left top, left bottom, from(white), to(white));
     background: url(../assets/firme-neto-bg.png), linear-gradient(white, white);
     background-size: contain;
     background-position: right bottom;
@@ -3011,7 +3022,7 @@ label.cek.registarski :checked+span {
 }
 
 .bank-racuni .grid-contents {
-    background: url(../assets/firme-racun-bg.png), -webkit-linear-gradient(white, white);
+    background: url(../assets/firme-racun-bg.png), -webkit-gradient(linear, left top, left bottom, from(white), to(white));
     background: url(../assets/firme-racun-bg.png), linear-gradient(white, white);
     background-size: contain;
     background-position: right -1px;
@@ -3020,7 +3031,7 @@ label.cek.registarski :checked+span {
 
 .odgovorni .profil-card,
 .odgovorni .grid-contents {
-    background: url(../assets/firme-odgovornolice-bg.png), -webkit-linear-gradient(white, white);
+    background: url(../assets/firme-odgovornolice-bg.png), -webkit-gradient(linear, left top, left bottom, from(white), to(white));
     background: url(../assets/firme-odgovornolice-bg.png), linear-gradient(white, white);
     background-size: contain;
     background-position: right bottom;
@@ -3104,6 +3115,7 @@ p.label-racuni .brojke {
     font-family: sans-serif;
     font-size: 10px;
     text-align: center;
+    -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
 
@@ -3191,7 +3203,8 @@ ul.povezana-drustva li>span {
 }
 
 #profil-firme-tabs .card-wrap {
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
 
@@ -3496,7 +3509,7 @@ a.paginate_button.current,
 }
 
 .objaviteoglas-bg-layer {
-    background: url(../assets/promo-loudspeaker.png), -webkit-linear-gradient(#9c5a9a, #9c5a9a);
+    background: url(../assets/promo-loudspeaker.png), -webkit-gradient(linear, left top, left bottom, from(#9c5a9a), to(#9c5a9a));
     background: url(../assets/promo-loudspeaker.png), linear-gradient(#9c5a9a, #9c5a9a);
     background-repeat: no-repeat;
     background-size: 45%;
@@ -3743,9 +3756,15 @@ table.tabela-paketa {
         font-size: 20px;
     }
     .tabela-paketa r {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
     .tabela-paketa td,
     .tabela-paketa th {
@@ -3768,6 +3787,7 @@ table.tabela-paketa {
     .tabela-paketa th:first-child {
         display: none;
     }
+
 }
 
 .registracijska-forma label {
@@ -3786,7 +3806,6 @@ table.tabela-paketa {
     left: 0;
     background: #e9e9e9;
     -webkit-box-shadow: 0px 15px 12px -10px rgb(50, 50, 50);
-    -moz-box-shadow: 0px 15px 12px -10px rgb(50, 50, 50);
     box-shadow: 0px 15px 12px -10px rgb(50, 50, 50);
     z-index: 99;
     padding-top: 30px;
@@ -4083,9 +4102,6 @@ table.tabela-paketa {
         padding: 0 10px;
         border: none;
         -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        -ms-transition: all .3s ease;
-        -o-transition: all .3s ease;
         transition: all .3s ease;
     }
     #tabela-rezultata td.normalnaVisina {
@@ -4274,8 +4290,13 @@ table.tabela-paketa {
 .ticker-vijesti{
     height: 61px;
     background: white;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0px 10px;
 }
 #ticker .item{
@@ -4286,6 +4307,7 @@ table.tabela-paketa {
 
 .tickercontainer{height:61px !important}
 .sadrzajVijesti{
+    -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
 }
@@ -4304,11 +4326,8 @@ span#prikaziViseManje:before {
 }
 span#prikaziViseManje.shadeOn:before{
      background: rgba(255,255,255,0.26);
-    background: -moz-linear-gradient(top, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.26) 25%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0.26)), color-stop(25%, rgba(255,255,255,0.26)), color-stop(69%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.26) 25%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
-    background: -o-linear-gradient(top, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.26) 25%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
-    background: -ms-linear-gradient(top, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.26) 25%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.26)), color-stop(25%, rgba(255,255,255,0.26)), color-stop(69%, rgba(255,255,255,1)), to(rgba(255,255,255,1)));
     background: linear-gradient(to bottom, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.26) 25%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
 }
@@ -4330,9 +4349,9 @@ span#prikaziViseManje.shadeOff:before{
     color: white;
     height: 0px;
     overflow: hidden;
+    -webkit-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
     -webkit-box-shadow: inset 0px 15px 30px -10px rgba(0,0,0,0.5), inset 0px -15px 30px -10px rgba(0,0,0,0.5);
-    -moz-box-shadow: inset 0px 15px 30px -10px rgba(0,0,0,0.5), inset 0px -15px 30px -10px rgba(0,0,0,0.5);
     box-shadow: inset 0px 15px 30px -10px rgba(0,0,0,0.5), inset 0px -15px 30px -10px rgba(0,0,0,0.5);
 }
 .container-fluid.user-menu-box.affix {
@@ -4351,6 +4370,7 @@ span#prikaziViseManje.shadeOff:before{
 }
 .user-menu-box .nav {
     opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 .user-menu-box.open .nav {
@@ -4376,6 +4396,7 @@ span#prikaziViseManje.shadeOff:before{
     padding: 0px 15px;
     font-family: "Raleway-Bold";
     font-size: 13px;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -4413,6 +4434,7 @@ span#prikaziViseManje.shadeOff:before{
     font-size: 16px;
     padding: 0 20px;
     outline: none;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     margin-left: 30px;
 }
@@ -4465,12 +4487,15 @@ span#prikaziViseManje.shadeOff:before{
     min-height: 480px;
     margin-top: 25px;
     display: -webkit-box;
-    display: -moz-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
         border-radius: 4px;
 }
@@ -4558,6 +4583,7 @@ span#prikaziViseManje.shadeOff:before{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 .collapsible-section[aria-expanded="true"] span.collapsible-control-ico{
@@ -4585,6 +4611,7 @@ span#prikaziViseManje.shadeOff:before{
     line-height: 30px;
     font-family: Raleway;
     font-weight: 700;
+    -webkit-transition:all 0.3s ease;
     transition:all 0.3s ease;
 }
 .collapsible-hold .btn-filter-refresh:hover, .collapsible-hold .btn-filter-refresh:focus{
@@ -4599,19 +4626,16 @@ span#prikaziViseManje.shadeOff:before{
 }
 .oglasavanje .sub-menu .wrap{
     display: -webkit-box;
-    display: -moz-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     background: #f7f7f7;
 }
 .leaderboard-cijena {
     display: -webkit-box;
-    display: -moz-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     text-align: center;
 }
 .cijena-holder {
@@ -4860,10 +4884,12 @@ input.akordion-input.sifra {
     height: 40px;
     width: 40px;
     background-size: 25px;
-    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
 }
 .korisnik .collapsible-section[aria-expanded="true"] span.collapsible-control-ico {
-    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
     background-image: url(../assets/arrows-up.svg);
 }
 .korisnik-desc {
@@ -4919,7 +4945,8 @@ input.newsletterDate {
     background: #E4E4E4;
     text-align: center;
     border: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 .newsletterWrap{
     margin: 15px 0;
@@ -5086,5 +5113,145 @@ p.izdvojeni-firme.naslov a{
     }
     .dropdown-toggle {
         margin-right: 15px;
+    }
+}
+@media screen and (min-width:768px){
+    .mobile-thead{
+        display:none;
+    }
+}
+@media screen and (max-width:768px){
+
+    /*************************************************
+     **                                             **
+     **    Marketing page responsive style          **
+     **                                             **
+     *************************************************/
+
+     .marketing_header .logo_big{
+        max-width: 150px;
+    }
+    .marketing_header p.header_subtitle{
+        font-size:15px;
+    }
+    .marketing_header {
+        min-height: 350px;
+    }
+    .kapacitet-card .ikona {
+        margin-top: 50px;
+        height: 90px;
+        width: 90px;
+    }
+    .vertical-separator {
+        display: none;
+    }
+    .kapacitet-card h1.kapacitet-title {
+        font-size: 23px;
+        margin-top: 30px;
+    }
+    .kapacitet-card p.kap-desc {
+        font-size: 12px;        
+    margin-bottom: 20px;
+    }
+    .collapsible-header a {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .collapsible-header span.collapsible-control-ico {
+        height: 25px;
+        width: 25px;
+    }
+    .collapsible-header {
+        padding: 15px 20px;
+    }
+    .oglasavanje .sub-menu .wrap {
+        display: block;
+        
+    overflow: auto;
+    }
+    .leaderboard-desc {
+        padding: 30px 20px;
+        font-size: 15px;
+    }
+    .cijena-holder {
+        font-size: 15px;
+        padding: 20px 35px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .wrap.tabela {
+        padding: 0 15px;
+        border: none;
+    }
+    .tabela .fifth {
+        width: 100%;
+        margin-bottom: 15px;
+    border: 1px solid #b2b2ba;
+    }
+    .tabela .fifth:nth-of-type(1){
+        border-left:1px solid #b2b2ba;
+    }
+    .cijenik-table td {
+        padding: 15px 20px;
+    }
+    .sub-table, .cijenik-table.grey {
+        margin: 0;
+    }
+    p.mark-description {
+        padding: 15px 20px;
+    }
+    table.cijenik-table.grey{
+        width:100%;        
+        margin-bottom: 30px;
+    }
+    .sub-menu .wrap:last-child {
+        padding-bottom: 20px;
+    }
+    .collapsible-hold .btn-filter-refresh {
+        min-width: 115px;
+        font-size: 11px;
+        line-height: 15px;
+        min-height: 25px;
+    }
+    .cijenik-table.kalkulator td {
+        width: 33.3333333%;
+        display: inline-block;
+        min-height: 50px;
+        font-size: 12px;
+        padding: 7px 15px;
+        text-align: center;        
+        line-height: 35px;
+    }
+    .kalk input, .kalk label.cek {
+        width: 100%;
+    }
+    .mobile-thead div{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: 36px;
+        line-height: normal;
+    }
+    td.mobile-thead {
+        background: #B2B2BB;
+        color: white;
+    }
+    .kalkulator tbody>tr:after {
+        display: block;
+        content: "";
+        height: 15px;
+    }
+    .kalk label.cek {
+        margin: 1px 0;
+    }
+    #fiksnibanneri .cijenik-table td {
+        padding: 7px 15px;
     }
 }
