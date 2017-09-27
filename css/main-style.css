@@ -5255,3 +5255,30 @@ p.izdvojeni-firme.naslov a{
         padding: 7px 15px;
     }
 }
+
+.sivi-input{
+    font-family: "Roboto";
+    font-size: 15px;
+    line-height: 35px;
+    border: none;
+    background: #e9e9e9;
+    color: #333;
+    padding: 0 10px;
+    outline: none;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+.zeleni-input{
+    font-family: "Roboto";
+    font-size: 15px;
+    line-height: 35px;
+    border: none;
+    background: #00827D;
+    color: #FFFFFF;
+    padding: 0 10px;
+    outline: none;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    border-radius: 4px;
+}
